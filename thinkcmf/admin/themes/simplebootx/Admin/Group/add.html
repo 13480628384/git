@@ -1,0 +1,58 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Group/index')}">群组列表</a></li>
+        <li class="active"><a href="{:U('Group/add')}">群组添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Group/add_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">归属部门</label>
+                <div class="controls">
+                    <select name="office_id">
+                        <volist name="office_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属用户</label>
+                <div class="controls">
+                    <select name="owner_id">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">群组名称</label>
+                <div class="controls">
+                    <input type="text" name="group_name" >
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">排序</label>
+                <div class="controls">
+                    <input type="text" name="ords" >
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

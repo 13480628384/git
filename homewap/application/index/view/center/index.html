@@ -1,0 +1,98 @@
+<html><head>
+    <title>个人中心</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link type="text/css" rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css?v211">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<style type="text/css">
+    .ucenter-data li {
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        line-height: 1;
+        font-size: 16px;
+    }
+    .um-list li i:first-child {
+        position: absolute;
+        left: -4px;
+        top: 13px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon-top{
+        top: 8px !important;
+    }
+</style>
+<body>
+
+<header class="user-head">
+    <div class="img-titile tab-one">
+        <p class="img-1"></p>
+        <p>城市：
+           {$res.city}
+        </p>
+    </div>
+    <div class="img-titile  tab-two">
+        <p class="img-1"></p>
+        <p>
+           手机：{$res.phone}
+        </p>
+    </div>
+    <div class="user-img">
+        <img src="{$res.headimgurl}" />
+    </div>
+    <div class="name-title" data-href="">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$res.nickname}</span>
+    </div>
+</header>
+<section class="ucenter-data line-title">
+    <ul>
+        <li data-href="{:url('add_list')}"><br><span class="mt5">家庭地址</span></li>
+        <li data-href="{:url('customer')}"><br><span class="mt5">商品订单</span></li>
+    </ul>
+</section>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <ul class="um-list">
+        <li data-href=""><i></i>优惠券<i class="icon-arrow-gray"></i></li>
+    </ul>
+    <div class="space-10"></div>
+    <ul class="um-list">
+        <li data-href=""><i class="icon-top"></i>意见反馈<i class="icon-arrow-gray"></i></li>
+    </ul>
+  <!--  <div class="space-10"></div>
+    <ul class="um-list">
+        <li data-href=""><i><img src="tpl/Wap/default/hn/img/icon-8.png" /></i>联系我们<i class="icon-arrow-gray"></i></li>
+    </ul>-->
+
+     <a href="{:url('logout')}" class="link-logout">退出登录</a>
+</section>
+
+<div class="space-60"></div>
+<menu class="ucenter-menu">
+    <ul>
+        <li data-href="{:url('Index/index')}">
+            <i class="icon-home"></i><br>首页
+        </li>
+        <li data-href="{:url('customer')}">
+            <i class="icon-custom"></i><br>我的订单
+        </li>
+        <li class="active">
+            <i class="icon-profile"></i><br>个人中心
+        </li>
+    </ul>
+</menu>
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js"></script>
+<script type="text/javascript">
+
+</script>
+</body></html>

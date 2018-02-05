@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>订单确认</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/select_time.css?0201811">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css">
+    <style>
+        .confirm-time-detial-selector{
+            display: none;
+        }
+        .intro{
+            background: #ccc;
+            border-radius: 50%;
+            font-size: 12px;
+            color: #b1a6a6;
+        }
+        .on{
+            background: #ccc;
+            color: #666;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body style="background: #fff">
+<header class="header">
+    <ul>
+        <li>日</li>
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+    </ul>
+</header>
+<div class="clear"></div>
+<section class="confirm-time-table">
+    <ul class="confirm-time-body dateList">
+    </ul>
+</section>
+<ul>
+    {volist name="time" id="v"}
+    <li class="onalyst" style="display: none" onaly="{$v.servicetime}" hour="{$v.hour}"></li>
+    {/volist}
+</ul>
+<div class="clear"></div>
+<!--<div class="next-month">
+    <div class="next ago">上个月</div>
+    <div class="next nexts">下个月</div>
+</div>-->
+<ul class="confirm-time-detial-selector">
+    <li class="confirm-time-button" times="08:00">08:00-12:00</li>
+    <li class="confirm-time-button" times="14:00">14:00-18:00</li>
+</ul>
+<input type="hidden" class="reserve" value="{:url('reserve',array('id'=>$res.id))}">
+</body>
+
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js?v113"></script>
+<script src="{$Think.URL}__JS__/jquery-1.1.2.min.js"></script>
+<script src="{$Think.URL}__JS__/date.js?v4122"></script>
+<script src="{$Think.URL}__JS__/common.js?v41"></script>
+<script type="text/javascript">
+    $(function() {
+        run(0);
+        run(1);
+        var array = new Array();
+        var hour = new Array();
+        $('.onalyst').each(function (index) {
+            var onaly = $(this).attr('onaly');
+            var hourd = $(this).attr('hour');
+            //console.log(onaly);
+            /*var zero = onaly.substr(5,1);
+            if(zero == 0){
+                onaly = onaly.substr(1).replace('0','',5);
+            }
+            console.log(onaly);*/
+            array[index] = onaly;
+            hour[index] = hourd;
+        });
+        // 选择的时间不能选择 start
+        $(".calendar-day-item").each(function(index){
+            //if($(typeof($(this).attr('onaly'))!='undefined')){
+                var times = $(this).attr('times');
+                var morning = times+' 08:00';
+                var afteren  = times+' 14:00';
+                if($.inArray(times,array) > -1){
+                    //同一天时间，如果客户选择了早上，那么下午还可以选择，如果都选择了，则不能出现点击了
+                    //console.log(afteren);return false;
+                    if($.inArray(morning,hour)>-1 && $.inArray(afteren,hour)>-1){
+                        $(this).addClass('intro');
+                        if($(this).hasClass('intro')){
+                            $(this).html($(this).html()+'已满');
+                        }
+                    }
+
+                }
+            //}
+        });
+        // 选择的时间不能选择 end
+        $('.calendar-day-item').click(function(){
+            /*if( $.inArray(morning,hour)>-1 ){
+                $(this).parents().parents().find('.confirm-time-detial-selector>li:eq(0)').addClass('on');
+            }*/
+            if(typeof($(this).attr("times"))!="undefined") {
+                if (!$(this).hasClass('intro')) {
+                    $(this).addClass('active').siblings().removeClass('active');
+                    if($.inArray($(this).attr('times'),array) > -1){
+                        //上午
+                        if( $.inArray($(this).attr('times')+' 08:00',hour)>-1 ){
+                            $(this).parents().parents().find('.confirm-time-detial-selector>li:eq(0)').addClass('on').siblings().removeClass('on');
+                        }
+                        //下午
+                        if( $.inArray($(this).attr('times')+' 14:00',hour)>-1 ){
+                            $(this).parents().parents().find('.confirm-time-detial-selector>li:eq(1)').addClass('on').siblings().removeClass('on');
+                        }
+                    }else{
+                        $(this).parents().parents().find('.confirm-time-detial-selector>li:eq(0)').siblings().removeClass('on');
+                        $(this).parents().parents().find('.confirm-time-detial-selector>li:eq(1)').siblings().removeClass('on');
+                    }
+                    $('.confirm-time-detial-selector').css('display', 'block');
+                }
+            }
+        });
+        //选择精确时间,返回下单连接
+        $('.confirm-time-button').click(function(){
+            if($(this).hasClass('on')){
+                return false;
+            }
+            var SelecTime = $('.active').attr('times');
+            var STime = $(this).attr('times');
+            var tim = SelecTime+" "+STime;
+            setCookie('select_time',tim);
+            var url = $('.reserve').val();
+            window.location.href=url;
+        })
+    });
+</script>
+</html>

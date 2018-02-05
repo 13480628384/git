@@ -1,0 +1,2578 @@
+[ 2016-03-15T16:38:25+08:00 ] 218.18.1.84 /install/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:38:25+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005045s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000249s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000414s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-03-15T16:38:32+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=check_login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048822s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `login_name` = 'hairui100' ) AND ( `del_flag` = 0 ) AND ( `user_type` = '3' ) LIMIT 1   [ RunTime:0.048439s ]
+
+[ 2016-03-15T16:39:55+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000265s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000252s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000183s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000376s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-03-15T16:40:04+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=check_login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043631s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `login_name` = 'admin' ) AND ( `del_flag` = 0 ) AND ( `user_type` = '3' ) LIMIT 1   [ RunTime:0.043422s ]
+
+[ 2016-03-15T16:40:05+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050706s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050045s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/jssdk.php 第 99 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/jssdk.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007954s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000504s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000277s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001539s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-03-15T16:40:06+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048151s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047771s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.047874s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.047910s ]
+
+[ 2016-03-15T16:40:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:40:42+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005425s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000253s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-03-15T16:40:56+08:00 ] 218.18.1.84 /install/index.php?m=Login&a=check_login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041417s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `login_name` = 'admin' ) AND ( `del_flag` = 0 ) AND ( `user_type` = '3' ) LIMIT 1   [ RunTime:0.041688s ]
+
+[ 2016-03-15T16:40:56+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.055030s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048957s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000381s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000263s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000217s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-03-15T16:40:58+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.039453s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.038894s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.039721s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.039383s ]
+
+[ 2016-03-15T16:41:06+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040673s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040218s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008557s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000311s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000240s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001494s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000486s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-03-15T16:42:39+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041057s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040505s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006135s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000269s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2016-03-15T16:42:40+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040867s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040413s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.040755s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.040297s ]
+ERR: 1054:Unknown column 'device_group.company_id' in 'where clause'
+ [ SQL语句 ] : SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc 
+
+[ 2016-03-15T16:42:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040613s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040296s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007084s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000372s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000267s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000213s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001290s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-03-15T16:42:43+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041285s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040770s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.040839s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.040989s ]
+
+[ 2016-03-15T16:43:43+08:00 ] 220.181.132.218 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:44:00+08:00 ] 101.199.112.45 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:44:00+08:00 ] 101.199.112.45 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004728s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000246s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000262s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000426s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-03-15T16:45:06+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040327s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039807s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005993s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001101s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000384s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-03-15T16:45:07+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042187s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041598s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.041898s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.041507s ]
+ERR: 1054:Unknown column 'device_group.company_id' in 'where clause'
+ [ SQL语句 ] : SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc 
+
+[ 2016-03-15T16:45:08+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051799s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050544s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007158s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000293s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-03-15T16:45:11+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041334s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040538s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007334s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000297s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2016-03-15T16:45:13+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047933s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047067s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005537s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-03-15T16:45:14+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040623s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040166s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.040693s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.040691s ]
+
+[ 2016-03-15T16:45:20+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056751s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.056231s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007057s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000349s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000254s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-03-15T16:45:21+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050853s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049972s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050352s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.050463s ]
+
+[ 2016-03-15T16:45:46+08:00 ] 220.181.132.218 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:46:23+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 0 /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Common/functions.php 第 734 行.
+
+[ 2016-03-15T16:46:23+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000247s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000378s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined offset: 0 /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Common/functions.php 第 734 行.
+
+[ 2016-03-15T16:47:15+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049504s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049010s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005580s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000378s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-03-15T16:47:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.039826s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039360s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.039922s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.039065s ]
+ERR: 1054:Unknown column 'device_group.company_id' in 'where clause'
+ [ SQL语句 ] : SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc 
+
+[ 2016-03-15T16:47:20+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049986s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049406s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000257s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000249s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000195s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001123s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-03-15T16:47:21+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041970s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041387s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.041725s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.041559s ]
+
+[ 2016-03-15T16:47:23+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049364s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044118s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006993s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000341s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000254s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000185s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-03-15T16:47:25+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044233s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043882s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007117s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000294s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-03-15T16:47:27+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042708s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user_id /home/wwwroot/v.sniperchw.com/install/APP/Runtime/Cache/Home/4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 334 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007863s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000263s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000195s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000413s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-03-15T16:47:28+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043978s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043296s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.043638s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.044032s ]
+
+[ 2016-03-15T16:47:30+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041280s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040160s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007210s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000312s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-03-15T16:47:31+08:00 ] 101.226.33.240 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:47:31+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050707s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050534s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050600s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.050601s ]
+
+[ 2016-03-15T16:47:46+08:00 ] 220.181.132.218 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:48:00+08:00 ] 101.199.112.55 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:48:00+08:00 ] 101.199.112.55 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000246s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000259s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-03-15T16:49:54+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049021s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048536s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007319s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000304s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000218s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-03-15T16:49:55+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056851s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.056218s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.060505s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.056775s ]
+
+[ 2016-03-15T16:50:08+08:00 ] 220.181.132.218 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:50:24+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041217s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040545s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000296s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000261s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000413s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-03-15T16:50:24+08:00 ] 101.199.108.51 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+
+[ 2016-03-15T16:50:24+08:00 ] 101.199.108.51 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005064s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000317s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000259s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001173s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000387s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-03-15T16:50:25+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042795s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041678s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.041904s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.042209s ]
+
+[ 2016-03-15T16:53:45+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050930s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050333s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051080s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = 'WWSZKS00049' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050398s ]
+
+[ 2016-03-15T16:54:50+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049785s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049484s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.050232s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.052047s ]
+
+[ 2016-03-15T16:55:15+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=submit_device_infos
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052047s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050543s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051492s ]
+SQL: UPDATE `ter_device` SET `device_command`='352425020962531',`another_name`='广州天河区',`set_status`=1,`device_status`=1,`status`=1 WHERE ( `device_code` = 'WWSZKS00049' ) [ RunTime:0.055575s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.050457s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.050882s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020962531' ) LIMIT 1   [ RunTime:0.050821s ]
+SQL: INSERT INTO `device_group` (`id`,`group_id`,`group_code`,`device_id`,`device_code`,`device_command`,`update_by`,`ords`,`status`,`create_time`) VALUES ('1801d61a5e127de21c68fcc7d6694fc1','b07c9df87ba34bbc926767dbc366f169','H','006d763403764f799a4801a7fcd20415','WWSZKS00049','352425020962531','2',8,1,'2016-03-15 16:55:15') [ RunTime:0.051426s ]
+
+[ 2016-03-15T16:55:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051141s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050297s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005596s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000377s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-03-15T16:55:18+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049208s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048687s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.048911s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.048121s ]
+ERR: 1054:Unknown column 'device_group.company_id' in 'where clause'
+ [ SQL语句 ] : SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.company_id = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc 
+
+[ 2016-03-15T16:55:47+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041718s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041298s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.041909s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.041261s ]
+
+[ 2016-03-15T16:55:48+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043266s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042953s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.043492s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.042770s ]
+
+[ 2016-03-15T16:56:27+08:00 ] 220.181.132.218 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000292s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000328s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000532s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-03-15T16:56:40+08:00 ] 101.199.112.50 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004472s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000255s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000301s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000406s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-03-15T17:11:05+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.057725s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.057272s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007080s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-03-15T17:11:06+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051050s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050392s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050784s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.050391s ]
+
+[ 2016-03-15T17:11:07+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049440s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048989s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000286s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000425s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-03-15T17:11:08+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049827s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049025s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049597s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.049841s ]
+
+[ 2016-03-15T17:11:11+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042988s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042507s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009121s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000330s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-03-15T17:11:12+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042939s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042186s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.042648s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.042156s ]
+
+[ 2016-03-15T17:11:13+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.058970s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.058426s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006164s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000277s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-03-15T17:11:14+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.058517s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.058355s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.058854s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.058403s ]
+
+[ 2016-03-15T17:11:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042180s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041399s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007081s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000303s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000185s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-03-15T17:11:18+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051225s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050669s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050970s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.050681s ]
+
+[ 2016-03-15T17:11:19+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044122s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043494s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005539s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000257s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-03-15T17:11:20+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048937s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048338s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.060429s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.048349s ]
+
+[ 2016-03-15T17:19:44+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043208s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042850s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004788s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000184s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000467s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-03-15T17:19:57+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=add_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049211s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048666s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.048974s ]
+SQL: INSERT INTO `device_group_info` (`group_name`,`id`,`create_by`) VALUES ('航母','7c62baa220eded1d22d934d85fafc33a','2') [ RunTime:0.048980s ]
+
+[ 2016-03-15T17:20:00+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043160s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042424s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005711s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000256s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000247s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000183s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-03-15T17:20:01+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040503s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039982s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.040329s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.040067s ]
+
+[ 2016-03-15T17:20:05+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group_update&updateid=7c62baa220eded1d22d934d85fafc33a&name=%E8%88%AA%E6%AF%8D
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049970s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049393s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005404s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000406s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000410s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000308s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-03-15T17:20:08+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043413s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042591s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.043018s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.042836s ]
+
+[ 2016-03-15T17:20:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043136s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042601s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005670s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001158s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-03-15T17:20:18+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041680s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041046s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.041494s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.041559s ]
+
+[ 2016-03-15T17:20:19+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049737s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049299s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006987s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000293s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000254s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000376s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-03-15T17:20:20+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040781s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039444s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.039568s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.039321s ]
+
+[ 2016-03-15T17:20:26+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051519s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050926s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005907s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000275s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-03-15T17:20:27+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044635s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044152s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.044912s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.044707s ]
+
+[ 2016-03-15T17:21:35+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.039958s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039510s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005659s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000313s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000397s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-03-15T17:21:35+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049670s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049182s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049414s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( di.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.049606s ]
+
+[ 2016-03-15T17:40:37+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050223s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048961s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005564s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000262s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000185s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-03-15T17:40:38+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041892s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041177s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.041539s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.041969s ]
+
+[ 2016-03-15T17:40:46+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041189s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040331s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006968s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000299s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000306s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-03-15T17:40:47+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.060920s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043409s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.043739s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.043521s ]
+
+[ 2016-03-15T17:40:53+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043657s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042687s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007060s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000312s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-03-15T17:40:56+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.074572s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040951s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007031s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000296s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000184s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2016-03-15T17:40:58+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041441s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040960s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005399s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000254s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-03-15T17:40:59+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049594s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048978s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049284s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.048826s ]
+
+[ 2016-03-15T17:41:00+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041384s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040903s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007054s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000299s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000704s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-03-15T17:41:11+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048507s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047940s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.048794s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.048045s ]
+
+[ 2016-03-15T17:41:12+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053107s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050946s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051353s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962531' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050675s ]
+
+[ 2016-03-15T17:41:13+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044271s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043590s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044899s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '35242502096253' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.046834s ]
+
+[ 2016-03-15T17:41:13+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049153s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041249s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.050547s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962533' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044416s ]
+
+[ 2016-03-15T17:41:23+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040890s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040346s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.040864s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = 'WWSZLH00031' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.040248s ]
+
+[ 2016-03-15T17:41:23+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042111s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041635s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.043083s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = 'WWSZLH00031' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.041502s ]
+
+[ 2016-03-15T17:41:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=submit_device_infos
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.058710s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040753s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.062495s ]
+SQL: UPDATE `ter_device` SET `device_command`='352425020962533',`another_name`='驱逐舰',`set_status`=1,`device_status`=1,`status`=1 WHERE ( `device_code` = 'WWSZLH00031' ) [ RunTime:0.046234s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962533' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.040746s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.051745s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020962533' ) LIMIT 1   [ RunTime:0.040846s ]
+SQL: INSERT INTO `device_group` (`id`,`group_id`,`group_code`,`device_id`,`device_code`,`device_command`,`update_by`,`ords`,`status`,`create_time`) VALUES ('4c2880d5394f821b481dc9d58c3fe769','7c62baa220eded1d22d934d85fafc33a','A','032846e6ba1e4f43ba1bdab3a020956b','WWSZLH00031','352425020962533','2',1,1,'2016-03-15 17:41:42') [ RunTime:0.059714s ]
+
+[ 2016-03-15T17:41:44+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050582s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043881s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005764s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000310s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001219s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-03-15T17:41:45+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044427s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043504s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.044159s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.043902s ]
+
+[ 2016-03-15T17:41:53+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.070196s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.051402s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005598s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000283s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001184s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000387s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-03-15T17:41:54+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044844s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044040s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.045551s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.044745s ]
+
+[ 2016-03-15T17:42:12+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047745s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042116s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005424s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000258s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000245s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000185s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-03-15T17:42:13+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050017s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049454s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049585s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.049361s ]
+
+[ 2016-03-15T17:42:16+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056430s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042268s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005676s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001120s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-03-15T17:42:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.058373s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.073675s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.058977s ]
+
+[ 2016-03-15T17:45:17+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048661s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048102s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007025s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000303s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000213s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-03-15T17:45:19+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051809s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050724s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005837s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000249s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-03-15T17:45:20+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048579s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040104s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.053922s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.040965s ]
+
+[ 2016-03-15T17:45:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=init_device_ads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059489s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.051175s ]
+SQL: SHOW COLUMNS FROM `weixin_qcode` [ RunTime:0.054589s ]
+SQL: SELECT * FROM `weixin_qcode` WHERE ( `device_code` = 'DEFAULT' ) AND ( `status` = 1 )  [ RunTime:0.052657s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051590s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020962533' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050497s ]
+SQL: INSERT INTO `weixin_qcode` (`device_id`,`id`,`device_code`,`wno`,`status`,`type`,`weixin_type`,`create_time`,`start_date`,`end_date`) VALUES ('032846e6ba1e4f43ba1bdab3a020956b','2356c2251a4653b4035993097dfe7442','352425020962533','gh_a0ee97a7e1f2','1','0','0','2016-03-15 17:45:41','2016-03-15 17:45:41','2016-04-14') [ RunTime:0.050642s ]
+SQL: INSERT INTO `weixin_qcode` (`device_id`,`id`,`device_code`,`wno`,`status`,`type`,`weixin_type`,`create_time`,`start_date`,`end_date`) VALUES ('032846e6ba1e4f43ba1bdab3a020956b','bd157334894ee2a3e166a561fa990d4a','352425020962533','gh_9fbfd2966933','1','0','0','2016-03-15 17:45:41','2016-03-15 17:45:41','2016-04-14') [ RunTime:0.050920s ]
+
+[ 2016-03-15T17:47:59+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048733s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048067s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005688s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000271s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000258s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-03-15T17:48:00+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049764s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049121s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049690s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.049950s ]
+
+[ 2016-03-15T17:48:05+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048207s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039718s ]
+
+[ 2016-03-15T17:48:10+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043508s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042327s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005529s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000273s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000247s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000184s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-03-15T17:48:11+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041217s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040580s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.040943s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.040543s ]
+
+[ 2016-03-15T17:48:14+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group_detail&detailid=7c62baa220eded1d22d934d85fafc33a&name=%E8%88%AA%E6%AF%8D
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050899s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049516s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005611s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000280s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000259s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2016-03-15T17:48:15+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_groups
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040156s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039612s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.040073s ]
+SQL: SELECT * FROM `device_group` WHERE ( `status` = 1 ) AND ( `group_id` = '7c62baa220eded1d22d934d85fafc33a' )  [ RunTime:0.040265s ]
+
+[ 2016-03-15T17:48:21+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=update_device&group_id=7c62baa220eded1d22d934d85fafc33a&device_code=WWSZLH00031&status=1&group_code=A&cname=%E8%88%AA%E6%AF%8D&ords=1&device_command=352425020962533
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043887s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044764s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000270s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000395s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-03-15T17:48:21+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048883s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041030s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.041430s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.041033s ]
+
+[ 2016-03-15T17:48:26+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=update_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056389s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.055754s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.058252s ]
+SQL: UPDATE `device_group` SET `group_code`='A',`group_id`='7c62baa220eded1d22d934d85fafc33a',`status`='1',`ords`=12 WHERE ( `device_command` = '352425020962533' ) [ RunTime:0.057088s ]
+
+[ 2016-03-15T17:48:28+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049935s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049036s ]
+NOTIC: [8] Constant THEME_NAME already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined /home/wwwroot/v.sniperchw.com/install/ThinkPHP/Lib/Core/View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005608s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000263s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000261s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-03-15T17:48:29+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042659s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041988s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.054922s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.042115s ]
+
+[ 2016-03-15T17:48:30+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=group_detail&detailid=7c62baa220eded1d22d934d85fafc33a&name=%E8%88%AA%E6%AF%8D
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059784s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.056776s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005599s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000260s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000295s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001158s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-03-15T17:48:31+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_groups
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.093900s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047172s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.047413s ]
+SQL: SELECT * FROM `device_group` WHERE ( `status` = 1 ) AND ( `group_id` = '7c62baa220eded1d22d934d85fafc33a' )  [ RunTime:0.047529s ]
+
+[ 2016-03-15T17:48:32+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=update_device&group_id=7c62baa220eded1d22d934d85fafc33a&device_code=WWSZLH00031&status=1&group_code=A&cname=%E8%88%AA%E6%AF%8D&ords=12&device_command=352425020962533
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051986s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049142s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005676s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000265s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000379s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-03-15T17:48:33+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.118646s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039251s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.057752s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.039268s ]
+
+[ 2016-03-15T17:48:35+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_groups
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041823s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041209s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.051394s ]
+SQL: SELECT * FROM `device_group` WHERE ( `status` = 1 ) AND ( `group_id` = '7c62baa220eded1d22d934d85fafc33a' )  [ RunTime:0.041728s ]
+
+[ 2016-03-15T17:48:38+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042102s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041480s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user_id /home/wwwroot/v.sniperchw.com/install/APP/Runtime/Cache/Home/4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 334 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008053s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000343s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000268s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-03-15T17:48:38+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041517s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040966s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.041916s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.041135s ]
+
+[ 2016-03-15T17:48:45+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041490s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041369s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007222s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000320s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000259s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000472s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-03-15T17:48:46+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.039648s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039399s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.039570s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.039224s ]
+
+[ 2016-03-15T17:51:51+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056798s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049095s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007212s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000309s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-03-15T17:51:52+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042749s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042206s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.042468s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.042045s ]
+
+[ 2016-03-15T17:53:41+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051460s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.052512s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.049793s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = 'WWSZ0000182' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.049057s ]
+
+[ 2016-03-15T17:53:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041350s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039286s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.039789s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = 'WWSZ0000182' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.039190s ]
+
+[ 2016-03-15T17:53:50+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040534s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039977s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.062215s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '1' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.043239s ]
+
+[ 2016-03-15T17:53:50+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050847s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042141s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.175729s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '11' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.045313s ]
+
+[ 2016-03-15T17:53:51+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056833s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.051602s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.052182s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '112' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.054709s ]
+
+[ 2016-03-15T17:53:52+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.097791s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040284s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.065248s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '1122' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.043731s ]
+
+[ 2016-03-15T17:53:52+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045210s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044418s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045227s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '11223' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.047508s ]
+
+[ 2016-03-15T17:53:53+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059956s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.051139s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051811s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '112233' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.053074s ]
+
+[ 2016-03-15T17:53:53+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.080920s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048431s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.149717s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '1122334' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.051560s ]
+
+[ 2016-03-15T17:53:54+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051378s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050179s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.050874s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '11223344' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.053361s ]
+
+[ 2016-03-15T17:53:54+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041968s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041393s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.042053s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '112233445' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044782s ]
+
+[ 2016-03-15T17:53:55+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.057448s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049990s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.050545s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '1122334455' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.053108s ]
+
+[ 2016-03-15T17:53:55+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047957s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047427s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.047963s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '11223344556' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050783s ]
+
+[ 2016-03-15T17:53:56+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050583s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050024s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.055503s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '112233445566' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.053335s ]
+
+[ 2016-03-15T17:54:06+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=submit_device_infos
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041592s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040394s ]
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.040576s ]
+SQL: UPDATE `ter_device` SET `device_command`='112233445566',`another_name`='战舰',`set_status`=1,`device_status`=1,`status`=1 WHERE ( `device_code` = 'WWSZ0000182' ) [ RunTime:0.050079s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '112233445566' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.040022s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.040054s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '112233445566' ) LIMIT 1   [ RunTime:0.040383s ]
+SQL: INSERT INTO `device_group` (`id`,`group_id`,`group_code`,`device_id`,`device_code`,`device_command`,`pay_price`,`update_by`,`ords`,`status`,`create_time`) VALUES ('7cfb67450b514184554d31e12254d95e','7c62baa220eded1d22d934d85fafc33a','A','00b4ae094b6345a588507f5739f133ef','WWSZ0000182','112233445566',2,'2',1,1,'2016-03-15 17:54:06') [ RunTime:0.042200s ]
+
+[ 2016-03-15T17:54:10+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045901s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.046687s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005761s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000277s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000304s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-03-15T17:54:10+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041417s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040138s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.040405s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.045851s ]
+
+[ 2016-03-15T17:55:26+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040256s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039650s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005636s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-03-15T17:55:27+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.040094s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.039478s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.039857s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '2' ) AND ( device_group.create_time >= '2016-03-15 00:00:00' ) ORDER BY device_group.create_time desc  [ RunTime:0.040070s ]
+
+[ 2016-03-15T17:55:29+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053015s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049773s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user_id /home/wwwroot/v.sniperchw.com/install/APP/Runtime/Cache/Home/4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 334 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008328s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000373s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000269s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000397s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-03-15T17:55:30+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044417s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043947s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044091s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.043831s ]
+
+[ 2016-03-15T17:55:42+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041508s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040916s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.064268s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'user_id' ) LIMIT 1   [ RunTime:0.041471s ]
+
+[ 2016-03-15T17:55:43+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049035s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.050309s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049311s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'user_id' ) LIMIT 1   [ RunTime:0.048799s ]
+
+[ 2016-03-15T17:55:43+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049392s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.048701s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049030s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = '' ) LIMIT 1   [ RunTime:0.049076s ]
+
+[ 2016-03-15T17:55:44+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051198s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.041871s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.042277s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = '' ) LIMIT 1   [ RunTime:0.042676s ]
+
+[ 2016-03-15T17:55:47+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.041718s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.042260s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user_id /home/wwwroot/v.sniperchw.com/install/APP/Runtime/Cache/Home/4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 334 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007871s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-03-15T17:55:47+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043354s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040535s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.041399s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = '' ) LIMIT 1   [ RunTime:0.040561s ]
+
+[ 2016-03-15T17:55:48+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.042702s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040257s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.040626s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.040531s ]
+
+[ 2016-03-15T17:55:49+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047902s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.040730s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.041178s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'WWSZ0000182' ) LIMIT 1   [ RunTime:0.040993s ]
+
+[ 2016-03-15T17:55:50+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045860s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043596s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.046594s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'WWSZ0000182' ) LIMIT 1   [ RunTime:0.043605s ]
+
+[ 2016-03-15T17:55:57+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049802s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049124s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user_id /home/wwwroot/v.sniperchw.com/install/APP/Runtime/Cache/Home/4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 334 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008374s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000374s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000271s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000195s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-03-15T17:55:59+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047402s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.043250s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.055076s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.043381s ]
+
+[ 2016-03-15T17:56:32+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048231s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.049526s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.050283s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'WWSZ0000182' ) LIMIT 1   [ RunTime:0.048254s ]
+
+[ 2016-03-15T18:29:56+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.118783s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.044735s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049092s ]
+SQL: SELECT * FROM `device_group` WHERE ( `update_by` = '2' ) AND ( `device_code` = 'WWSZ0000103' ) LIMIT 1   [ RunTime:0.045062s ]
+
+[ 2016-03-15T18:30:18+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=device_code_exists_or
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047717s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.047394s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.050309s ]
+SQL: SELECT device_group.*,td.another_name FROM `device_group` LEFT JOIN ter_device td on td.device_command=device_group.device_command WHERE ( device_group.device_command = '352425020762087' ) OR ( device_group.device_code = '352425020762087' ) LIMIT 1   [ RunTime:0.048544s ]
+
+[ 2016-03-15T18:32:43+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049727s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.088825s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007345s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000316s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000259s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-03-15T18:32:44+08:00 ] 218.18.1.84 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052274s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.051773s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050834s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '2' ) ORDER BY create_time desc  [ RunTime:0.050456s ]
+

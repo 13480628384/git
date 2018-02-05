@@ -1,0 +1,130 @@
+<admintpl file="header" />
+<style>
+.home_info li em {
+	float: left;
+	width: 120px;
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="home_toptip">
+			<a href="{:U('message')}">
+			<button class="btn btn-primary js-ajax-submit" type="submit">
+				留言给我们
+			</button>
+			</a>
+		</div>
+
+		<h4 class="well"><!--{:L('SYSTEM_INFORMATIONS')}-->版本信息</h4>
+		<div class="home_info">
+			<ul>
+				{$info.post_content}
+			</ul>
+		</div>
+		<div class="home_info" id="home_devteam">
+			<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<php>
+		$lang_set=defined('LANG_SET')?LANG_SET:'';
+		$thinkcmf_version=defined('THINKCMF_VERSION')?THINKCMF_VERSION:'';
+	</php>
+	<input type="hidden" class="result" value="{$result}"/>
+	<input type="hidden" class="array" value="{$array}"/>
+	<input type="hidden" class="weixin_pay" value="{$weixin_pay}"/>
+	<input type="hidden" class="pay_str" value="{$pay_str}"/>
+	<input type="hidden" class="come_str" value="{$come_str}"/>
+	<script>
+		//获取官方通知
+		$.getJSON("http://www.thinkcmf.com/service/sms_jsonp.php?lang={$lang_set}&v={$thinkcmf_version}&callback=?",
+		function(data) {
+			var tpl = '<li><em class="title"></em><span class="content"></span></li>';
+			var $thinkcmf_notices = $("#thinkcmf_notices");
+			$thinkcmf_notices.empty();
+			if (data.length > 0) {
+				$.each(data, function(i, n) {
+					var $tpl = $(tpl);
+					$(".title", $tpl).html(n.title);
+					$(".content", $tpl).html(n.content);
+					$thinkcmf_notices.append($tpl);
+				});
+			} else {
+				$thinkcmf_notices.append("<li>^_^,{:L('NO_NOTICE')}~~</li>");
+			}
+
+		});
+		//收益状况
+		var result = $('.result').val();
+		var jsons = $('.array').val();
+		var come_str = $('.come_str').val().split(',');
+		var pay_str = $('.pay_str').val().split(',');
+		var new_pay = new Array();
+		for(var io=0;io<pay_str.length;io++){
+			new_pay[io] = parseInt(pay_str[io].replace('"',''));
+		}
+		var new_come = new Array();
+		for(var ioe=0;ioe<come_str.length;ioe++){
+			new_come[ioe] = parseInt(come_str[ioe].replace('"',''));
+		}
+		console.log(come_str);
+		Highcharts.chart('container', {
+			chart: {
+				type: 'spline'
+			},
+			title: {
+				text: '微信收益路线图－－－最近半个月'
+			},
+			subtitle: {
+				text: ''
+			},
+			xAxis: {
+				categories: jsons.split(',')
+			},
+			yAxis: {
+				title: {
+					text: '数量'
+				},
+				labels: {
+					formatter: function () {
+						return this.value + '元';
+					}
+				}
+			},
+			tooltip: {
+				crosshairs: true,
+				shared: true
+			},
+			plotOptions: {
+				spline: {
+					marker: {
+						radius: 4,
+						lineColor: '#666666',
+						lineWidth: 1
+					}
+				}
+			},
+			series: [{
+				name: '消费',
+				marker: {
+					symbol: 'square'
+				},
+				data: new_come
+
+			}, {
+				name: '支付',
+				marker: {
+					symbol: 'diamond'
+				},
+				data: new_pay
+			}]
+		});
+	</script>
+</body>
+</html>

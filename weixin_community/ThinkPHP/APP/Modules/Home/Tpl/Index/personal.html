@@ -1,0 +1,540 @@
+<html><head>
+    <title>个人中心</title>
+    <meta charset="utf-8">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <css href="__PUBLIC__/Home/css/frozen.css" />
+    <css href="__PUBLIC__/Home/css/mobi.css" />
+</head>
+<style type="text/css">
+.ucenter-data li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    line-height:23px;
+}
+.um-list li i:first-child {
+  position: absolute;
+  left: -4px;
+  top: 13px;
+  width: 25px;
+  height: 25px;
+}
+.ucenter-menu{padding: 0px;}
+.icon-top{
+    top: 8px !important;
+}
+.ucenter-menu li{
+    line-height: 50px;
+}
+.hard,.paper{
+    background-color: #FE6A6A;
+    width: 25%;
+    height: 44px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 2%;
+    text-align: center;
+}
+.status{
+    width: 200px;
+    height: 45px;
+}
+.Mask-from{
+    padding:10px;
+}
+.Mask-input{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    color: rgb(176, 176, 176);
+    position: relative;
+}
+.Mask-content.Mask-gai{
+    margin-top:150px !important;
+    background: #fff;
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#reform{
+    width: 90%;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.Mask-title{
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.Mask-btn{
+        padding: 10px;
+    display: -webkit-box;
+}
+.Mask-tab-btn{
+    -webkit-box-flex: 1;
+    text-align: center;
+    background-color: #e0e0e0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.check{
+    margin-right: 0;
+    background-color: #F83535;
+    color: #fff;
+}
+.Mask{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100% !important;
+    background-color: rgba(0,0,0, 0.6) !important;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 9999;
+}
+.Mask.is-visible{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+</style>
+<body>
+
+<header class="user-head">
+    <div class="img-titile tab-one">
+            <p class="img-1"><img src="__PUBLIC__/Home/img/icon-2.png" /></p>
+            <p>安装员</p>
+    </div>
+    <div class="img-titile tab-two logout">
+            <p class="img-1"><img src="__PUBLIC__/Home/img/icon_1.png" /></p>
+            <p>退出</p>
+    </div>
+    <div class="user-img">
+        <img src="__PUBLIC__/Home/img/4.jpg" />
+    </div>
+    <div class="name-title">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['username']?></span>
+        <span><img src="__PUBLIC__/Home/img/icon-3.png" style="width:13px"/></span>
+    </div>
+</header>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form">
+        <li><label for="cuser_name" class="label hard">点击扫描</label><input type="text" placeholder="请扫描硬编码" id="device_command" onkeyup="hcsoft()"></li>
+
+        <li><label for="cuser_name" class="label">群组</label><input type="text" placeholder="请输入群组编号名称" id="group_code" value=""></li>
+        <li>
+            <label for="cuser_name" class="label">状态</label>
+            <select name="status" class="status">
+                <option value="1">有效</option>
+                <option value="0">无效</option>
+            </select>    
+        </li>
+        <li>
+            <label for="cuser_name" class="label">排序</label><input value="" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" id="ords">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">硬编码</label><input value="" class="hcode_select" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">软编码</label><input value="" class="pcode_select" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">运营编码</label><input value="" class="another_name" readonly="readonly">
+        </li>
+        <li>
+        <label for="cuser_name" class="label">更改群组</label>
+            <select name="p_code" id="device_group_id" style="width:150px;">
+            </select>
+        </li>
+    </ul>
+   
+</section>
+
+<div class="space-20"></div>
+<aside class="account-submit">
+    <input type="hidden" id="hcode" value="1">
+    <button class="ui-btn-lg ui-btn-danger" type="button" id="save_personal">保存</button>
+</aside>
+
+<!-----------扫软编码------------>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form">
+        <li><label for="cuser_name" class="label paper">点击扫描</label><input type="text" placeholder="请扫软编码" id="device_code" onkeyup="pcsoft()"></li>
+
+        <li><label for="cuser_name" class="label">群组</label><input type="text" readonly="readonly" class="group_codes" value=""></li>
+        <li>
+           <label for="cuser_name" class="label">状态</label><input value="" class="statuss" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">排序</label><input value="" class="ordss" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">硬编码</label><input value="" class="hcode_selects" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">软编码</label><input value="" class="pcode_selects" readonly="readonly">
+        </li>
+        <li>
+            <label for="cuser_name" class="label">是否在线</label><input value="" class="online" readonly="readonly">
+        </li>
+    </ul>
+   
+</section>
+
+<div class="space-20"></div>
+<aside class="account-submit">
+    <input type="hidden" id="hcode" value="1">
+    <button class="ui-btn-lg ui-btn-danger" type="button" id="send">发送</button>
+</aside>
+<!--改名称-->
+    <div class="Mask" id="reform">
+        <div class="Mask-content Mask-gai">
+            <div class="Mask-title">改名称</div>
+            <div class="Mask-from">
+                <div class="Mask-input date  update">
+                    <input type="text" class="update_username" onkeyup="none();" placeholder="请输入你要改的姓名">
+                </div>
+                <span style="margin-left:85px;color:#f00;" class="now-name" ></span>
+            </div>
+            <div class="Mask-btn">
+                <div class="Mask-tab-btn removeclass">取消</div>
+                <div class="Mask-tab-btn addclass check">确定</div>
+            </div>
+        </div>
+    </div>
+<div class="space-60"></div>
+      <menu class="ucenter-menu">
+    <ul>
+        <li id="index" onclick="window.location.href='{:U('index')}'" class="menu_li ">
+          扫码
+        </li>
+        <li id="deivice" onclick="window.location.href='{:U('device')}'" class="menu_li">
+          设备列表
+        </li>
+        <li id="group" onclick="window.location.href='{:U('group')}'" class="menu_li">
+          群组信息列表
+        </li>
+        <li id="personal" onclick="window.location.href='{:U('personal')}'" class="current">
+          个人信息
+        </li>
+    </ul>
+  </menu>
+  <js href="__PUBLIC__/Home/js/zepto.js" />
+  <js href="__PUBLIC__/Home/js/frozen.js" />
+  <js href="__PUBLIC__/Home/js/jsweixin1.0.js" />
+  <js href="__PUBLIC__/Home/js/jquery-1.9.1.min.js" />
+<script type="text/javascript">
+wx.config({
+    debug: false,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+    jsApiList: [
+      'scanQRCode',
+    ]
+  });
+//退出
+$('.logout').click(function(){
+    window.location.href="{:U('logout')}";
+});
+//点击改名称
+$('.name-title').click(function(){
+    return false;
+    $("#reform").addClass('is-visible');
+});
+$('.removeclass').click(function(){
+    $("#reform").removeClass('is-visible');
+});
+//获取url地址的最后一个参数
+function getSNCode(str){
+  var n = str.lastIndexOf("/");
+  return str.substring(n+1);
+}
+//手动输入硬编码，自动验证
+function hcsoft(){
+        $.post("{:U('device_code_exists_or')}",{hard_device_code:$('#device_command').val()},function(data){
+          if(data.msg == 1){
+              $('#group_code').val(data.datas.group_code);
+              $('#ords').val(data.datas.ords);
+              $('.pcode_select').val(data.datas.device_code);
+              $('.another_name').val(data.datas.another_name);
+              $('.hcode_select').val(data.datas.device_command);
+          }else{
+            $('#group_code').val('');
+            $('#ords').val('');
+            $('.pcode_select').val('');
+            $('.another_name').val('');
+            $('.hcode_select').val('');
+          }
+        },'json');
+      }
+//手动输入软编码，自动验证
+function pcsoft(){
+        $.post("{:U('query_group')}",{device_code:$('#device_code').val()},function(data){
+          if(data.msg == 1){
+              $('.group_codes').val(data.datas.group_code);
+              $('.ordss').val(data.datas.ords);
+              $('.pcode_selects').val(data.datas.device_code);
+              $('.hcode_selects').val(data.datas.device_command);
+              var online,statuss;
+              if(data.datas.online_status == 0){
+                online = '在线';
+              }else{
+                online = '不在线';
+              }
+              if(data.datas.status == 1){
+                statuss = '有效';
+              }else{
+                statuss = '无效';
+              }
+              $('.statuss').val(statuss);
+              $('.online').val(online);
+          }else{
+            $('.group_codes').val('');
+            $('.ordss').val('');
+            $('.pcode_selects').val('');
+            $('.hcode_selects').val('');
+            $('.group_codes').val('');
+            $('.statuss').val('');
+            $('.online').val('');
+          }
+        },'json');
+      } 
+//保存名称
+$('.check').click(function(){
+            if($('.now-name').hasClass('add')){
+                return false;
+            }
+            var update_username = $('.update_username').val();
+            var user_id         = "<?php echo $_COOKIE['user_id'];?>";
+            if(!update_username){
+                $('.now-name').html('请输入名称');
+                return false;
+            }
+            if(update_username.length>7){
+                $('.now-name').html('不能超出4个字哦');
+                return false;
+            }
+            $('.now-name').html('请稍候...').addClass('add');
+            var update_username_url = url+"update_username";
+            $.post(update_username_url,{name:update_username,user_id:user_id},function(updatename){
+                if(updatename.result_code==1){
+                    $('.now-name').css('color','#7CCC6F');
+                    $('.now-name').html('修改成功');
+                       delCookie('user_id');
+                       delCookie('username');
+                       setTimeout('location.href="login.php"',1000);
+                }else{
+                    $('.now-name').html('修改失败');
+                }
+            },'json');
+    });
+function none(){
+    $('.now-name').html('');
+}
+  //点击软编码扫码
+    $(".paper").click(function(){
+        wx.scanQRCode({
+            needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+                var urlt = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+                if((urlt).indexOf("t.7i1.cn")<0){
+                  alert('域名格式不对');
+                  return false;
+                }
+                $('#device_code').val(getSNCode(urlt));
+                    $.post("{:U('query_group')}",{device_code:$('#device_code').val()},function(data){
+                      if(data.msg == 1){
+                          $('.group_codes').val(data.datas.group_code);
+                          $('.ordss').val(data.datas.ords);
+                          $('.pcode_selects').val(data.datas.device_code);
+                          $('.hcode_selects').val(data.datas.device_command);
+                          var online,statuss;
+                          if(data.datas.online_status == 0){
+                            online = '在线';
+                          }else{
+                            online = '不在线';
+                          }
+                          if(data.datas.status == 1){
+                            statuss = '有效';
+                          }else{
+                            statuss = '无效';
+                          }
+                          $('.statuss').val(statuss);
+                          $('.online').val(online);
+                      }else{
+                        $('.group_codes').val('');
+                        $('.ordss').val('');
+                        $('.pcode_selects').val('');
+                        $('.hcode_selects').val('');
+                        $('.group_codes').val('');
+                        $('.statuss').val('');
+                        $('.online').val('');
+                      }
+                    },'json');
+            }
+        });
+    });
+//点击保存群组信息
+Zepto(function($){
+    //发送测试
+    $('#send').tap(function(){
+        device_code = $('.hcode_selects').val();
+        if(!device_code){
+            $.dialog({
+                content:'硬编码为空',
+                button:['我知道了']
+            });
+            return false;
+        }
+        var el=$.loading({
+            content:'发送中...'
+        });
+        $.post("{:U('remote_http')}",{device_command:device_code},function(data){
+            var DG=$.dialog({
+              content:'恭喜您，发送成功！',
+              button:['我知道了']
+            });
+            el.hide();
+        });
+    });
+        var el=$.loading({
+            content:'拼命加载中...'
+        });
+        var cname = $('#cname').val();
+        $.post("{:U('query_device_group')}",function(reg){
+          if(reg.msg==1){
+            $.each(reg.datas,function(i,o){
+              $('#device_group_id').append(
+                '<option value='+o.id+'>'+o.group_name+'</option>'
+              );
+            });
+          }
+          el.hide();
+        },'json');
+        var save_personal = $('#save_personal');
+    save_personal.tap(function(){
+        var group_id    = $('#device_group_id').val();//原组名的id
+        var group_code  = $('#group_code').val();//组内名称
+        var status      = $('.status').val();//是否有效
+        var ords      = $('#ords').val();//排序
+        var device_command  = $('#device_command').val();//排序
+        ///alert(group_id+','+group_code+','+status+','+ords+','+device_command);
+        var DATA = {
+            group_id : group_id,
+            group_code : group_code,
+            status : status,
+            device_command : device_command,
+            ords:ords
+        }
+        if(device_command==''){
+            $.dialog({
+                content:'请输入或扫码',
+                button:['我知道了']
+            });
+            return false;
+        }
+        if(group_code==''){
+            $.dialog({
+                    content:'请输入名称',
+                    button:['我知道了']
+            });
+            return false;
+        }
+        if(group_code.length>10){
+            $.dialog({
+                    content:'名称不能超出10个字哦',
+                    button:['我知道了']
+            });
+            return false;
+        }
+        if(!ords){
+            $.dialog({
+                    content:'请输入排序号',
+                    button:['我知道了']
+            });
+            return false;
+        }
+        if(ords.length>5){
+            $.dialog({
+                    content:'排序号不能超出5位哦',
+                    button:['我知道了']
+            });
+            return false;
+        }
+        var el=$.loading({
+            content:'正在保存'
+        });
+        $.post("{:U('update_device_group')}",DATA,function(data){
+            if(data.msg==1){
+                var DG=$.dialog({
+                    content:'恭喜您，保存成功！',
+                    button:['我知道了']
+                });
+                DG.on('dialog:action',function(e){
+                    document.location.href="{:U('group')}";
+                });
+            }else{
+                $.dialog({
+                    content:'网络错误，请重试',
+                    button:['我知道了']
+                });
+            }
+            el.hide();
+        },'json');
+    })
+});
+$(".hard").click(function(){
+                wx.scanQRCode({
+                    needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+                    scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+                    success: function (res) {
+                        var urlt = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+                        $('#device_command').val(getSNCode(urlt));
+                        $.post("{:U('device_code_exists_or')}",{hard_device_code:$('#device_command').val()},function(data){
+                          if(data.msg == 1){
+                              $('#group_code').val(data.datas.group_code);
+                              $('#ords').val(data.datas.ords);
+                              $('.pcode_select').val(data.datas.device_code);
+                              $('.another_name').val(data.datas.another_name);
+                              $('.hcode_select').val(data.datas.device_command);
+                          }else{
+                            $('#group_code').val('');
+                            $('#ords').val('');
+                            $('.pcode_select').val('');
+                            $('.another_name').val('');
+                            $('.hcode_select').val('');
+                          }
+                        },'json');
+                    }
+                });
+            });
+</script>
+</body>
+</html>

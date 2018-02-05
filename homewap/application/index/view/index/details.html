@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>服务详细</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/common.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/details.css">
+</head>
+<body>
+    <header class="header">
+        服务详细
+    </header>
+    <div class="img">
+        <img src="{$Think.WAP_IMG}{$res.img}">
+    </div>
+<div class="content" style="margin-bottom: 50px;">
+    <div class="title">
+        <p>{$res.title}</p>
+        <p>{$res.samlltitle}</p>
+        <p style="color: #ff0101;font-size: 16px;">￥{$res.price}元</p>
+    </div>
+    服务介绍
+    <div class="service">
+        {$res.service}
+    </div>
+</div>
+    <footer class="footer">
+        <a href="{:url('Center/reserve',['id'=>$res.id])}">立即预定</a>
+    </footer>
+</body>
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script type="text/javascript">
+</script>
+</html>

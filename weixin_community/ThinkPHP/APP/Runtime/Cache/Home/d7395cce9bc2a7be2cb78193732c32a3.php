@@ -1,0 +1,156 @@
+<?php if (!defined('THINK_PATH')) exit();?><html><head>
+    <title>群组列表</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/frozen.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/mobi.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/common.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+
+<div class="tab-yj tab-customer">
+    <ul class="tab-yj-nav">
+        <li class="active">群组列表</li>
+    </ul>
+    <div class="tab-yf-box">
+        <div class="tab-yf-null">
+            <div class="tab-yf-box1">
+            <div class="tab-yf-box-main f14">
+                    <div class="tab-yf-box-main-time">
+                            <div>群组名称</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>终端编码</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>终端指令</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>状态</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                        <div>操作</div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+</div>
+      <menu class="ucenter-menu">
+    <ul>
+        <li id="index" onclick="window.location.href='<?php echo U('index');?>'" class="menu_li ">
+          扫码
+        </li>
+        <li id="deivice" onclick="window.location.href='<?php echo U('device');?>'" class="current">
+          设备列表
+        </li>
+        <li id="group" onclick="window.location.href='<?php echo U('group');?>'" class="menu_li">
+          群组信息列表
+        </li>
+        <li id="personal" onclick="window.location.href='<?php echo U('personal');?>'" class="menu_li">
+          个人信息
+        </li>
+    </ul>
+  </menu>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/zepto.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/frozen.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jsweixin1.0.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+</body>
+<script>
+Zepto(function($){
+        var el=$.loading({
+            content:'加载中...'
+        });
+        $.post("<?php echo U('query_24h_devices');?>",function(datased){
+            if(datased.msg == 1){
+                $.each(datased.datas,function(i,o){
+                    var status = '';
+                    if(o.online_status==1){
+                        status = '在线';
+                    }else{
+                        status = '不在线';
+                    }
+                    $('.tab-yf-box1').append(
+                        '<div class="tab-yf-box-main f14">'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.group_name+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.device_code+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.device_command+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+status+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div class="huacolor" dataid='+o.device_command+'>'
+                        +'初次化'
+                        +'</div>'
+                        +'<div class="send" sendid='+o.device_command+'>'
+                        +'发送'
+                        +'</div>'
+                        +'</div>'
+                        +'</div>'
+                    );
+                });
+            }else{
+                $('.tab-yf-box1').append(
+                        '<div class="content">'
+                        +'没有数据'
+                        +'</div>'
+                    );
+            }
+            el.hide();
+            //发送指令
+            $('.huacolor').click(function(){
+                if($('.huacolor').hasClass('add')){
+                   return false; 
+                }
+                var el=$.loading({
+                    content:'初次化中...'
+                });
+                var device_command = $(this).attr('dataid');
+                $('.huacolor').addClass('add');
+                $.post("<?php echo U('init_device_ads');?>",{device_command:device_command},function(data){
+                $('.huacolor').removeClass('add');
+                    if(data.msg == 1){
+                        var DG=$.dialog({
+                            content:'恭喜您，初次化成功！',
+                            button:['我知道了']
+                        });
+                    }else{
+                        var DG=$.dialog({
+                            content:'初次化失败',
+                            button:['我知道了']
+                        });
+                    }
+                el.hide();
+                },'json');
+            })
+            $('.send').click(function(){
+                var el=$.loading({
+                    content:'发送中...'
+                });
+                var device_command = $(this).attr('sendid');
+                $.post("<?php echo U('remote_http');?>",{device_command:device_command},function(data){
+					var DG=$.dialog({
+						content:'恭喜您，发送成功！',
+						button:['我知道了']
+					});
+                el.hide();
+                });
+            })
+        },'json');
+});    
+</script>
+</html>

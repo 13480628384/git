@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>家庭地址</title>
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Administrator" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link href="{$Think.URL}__CSS__/mobile.css?v2321" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css">
+</head>
+<body class='self-driver'>
+<header class='selfdriver'>
+    <span class='text'>家庭地址</span>
+    <span class='rightarrow'></span>
+</header>
+<div class='stepmsg'>
+    <div class='msgitem '>
+        <div class='lefttext'><span >联系人</span></div>
+        <div class='centertext'><input type='text' class="name" value='' placeholder="请输入联系人姓名" /></div>
+    </div>
+    <div class='msgitem'>
+        <div class='lefttext'><span >联系电话</span></div>
+        <div class='centertext'><input type='number' class="phone" value='' placeholder="手机号码或固话"/></div>
+    </div>
+    <div class='msgitem'>
+        <div class='lefttext'><span >服务面积</span></div>
+        <div class='centertext'><input type='number' maxlength="4" class="servicearea" placeholder="请输入服务的面积"/></div>
+    </div>
+</div>
+<div class='stepmsg'>
+    <div class='msgitem'>
+        <div class='lefttext'><span >详细地址</span></div>
+        <div class='centertext'><input type='text'class="address"  value='' placeholder="门牌街道信息" /></div>
+    </div>
+</div>
+<h1 class='pub_hidden'></h1>
+<div class='start' id='jsStart'><a>提交</a></div>
+<input type="hidden" class="reserve" value="{:url('reserve',array('id'=>$id))}">
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/common.js?1"></script>
+<script type="text/javascript">
+    var REG = {
+        name: /^[a-zA-Z\u4e00-\u9fa5]{2,6}$/,
+        phone: /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^0{0,1}1[0|1|2|3|4|5|6|7|8|9][0-9]{9}$)/,
+        passwd:/^[0-9]{6,8}$/,
+        id:/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[A-Z])$/
+    }
+    Zepto(function($){
+        $("#jsStart").tap(function(){
+            var name = $('.name').val();
+            var phone = $('.phone').val();
+            var address = $('.address').val();
+            var servicearea = $('.servicearea').val();
+            var reserve = $('.reserve').val();
+            if(name == ''){
+                $.dialog({
+                    content: '请输入联系人姓名',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(phone == ''){
+                $.dialog({
+                    content: '请输入手机号码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(!REG.phone.test(phone)){
+                $.dialog({
+                    content:'请输入正确的手机号码',
+                    button:['ok']
+                });
+                return false;
+            }
+            if(address == ''){
+                $.dialog({
+                    content: '请输入服务地址',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(servicearea == ''){
+                $.dialog({
+                    content: '请输入服务面积',
+                    button: ['ok']
+                });
+                return false;
+            }
+            var el=$.loading({
+                content:'正在添加'
+            });
+            $.post("",{name:name,phone:phone,address:address,servicearea:servicearea},function(data){
+                el.hide();
+                if(data.code == 200){
+                    var DG = $.dialog({
+                        content:data.msg,
+                        button: ['ok']
+                    });
+                    setCookie('add_id',data.add_id);
+                    DG.on('dialog:action',function(e){
+                        document.location.href=reserve;
+                    });
+                }else{
+                    $.dialog({
+                        content: data.msg,
+                        button: ['ok']
+                    });
+                    return false;
+                }
+            },'json');
+        });
+    })
+</script>
+</body>
+</html>

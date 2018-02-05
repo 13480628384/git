@@ -1,0 +1,134 @@
+<html><head>
+    <title>登录</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        .logo{
+            text-align: center;
+            font-size: 40px;
+            font-family: cursive;
+            line-height: 70px;
+        }
+        .key-login{
+            display: block;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="space-20"></div>
+<h1 class="logo animated fadeInDown">红家君助</h1>
+<div class="space-20"></div>
+
+<section class="account-form">
+    <div class="af-row">
+        <label for="login_phone"><i class="icon-phone"></i></label>
+        <input type="text" pattern="[0-9]*" placeholder="手机号码" id="login_phone" value="">
+    </div>
+    <div class="af-row">
+        <label for="login_passwd"><i class="icon-lock"></i></label>
+        <input type="password" pattern="[0-9]*" placeholder="请输入密码" id="login_passwd" value="">
+    </div>
+    <div class="af-row">
+        <label for="login_passwd"><i class="icon-lock"></i></label>
+        <input type="password" pattern="[0-9]*" placeholder="请输入验证码" id="capth" value="" style="width: 30%;">
+        <img src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?x='+Math.random();" style="float: right;height: 43px;width: 60%;" />
+    </div>
+</section>
+<aside class="account-submit">
+    <button class="ui-btn-lg ui-btn-danger" type="button" id="J_submitLogin">登录</button>
+</aside>
+<span class="key-login">一键登录</span>
+<footer class="foot">
+    玫瑰科技&nbsp;</footer>
+<div class="space-50"></div>
+<a class="account-fixed" href="{:url('Login/resigter')}">还未注册？&nbsp;»</a>
+<input type="hidden" class="openid" value="{$openid}">
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script type="text/javascript">
+    var REG = {
+        name: /^[a-zA-Z\u4e00-\u9fa5]{2,6}$/,
+        phone: /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^0{0,1}1[0|1|2|3|4|5|6|7|8|9][0-9]{9}$)/,
+        passwd:/^[0-9]{6,8}$/,
+        id:/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[A-Z])$/
+    }
+    Zepto(function($){
+        //一键登录
+        $('.key-login').tap(function () {
+            var openid = $('.openid').val();
+            var el=$.loading({
+                content:'正在登录'
+            });
+            $.post("{:url('keylogin')}",{openid:openid},function(data){
+                el.hide();
+                if(data.code == 200){
+                    document.location.href=data.url;
+                }else{
+                    $.dialog({
+                        content: data.msg,
+                        button: ['ok']
+                    });
+                    return false;
+                }
+            },'json');
+        })
+        $("#J_submitLogin").tap(function(){
+            var phone = $('#login_phone').val();
+            var passwd = $('#login_passwd').val();
+            var capth = $('#capth').val();
+            var openid = $('.openid').val();
+            if(phone == ''){
+                $.dialog({
+                    content: '请输入手机号码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(!REG.phone.test(phone)){
+                $.dialog({
+                    content:'请输入正确的手机号码',
+                    button:['ok']
+                });
+                return false;
+            }
+            if(passwd == ''){
+                $.dialog({
+                    content: '请输入密码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            var el=$.loading({
+                content:'正在登录'
+            });
+            $.post("{:url('login_check')}",{phone:phone,passwd:passwd,openid:openid,capth:capth},function(data){
+                el.hide();
+                if(data.code == 200){
+                    var DG = $.dialog({
+                        content:data.msg,
+                        button: ['ok']
+                    });
+                    DG.on('dialog:action',function(e){
+                        document.location.href=data.url;
+                    });
+                }else{
+                    $.dialog({
+                        content: data.msg,
+                        button: ['ok']
+                    });
+                    return false;
+                }
+            },'json');
+        });
+    })
+</script>
+</body></html>

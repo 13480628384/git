@@ -1,0 +1,102 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Rose/index')}">玫瑰用户信息列表</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Rose/index')}">
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="昵称/邮箱/ID">
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>昵称</th>
+                <th>头像</th>
+                <th>微信号</th>
+                <th>支付宝号</th>
+                <th>手机号码</th>
+                <th>邮箱</th>
+                <th>云网余额</th>
+                <th>红玫瑰</th>
+                <th>生态红玫瑰</th>
+                <th>玫瑰ID</th>
+                <th>类型</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.nickname}</td>
+                    <td>
+                        <if condition="$v['headimgurl'] neq  null"><img src="{$v.headimgurl}" width="50">
+                            <else/>空
+                        </if>
+                    </td>
+                    <td>{$v.wechat_number}</td>
+                    <td>{$v.alipay_number}</td>
+                    <td>{$v.phone}</td>
+                    <td>{$v.email}</td>
+                    <td>{$v.alipay_wechant_account}</td>
+                    <td>{$v.red_rose}</td>
+                    <td>{$v.ecological_red_rose}</td>
+                    <td>{$v.rose_id}</td>
+                    <td>
+                        <if condition="$v['type'] eq 1">生态商
+                            <else/>其他
+                        </if>
+                    </td>
+                    <td>{$v.create_date}</td>
+                    <td>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>昵称</th>
+                <th>头像</th>
+                <th>微信号</th>
+                <th>支付宝号</th>
+                <th>手机号码</th>
+                <th>邮箱</th>
+                <th>云网余额</th>
+                <th>红玫瑰</th>
+                <th>生态红玫瑰</th>
+                <th>玫瑰ID</th>
+                <th>类型</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

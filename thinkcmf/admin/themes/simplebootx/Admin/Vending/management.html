@@ -1,0 +1,137 @@
+<admintpl file="header" />
+</head>
+<body>
+<style>
+    input{
+        width: 60px;
+    }
+</style>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Vending/index')}">售货机列表</a></li>
+        <li class="active"><a href="">上下货管理</a></li>
+    </ul>
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th style="width:50px;">通道号</th>
+                <th>商品数量</th>
+                <th>商品单价</th>
+                <th>投币价格</th>
+                <!--<th>货道最大容量</th>-->
+                <th>启动货道命令</th>
+                <th>货道总出货数</th>
+                <th>状态</th>
+                <th>商品</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.number}</td>
+                    <td><input type="number" dataid="{$v.id}" oninput="if(value.length>3)value=value.slice(0,3)" class="blur" name="shop_number" class="input input-order valid" aria-invalid="flase" size="2" value="{$v.shop_number}"></td>
+                    <td><input type="number" dataid="{$v.id}" oninput="if(value.length>3)value=value.slice(0,3)" class="blur" name="shop_price" class="input input-order valid" aria-invalid="flase" size="2" value="{$v.shop_price}"></td>
+                    <td><input type="number" dataid="{$v.id}" oninput="if(value.length>3)value=value.slice(0,3)" class="blur" name="toubi_price" class="input input-order valid" aria-invalid="flase" size="3" value="{$v.toubi_price}"></td>
+                    <!--<td><input type="text" dataid="{$v.id}" class="blur" name="huodao" class="input input-order valid" aria-invalid="flase" size="3" value="{$v.huodao}"></td>-->
+                    <td><input type="number" dataid="{$v.id}" oninput="if(value.length>4)value=value.slice(0,4)" class="blur" name="number_order" class="input input-order valid" aria-invalid="flase" size="3" value="{$v.number_order}"></td>
+                    <td>{$v.alls}</td>
+                    <td>
+                        <select class="blur" dataid="{$v.id}" name="status">
+                                <option value="0" <if condition="$v['status'] eq 0">selected="selected"</if>>停用</option>
+                                <option value="1" <if condition="$v['status'] eq 1">selected="selected"</if>>有货</option>
+                                <option value="2" <if condition="$v['status'] eq 2">selected="selected"</if>>缺货</option>
+                                <option value="3" <if condition="$v['status'] eq 3">selected="selected"</if>>货道错误</option>
+                                <option value="4" <if condition="$v['status'] eq 4">selected="selected"</if>>货道忙</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="blur" dataid="{$v.id}" name="shop_id">
+                            <volist name="shop" id="vo">
+                                <option value="{$vo.id}" <if condition="$v['shop_id'] eq $vo['id']">selected="selected"</if>>{$vo.name}</option>
+                            </volist>
+                        </select>
+                    </td>
+                    <td><button class="btn btn-xs btn-warning onbilbi" dataid="{$v.id}">更新</button></td>
+                </tr>
+            </volist>
+            </tbody>
+            <div id="qrcode" class="code-mains">
+            </div>
+            <tfoot>
+            <tr>
+                <th>通道号</th>
+                <th>商品数量</th>
+                <th>商品单价</th>
+                <th>投币价格</th>
+                <!--<th>货道最大容量</th>-->
+                <th>启动货道命令</th>
+                <th>货道总出货数</th>
+                <th>状态</th>
+                <th>商品</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+    $('.onbilbi').click(function () {
+        var shop_number = $(this).parents('td').parents().children('td').eq(1).children('input').val();
+        var shop_price = $(this).parents('td').parents().children('td').eq(2).children('input').val();
+        var toubi_price = $(this).parents('td').parents().children('td').eq(3).children('input').val();
+        var number_order = $(this).parents('td').parents().children('td').eq(4).children('input').val();
+        var status = $(this).parents('td').parents().children('td').eq(6).children('select').val();
+        var shop_id = $(this).parents('td').parents().children('td').eq(7).children('select').val();
+        var id = $(this).attr('dataid');
+        var DATA = {
+            shop_number:shop_number,
+            shop_price:shop_price,
+            toubi_price:toubi_price,
+            number_order:number_order,
+            status:status,
+            shop_id:shop_id,
+            id:id
+        };
+        $.post("",DATA,function(data){
+            if(data.msg == 200){
+                alert('更新数据成功');
+                window.location.reload();
+            } else {
+                alert('更新数据失败');
+            }
+        },'json')
+        //console.log(shop_number+'---'+shop_price+'---'+toubi_price+'---'+huodao+'---'+status+'---'+shop_id+'--'+id);
+
+    })
+    //失去焦点改变值
+   /* $('.blur').blur(function(){
+        var uid = $(this).attr("dataid");
+        var values = $(this).val();
+        $.post("",{uid:uid,values:values},function(data){
+            if(data.msg == 200){
+                alert('更新数据成功');
+            } else {
+                alert('更新数据失败');
+            }
+        })
+    });*/
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>写攻略</title>
+    <css href="__PUBLIC__/Home/css/base.css" />
+</head>
+<body>
+<div id="wrapper">
+    <!--<header class="title">
+        <input type="text" id="add_title" name="add_title" onkeyup="search()" placeholder="添加标题（不超过25字）">
+    </header>-->
+    <div class="content">
+        <div class="txtArea">
+            <textarea name="" id="content" cols="20" rows="5" placeholder="输入内容" onkeyup="content()"></textarea>
+        </div>
+        <ul class="imgList clearfix">
+            <!--<li class="img_url" data="__PUBLIC__/Home/img/img1.jpg">
+                <img src="__PUBLIC__/Home/img/img1.jpg">
+            </li>
+            <li class="img_url" data="__PUBLIC__/Home/img/img2.jpg">
+                <img src="__PUBLIC__/Home/img/img2.jpg">
+            </li>
+            <li class="img_url" data="__PUBLIC__/Home/img/img3.jpg">
+                <img src="__PUBLIC__/Home/img/img3.jpg">
+            </li>-->
+            <li class="add_img" data="__PUBLIC__/Home/img/btn_addimg.jpg">
+                <img src="__PUBLIC__/Home/img/btn_addimg.jpg">
+                <input type="file" name="picture" id="picture" onchange="upload(event)">
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <button type="submit" class="new_submit">发布</button>
+    </footer>
+</div>
+</body>
+<input type="hidden" class="strate_url_of" value="{:U('strate_url_of')}">
+<input type="hidden" class="submit_content" value="{:U('submit_content')}">
+<input type="hidden" class="indexs" value="<php>echo 'http://'.$_SERVER['HTTP_HOST'];</php>{:U('get_openid')}">
+<input type="hidden" class="is_all_none" value="0">
+<input type="hidden" class="content" value="0">
+<input type="hidden" class="openid" value="{$openid}">
+<input type="hidden" class="token" value="{$token}">
+<js href="__PUBLIC__/Home/js/jquery-1.9.1.min.js"/>
+<js href="__PUBLIC__/Home/js/upfile.js" />
+<script>
+    /*function search(){
+     var add_title = $('#add_title').val();
+     var strate_url_of = $('.strate_url_of').val();
+     $.post(strate_url_of,{add_title:add_title},function(data){
+     if(data.code==200){
+     $('.is_all_none').val(1);
+     }else{
+     $('.is_all_none').val(0);
+     }
+     },'json');
+     }*/
+    function content(){
+        var content = $('#content').val();
+        var strate_url_of = $('.strate_url_of').val();
+        $.post(strate_url_of,{add_title:content},function(data){
+            if(data.code==200){
+                $('.content').val(1);
+            }else{
+                $('.content').val(0);
+            }
+        },'json');
+    }
+    $('.new_submit').click(function(){
+        var content = $('#content').val();
+        var check = $('.content').val();
+        var clearfix = $('.clearfix');
+        var select_id="";
+        $('.clearfix').find('.img_url').each(function() {
+            if ($(this).attr("data")) {
+                select_id += $(this).attr("data")+",";
+            }
+        });
+        var select_id=select_id.substring(0,select_id.length-1);
+        if(content==''){
+            alert('请输入内容');
+            return false;
+        }
+        if(check==1){
+            alert('请输入合法内容');
+            return false;
+        }
+        if(select_id==''){
+            alert('请上传图片');
+            return false;
+        }
+        var url = $('.submit_content').val();
+        var openid = $('.openid').val();
+        var indexs = $('.indexs').val();
+        $.post(url,{content:content,select_id:select_id,openid:openid},function(data){
+            if(data.code==200){
+                alert('评论成功');
+                window.location.href=indexs;
+            }
+        },'json')
+    })
+    //上传图片
+    var uploader = uploadJSSDK;
+    var num=1;
+    function upload(e){
+        if(num>5){
+            alert('最多只能选择5张图片');
+            return false;
+        }
+        var token = $('.token').val();
+        var files = e.target.files;
+        for(var i=0;i<files.length;i++){
+            uploader({
+                file:files[i],   //文件，必填,html5 file类型，不需要读数据流，
+                name: '', //文件名称，选填，默认为文件名称
+                token: token,  //token，必填
+                dir: "guangjia",  //目录，选填，默认根目录''
+                retries: parseInt(0),  //重试次数，选填，默认0不重试
+                maxSize: 5242880,  //上传大小限制，选填，默认0没有限制
+                callback: function (percent, result) {
+                    if(result.code=='OK'){
+                        num++;
+                        $(".clearfix").prepend("<li class='img_url' data='"+result.url+"'><img src='"+result.url+"' class='images' /></li>");
+                        //$(".clearfix").prepend("<li><img src='"+result.url+"' class='images' /></li>");
+                        /*var url = "{:U('upload_chw')}";
+                         $.post(url,{url:result.url},function(data){
+                         if(data.code==200){
+                         $(".clearfix").prepend("<li><img src='"+data.message+"' class='images' /></li>")
+                         }
+                         },'json')*/
+                    }
+                }
+            });
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>提交订单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/common.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/reserve.css?1">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css?1">
+</head>
+<body>
+<header class="header">
+    <img class="header-img" src="{$Think.WAP_IMG}{$res.img}">
+    <div class="header-right">
+        {$res.title}<p style="color: #ff0101;font-size: 16px;">￥{$res.price}元</p>
+    </div>
+</header>
+
+<div class="content">
+    服务介绍
+    <div class="service">
+        {$res.service}
+    </div>
+</div>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form">
+        <li class="times" data-href="{:url('select_time',array('id'=>$res.id))}">
+            <label for="customer_mark" class="label" style="width: 22%;">选择时间</label>
+            <input type="text" placeholder="选择服务时间" readonly="readonly" class="datetime">
+            <i class="icon-arrow-gray"></i>
+        </li>
+    </ul>
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form" id="J_chooseProject">
+        <li><label class="label">
+            选择地址
+        </label>
+            <input type="text" style="width: 70%" placeholder="选择服务地址" id="customer_project" readonly="readonly" class="color-blue" data-ids="" value="">
+            <i class="icon-arrow-gray"></i></li>
+    </ul>
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form">
+        <li><label for="customer_mark" class="label" style="width: 20%;">备注</label>
+            <input type="text" placeholder="提醒下商家呗" id="customer_mark"></li>
+    </ul>
+    <p class="um-tips"><em>提示：</em>购买即视为同意《用户购买协议》</p>
+</section>
+<section class="html">
+
+</section>
+<section class="dialog-choose-project animated fast slideInUp" style="display:none;">
+    <div class="dcp-main">
+        <div class="ui-form ui-border-t">
+            <div class="ui-form-item" style="width: 100%;text-align: center;padding-left: 0;border-bottom: 1px solid #e0e0e0;" data-href="{:url('address',array('id'=>$res.id))}">
+                <span> + 新增服务地址</span>
+            </div>
+            {volist name="house" id="v"}
+                <div class="ui-form-item ui-form-item-switch ui-border-b">
+                    <span>{$v.name}</span>
+                    <label class="ui-checkbox" style="top:0;">
+                        <input type="checkbox" class="cur_house" value="{$v.id}">
+                    </label>
+                </div>
+            {/volist}
+        </div>
+        <div class="space-50"></div>
+        <div class="space-50"></div>
+    </div>
+</section>
+<aside class="account-submit account-submit-fixed" style="display:none;">
+    <!--<p class="um-tips"><em>提示：</em>最多只能选择3个项目</p>-->
+    <div class="ui-btn-group-tiled ui-btn-wrap">
+        <button class="ui-btn-lg ui-btn-danger" id="J_submitProjectChoose">确认</button> <button class="ui-btn-lg" id="J_cancelProjectChoose">取消</button>
+    </div>
+</aside>
+<footer class="footer">
+    <span class="accounting">立即预定</span>
+</footer>
+</body>
+<input type="hidden" class="time_url" value="{:url('select_time',array('id'=>$res.id))}">
+<input type="hidden" class="reserve" value="{:url('reserve')}">
+<input type="hidden" class="id" value="{$res.id}">
+<input type="hidden" class="price" value="{$res.price}">
+<input type="hidden" class="add_id" value="">
+<input type="hidden" class="select_time" value="">
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js?v170713"></script>
+<script src="{$Think.URL}__JS__/common.js?85"></script>
+<script type="text/javascript">
+    javascript:window.history.forward(1);
+    Zepto(function($){
+        var add_id = getCookie('add_id');
+        var select_time = getCookie('select_time');
+        if(select_time){
+            $('.datetime').val(select_time);
+        }
+        if(add_id){
+            $('.add_id').val(getCookie('add_id'));
+            $('#customer_project').val('您已选择了1个地址');
+        }
+        //填写地址
+        $('.color-blue').tap(function () {
+            //var id = $('.id').val();
+            //判断地址是否已经填写
+            //var add_id = $('.color-blue').attr('data-ids');
+            var url = $('.time_url').val();
+            var select_time = getCookie('select_time');
+            if(select_time == ''){
+                $.dialog({
+                    content:'请选择时间',
+                    button:['ok']
+                });
+                return false;
+            }
+        });
+        //立即预定
+       $('.accounting').tap(function () {
+           var select_time = $('.datetime').val();
+           var add_id = $('.add_id').val();
+           var id = $('.id').val();
+           var price = $('.price').val();
+           var customer_mark = $('#customer_mark').val();
+           if(select_time == ''){
+               $.dialog({
+                   content:'请选择时间',
+                   button:['ok']
+               });
+               return false;
+           }
+           if(add_id == ''){
+               $.dialog({
+                   content:'请选择地址',
+                   button:['ok']
+               });
+               return false;
+           }
+           var el=$.loading({
+               content:'提交订单中...'
+           });
+           $.post($('.reserve').val(),
+               {select_time:select_time,add_id:add_id,customer_mark:customer_mark,id:id,price:price}
+               ,function (data) {
+               el.hide();
+               window.location.href=data.url;
+           },'json');
+       })
+    })
+</script>
+</html>

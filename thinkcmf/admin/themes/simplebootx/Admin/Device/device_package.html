@@ -1,0 +1,42 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Device/index')}">设备列表</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form" method="post" action="{:U('Device/package_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="input-old-password">硬件编码</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" readonly="readonly" value="{$id.device_command}">
+                </div>
+            </div>
+            <input type="hidden" name="id" value="{$id.id}">
+            <div class="control-group">
+                <label class="control-label" for="input-old-password">群组编号</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="input-old-password" name="group_word" placeholder="请输入大写字母">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" >群组名称</label>
+                <div class="controls">
+                    <select name="group_name">
+                        <volist name="group" id="v">
+                            <option value="{$v.id}">{$v.group_name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary  js-ajax-submit">{:L('SAVE')}</button>
+                <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

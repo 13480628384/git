@@ -1,0 +1,1323 @@
+[ 2016-06-16T14:17:10+08:00 ] 0.0.0.0 /install/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030002s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+
+[ 2016-06-16T14:17:10+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.099006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.022001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-06-16T14:17:13+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2016-06-16T14:17:16+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-16T14:17:18+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:17:58+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.042002s ]
+
+[ 2016-06-16T14:17:59+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:18:07+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.043002s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.044003s ]
+
+[ 2016-06-16T14:18:18+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.048003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:19:17+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.350020s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-06-16T14:19:30+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.350020s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.053003s ]
+
+[ 2016-06-16T14:19:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044002s ]
+
+[ 2016-06-16T14:19:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044003s ]
+
+[ 2016-06-16T14:19:36+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:19:37+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.048002s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:21:34+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-06-16T14:21:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:21:45+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.052003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:21:46+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:22:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:24:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-16T14:24:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.048003s ]
+
+[ 2016-06-16T14:24:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.046003s ]
+
+[ 2016-06-16T14:24:26+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.046003s ]
+
+[ 2016-06-16T14:24:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.048003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050002s ]
+
+[ 2016-06-16T14:25:52+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.352020s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-16T14:25:53+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:25:57+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.050002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:25:58+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.047003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.043002s ]
+
+[ 2016-06-16T14:26:00+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044002s ]
+
+[ 2016-06-16T14:26:01+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:26:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.057004s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.950054s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-16T14:26:30+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:26:32+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.046003s ]
+
+[ 2016-06-16T14:26:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.045003s ]
+
+[ 2016-06-16T14:26:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:37:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-16T14:37:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.047002s ]
+
+[ 2016-06-16T14:37:28+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.049003s ]
+
+[ 2016-06-16T14:37:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.045003s ]
+
+[ 2016-06-16T14:37:32+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050002s ]
+SQL: SHOW COLUMNS FROM `sy_user` [ RunTime:0.049002s ]
+ERR: 1146:Table 'ad_iwork_2015124.sy_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sy_user`
+SQL: UPDATE `sy_user` SET `start_num`=start_num+1 WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `del_flag` = 0 ) [ RunTime:0.049002s ]
+ERR: 1146:Table 'ad_iwork_2015124.sy_user' doesn't exist
+ [ SQL语句 ] : UPDATE `sy_user` SET `start_num`=start_num+1 WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `del_flag` = 0 )
+
+[ 2016-06-16T14:39:12+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-16T14:39:13+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.045003s ]
+
+[ 2016-06-16T14:39:17+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.048002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.048003s ]
+
+[ 2016-06-16T14:39:18+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.043002s ]
+
+[ 2016-06-16T14:39:19+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.050002s ]
+SQL: UPDATE `sys_user` SET `start_num`=start_num+1 WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `del_flag` = 0 ) [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:39:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-16T14:39:34+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.044003s ]
+
+[ 2016-06-16T14:39:38+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.048003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.049003s ]
+
+[ 2016-06-16T14:39:39+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = '352425020961549' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.048003s ]
+
+[ 2016-06-16T14:39:41+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=remote_http
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961549' ) AND ( `status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.046002s ]
+SQL: UPDATE `sys_user` SET `start_num`=start_num+1 WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `del_flag` = 0 ) [ RunTime:0.051002s ]
+
+[ 2016-06-16T14:39:54+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-16T14:39:55+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:39:57+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.043003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 231 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 234 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 237 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 240 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-16T14:39:58+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.052003s ]
+
+[ 2016-06-16T14:40:18+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-16T14:40:19+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.050003s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( device_group.create_time >= '2016-06-16 00:00:00' ) AND ( device_group.del_flag = 0 ) ORDER BY device_group.create_time desc  [ RunTime:0.051003s ]
+
+[ 2016-06-16T14:40:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\WWW\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' F:\WWW\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-06-16T14:40:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.048002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.049003s ]
+
+[ 2016-06-16T14:40:24+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' F:\WWW\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-06-16T14:40:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.046003s ]
+
+[ 2016-06-16T14:40:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=pc
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant download_excel - assumed 'download_excel' F:\WWW\install\APP\Runtime\Cache\Home\8768cceffbb407427f86f58157e29acf.php 第 449 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-16T14:40:30+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.049003s ]
+
+[ 2016-06-16T14:40:30+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.045003s ]
+
+[ 2016-06-16T14:40:31+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.046002s ]
+
+[ 2016-06-16T14:40:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.046003s ]
+
+[ 2016-06-16T14:40:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.048003s ]
+
+[ 2016-06-16T14:40:36+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.047002s ]
+
+[ 2016-06-16T14:40:38+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.044003s ]
+
+[ 2016-06-16T14:40:40+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.044002s ]
+
+[ 2016-06-16T14:44:39+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=hard_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.049002s ]
+NOTIC: [8] Undefined index: device_command F:\WWW\install\APP\Modules\Home\Action\IndexAction.class.php 第 27 行.
+SQL: SELECT * FROM `ter_device` WHERE ( `device_command` = null ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.050003s ]
+
+[ 2016-06-16T14:44:41+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = '' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.044002s ]
+
+[ 2016-06-16T14:44:41+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=soft_device_code_exists
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid F:\WWW\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ter_device` [ RunTime:0.045003s ]
+SQL: SELECT * FROM `ter_device` WHERE ( `device_code` = '' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.045002s ]
+

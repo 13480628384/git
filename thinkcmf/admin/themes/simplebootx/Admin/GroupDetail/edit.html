@@ -1,0 +1,125 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('GroupDetail/index')}">群组详情列表</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('GroupDetail/edit_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">群组列表</label>
+                <div class="controls">
+                    <select name="deivce_group_info">
+                        <volist name="deivce_group_info" id="v">
+
+                        <option value="{$v.id}" <if condition="$v['id'] eq $dgi_id">selected="selected"</if>>{$v.group_name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">群组字母</label>
+                <div class="controls">
+                    <input type="text" name="group_word" value="{$device.group_word}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件编码</label>
+                <div class="controls">
+                    <input type="text" name="device_code" value="{$device.device_code}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件指令</label>
+                <div class="controls">
+                    <input type="text" name="device_command" value="{$device.device_command}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">状态</label>
+                <div class="controls">
+                   <select name="online_status">
+                        <option <if condition="$device['online_status'] eq 1">selected="selected"</if> value="1">在线</option>
+                        <option <if condition="$device['online_status'] eq 0">selected="selected"</if> value="0">离线</option>
+                   </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">支付价格</label>
+                <div class="controls">
+                    <input type="text" name="pay_price" value="{$device.pay_price}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备类型</label>
+                <div class="controls">
+                    <select name="device_type_update">
+                        <volist name="device_type" id="v">
+                            <option value="{$v.device_type}" <if condition="$device['device_type'] eq $v['device_type']">selected="selected"</if>>{$v.desc}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">排序</label>
+                <div class="controls">
+                    <input type="text" name="ords" value="{$device.ords}">
+                </div>
+            </div>
+            <if condition="($device['device_type'] eq 2) or ($device['device_type'] eq 3)
+             or ($device['device_type'] eq 5) or ($device['device_type'] eq 6)">
+                <div class="control-group">
+                    <label class="control-label">种类价格</label>
+                    <div class="controls">
+                        <input type="text" name="charger" value="{$device.charger}">
+                        <b>格式：1元等于2分钟-2元等于3分钟</b>
+                    </div>
+                </div>
+            </if>
+            <if condition="$device['device_type'] eq 4">
+                <div class="control-group">
+                    <label class="control-label">按摩椅价格</label>
+                    <div class="controls">
+                        <input type="text" name="ANM" value="{$device.ANM}">
+                        <b>格式：1元等于2分钟-2元等于3分钟</b>
+                    </div>
+                </div>
+            </if>
+            <if condition="$device['device_type'] eq 7">
+                <div class="control-group">
+                    <label class="control-label">洗车价格</label>
+                    <div class="controls">
+                        <input type="text" name="charger" value="{$device.charger}">
+                        <b>格式：1元等于2分钟</b>
+                    </div>
+                </div>
+            </if>
+            <if condition="$device['device_type'] eq 9">
+                <div class="control-group">
+                    <label class="control-label">眼宝仪启动时间</label>
+                    <div class="controls">
+                        <input type="text" name="charger" value="{$device.charger}">
+                        <b>格式：价钱等于1800秒-价钱等于1800秒</b>
+                    </div>
+                </div>
+            </if>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks">{$device.remarks}</textarea>
+                </div>
+            </div>
+            <input type="hidden" name="id" value="{$device.id}">
+            <input type="hidden" name="device_type" value="{$device.device_type}">
+            <input type="hidden" name="di_command" value="{$device.device_command}">
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+[ 2016-08-17T14:18:20+08:00 ] 183.16.199.83 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-17T14:18:21+08:00 ] 183.16.199.83 /weixin_community/index.php?m=Index&a=index&code=0413SgwC1pdvih0xSzuC1YqdwC13Sgwo&state=STATE
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.010111s ]
+SQL: SELECT * FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.009907s ]
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.009995s ]
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.009704s ]
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.009608s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.009866s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '861694034016582' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.009691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.009672s ]
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi left join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='861694034016582' GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011258s ]
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.009627s ]
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi LEFT
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='861694034016582' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.009842s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 136 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 31 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000197s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000405s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-08-17T14:21:25+08:00 ] 180.153.205.252 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-17T14:21:52+08:00 ] 183.16.199.83 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-17T14:22:12+08:00 ] 183.16.199.83 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-17T14:22:13+08:00 ] 183.16.199.83 /weixin_community/index.php?m=Index&a=index&code=0111Qaa42NaOEI0Fsad42dRea421Qaaj&state=STATE
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.010395s ]
+SQL: SELECT * FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.010174s ]
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.010182s ]
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.010012s ]
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.009966s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.010175s ]
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '861694034016582' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.010018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.009875s ]
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi left join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='861694034016582' GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011253s ]
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.009941s ]
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi LEFT
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='861694034016582' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.010159s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 136 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 31 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 188 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php on line 213 and defined /home/wwwroot/v.sniperchw.com/weixin_community/APP/Common/common.php 第 756 行.
+NOTIC: [8] Undefined index: is_on /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 241 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 273 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 279 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant device_command - assumed 'device_command' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+NOTIC: [8] Use of undefined constant mchid - assumed 'mchid' /home/wwwroot/v.sniperchw.com/weixin_community/APP/Runtime/Cache/Home/b71efac2c45dfbbb12a5b9b57341de1f.php 第 285 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021520s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000429s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000274s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000194s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001336s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000396s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000435s ]
+

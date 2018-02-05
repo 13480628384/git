@@ -1,0 +1,88 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">{$month}月收益</a></li>
+        <li><a href="javascript:history.go(-1)">返回</a></li>
+    </ul>
+    注：洗车的不一样，后期会统计,在在{$name}支付所得收入，即是用户A在B商户上充值5元，但是也可以到其他商户中使用，只有A消费成功才属于B商户
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>设备编号</th>
+                <th>消费金额</th>
+                <th>消费类型</th>
+                <th>消费单号</th>
+                <th>客户名称</th>
+                <th>设备地址</th>
+                <th>状态情况</th>
+                <th>消费时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="result" id="v">
+                <tr>
+                    <td>{$v.deivce_command}</td>
+                    <td>{$v.consume_account}</td>
+                    <td><if condition="$v['type'] eq 1">微信消费
+                        <elseif condition="$v['type'] eq 3"/>按摩椅消费
+                        <elseif condition="$v['type'] eq 4"/>按摩椅支付宝消费
+                        <elseif condition="$v['type'] eq 2"/>支付宝消费
+                        <elseif condition="$v['type'] eq 5"/>充电器消费
+                        <elseif condition="$v['type'] eq 6"/>充电器支付宝消费
+                        <elseif condition="$v['type'] eq 9"/>微信洗衣机消费
+                        <elseif condition="$v['type'] eq 10"/>支付宝洗衣机消费
+                        <elseif condition="$v['type'] eq 15"/>微信洗车
+                        <elseif condition="$v['type'] eq 16"/>支付宝洗车
+                        <elseif condition="$v['type'] eq 13"/>微信电动车消费
+                        <elseif condition="$v['type'] eq 14"/>支付宝电动车消费
+                        <else/>其它</if></td>
+                    <td>{$v.id}</td>
+                    <td>{$v.from_username}</td>
+                    <td>默认地址</td>
+                    <td><if condition="$v['command_status'] eq 2">成功收入
+                        <else/>退币或失败</if></td>
+                    <td>{$v.create_date}</td>
+                </tr>
+            </volist>
+            </tbody>
+</div>
+<tfoot>
+<tr>
+    <th>设备编号</th>
+    <th>消费金额</th>
+    <th>消费类型</th>
+    <th>消费单号</th>
+    <th>客户名称</th>
+    <th>设备地址</th>
+    <th>状态情况</th>
+    <th>消费时间</th>
+</tr>
+</tfoot>
+</table>
+<div class="pagination">{$page}</div>
+</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

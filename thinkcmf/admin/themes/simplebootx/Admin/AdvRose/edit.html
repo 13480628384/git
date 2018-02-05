@@ -1,0 +1,64 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('AdvRose/index')}">广告列表</a></li>
+        <li class="active"><a href="">广告修改</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('AdvRose/edit_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">标题</label>
+                <div class="controls">
+                    <input type="text" name="title"  value="{$v.title}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">审核状态</label>
+                <div class="controls">
+                    <select name="audit_status">
+                        <option value="0" <if condition="$v['audit_status'] eq '0'">selected="selected"</if>>未审核</option>
+                        <option value="1" <if condition="$v['audit_status'] eq '1'">selected="selected"</if>>通过审核</option>
+                        <option value="2" <if condition="$v['audit_status'] eq '2'">selected="selected"</if>>审核不通过</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">不通过描述</label>
+                <div class="controls">
+                    <textarea name="no_by_desc" maxlength="50">{$v.no_by_desc}</textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">在线状态</label>
+                <div class="controls">
+                    <select name="online">
+                        <option value="0" <if condition="$v['online'] eq '0'">selected="selected"</if>>下线</option>
+                        <option value="1" <if condition="$v['online'] eq '1'">selected="selected"</if>>上线</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设置会员消耗数</label>
+                <div class="controls">
+                    <input type="number" name="consume_number"  value="{$v.consume_number}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">点击导流广告消耗的数量</label>
+                <div class="controls">
+                    <input type="number" name="one_number"  value="{$v.one_number}">
+                </div>
+            </div>
+            <input type="hidden" name="id" value="{$v.id}">
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

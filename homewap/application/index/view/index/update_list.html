@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>设备更新信息</title>
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Administrator" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link href="{$Think.URL}__CSS__/mobile.css?v2321" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css">
+</head>
+<body class='self-driver'>
+<header class='selfdriver'>
+    <span class='text'>更新信息</span>
+    <span class='rightarrow'></span>
+</header>
+<div class='stepmsg'>
+    <div class='msgitem '>
+        <div class='lefttext'><span >硬件编码</span></div>
+        <div class='centertext'><input type='text' class="device_code" value='{$result.device_code}' placeholder="请输入编码" /></div>
+    </div>
+    <div class='msgitem'>
+        <div class='lefttext'><span >软件指令</span></div>
+        <div class='centertext'><input type='text' class="device_command" value='{$result.device_command}' placeholder="请输入指令码"/></div>
+    </div>
+</div>
+<div class='stepmsg'>
+    <div class='msgitem'>
+        <div class='lefttext'><span >价格时间</span></div>
+        <div class='centertext'><input type='text'class="charger"  value='{$result.charger}' placeholder="格式：10-1800=10-1800=10-1800=10-1800" /></div>
+    </div>
+</div>
+<h1 class='pub_hidden'></h1>
+<div class='start' id='jsStart'><a>提交</a></div>
+<input type="hidden" class="drg_id" value="{$drg_id}">
+<input type="hidden" class="di_id" value="{$di_id}">
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script type="text/javascript">
+    Zepto(function($){
+        $("#jsStart").tap(function(){
+            var drg_id = $('.drg_id').val();
+            var di_id = $('.di_id').val();
+            var device_code = $('.device_code').val();
+            var device_command = $('.device_command').val();
+            var charger = $('.charger').val();
+            if(device_code == ''){
+                $.dialog({
+                    content: '请输入编码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(device_command == ''){
+                $.dialog({
+                    content: '请输入指令',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(charger == ''){
+                $.dialog({
+                    content: '请输入时间价格',
+                    button: ['ok']
+                });
+                return false;
+            }
+            var el=$.loading({
+                content:'正在登录'
+            });
+            $.post("{:url('update_check')}",{di_id:di_id,drg_id:drg_id,device_code:device_code,device_command:device_command,charger:charger},function(data){
+                el.hide();
+                if(data.code == 200){
+                    var DG = $.dialog({
+                        content:data.msg,
+                        button: ['ok']
+                    });
+                    DG.on('dialog:action',function(e){
+                        document.location.href=data.url;
+                    });
+                }else{
+                    $.dialog({
+                        content: data.msg,
+                        button: ['ok']
+                    });
+                    return false;
+                }
+            },'json');
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-12-04 16:29:25
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-12-05 18:10:13
+*/
+.collect-content{
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+    border-top:1px solid #e6e6e6;
+}
+.collect-content .collect-title-left{
+    float: left;
+}
+.collect-content .collect-title{
+    overflow: hidden;
+}
+.collect-content .collect-title-left span:first-child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.collect-title-left img{
+    vertical-align: initial;
+}
+
+.collect-content .collect-title-left span:nth-child(2){
+    font-size: 14px;
+    line-height: 50px;
+    float: left;
+}
+.collect-title-right{
+    float: right;
+    color: #ababab;
+    line-height: 50px;
+}
+.collect-main{
+    margin-top: 20px;
+    display: -webkit-box;
+}
+.collect-main-left{
+    width: 20%;
+}
+.collect-main-right{
+    -webkit-box-flex: 1;
+    margin-left: 10px;
+    text-align: justify;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333333;
+}
+.collect-main-right p:last-child{
+    color: #8c8c8c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.bjf5f5f5{
+    background: #f5f5f5;
+}
+.select{
+    padding: 10px; 
+}
+.select-content{
+    background: #e6e6e6;
+    padding: 10px;
+    position: relative;
+}
+.select-content input{
+    background: #e6e6e6;
+    border: 0;
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+.icon--62{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: #9f9fa0;
+    font-size: 16px;
+}
+.select-title{
+    font-size: 16px;
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+    color: #1a1a1a;
+}
+.select-left{
+    float: left;
+}
+.select-right{
+    float: right;
+    color: #8c8c8c;
+}
+.select-user{
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.icon-uniE704{
+    float: left;
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 30px !important;
+    margin-right: 5px;
+}
+.user-img{
+    width: 30px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-name{
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.select-user.on .icon-uniE704{
+    color: #7ebe29;
+}
+.footer-user{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* display: 
+    
+    
+    
+    -webkit-box; */
+    padding: 10px 0;
+    height: 48px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background: #fff;
+}
+.footer-user-left{
+    /* -webkit-box-flex: 1; */
+    margin: 0 3%;
+    overflow-x: auto;
+    width: 64%;
+    float: left;
+}
+.footer-user-right{
+    width: 22%;
+    background: #7ebe29;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    height: 25px;
+    float: left;
+    margin-top: 9px;
+}
+.add{
+    width: 41px;
+    text-align: center;
+    /* float: left; */
+    margin-right: 5px;
+    position: relative;
+}
+.add p:first-child{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    /* float: left; */
+}
+.footer-user-left-content{
+    overflow: auuto;
+    /* width: 60%; */
+    display: 
+    
+    
+    
+    
+    
+    
+    
+    
+    -webkit-box;
+    text-align: left;
+}
+.select-warp-content{
+    padding-bottom: 68px;
+}
+.icon-cancel{
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.dynamic-header{
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+.dynamic-header-title textarea{
+    border: 0;
+    font-family: 微软雅黑;
+    color: #b2b2b2;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+.icon-add{
+    font-size: 85px;
+    color: #d9d9d9;
+}
+.present,.icon-edg-1{
+    color: #b2b2b2;
+}
+.icon-edg-1{
+    font-size: 20px;
+}
+.present{
+    font-size:16px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.dynamic-content{
+    background: #fff;
+    margin-top: 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+.dynamic-content-remind{
+        padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+}
+.AT{
+    color: #949494;
+}
+.icon-chevron-thin-down{
+    float: right;
+    line-height: 26px !important;
+    color: #b2b2b2;
+}
+.dynamic-content-visible{
+    padding: 10px;
+    font-size: 16px;
+    text-indent: 20px;
+}
+.publish-btn{
+    width: 80%;
+    background: #7ebe29;
+    margin: 30px auto 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.schoolmate-hedaer{
+    position: relative;
+    /* height: 213px; */
+}
+.schoolmate-user{
+    width: 64px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 10px;
+    bottom: -32px;
+}
+.schoolmate-content{
+    margin-top: 50px;
+}
+.schoolmate-main{
+    padding: 0 10px;
+    display: 
+    
+    
+    
+    -webkit-box;
+    margin-bottom: 10px;
+}
+.schoolmate-main-left{
+    width: 45px;
+}   
+.schoolmate-main-right{
+    -webkit-box-flex: 1;
+    text-align: justify;
+    margin-left: 5px;
+}
+.schoolmate-main-right-user{
+    font-size: 14px;
+    color: rgba(35,119,197,0.8);
+}
+.schoolmate-main-right-comment{
+    padding: 5px 0;
+    color: #808080;
+    position: relative;
+}
+.icon-chat.chat{
+    color: #4d85b8;
+    float: right;
+    font-size: 23px;
+}
+.color2377c5{
+    color: rgba(35,119,197,0.8);
+}
+.schoolmate-main-right-praise{
+    background: rgba(237,237,237,0.5);
+    margin-top: 10px;
+    position: relative;
+}
+.schoolmate-main-right-praise:before{
+    content:"";
+    position: absolute;
+    background: rgb(246, 246, 246);
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.praise-main{
+    border-bottom: 1px solid rgba(230,230,230,0.8);
+    padding: 10px;
+}
+.praise-text{
+    padding: 5px 10px 10px;
+}
+.praise-text-main {
+    line-height: 23px;
+}
+.img__ul__li{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.img__ul__li:last-child{
+    margin-right: 0
+}
+.chat__ul{
+    display: 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -webkit-box;
+    background: #35383b;
+    color: #fff;
+    top: 3px;
+    width: 145px;
+    position: absolute;
+    height: 30px;
+    right: 30px;
+    line-height: 30px;
+}
+.chat__ul__li{
+    border-right: 1px solid #262724;
+    box-sizing: border-box;
+}
+.chat__ul__li{
+    width: 50%;
+    text-align: center;
+}
+.schoolmate-name{
+    position: absolute;
+    right: 84px;
+    font-size: 15px;
+    bottom: 5px;
+    color: #fff;
+}
+.commend.on{
+    color: rgba(35,119,197,0.8);
+}
+.footer-import{
+    background: #fff;
+    border-top: 1px solid #e6e6e6;
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+}
+.footer-import.on{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+.import-input{
+    width: 77%;
+    margin-right: 3%;
+    float: left;
+    line-height: 28px;
+}
+.import-input input{
+    border: 0;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.send-btn{
+    width: 16%;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    box-sizing: border-box;
+}
+.Mask-chat.on{
+    display: block;
+}
+
+
+
+.images{
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+    float: left;
+}
+.icon-add{
+    float: left;
+}
+.dynamic-header-file{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.icon-chevron-with-circle-left{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 35px;
+    color: rgba(255,255,255,0.8);
+}
+.icon-camera{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0,0,0,0.3);
+    width: 40px;
+    height: 40px;
+    line-height: 40px !important;
+    text-align: center;
+    border-radius: 50%;
+}

@@ -1,0 +1,119 @@
+<html><head>
+    <title>群组信息列表</title>
+    <meta charset="utf-8">
+    <css href="__PUBLIC__/Home/css/frozen.css" />
+    <css href="__PUBLIC__/Home/css/mobi.css" />
+    <css href="__PUBLIC__/Home/css/common.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+<div class="tab-yj tab-customer">
+    <ul class="tab-yj-nav">
+        <li class="active">群组（<?php echo $name;?>）列表</li>
+    </ul>
+    <input type="hidden" class="cname" value="<?php echo $name?>">
+    <div class="tab-yf-box">
+        <div class="tab-yf-null">
+            <div class="tab-yf-box1">
+            <div class="tab-yf-box-main f14">
+                    <div class="tab-yf-box-main-time">
+                            <div>组内名称</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>终端编码</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>终端指令</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>状态</div>
+                    </div>
+                    <div class="tab-yf-box-main-time">
+                            <div>排序</div>
+                    </div>
+                <div class="tab-yf-box-main-time">
+                    <div>操作</div>
+                </div>
+                <div id="session"></div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <input type="hidden" id="detailid" value="<?php echo $detailid;?>">
+</div>
+    <menu class="ucenter-menu">
+    <ul>
+        <li id="index" onclick="window.location.href='{:U('index')}'" class="menu_li ">
+          扫码
+        </li>
+        <li id="deivice" onclick="window.location.href='{:U('device')}'" class="menu_li">
+          设备列表
+        </li>
+        <li id="group" onclick="window.location.href='{:U('group')}'" class="menu_li">
+          群组信息列表
+        </li>
+        <li id="personal" onclick="window.location.href='{:U('personal')}'" class="menu_li">
+          个人信息
+        </li>
+    </ul>
+  </menu>
+  <js href="__PUBLIC__/Home/js/zepto.js" />
+  <js href="__PUBLIC__/Home/js/frozen.js" />
+  <js href="__PUBLIC__/Home/js/jsweixin1.0.js" />
+  <js href="__PUBLIC__/Home/js/jquery-1.9.1.min.js" />
+</body>
+<script>
+var cname = $('.cname').val();
+Zepto(function($){
+        var el=$.loading({
+            content:'加载中...'
+        });
+var detailid = $('#detailid').val();
+        $.post("{:U('query_device_groups')}",{device_group_id:detailid},function(ret){
+            if(ret.msg == 1){
+                 $.each(ret.datas,function(i,o){
+                    var online_status = '';
+                    if(o.status==1){
+                        online_status='有效';
+                    }else{
+                        online_status='无效';
+                    }
+                    $('.tab-yf-box1').append(
+                        '<div class="tab-yf-box-main f12">'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.group_code+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.device_code+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.device_command+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+online_status+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'+o.ords+'</div>'
+                        +'</div>'
+                        +'<div class="tab-yf-box-main-time">'
+                        +'<div>'
+                        +'<a href="{:U('update_device')}&group_id='+o.group_id+'&device_code='+o.device_code+'&status='+o.status+'&group_code='+o.group_code+'&cname='+cname+'&ords='+o.ords+'&device_command='+o.device_command+'">修改</a>'+'&nbsp;&nbsp;'
+                        +'</div>'
+                        +'</div>'
+                        +'</div>'
+                    );
+                 })
+            }else{
+
+            }
+        el.hide();
+        },'json');
+
+})
+</script>
+</html>

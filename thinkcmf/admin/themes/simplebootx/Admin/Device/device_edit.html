@@ -1,0 +1,111 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Device/index')}">设备信息列表</a></li>
+        <li><a href="{:U('Device/device_add')}">设备信息添加</a></li>
+        <li class="active"><a href="">设备信息修改</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Device/edit_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">扫描码</label>
+                <div class="controls">
+                    <input type="text" name="scan_code"  value="{$device.scan_code}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属公司</label>
+                <div class="controls">
+                    <select name="company_id" >
+                        <volist name="company_id" id="v">
+                            <option value="{$v.id}" <if condition="$device['company_id'] eq $v['id']">selected="selected"</if>>{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属部门</label>
+                <div class="controls">
+                    <select name="office_id">
+                        <volist name="office_id" id="v">
+                            <option value="{$v.id}" <if condition="$device['office_id'] eq $v['id']">selected="selected"</if> >{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属用户</label>
+                <div class="controls">
+                    <select name="owner_id">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}" <if condition="$device['owner_id'] eq $v['id']">selected="selected"</if>>{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属区域</label>
+                <div class="controls">
+                    <select name="area">
+                        <volist name="area" id="v">
+                            <option value="{$v.id}" <if condition="$device['area_id'] eq $v['id']">selected="selected"</if>>{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">安装日期</label>
+                <div class="controls">
+                    <input type="text" name="install_date" value="{$device.install_date}" class="js-datetime">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件设备码</label>
+                <div class="controls">
+                    <input type="text" name="device_code"  value="{$device.device_code}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件指令码</label>
+                <div class="controls">
+                    <input type="text" name="device_command" value="{$device.device_command}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备类型</label>
+                <div class="controls">
+                    <select name="device_type">
+                            <volist name="device_type" id="v">
+                                <option value="{$v.device_type}" <if condition="$device['device_type'] eq $v['device_type']">selected="selected"</if>>{$v.desc}</option>
+                            </volist>
+                    </select>
+                 </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">支付价格</label>
+                <div class="controls">
+                    <input type="text" name="pay_price"  value="<php>echo intval($device['pay_price']);</php>" maxlength="2">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks">{$device.remarks}</textarea>
+                </div>
+            </div>
+
+            <input type="hidden" name="di_id" value="{$device.id}">
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+</script>
+</body>
+</html>

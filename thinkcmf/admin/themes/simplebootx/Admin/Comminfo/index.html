@@ -1,0 +1,85 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Comminfo/index')}">指令记录</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Comminfo/index')}">
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="设备">
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>指令编码</th>
+                <th>状态</th>
+                <th>响应状态</th>
+                <th>指令编号</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.deivce_command}</td>
+                    <td><if condition="$v['status'] eq 1">有效<else/>无效</if></td>
+                    <td><if condition="$v['resp_status'] eq 400">No api-key
+                        <elseif condition="$v['resp_status'] eq 403"/>Auth Failed
+                        <elseif condition="$v['resp_status'] eq 404"/>Not Found
+                        <elseif condition="$v['resp_status'] eq 400"/>Invalid Parameter
+                        <elseif condition="$v['resp_status'] eq 220"/>Command Created
+                        <elseif condition="$v['resp_status'] eq 221"/>Command Sent
+                        <elseif condition="$v['resp_status'] eq 520"/>Send Command Failed
+                        <elseif condition="$v['resp_status'] eq 200"/>Command Response Received
+                        <elseif condition="$v['resp_status'] eq 432"/>Command Response Timeout
+                        <elseif condition="$v['resp_status'] eq 433"/>Command Resp
+                    </if>
+                    </td>
+                    <td>{$v.cmd_id}</td>
+                    <td>{$v.create_date}</td>
+                    <td>{$v.update_date}</td>
+                    <td>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a></td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>指令编码</th>
+                <th>状态</th>
+                <th>响应状态</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pager">{$page}{$current_page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

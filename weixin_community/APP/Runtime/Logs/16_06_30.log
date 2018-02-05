@@ -1,0 +1,306 @@
+[ 2016-06-30T10:43:59+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-30T10:44:08+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-30T10:44:31+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050314204354133.jpg') [ RunTime:0.011001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=44 ) LIMIT 1   [ RunTime:0.010000s ]
+
+[ 2016-06-30T10:44:37+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050503355047414.jpg') [ RunTime:0.010000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=45 ) LIMIT 1   [ RunTime:0.011001s ]
+
+[ 2016-06-30T10:45:41+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-30T10:45:47+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011000s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050503380479358.jpg') [ RunTime:0.011001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=46 ) LIMIT 1   [ RunTime:0.010001s ]
+
+[ 2016-06-30T10:45:52+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050308543092042.jpg') [ RunTime:0.010001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=47 ) LIMIT 1   [ RunTime:0.011000s ]
+
+[ 2016-06-30T10:46:06+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-30T10:46:11+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050308543092042.jpg') [ RunTime:0.011000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=48 ) LIMIT 1   [ RunTime:0.011001s ]
+
+[ 2016-06-30T10:46:23+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-30T10:46:28+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011000s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/2015050308540577647.jpg') [ RunTime:0.011001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.011001s ]
+
+[ 2016-06-30T10:46:49+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/11.jpg') [ RunTime:0.011000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.012001s ]
+
+[ 2016-06-30T10:46:54+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/22.jpg') [ RunTime:0.012000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.010001s ]
+
+[ 2016-06-30T10:46:58+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/44.jpeg') [ RunTime:0.012001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.010000s ]
+
+[ 2016-06-30T10:47:03+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/44.jpg') [ RunTime:0.011000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.010001s ]
+
+[ 2016-06-30T10:47:48+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-30T10:47:53+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/44.jpeg') [ RunTime:0.011000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.010001s ]
+
+[ 2016-06-30T10:47:56+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/44.jpg') [ RunTime:0.012001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=55 ) LIMIT 1   [ RunTime:0.010000s ]
+
+[ 2016-06-30T10:47:59+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/ad_focus_img01.jpg') [ RunTime:0.011001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.011000s ]
+
+[ 2016-06-30T10:48:05+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011000s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/desinger_img01.jpg') [ RunTime:0.011001s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.011001s ]
+
+[ 2016-06-30T10:48:09+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=upload_chw
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `taobao` [ RunTime:0.011001s ]
+SQL: INSERT INTO `taobao` (`url`) VALUES ('http://chw.image.alimmdn.com/guangjia/arts_item01.jpg') [ RunTime:0.010000s ]
+SQL: SELECT * FROM `taobao` WHERE ( id=58 ) LIMIT 1   [ RunTime:0.010001s ]
+

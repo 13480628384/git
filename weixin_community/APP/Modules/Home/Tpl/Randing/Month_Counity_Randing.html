@@ -1,0 +1,25 @@
+<if condition="$Month_Counity_Randing neq null">
+    <ul>
+        <volist name="Month_Counity_Randing" id="v" key="k">
+            <if condition="$k elt 10">
+                <li <php>if(isset($v['my_pai'])){echo "class='user'";}</php>>
+                <span>NO.{$v.user_count}</span> <img src="<if condition='$v[headimgurl] eq null'>__PUBLIC__/Home/img/bg.png<else/>{$v.headimgurl}</if>" alt="">
+                <span class="userName">{$v.nickname}</span>
+                <div class="right">
+                    总分 <span class="goal">{$v.count}</span>
+                </div>
+                </li>
+            </if>
+            <php>if(isset($v['my_pai']) && $k>10){</php>
+            <li <php>if(isset($v['my_pai'])){echo "class='user'";}</php>>
+            <span>NO.{$v.user_count}</span> <img src="<if condition='$v[headimgurl] eq null'>__PUBLIC__/Home/img/bg.png<else/>{$v.headimgurl}</if>" alt="">
+            <span class="userName">{$v.nickname}</span>
+            <div class="right">
+                总分 <span class="goal">{$v.count}</span>
+            </div>
+            </li>
+            <php>}</php>
+        </volist>
+        <div style="clear:both"></div>
+    </ul>
+</if>

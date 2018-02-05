@@ -1,0 +1,2374 @@
+[ 2016-05-13T14:20:15+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.021586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035799s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+
+[ 2016-05-13T14:20:15+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.142172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142365s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.010233s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.014093s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.014446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046009s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.014311s ]
+INFO: [ view_end ] --END-- [ RunTime:0.014468s ]
+
+[ 2016-05-13T14:20:16+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002363s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002259s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002743s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001590s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009094s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001994s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002157s ]
+
+[ 2016-05-13T14:22:36+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003650s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.054633s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052676s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant pc - assumed 'pc' D:\wamp\www\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 129 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 144 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 147 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 150 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041999s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003232s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002658s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002253s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002685s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002837s ]
+
+[ 2016-05-13T14:22:37+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049517s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048324s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.048403s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.048297s ]
+
+[ 2016-05-13T14:22:40+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=device
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.063566s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.066298s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034230s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002014s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003775s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001765s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009823s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002043s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002180s ]
+
+[ 2016-05-13T14:22:42+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_24h_devices
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005805s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.063084s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.062891s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.063822s ]
+SQL: SELECT device_group.*,di.group_name FROM `device_group` LEFT JOIN device_group_info di on di.id = device_group.group_id WHERE ( device_group.update_by = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( device_group.create_time >= '2016-05-13 00:00:00' ) AND ( device_group.del_flag = 0 ) ORDER BY device_group.create_time desc  [ RunTime:0.064628s ]
+
+[ 2016-05-13T14:22:49+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.077529s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.078091s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002074s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001801s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001405s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007417s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001863s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002005s ]
+
+[ 2016-05-13T14:22:50+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.054329s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.054959s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.055432s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.058141s ]
+
+[ 2016-05-13T14:22:56+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052062s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052014s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.052850s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.053929s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040949s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001647s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001608s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001414s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006811s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001833s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2016-05-13T14:29:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006176s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045779s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044699s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.043411s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045212s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031138s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002649s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003158s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003399s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012419s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002549s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002687s ]
+
+[ 2016-05-13T14:29:38+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004155s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052730s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.053198s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051148s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051743s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029660s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003496s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002652s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003881s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013152s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002748s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002886s ]
+
+[ 2016-05-13T14:30:32+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004192s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051757s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052238s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051020s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.053800s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 59 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029970s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002278s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002068s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009496s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004260s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004452s ]
+
+[ 2016-05-13T14:30:52+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002095s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051806s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050412s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050038s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051075s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 54 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025503s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001807s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001607s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001429s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006914s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2016-05-13T14:31:19+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003225s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053777s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050407s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050357s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052338s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023094s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001641s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001612s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001375s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007593s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002732s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002914s ]
+
+[ 2016-05-13T14:31:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002815s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051797s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052803s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049519s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.050267s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023900s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001793s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001614s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002887s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002100s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002290s ]
+
+[ 2016-05-13T14:32:20+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046582s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045664s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046407s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045303s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024044s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002243s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002659s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002002s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009974s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002017s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002196s ]
+
+[ 2016-05-13T14:34:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005638s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047848s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045764s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046719s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047353s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034711s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004040s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003737s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003415s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003622s ]
+
+[ 2016-05-13T14:39:38+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004784s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051588s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050548s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051791s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051609s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002940s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002750s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012683s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003454s ]
+
+[ 2016-05-13T14:41:31+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005079s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059991s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.053966s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.052623s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.060378s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032557s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002729s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002282s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002086s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009890s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004328s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004495s ]
+
+[ 2016-05-13T14:42:11+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003675s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045757s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044544s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.043156s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045223s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028583s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002318s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003076s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003150s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012050s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002957s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003130s ]
+
+[ 2016-05-13T14:43:48+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003773s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048010s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046076s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.045733s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047150s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028616s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002834s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002910s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003638s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012523s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002733s ]
+
+[ 2016-05-13T14:44:24+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004644s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050459s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049144s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049634s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.048868s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030461s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002827s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002314s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002092s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010025s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002821s ]
+
+[ 2016-05-13T14:44:41+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002883s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050119s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050919s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049526s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.050795s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024302s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001804s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002190s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002526s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009222s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002232s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002382s ]
+
+[ 2016-05-13T14:45:05+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002987s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.147739s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.147339s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.147617s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.147882s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024869s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001705s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001913s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001650s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007860s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001884s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002035s ]
+
+[ 2016-05-13T14:45:26+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049906s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050875s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049216s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051315s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 46 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024480s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001791s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001652s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007842s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002786s ]
+
+[ 2016-05-13T14:45:39+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004153s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.152716s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.152149s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.151220s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.151813s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024656s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003522s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002179s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001435s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009379s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001872s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2016-05-13T14:46:00+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003943s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051820s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050777s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051698s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051459s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029368s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002911s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014069s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003238s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003422s ]
+
+[ 2016-05-13T14:46:12+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003955s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048623s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046961s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.047724s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047388s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036204s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003410s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002281s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013472s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003129s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003357s ]
+
+[ 2016-05-13T14:46:48+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003796s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050974s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051154s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051177s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051483s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030133s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002131s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010731s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003042s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003340s ]
+
+[ 2016-05-13T14:47:07+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002747s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046361s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047266s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046062s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.046270s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024759s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001992s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001635s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001391s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007475s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002550s ]
+
+[ 2016-05-13T14:47:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002158s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043756s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044672s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.045280s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.044865s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001726s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002702s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008666s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002120s ]
+
+[ 2016-05-13T14:47:45+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003533s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051300s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.053160s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051356s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029559s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002755s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002773s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003642s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012315s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002817s ]
+
+[ 2016-05-13T14:47:58+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002892s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045750s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044470s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.044631s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.044857s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024127s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001916s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001644s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001390s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007045s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001799s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001934s ]
+
+[ 2016-05-13T14:48:08+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051028s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049875s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049958s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.050096s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023615s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002271s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002005s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008201s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002222s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002396s ]
+
+[ 2016-05-13T14:48:09+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003631s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050768s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049337s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050566s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.049472s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024890s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002064s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001793s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001380s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007322s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001753s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001896s ]
+
+[ 2016-05-13T14:48:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005076s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044616s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045054s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.044934s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045994s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030841s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002739s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002753s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002175s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010849s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002786s ]
+
+[ 2016-05-13T14:48:47+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004587s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047235s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046224s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046332s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045979s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032973s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003196s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004821s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002848s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014271s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002596s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002732s ]
+
+[ 2016-05-13T14:48:54+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.054402s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051785s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.052100s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051408s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026103s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001841s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001580s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001395s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007979s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002830s ]
+
+[ 2016-05-13T14:50:45+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006606s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052126s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050031s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049421s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: group D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\install\APP\Runtime\Cache\Home\f2830517099d22eae16385b7a6690611.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031204s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002993s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003162s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002179s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011244s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002552s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002687s ]
+
+[ 2016-05-13T14:51:31+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003592s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049904s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049327s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050291s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051140s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035328s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002771s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002446s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002114s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012391s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002761s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002920s ]
+
+[ 2016-05-13T14:52:08+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052153s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050640s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051910s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025927s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002661s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002316s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001858s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2016-05-13T14:53:43+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003863s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047915s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046044s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046241s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047385s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032114s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002513s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002298s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010869s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002898s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003069s ]
+
+[ 2016-05-13T14:56:13+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004842s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051567s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051345s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050758s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051500s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003608s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002452s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002116s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011519s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003952s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004135s ]
+
+[ 2016-05-13T14:58:15+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003582s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045902s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046009s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046869s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045723s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030587s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005245s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015303s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002682s ]
+
+[ 2016-05-13T14:59:50+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004190s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.053976s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.054785s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.054540s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.054833s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030680s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002575s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002283s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009806s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003860s ]
+
+[ 2016-05-13T15:00:14+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002749s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044207s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045628s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.044552s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.043837s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029052s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002158s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001970s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002318s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010364s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002251s ]
+
+[ 2016-05-13T15:00:19+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002816s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048079s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046739s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.047385s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047030s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025185s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003325s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002032s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001536s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003402s ]
+
+[ 2016-05-13T15:00:27+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003873s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052425s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051308s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050926s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051154s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035221s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003581s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002926s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002810s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013044s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003038s ]
+
+[ 2016-05-13T15:01:32+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005074s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052452s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052675s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.053297s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052069s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030697s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002615s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002622s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003834s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012432s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002509s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002654s ]
+
+[ 2016-05-13T15:01:53+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002488s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051354s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050541s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051418s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052272s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026289s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001903s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002487s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002350s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009587s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002054s ]
+
+[ 2016-05-13T15:03:45+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004767s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050291s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050958s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049371s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.049645s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034482s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003138s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002690s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002275s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011129s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003817s ]
+
+[ 2016-05-13T15:05:07+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004229s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049922s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050712s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050603s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.050367s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002483s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002110s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011946s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003622s ]
+
+[ 2016-05-13T15:06:42+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003694s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047583s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046714s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046621s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047556s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032321s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002718s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002329s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002104s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010554s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004890s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005126s ]
+
+[ 2016-05-13T15:07:33+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003905s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046050s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045489s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.044499s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045325s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030519s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003806s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003140s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012339s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002481s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002642s ]
+
+[ 2016-05-13T15:07:48+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008387s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047281s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046640s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046703s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047392s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030514s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003599s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002695s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003407s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014400s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002818s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002991s ]
+
+[ 2016-05-13T15:07:51+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002990s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047256s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046540s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.047641s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.047733s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026320s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001802s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001845s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002164s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008472s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001823s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2016-05-13T15:08:23+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004816s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051488s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051664s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.052116s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052319s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032576s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002552s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002530s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013099s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002807s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002958s ]
+
+[ 2016-05-13T15:09:58+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=add_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.055284s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.054049s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.052409s ]
+SQL: INSERT INTO `device_group_info` (`group_name`,`area_id`,`id`,`create_by`) VALUES ('中国馆','b0e094a78c864a72a10ffa4bf93e89f8','b997a1b2316f3c6ef25adfdf8a5b09ad','8cd0af5bf6f84319ad3963aa06e89b90') [ RunTime:0.051636s ]
+
+[ 2016-05-13T15:10:00+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002477s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050014s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050132s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034491s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002926s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003077s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002479s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014887s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003205s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003385s ]
+
+[ 2016-05-13T15:10:01+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002968s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049997s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049507s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.057313s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.050230s ]
+
+[ 2016-05-13T15:10:03+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=b997a1b2316f3c6ef25adfdf8a5b09ad&name=%E4%B8%AD%E5%9B%BD%E9%A6%86
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049502s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051104s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049958s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.052223s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050037s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '中国馆' ) LIMIT 1   [ RunTime:0.049579s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 39 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044347s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001845s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001884s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002709s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009190s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001928s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002078s ]
+
+[ 2016-05-13T15:10:09+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004069s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.043808s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044714s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044518s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.044657s ]
+
+[ 2016-05-13T15:10:11+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052264s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050957s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050818s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.052007s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026705s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001922s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001605s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001383s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007392s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002695s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002893s ]
+
+[ 2016-05-13T15:11:27+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003756s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046743s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046973s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046747s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.046138s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029586s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002887s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002631s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002264s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010735s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002701s ]
+
+[ 2016-05-13T15:12:08+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008596s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047479s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046047s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.045335s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.045545s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029578s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002651s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004101s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002463s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012287s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002781s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002925s ]
+
+[ 2016-05-13T15:12:40+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007225s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.080404s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.079087s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.078880s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.078254s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030102s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003966s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002980s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003102s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016262s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003311s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003474s ]
+
+[ 2016-05-13T15:12:52+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=add_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046281s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046271s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.046863s ]
+SQL: INSERT INTO `device_group_info` (`group_name`,`area_id`,`id`,`create_by`) VALUES ('中国少时诵诗书','07e253b9a4bb490eaa82fcad88e14196','6025c1daa2555a06242c8aed5502f203','8cd0af5bf6f84319ad3963aa06e89b90') [ RunTime:0.046272s ]
+
+[ 2016-05-13T15:12:55+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003051s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047992s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048060s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024872s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003448s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002423s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001438s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009764s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002471s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002654s ]
+
+[ 2016-05-13T15:12:55+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002963s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051791s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050953s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.051492s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.051099s ]
+
+[ 2016-05-13T15:15:24+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003741s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050767s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051822s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028904s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003720s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002386s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011729s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002751s ]
+
+[ 2016-05-13T15:15:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005206s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051620s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051073s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050781s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.050381s ]
+
+[ 2016-05-13T15:15:26+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%B8%AD%E5%9B%BD%E5%B0%91%E6%97%B6%E8%AF%B5%E8%AF%97%E4%B9%A6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003898s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046735s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046252s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.045909s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.047027s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.047313s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '中国少时诵诗书' ) LIMIT 1   [ RunTime:0.045097s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002892s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003741s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002354s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013401s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003107s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003290s ]
+
+[ 2016-05-13T15:17:19+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%B8%AD%E5%9B%BD%E5%B0%91%E6%97%B6%E8%AF%B5%E8%AF%97%E4%B9%A6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002527s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047853s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047421s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.046755s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.045458s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045280s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '中国少时诵诗书' ) LIMIT 1   [ RunTime:0.046561s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025181s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002506s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002282s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001698s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008913s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001929s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002091s ]
+
+[ 2016-05-13T15:18:01+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%B8%AD%E5%9B%BD%E5%B0%91%E6%97%B6%E8%AF%B5%E8%AF%97%E4%B9%A6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004816s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.052739s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052621s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050879s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.051993s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.051327s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '中国少时诵诗书' ) LIMIT 1   [ RunTime:0.050392s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003232s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003135s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002366s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013117s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002976s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003190s ]
+
+[ 2016-05-13T15:23:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%B8%AD%E5%9B%BD%E5%B0%91%E6%97%B6%E8%AF%B5%E8%AF%97%E4%B9%A6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003829s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046141s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.045075s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.044527s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.045521s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045957s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '中国少时诵诗书' ) LIMIT 1   [ RunTime:0.045715s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039301s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005029s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003638s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003210s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016793s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005742s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005967s ]
+
+[ 2016-05-13T15:23:34+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=update_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005442s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047902s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047289s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045096s ]
+SQL: UPDATE `device_group_info` SET `group_name`='和生活费和',`area_id`='5' WHERE (  ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `id` = '6025c1daa2555a06242c8aed5502f203' ) ) [ RunTime:0.054641s ]
+
+[ 2016-05-13T15:23:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005125s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045786s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044975s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034952s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002764s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002795s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003645s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012682s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002685s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002829s ]
+
+[ 2016-05-13T15:23:36+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003164s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047972s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.048609s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.046241s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.047789s ]
+
+[ 2016-05-13T15:23:40+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E5%92%8C%E7%94%9F%E6%B4%BB%E8%B4%B9%E5%92%8C
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.048237s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047563s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.047501s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.048205s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.047947s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '和生活费和' ) LIMIT 1   [ RunTime:0.045611s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026541s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001890s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001595s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001398s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007936s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002959s ]
+
+[ 2016-05-13T15:23:49+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=update_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051681s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050364s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049828s ]
+SQL: UPDATE `device_group_info` SET `group_name`='二十日发顺丰',`area_id`='dc397eb4a79c46ac8c247231f49e6772' WHERE (  ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `id` = '6025c1daa2555a06242c8aed5502f203' ) ) [ RunTime:0.051094s ]
+
+[ 2016-05-13T15:23:50+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050795s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.049678s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026784s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002910s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001722s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001887s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010118s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002481s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002636s ]
+
+[ 2016-05-13T15:23:51+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005870s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051713s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050683s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049916s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.051857s ]
+
+[ 2016-05-13T15:23:53+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%BA%8C%E5%8D%81%E6%97%A5%E5%8F%91%E9%A1%BA%E4%B8%B0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004164s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.049762s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051215s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049342s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.050579s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.049351s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '二十日发顺丰' ) LIMIT 1   [ RunTime:0.049767s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026431s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001789s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001567s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002014s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008374s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002562s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002790s ]
+
+[ 2016-05-13T15:25:07+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=6025c1daa2555a06242c8aed5502f203&name=%E4%BA%8C%E5%8D%81%E6%97%A5%E5%8F%91%E9%A1%BA%E4%B8%B0
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002264s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050129s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051415s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.050896s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.049815s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.051203s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '二十日发顺丰' ) LIMIT 1   [ RunTime:0.050382s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026355s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001999s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001741s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001374s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007837s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002569s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002784s ]
+
+[ 2016-05-13T15:25:20+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=update_device_group_info
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003603s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.045210s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044501s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.044567s ]
+SQL: UPDATE `device_group_info` SET `group_name`='人员让他',`area_id`='4' WHERE (  ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) AND ( `id` = '6025c1daa2555a06242c8aed5502f203' ) ) [ RunTime:0.051142s ]
+
+[ 2016-05-13T15:25:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044158s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044775s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 171 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\install\ThinkPHP\Lib\Core\View.class.php 第 172 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 44 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 47 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 50 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 53 行.
+NOTIC: [8] Use of undefined constant group_update - assumed 'group_update' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 90 行.
+NOTIC: [8] Use of undefined constant group_detail - assumed 'group_detail' D:\wamp\www\install\APP\Runtime\Cache\Home\63e71782ac41ec1f74162d790575ff7a.php 第 91 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033152s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003538s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002905s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017624s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002847s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002996s ]
+
+[ 2016-05-13T15:25:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005987s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051595s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051171s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050468s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.052067s ]
+
+[ 2016-05-13T15:25:25+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.050362s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.050150s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.049829s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 ) ORDER BY create_date desc  [ RunTime:0.051897s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023892s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001597s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002902s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009229s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002504s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002704s ]
+
+[ 2016-05-13T15:26:32+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008349s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047196s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.047468s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.046778s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.047925s ]
+
+[ 2016-05-13T15:26:35+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=2a26bd83c9f947c6859b549da5cdbcd3&name=%E4%BD%9B%E5%B1%B1%E9%B9%8F%E7%91%9E%E5%88%A9%E5%AD%A3%E5%8D%8E%E5%B9%BF%E5%9C%BA%E6%B8%B8%E4%B9%90%E5%9B%AD1%E5%8C%BA
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051481s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.051406s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.051130s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.051277s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.051303s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '佛山鹏瑞利季华广场游乐园1区' ) LIMIT 1   [ RunTime:0.051448s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025835s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001774s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001568s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002259s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002423s ]
+
+[ 2016-05-13T15:27:22+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=group_update&updateid=2a26bd83c9f947c6859b549da5cdbcd3&name=%E4%BD%9B%E5%B1%B1%E9%B9%8F%E7%91%9E%E5%88%A9%E5%AD%A3%E5%8D%8E%E5%B9%BF%E5%9C%BA%E6%B8%B8%E4%B9%90%E5%9B%AD1%E5%8C%BA
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006024s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.046680s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046434s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sys_area` [ RunTime:0.045198s ]
+SQL: SELECT * FROM `sys_area` WHERE ( `del_flag` = 0 ) AND ( `type` = 4 )  [ RunTime:0.046689s ]
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.045506s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `del_flag` = 0 ) AND ( `group_name` = '佛山鹏瑞利季华广场游乐园1区' ) LIMIT 1   [ RunTime:0.044763s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+NOTIC: [8] Undefined index: is D:\wamp\www\install\APP\Runtime\Cache\Home\c00a0946c531e5247e4203c6cd46c548.php 第 58 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033322s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003189s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003798s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002828s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012843s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004397s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004579s ]
+
+[ 2016-05-13T15:29:21+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005825s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047195s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046408s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.046469s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.045918s ]
+
+[ 2016-05-13T15:29:23+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=personal
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002100s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.047822s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.046536s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 231 行.
+NOTIC: [8] Use of undefined constant device - assumed 'device' D:\wamp\www\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 234 行.
+NOTIC: [8] Use of undefined constant group - assumed 'group' D:\wamp\www\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 237 行.
+NOTIC: [8] Use of undefined constant personal - assumed 'personal' D:\wamp\www\install\APP\Runtime\Cache\Home\4720dc4cc24d31b5b5529eaa6cbc1e37.php 第 240 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042706s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002861s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002401s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002133s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010189s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003831s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004028s ]
+
+[ 2016-05-13T15:29:24+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=query_device_group
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002390s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.051264s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.052272s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+SQL: SHOW COLUMNS FROM `device_group_info` [ RunTime:0.050705s ]
+SQL: SELECT * FROM `device_group_info` WHERE ( `status` = 1 ) AND ( `create_by` = '8cd0af5bf6f84319ad3963aa06e89b90' ) ORDER BY create_time desc  [ RunTime:0.052112s ]
+
+[ 2016-05-13T15:29:29+08:00 ] 0.0.0.0 /install/index.php?m=Index&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid D:\wamp\www\install\APP\Modules\Home\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.044010s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '8cd0af5bf6f84319ad3963aa06e89b90' ) LIMIT 1   [ RunTime:0.044578s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 78 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\install\APP\Modules\Home\Action\jssdk.php 第 55 行.
+
+[ 2016-05-13T15:29:29+08:00 ] 0.0.0.0 /install/index.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002102s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020159s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001755s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001711s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001498s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009462s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002161s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002356s ]
+

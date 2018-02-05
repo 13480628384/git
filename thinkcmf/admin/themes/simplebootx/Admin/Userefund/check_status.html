@@ -1,0 +1,77 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Userefund/index')}">用户退款</a></li>
+        <li class="active"><a href="">退款审核</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Userefund/check_ajax')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">用户姓名</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="name" value="{$res.name}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">电话号码</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="phone" value="{$res.phone}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">商户订单号</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="partner_trade_no" value="{$res.partner_trade_no}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">申请金额</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="total" value="{$res.total}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">微信号</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="wechatid" value="{$res.wechatid}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">申请时间</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="apple_time" value="{$res.apple_time}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="desc">{$res.remarks}</textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">申请期间用户所剩的余额</label>
+                <div class="controls">
+                    <input type="text"readonly="readonly" name="pay" value="{$pay}">实际退款的金额，请务必核实
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">请审核</label>
+                <div class="controls">
+                    <label><input name="status" type="radio" value="2" />不通过审核 </label>
+                    <label><input name="status" type="radio" value="1" />审核通过 </label>
+                </div>
+            </div>
+        </fieldset>
+        <input type="hidden" name="id" value="{$res.id}">
+        <input type="hidden" name="openid" value="{$res.openid}">
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">审核确认</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

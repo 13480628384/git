@@ -1,0 +1,149 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Organizational/index')}">机构管理</a></li>
+        <li class="active"><a href="{:U('Organizational/add')}">机构添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Organizational/add_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">上级机构</label>
+                <div class="controls">
+                    <select name="parent_id">
+                            <if condition="$admin_id eq 1 or $role_type eq 2">
+                                <option value="0">一级菜单</option>
+                                {$select_categorys}
+                            <else/>
+                                <option value="{$select_categorys.id}">{$select_categorys.name}</option>
+                            </if>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属区域</label>
+                <div class="controls">
+                    <select name="area_id">
+                        {$sys_area}
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">机构名称</label>
+                <div class="controls">
+                    <input type="text" name="name" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">机构编码</label>
+                <div class="controls">
+                    <input type="text" name="code"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">机构类型</label>
+                <div class="controls">
+                    <select name="type">
+                        <if condition="$admin_id eq 1 or $role_type eq 2">
+                            <option value="1">公司</option>
+                        </if>
+                        <option value="2">部门</option>
+                        <option value="3">小组</option>
+                        <option value="4">其他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">机构级别</label>
+                <div class="controls">
+                    <select name="grade">
+                        <option value="1">一级</option>
+                        <option value="2">二级</option>
+                        <option value="3">三级</option>
+                        <option value="4">四级</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">是否可用</label>
+                <div class="controls">
+                    <select name="USEABLE">
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">主负责人</label>
+                <div class="controls">
+                    <select name="PRIMARY_PERSON">
+                        <volist name="name" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">副负责人</label>
+                <div class="controls">
+                    <select name="DEPUTY_PERSON">
+                        <volist name="name" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">联系地址</label>
+                <div class="controls">
+                   <input type="text" name="address">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">邮政编码</label>
+                <div class="controls">
+                    <input type="text" name="zip_code">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">负责人</label>
+                <div class="controls">
+                    <input type="text" name="master">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">电话</label>
+                <div class="controls">
+                    <input type="text" name="phone">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">传真</label>
+                <div class="controls">
+                    <input type="text" name="fax">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">邮箱</label>
+                <div class="controls">
+                    <input type="text" name="email">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

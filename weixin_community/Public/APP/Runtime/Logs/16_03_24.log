@@ -1,0 +1,7 @@
+[ 2016-03-24T00:01:17+08:00 ] 121.42.0.33 /install/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: openid /home/wwwroot/v.sniperchw.com/install/APP/Modules/Home/Action/BaseAction.class.php 第 18 行.
+

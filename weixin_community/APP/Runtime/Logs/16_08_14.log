@@ -1,0 +1,81 @@
+[ 2016-08-14T11:36:04+08:00 ] 121.42.0.71 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T11:36:59+08:00 ] 121.42.0.59 /weixin_community/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T11:55:35+08:00 ] 59.173.192.187 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T11:57:33+08:00 ] 121.42.0.54 /weixin_community/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T12:29:20+08:00 ] 121.42.0.60 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T20:14:49+08:00 ] 121.42.0.73 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /home/wwwroot/v.sniperchw.com/weixin_community/ThinkPHP/Extend/Vendor/weixin/jssdk.php 第 99 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+
+[ 2016-08-14T20:14:59+08:00 ] 121.42.0.62 /weixin_community/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: sc_small /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/IndexAction.class.php 第 14 行.
+NOTIC: [8] Undefined index: group_id /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: device_command /home/wwwroot/v.sniperchw.com/weixin_community/APP/Modules/Home/Action/BaseAction.class.php 第 40 行.
+

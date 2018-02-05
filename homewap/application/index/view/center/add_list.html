@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>家庭地址</title>
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Administrator" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link href="{$Think.URL}__CSS__/mobile.css?v2321" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css">
+    <style>
+        .loc-box {
+            padding: 15px 0 15px 15px !important;
+        }
+        .center-address {
+            line-height: 24px;
+            margin: 20px 10px;
+        }
+        .loc-box-left {
+            float: left;
+            width: 70%;
+        }
+        .wrapper dl {
+            background: #fff;
+            border-radius: 6px;
+            border: 1px solid #d7d7d7;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            font-size: 14px;
+        }
+        .loc-box-right {
+            float: left;
+            width: 15%;
+            height: 100%;
+            vertical-align: middle;
+            text-align: center;
+            border-left: 1px solid #d7d7d7;
+        }
+        .loc-box-right .loc-edit {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            background: #008CD7;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            font-size: 12px;
+            height: 30px;
+            position: relative;
+            left: 20px;
+            padding: 0 6px;
+            line-height: 30px;
+        }
+        .btn{
+            margin: 10px 10px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 25px;
+            background: #e45a5b;
+            display: block;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class='self-driver'>
+<header class='selfdriver'>
+    <span class='text'>家庭地址</span>
+    <span class='rightarrow'></span>
+</header>
+<section class="wrapper center-address">
+    {volist name="home" id="v"}
+    <dl class="b">
+        <dd>
+            <div class="loc-box">
+                <div class="loc-box-left ">
+                    <p>{$v.name}  {$v.phone} &nbsp;{if condition="$v['is_default'] eq '1'"}<b style="color: #f3842b">默认</b>{/if}</p>
+                    <p>{$v.details}</p>
+                </div>
+                <div class="loc-box-right edit" data-href="{:url('add_edit',array('id'=>$v['id']))}">
+                    <p class="loc-edit">编辑</p>
+                </div>
+            </div>
+        </dd>
+    </dl>
+    {/volist}
+</section>
+<div class="normal">
+    <a href="{:url('add_html')}" id="btnAddLoc" class="btn orange">新增家庭住址</a>
+</div>
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js"></script>
+</body>
+</html>

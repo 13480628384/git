@@ -1,0 +1,89 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Vending/index')}">售货机列表</a></li>
+        <li class="active"><a href="{:U('Vending/add')}">售货机添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Vending/add_post')}">
+        <fieldset>
+            <div class="control-group">
+            <div class="control-group">
+                <label class="control-label">归属用户</label>
+                <div class="controls">
+                    <select name="owner_id">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备编号</label>
+                <div class="controls">
+                    <input type="text" name="device_code" >
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备编码</label>
+                <div class="controls">
+                    <input type="text" name="device_command" >
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">充值价格</label>
+                <div class="controls">
+                    <textarea name="pay_price">10-0,20-0,50-0,100-0,200-0,500-0</textarea>
+                </div>
+            </div><p style="color:#f00;">注：价格1-赠送玫瑰币1,价格2-赠送玫瑰币2,价格3-赠送玫瑰币3</p>
+            <div class="control-group">
+                <label class="control-label">设备安放位置</label>
+                <div class="controls">
+                    <input type="text" name="address" >
+                </div>
+            </div>
+                <div class="control-group">
+                    <label class="control-label">设备类型</label>
+                    <div class="controls">
+                        <select name="device_type">
+                            <option value="1">投币型</option>
+                            <option value="2">微信支付型</option>
+                            <option value="3">支付宝型</option>
+                            <option value="4">混合型</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">货道数目</label>
+                    <div class="controls">
+                        <select name="number_routes">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Devicetype/index')}">设备类型列表</a></li>
+        <li><a href="{:U('Devicetype/add')}">设备类型添加</a></li>
+    </ul>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>设备建值</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>描述</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.device_type}</td>
+                    <td>{$v.create_date}</td>
+                    <td>{$v.update_date}</td>
+                    <td>{$v.desc}</td>
+                    <td>
+                        <a class="btn btn-xs btn-warning" href="{:U('edit',array('id'=>$v['id']))}">修改 </a>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>设备建值</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>描述</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pager">{$page}{$current_page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

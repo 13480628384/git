@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>微社区</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="eric.wu" name="author">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <css href="__PUBLIC__/Home/css/frozen.css?0" />
+    <css href="__PUBLIC__/Home/css/mobi.css?011621" />
+    <css href="__PUBLIC__/Home/css/index.css?v1.3" />
+    <css href="__PUBLIC__/Home/css/touch.css" />
+    <css href="__PUBLIC__/Home/css/style.css" />
+    <css href="__PUBLIC__/Home/css/site.css?1001" />
+    <css href="__PUBLIC__/Home/css/photoswipe.css" />
+    <css href="__PUBLIC__/Home/css/default-skin.css" />
+    </head>
+    <body>
+    <div class="back">
+        <img src="__PUBLIC__/Home/img/back.png">
+    </div>
+    <div class="message-top">
+        <ul>
+            <li><img src="<php>if($headimgurl==''){echo '__PUBLIC__/Home/img/bg.png';}else{echo $headimgurl;}</php>"></li>
+            <li>昵称:<php>if($nickname==''){echo '玩家';}else{echo str_substr($nickname,3);}</php></li>
+            <li>等级:LV1</li>
+            <!--<li>积分:<php>if($user_integral==''){echo '0';}else{echo $user_integral;}</php></li>-->
+            <li>余额:<b class="total_all">{$total}</b></li>
+        </ul>
+    </div>
+    <div class="all-content">
+    <div class="clear"></div>
+    <div class="message-content-top">
+        <div class="content-left">
+            <div class="letter"><if condition="$group_code['group_code'] eq null">A<else/>{$group_code.group_code}</if></div>
+            <div class="tishi">点击启动</div>
+            <div class="content-title-price"><img src="__PUBLIC__/Home/img/icon_01.png"><tt class="tt"><php>if($group_code['pay_price']==''){echo 1;}else{echo $group_code['pay_price'];}</php>元</tt></div>
+        </div>
+        <div class="content-right">
+            <php>if(empty($group_code['give_coin'])){</php>
+            <div class="media-6"></div>
+            <div class="button-top">
+                <div class="c-left">
+                    3次<!--送<label class="number_send">1--></label>
+                </div>
+                <div class="c-right">
+                    &nbsp;&nbsp;<img src="__PUBLIC__/Home/img/icon_01.png"><tt class="tt1">3</tt>元
+                </div>
+            </div>
+            <div class="media-6"></div>
+            <div class="button-top">
+                <div class="c-left">
+                    5次<!--送<label class="number_send">2--></label>
+                </div>
+                <div class="c-right">
+                    &nbsp;&nbsp;<img src="__PUBLIC__/Home/img/icon_01.png"><tt class="tt1">5</tt>元
+                </div>
+            </div>
+            <div class="media-6"></div>
+            <div class="button-top">
+                <div class="c-left">
+                    10次<!--送<label class="number_send">3--></label>
+                </div>
+                <div class="c-right">
+                    <img src="__PUBLIC__/Home/img/icon_01.png"><tt class="tt1">10</tt>元</div>
+            </div>
+            <php>}else{</php>
+        <volist name="give_coin_array" id="v" key="k">
+            <div class="media-6"></div>
+            <div class="button-top">
+                <div class="c-left">
+                    {$v.number.0}<!--次送<label class="number_send">{$v.number.1}--></label>
+                </div>
+                <div class="c-right">
+                    <if condition="$k eq 1 or $k eq 2">&nbsp;&nbsp;</if><img src="__PUBLIC__/Home/img/icon_01.png"><tt class="tt1">{$v.number.0}</tt>元
+                </div>
+            </div>
+        </volist>
+            <php>}</php>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="tab-yj tab-customer">
+        <ul class="tab-yj-nav">
+            <li class="active total">今日榜单<div class="tab-total">人数<b>{$count}</b></div></li>
+            <li>历史榜单</li>
+        </ul>
+        <div class="tab-yf-box">
+            <div class="tab-yf-null">
+                <div class="tab-yf-box1">
+                    <php>if($qianwu>$houliu){</php>
+                        <php>if(in_array($openid,$yiwei)){</php>
+                            <volist name="total_ranking_1" id="v">
+                                <div class="tab-yf-box-main f12">
+                                    <div class="tab-yf-box-main-name">
+                                        <div>
+                                            <div class="number <php>if($v['openid']==$openid){echo 'my';}</php>">NO.{$v.user_count}</div>
+                                            <img src="{$v.headimgurl}">
+                                            <div class="name">{$v.nickname|str_substr=7}（{$v.city}）</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-yf-box-main-time">
+                                        <div>
+                                            战斗力 <b class="total-num">{$v.count}</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </volist>
+                        <php>if(!empty($total_ranking)){</php>
+                        <p class="new" style="color:#ff6e35;font-weight: bold">···</p>
+                        <php>}</php>
+                        <volist name="total_ranking_2" id="v">
+                            <div class="tab-yf-box-main f12">
+                                <div class="tab-yf-box-main-name">
+                                    <div>
+                                        <div class="number <php>if($v['openid']==$openid){echo 'my';}</php>">NO.{$v.user_count}</div>
+                                        <img src="{$v.headimgurl}">
+                                        <div class="name">{$v.nickname|str_substr=7}（{$v.city}）</div>
+                                    </div>
+                                </div>
+                                <div class="tab-yf-box-main-time">
+                                    <div>
+                                        战斗力 <b class="total-num">{$v.count}</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                        <php>}else{</php>
+                            <volist name="no_array" id="v">
+                                <div class="tab-yf-box-main f12">
+                                    <div class="tab-yf-box-main-name">
+                                        <div>
+                                            <div class="number">NO.{$v.user_count}</div>
+                                            <img src="{$v.headimgurl}">
+                                            <div class="name">{$v.nickname|str_substr=7}（{$v.city}）</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-yf-box-main-time">
+                                        <div>
+                                            战斗力 <b class="total-num">{$v.count}</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </volist>
+                        <php>}</php>
+                    <php>}else{</php>
+                        <volist name="new_one_array_1" id="v" key="k">
+                                <div class="tab-yf-box-main f12">
+                                    <div class="tab-yf-box-main-name">
+                                        <div>
+                                            <div class="number <php>if($v['openid']==$openid){echo 'my';}</php>">NO.{$v.user_count}</div>
+                                            <img src="{$v.headimgurl}">
+                                            <div class="name">{$v.nickname|str_substr=7}（{$v.city}）</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-yf-box-main-time">
+                                        <div>
+                                            战斗力 <b class="total-num">{$v.count}</b>
+                                        </div>
+                                    </div>
+                                </div>
+                        </volist>
+                        <php>if(!empty($total_ranking)){</php>
+                            <p class="new" style="color:#ff6e35;font-weight: bold">···</p>
+                        <php>}</php>
+                        <volist name="new_one_array_2" id="v" key="k">
+                            <div class="tab-yf-box-main f12">
+                                <div class="tab-yf-box-main-name">
+                                    <div>
+                                        <div class="number <php>if($v['openid']==$openid){echo 'my';}</php>">NO.{$v.user_count}</div>
+                                        <img src="{$v.headimgurl}">
+                                        <div class="name">{$v.nickname|str_substr=7}（{$v.city}）</div>
+                                    </div>
+                                </div>
+                                <div class="tab-yf-box-main-time">
+                                    <div>
+                                        战斗力 <b class="total-num">{$v.count}</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    <php>}</php>
+                </div>
+                </div>
+            </div>
+        <div class="tab-yf-box" style="display:none">
+            <div class="tab-yf-null">
+                <div class="tab-yf-box1">
+                    <volist name="ranking" id="v" key="k">
+                    <div class="tab-yf-box-main f12">
+                        <div class="tab-yf-box-main-name">
+                            <div>
+                                <div class="number">NO.{$k}</div>
+                                <img src="{$v.headimgurl}">
+                                <div class="name">{$v.nickname|str_substr=5}（{$v.city}）</div>
+                            </div>
+                        </div>
+                        <div class="tab-yf-box-main-time">
+                            <div>
+                                战斗力 <b class="total-num">{$v.count}</b>
+                            </div>
+                        </div>
+                    </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--玩家攻略评论  [[-->
+    <aside class="player">
+        <div class="player-left">赫赫战功</div>
+        <!--<div class="player-center">最火</div>-->
+        <div class="player-right"><img src="__PUBLIC__/Home/img/write.png">捷报</div>
+    </aside>
+    <!--玩家攻略评论  ]]-->
+    <!--评论内容  [[-->
+    <div class="clear"></div>
+    <section class="community">
+        <volist name="friend_info" id="value">
+        <div class="comm-total">
+            <div class="com-top"><b class="c-name">{$value.nickname}</b>  - {$value.create_date|str_substr=10} </div>
+            <div class="com-middle">
+                {$value.text}
+            </div>
+            <!--图片显示 [[-->
+            <php>if(!empty($value['pic'])){</php>
+            <ul class="pics">
+                <li class="img_pics">
+                    <div class="demo-gallery">
+                <php>
+                    $pic = explode(',',$value['pic']);
+                    $pics = array();
+                    foreach($pic as $p){
+                        $pics[]['imgs'] = $p;
+                    }
+                    $count = count($pics);
+                    foreach($pics as $kpic=>$vpic){
+                    if($kpic<=2){
+                </php>
+                        <a href="{$vpic.imgs}" <if condition="$count eq 1">class='big';</if>  data-size="1600x1068" data-med="{$vpic.imgs}" data-med-size="1024x1024">
+                            <img src="<php>echo $vpic['imgs'];</php>">
+                        </a>
+
+                <php>}}</php>
+                    </div>
+                </li>
+            </ul>
+            <php>}</php>
+            <div class="clear"></div>
+            <!--图片显示 ]]-->
+            <ul class="com-bottom">
+			<li class="bottom-two" data="{$value.id}"><img class="bxin" src="__PUBLIC__/Home/img/icon_04.png">&nbsp;&nbsp;<tt class="po">{$value.praise}</tt></li>
+                <li class="bottom-one" replybuyer_id="{$value.create_by}" friendinfo_id="{$value.id}">
+                    <img src="__PUBLIC__/Home/img/coummity.png">&nbsp;&nbsp;{$value.community_total}
+                </li>
+            </ul>
+            <div class="clear"></div>
+        <if condition="$value['is_on'] eq 1">
+            <div class="schoolmate-main-right-praise">
+                <div class="praise-text">
+                    <volist name="reply" id="v">
+                        <if condition="$v['fr_id'] eq $value['id']">
+                            <div class="praise-text-main comments" friendinfo_id="{$v.fr_id}" replybuyer_id="{$v.openid}">
+                                <span class="color2377c5" id="names">{$v.re_name}</span> <if condition="$v['reply_name'] neq $value['nickname']">回复
+                                <span class="color2377c5" id="name">{$v.reply_name}</span></if>
+                                <span>:{$v.re_text}</span>
+                            </div>
+                        </if>
+                    </volist>
+                </div>
+            </div>
+        </if>
+        </div>
+        </volist>
+    </section>
+        <!--评论发帖的 [[-->
+        <div class="footer-import">
+            <div class="import-input">
+                <input type="text" id="content" value="" onkeyup="contentspl()">
+            </div>
+            <div class="send-btn" id="send-btn">
+                发送
+            </div>
+        </div>
+        <!--评论发帖的 ]]-->
+    <!--评论内容  ]]-->
+    <button type="button" class="loading"><span class="more">点击加载更多</span><img style="display: none;margin: auto;" class="loading_animate" src="__PUBLIC__/Home/img/three-dots.svg" width="40"/></button>
+        <p class="bottoms"></p>
+    <!--底部菜单栏  [[-->
+    <menu class="ucenter-menu">
+        <!--<footer class="footer">温馨提示：若扣费未成功，10分钟内重新扫码自动退币。<p class="kefu">联系客服</p></footer>-->
+        <ul>
+            <li><i class="icon-weixin"></i><br>微信支付</li>
+            <php>if(empty($is_openid)){</php>
+            <li onclick="window.location.href='{:U(\'get_openid\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command))}'"><i class="icon-doubi"></i><br>玩家中心</li>
+            <php>}else{</php>
+            <li onclick="window.location.href='{:U(\'Personal/index\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command,mchid=>$mchid))}'"><i class="icon-doubi"></i><br>玩家中心</li>
+            <php>}</php>
+
+            <php>if(empty($is_openid)){</php>
+            <li onclick="window.location.href='{:U(\'get_openid\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command))}'"><i class="icon-mian"></i><br>免费逗币</li>
+            <php>}else{</php>
+            <li onclick="window.location.href='{:U(\'Nomoney/index\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command,mchid=>$mchid))}'"><i class="icon-mian"></i><br>免费逗币</li>
+            <php>}</php>
+
+            <php>if(empty($is_openid)){</php>
+            <li onclick="window.location.href='{:U(\'get_openid\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command,mchid=>$mchid))}'"><i class="icon-comm"></i><br>根据地</li>
+            <php>}else{</php>
+            <li onclick="window.location.href='{:U(\'Community/index\',array(openid=>$openid,group_id=>$group_id,device_command=>$device_command,mchid=>$mchid))}'"><i class="icon-comm"></i><br>根据地</li>
+            <php>}</php>
+        </ul>
+    </menu>
+    </div>
+    <!--底部菜单栏  ]]-->
+    <!--图片放大-->
+    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip">
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" class="dataiduser" value="">
+    <input type="hidden" class="friendinfo_id" value="">
+    <input type="hidden" class="strate_url_of" value="{:U('reply')}">
+    <input type="hidden" class="jinzhi" value="0">
+    <input type="hidden" class="is_openid" value="{$is_openid}">
+    <input type="hidden" class="pl_url" value="{:U('pl_url')}">
+    </body>
+    <input type="hidden" class="user_ajax_community" value="{:U('user_ajax')}">
+    <input type="hidden" class="nurl" value="{:U('get_openid')}">
+    <input type="hidden" class="hot_index" value="{:U('index',array('hot'=>1))}">
+    <input type="hidden" class="click_friend" value="{:U('click_friend')}">
+    <input type="hidden" class="click_zan_more" value="{:U('click_zan_more')}">
+    <input type="hidden" class="cancel" value="{:U('cancel')}">
+    <input type="hidden" class="community_more" value="{:U('community_more')}">
+    <input type="hidden" class="community_add" value="{:U('community_add')}">
+    <input type="hidden" class="icon_img" value="__PUBLIC__/Home/img/icon_04.png">
+    <input type="hidden" class="xin" value="__PUBLIC__/Home/img/icon_05.png?100">
+    <input type="hidden" class="comm_img" value="__PUBLIC__/Home/img/coummity.png">
+    <input type="hidden" class="group_code" value="{$group_code.online_status}">
+    <input type="hidden" class="mchid" value="{$mchid}">
+    <input type="hidden" class="type" value="{$type}">
+    <input type="hidden" class="sc_small" value="{$sc_small}">
+    <input type="hidden" class="group_id" value="{$group_id}">
+    <input type="hidden" class="openid" value="{$openid}">
+    <input type="hidden" class="device_command" value="{$group_code.device_command}">
+    <input type="hidden" class="device_id" value="{$group_code.device_id}">
+    <js href="__PUBLIC__/Home/js/jquery-1.9.1.min.js"/>
+  <js href="__PUBLIC__/Home/js/zepto.js" />
+  <js href="__PUBLIC__/Home/js/frozen.js" />
+  <js href="__PUBLIC__/Home/js/touch.js" />
+  <js href="__PUBLIC__/Home/js/index.js?v1.1" />
+  <js href="__PUBLIC__/Home/js/community.js?v1.0" />
+  <js href="__PUBLIC__/Home/js/photoswipe.min.js" />
+  <js href="__PUBLIC__/Home/js/photoswipe-ui-default.min.js" />
+  <js href="__PUBLIC__/Home/js/snf1yod.js" />
+  <js href="__PUBLIC__/Home/js/photo.js" />
+<script>
+    /*var useragent = navigator.userAgent;
+    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        var opened = window.open('about:blank', '_self');
+        opened.opener = null;
+        opened.close();
+    }*/
+   /*function contentspl(){
+       var content = $('#content').val();
+       var strate_url_of = $('.strate_url_of').val();
+       $.post(strate_url_of,{add_title:content},function(data){
+           if(data.code==200){
+               $('.jinzhi').val(1);
+           }else{
+               $('.jinzhi').val(0);
+           }
+       },'json');
+   }*/
+    </script>
+</html>

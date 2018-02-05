@@ -1,0 +1,115 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Indexadmin/index')}">用户列表</a></li>
+        <li><a href="{:U('Indexadmin/sys_user_add')}">用户添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Indexadmin/add_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">归属公司</label>
+                <div class="controls">
+                    <select name="company_id">
+                        <php>foreach($office as $v){</php>
+                            <option value="<php>echo $v['id'];</php>"><php>echo $v['name'];</php></option>
+                        <php>}</php>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属部门</label>
+                <div class="controls">
+                    <select name="office_id">
+                        <php>foreach($office_id as $v){</php>
+                        <option value="<php>echo $v['id'];</php>"><php>echo $v['name'];</php></option>
+                        <php>}</php>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">姓名</label>
+                <div class="controls">
+                    <input type="text" name="name" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">登陆账号</label>
+                <div class="controls">
+                    <input type="text" name="login_name"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">密码</label>
+                <div class="controls">
+                    <input type="password" name="password" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">邮箱</label>
+                <div class="controls">
+                    <input type="text" name="email"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">手机</label>
+                <div class="controls">
+                    <input type="text" name="mobile"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">是否可以登陆</label>
+                <div class="controls">
+                    <select name="login_flag">
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">用户类型</label>
+                <div class="controls">
+                    <select name="user_type">
+                        <option value="1">系统管理</option>
+                        <option value="2">部门经理</option>
+                        <option value="3">普通用户</option>
+                    </select>
+                </div>
+            </div>
+            <if condition="$role_type eq 2 or $admin_id eq 1">
+                <div class="control-group">
+                    <label class="control-label">用户角色</label>
+                    <div class="controls">
+                        <foreach name="result" item="vo">
+                            <label class="checkbox inline"><input value="{$vo.id}" type="checkbox" name="role_id[]">{$vo.name}</label>
+                        </foreach>
+                    </div>
+                </div>
+            <else/>
+                <div class="control-group" style="display:none">
+                    <label class="control-label">用户角色</label>
+                    <div class="controls">
+                        <foreach name="result" item="vo">
+                            <label class="checkbox inline"><input value="{$vo.id}" type="checkbox" name="role_id[]" checked="checked" >{$vo.name}</label>
+                        </foreach>
+                    </div>
+                </div>
+            </if>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks">{$sys_user.remarks}</textarea>
+                </div>
+            </div>
+            <input type="hidden" name="user_id" value="{$sys_user.id}">
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

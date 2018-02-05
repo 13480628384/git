@@ -1,0 +1,132 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('AdvRose/index')}">玫瑰广告列表</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('AdvRose/index')}">
+        审核：
+        <select name="audit_status">
+            <option value="">请选择</option>
+            <option value="0">未审核</option>
+            <option value="1">审核通过</option>
+            <option value="2">审核不通过</option>
+        </select>
+        状态：
+        <select name="online">
+            <option value="">请选择</option>
+            <option value="0">下线</option>
+            <option value="1">上线</option>
+        </select>
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="昵称/标题">
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/check',array('check'=>1))}" data-subcheck="true">通过审核</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/check',array('uncheck'=>1))}" data-subcheck="true">审核不通过</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/online',array('line'=>1))}" data-subcheck="true">上线</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/online',array('unline'=>1))}" data-subcheck="true">下线</button>
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th>昵称</th>
+                <th>标题</th>
+                <th>图片</th>
+                <th>审核状态</th>
+                <th>描述</th>
+                <th>状态</th>
+                <th>展示数</th>
+                <th>点击数</th>
+                <th>会员消耗数</th>
+                <th>消耗数量</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <th width="15"><label>
+                        <input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$v.id}" title="ID:{$v.id}">
+                    </label></th>
+                    <td>{$v.nickname}</td>
+                    <td><php>echo str_substr($v['title'],5);</php></td>
+                    <td><if condition="$v['image'] eq ''">无
+                            <else/><img src="{$v.image}" width="60">
+                        </if>
+                    </td>
+                    <td>
+                        <if condition="$v['audit_status'] eq '0'">未审核
+                            <elseif condition="$v['audit_status'] eq '1'"/>审核通过
+                            <else/>审核不通过
+                        </if>
+                    </td>
+                    <td>
+                        <php>echo str_substr($v['no_by_desc'],5);</php>
+                    </td>
+                    <td>
+                        <if condition="$v['online'] eq '0'">下线
+                            <else/>上线
+                        </if>
+                    </td>
+                    <td>{$v.show_number}</td>
+                    <td>{$v.click_number}</td>
+                    <td>{$v.consume_number}</td>
+                    <td>{$v.one_number}</td>
+                    <td>{$v.create_date}</td>
+                    <td>
+                        <a class="btn btn-xs btn-warning" href="{:U('edit',array('id'=>$v['id']))}">修改 </a>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th>昵称</th>
+                <th>标题</th>
+                <th>图片</th>
+                <th>审核状态</th>
+                <th>描述</th>
+                <th>状态</th>
+                <th>展示数</th>
+                <th>点击数</th>
+                <th>会员消耗数</th>
+                <th>消耗数量</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/check',array('check'=>1))}" data-subcheck="true">通过审核</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/check',array('uncheck'=>1))}" data-subcheck="true">审核不通过</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/online',array('line'=>1))}" data-subcheck="true">上线</button>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdvRose/online',array('unline'=>1))}" data-subcheck="true">下线</button>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

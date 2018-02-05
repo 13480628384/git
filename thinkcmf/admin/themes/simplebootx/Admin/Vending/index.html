@@ -1,0 +1,187 @@
+<admintpl file="header" />
+</head>
+<body>
+<style type="text/css">
+    #qrcode{display: none;
+        width:200px; height:200px;padding:4px 10px 10px;background-color:#FFFFFF;border:1px solid #05549d;color:#333333;line-height:24px;-webkit-box-shadow:5px 2px 6px #000;-moz-box-shadow:3px 3px 6px #555;}
+</style>
+<script>
+    function code(qrcode) {
+        $(".code-mains").qrcode({
+            width: 200, //宽度
+            height:200, //高度
+            foreground:'rgb(51, 51, 51)',
+            text: qrcode
+        });
+    }
+    //点击显示图片插件
+    function showid_zzjs_net(idname,qrcode){
+        code(qrcode);
+        var isIE = (document.all) ? true : false;
+        var isIE6 = isIE && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+        var newbox=document.getElementById(idname);
+        newbox.style.zIndex="9999";
+        newbox.style.display="block";
+        newbox.style.position = !isIE6 ? "fixed" : "absolute";
+        newbox.style.top =newbox.style.left = "50%";
+        newbox.style.marginTop = - newbox.offsetHeight / 2 + "px";
+        newbox.style.marginLeft = - newbox.offsetWidth / 2 + "px";
+        var layer=document.createElement("div");
+        layer.id="layer";
+        layer.style.width=layer.style.height="100%";
+        layer.style.position= !isIE6 ? "fixed" : "absolute";
+        layer.style.top=layer.style.left=0;
+        layer.style.backgroundColor="#000";
+        layer.style.zIndex="9998";
+        layer.style.opacity="0.6";
+        document.body.appendChild(layer);
+        var sel=document.getElementsByTagName("select");
+        for(var i=0;i<sel.length;i++){
+            sel[i].style.visibility="hidden";
+        }
+        function layer_iestyle(){
+            layer.style.width=Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
+                    + "px";
+            layer.style.height= Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) +
+                    "px";
+        }
+        function newbox_iestyle(){
+            newbox.style.marginTop = document.documentElement.scrollTop - newbox.offsetHeight / 2 + "px";
+            newbox.style.marginLeft = document.documentElement.scrollLeft - newbox.offsetWidth / 2 + "px";
+        }
+        if(isIE){layer.style.filter ="alpha(opacity=60)";}
+        if(isIE6){
+            layer_iestyle()
+            newbox_iestyle();
+            window.attachEvent("onscroll",function(){
+                newbox_iestyle();
+            })
+            window.attachEvent("onresize",layer_iestyle)
+        }
+        layer.onclick=function(){
+            $(".code-mains").html('');
+            newbox.style.display="none";layer.style.display="none";for(var i=0;i<sel.length;i++){
+                sel[i].style.visibility="visible";
+            }};
+    }
+</script>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Vending/index')}">售货机列表</a></li>
+        <li><a href="{:U('Vending/add')}">新增售货机</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Vending/index')}">
+        设备类型：
+        <select name="device_type">
+            <option value="">请选择</option>
+                <option value="1">投币型</option>
+                <option value="2">微信支付型</option>
+                <option value="3">支付宝型</option>
+                <option value="4">混合型</option>
+        </select>
+        在线/离线：
+        <select name="online_status">
+            <option value="">请选择</option>
+            <option value="1">在线</option>
+            <option value="0">离线</option>
+        </select>
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="请输入搜索的设备">
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit"
+                data-action="{:U('change',array('chan'=>1))}" data-subcheck="true">转移设备</button>
+        <select name="user_id">
+            <option value="">请选择转移用户</option>
+            <volist name="user" id="v">
+                <option value="{$v.id}">{$v.name}</option>
+            </volist>
+        </select>
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th>设备编号</th>
+                <th>设备编码</th>
+                <th>归属用户</th>
+                <th>设备类型</th>
+                <th>二维码链接</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <th width="15"><label>
+                        <input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$v.device_command}" title="ID:{$v.device_command}">
+                    </label></th>
+                    <input class="qrcode" type="hidden" value="http://wxpay.roseo2o.com/vending/{$v.device_code}">
+                    <td>{$v.device_code}</td>
+                    <td>{$v.device_command}</td>
+                    <td>{$v.name}</td>
+                    <td>
+                        <if condition="$v['device_type'] eq 1">投币型
+                            <elseif condition="$v['device_type'] eq 2"/>微信支付型
+                            <elseif condition="$v['device_type'] eq 3"/>支付宝型
+                            <elseif condition="$v['device_type'] eq 4"/>混合型
+                            <else/>其他未定义类型
+                        </if>
+                    </td>
+                    <td>http://wxpay.roseo2o.com/vending/{$v.device_code}</td>
+                    <input class="qrcode" type="hidden" value="http://wxpay.roseo2o.com/qrcode/{$v.scan_code}">
+                    <td><if condition="$v['online_status'] eq 1"><span style="color:#0fbb3d">在线</span><else/>离线</if></td>
+                    <td>{$v.create_date}</td>
+                    <td>
+                        <a class="btn btn-xs btn-warning" href="{:U('edit',array('id'=>$v['id']))}">修改 </a>
+                        <a class="btn btn-xs btn-warning" href="{:U('management',array('id'=>$v['id']))}">上下货管理 </a>
+                        <input class="btn btn-xs btn-warning" type="button" id="showbtn" name="showbtn" value="二维码" onclick="showid_zzjs_net('qrcode','http://wxpay.roseo2o.com/vending/{$v.device_code}');">
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <div id="qrcode" class="code-mains">
+            </div>
+            <tfoot>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th>设备编号</th>
+                <th>设备编码</th>
+                <th>归属用户</th>
+                <th>设备类型</th>
+                <th>二维码链接</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <button class="btn btn-primary btn-small js-ajax-submit" type="submit"
+                data-action="{:U('change')}" data-subcheck="true">转移设备</button>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

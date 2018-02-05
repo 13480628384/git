@@ -1,0 +1,135 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Device/index')}">设备信息列表</a></li>
+        <li class="active"><a href="{:U('Device/device_add')}">设备信息添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Device/add_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">扫描码</label>
+                <div class="controls">
+                    <input type="text" name="scan_code"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属公司</label>
+                <div class="controls">
+                    <select name="company_id">
+                        <volist name="company_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属部门</label>
+                <div class="controls">
+                    <select name="office_id">
+                        <volist name="office_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属用户</label>
+                <div class="controls">
+                    <select name="owner_id">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属区域</label>
+                <div class="controls">
+                    <select name="area">
+                        <volist name="area" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">安装日期</label>
+                <div class="controls">
+                    <input type="text" name="install_date" value="" class="js-datetime">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件设备码</label>
+                <div class="controls">
+                    <input type="text" name="device_code"  value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">硬件指令码</label>
+                <div class="controls">
+                    <input type="text" name="device_command" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备类型</label>
+                <div class="controls">
+                    <select name="device_type">
+                        <volist name="device_type" id="v">
+                            <option value="{$v.device_type}">{$v.desc}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">支付价格</label>
+                <div class="controls">
+                    <input type="text" name="pay_price"  value="" maxlength="2">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">备注</label>
+                <div class="controls">
+                    <textarea name="remarks"></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">洗车分成设备（其他设备不用填写，留空即可）</label>
+                <div class="controls">
+                    玫瑰物联<select name="meigui">
+                    <volist name="owner_id" id="v">
+                        <option value="{$v.id}">{$v.name}</option>
+                    </volist>
+                </select><input type="number" name="one1" placeholder="请输入收益百分比" value="2" maxlength="2">
+                    <br/>热爱天然
+                    <select name="reai">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select><input type="number" name="one2" placeholder="请输入收益百分比" value="13" maxlength="2">
+                    <br/>市场招商
+                    <select name="zhao">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select><input type="number" name="one3" placeholder="请输入收益百分比" value="5" maxlength="2">
+                    <br/>授权合伙
+                    <select name="heh">
+                        <volist name="owner_id" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                    <input type="number" name="one4" placeholder="请输入收益百分比" value="80" maxlength="2">注：授权合伙要跟设备归属用户一样
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

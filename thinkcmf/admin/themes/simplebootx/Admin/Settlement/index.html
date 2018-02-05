@@ -1,0 +1,113 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Settlement/index')}">消费记录</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Settlement/index')}">
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="用户id/设备指令,用户id">
+        消费类型：
+        <select name="type">
+            <option value="">请选择</option>
+                <option value="1">微信消费</option>
+                <option value="2">支付宝消费</option>
+                <option value="3">按摩椅微信消费</option>
+                <option value="4">按摩椅支付宝消费</option>
+                <option value="5">充电器微信消费</option>
+                <option value="6">充电器支付宝消费</option>
+                <option value="9">洗衣机微信消费</option>
+                <option value="10">洗衣机支付宝消费</option>
+                <option value="11">售货机微信消费</option>
+                <option value="12">售货机支付宝消费</option>
+                <option value="13">电动车微信消费</option>
+                <option value="14">电动车支付宝消费</option>
+        </select>
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>用户id</th>
+                <th>消费金额</th>
+                <th>消费类型</th>
+                <th>指令状态</th>
+                <th>硬件设备指令</th>
+                <th>消费状态</th>
+                <th>是否归档</th>
+                <th>转账状态</th>
+                <th>消费时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.from_username}</td>
+                    <td>{$v.consume_account}</td>
+                    <td><if condition="$v['type'] eq 1">微信消费
+                        <elseif condition="$v['type'] eq 2" />支付宝消费
+                        <elseif condition="$v['type'] eq 3" />按摩椅微信消费
+                        <elseif condition="$v['type'] eq 4" />按摩椅支付宝消费
+                        <elseif condition="$v['type'] eq 5" />充电器微信消费
+                        <elseif condition="$v['type'] eq 6" />充电器支付宝消费
+                        <elseif condition="$v['type'] eq 9" />洗衣机微信消费
+                        <elseif condition="$v['type'] eq 10" />洗衣机支付宝消费
+                        <elseif condition="$v['type'] eq 11" />售货机微信消费
+                        <elseif condition="$v['type'] eq 12" />售货机支付宝消费
+                        <elseif condition="$v['type'] eq 13" />电动车微信消费
+                        <elseif condition="$v['type'] eq 14" />电动车支付宝消费
+                        <elseif condition="$v['type'] eq 15" />洗车微信消费
+                        <elseif condition="$v['type'] eq 16" />洗车支付宝消费
+                    </if></td>
+                    <td><if condition="$v['command_status'] eq 3">✘<else/>✔</if></td>
+                    <td>{$v.deivce_command}</td>
+                    <td><if condition="$v['consume_status'] eq 1">消费成功<else/>消费失败</if></td>
+                    <td><if condition="$v['is_close'] eq 1">是<else/>未</if></td>
+                    <td><if condition="$v['transfer_status'] eq 1">是<else/>未</if></td>
+                    <td>{$v.create_date}</td>
+                    <!--<td>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn"
+                           data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">删除</a></td>-->
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>用户id</th>
+                <th>消费金额</th>
+                <th>消费类型</th>
+                <th>指令状态</th>
+                <th>硬件设备指令</th>
+                <th>消费状态</th>
+                <th>是否归档</th>
+                <th>转账状态</th>
+                <th>消费时间</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

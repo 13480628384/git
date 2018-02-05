@@ -1,0 +1,36 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <form method="post" class="file form-horizontal js-ajax-form" action="{:U('Package/export')}"  enctype="multipart/form-data">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">请选择安装设备</label>
+                <div class="controls">
+                    <input type="file" name="file" id="codebase" value="导入">
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">确定安装</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+    <form method="post" class="file form-horizontal js-ajax-form" action="{:U('Package/batch')}"  enctype="multipart/form-data">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">请选择添加设备</label>
+                <div class="controls">
+                    <input type="file" name="file"  value="导入">
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">确定添加</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,1294 @@
+[ 2016-07-11T11:47:39+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020966639' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020966639' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020966639' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.013000s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 26 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 27 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 98 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 98 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [8] Undefined variable: string2 F:\WWW\weixin_community\APP\Common\common.php 第 758 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-07-11T11:48:06+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.013000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020966639' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.013000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020966639' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020966639' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020966639' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.013001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 26 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 27 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 98 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 98 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [8] Undefined variable: string2 F:\WWW\weixin_community\APP\Common\common.php 第 758 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T14:21:01+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [8] Undefined index: str F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: code F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 10 行.
+
+[ 2016-07-11T14:21:05+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [8] Undefined index: str F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: code F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 10 行.
+
+[ 2016-07-11T14:59:01+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.317018s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 26 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 27 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 98 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 184 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 208 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:02:51+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-11T15:08:41+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.037002s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.018001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.018001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-07-11T15:18:34+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.015001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.026001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.021001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.018001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.013000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.011001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:19:28+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.010001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-11T15:20:34+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.010001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:23:45+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012000s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-07-11T15:24:40+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.309018s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:26:39+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2016-07-11T15:26:58+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.011000s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-11T15:27:16+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:27:38+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-11T15:27:50+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.010000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.010001s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 42 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 113 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 199 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 223 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-11T15:29:12+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.011000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.013000s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 40 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 112 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 198 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-11T15:29:21+08:00 ] 0.0.0.0 /weixin_community/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\WWW\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_config` [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `weixin_pay_config` join ter_device td on td.payconfig_id=weixin_pay_config.id WHERE ( td.device_command = '352425020961770' ) AND ( td.status = 1 ) AND ( td.del_flag = 0 ) AND ( weixin_pay_config.pay_type = 1 ) AND ( weixin_pay_config.status = 1 ) AND ( weixin_pay_config.del_flag = 0 ) LIMIT 1   [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.012000s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.014001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.017001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.013001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.310017s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = 'oXgRcuKECWvDLQo9M-7_TaBkdfDY' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count from(
+SELECT count(1) as count FROM `service_pay_info` spi join
+service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0 and spi.sys_time>CURDATE() GROUP
+BY wu.openid ORDER BY count desc) testnew  where testnew.count>(SELECT count(1) as c FROM `service_pay_info` where from_username='oXgRcuKECWvDLQo9M-7_TaBkdfDY' and
+device_code='352425020961770' and type=0 and status=1 and del_flag=0 and is_archive=0 and sys_time>CURDATE()) [ RunTime:0.012001s ]
+NOTIC: [2] mt_rand(): max(0) is smaller than min(1) F:\WWW\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 192 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.012000s ]
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 158 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: type F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: group_id F:\WWW\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 173 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: headimgurl F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 40 行.
+NOTIC: [8] Undefined variable: nickname F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 41 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 112 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 198 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+NOTIC: [2] Missing argument 3 for str_substr(), called in F:\WWW\weixin_community\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php on line 222 and defined F:\WWW\weixin_community\APP\Common\common.php 第 756 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+

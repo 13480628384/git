@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>根据地</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="eric.wu" name="author">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <css href="__PUBLIC__/Home/css/frozen.css" />
+    <css href="__PUBLIC__/Home/css/mobi.css" />
+    <css href="__PUBLIC__/Home/css/index.css" />
+    <css href="__PUBLIC__/Home/css/community_index.css?v1.2" />
+    <css href="__PUBLIC__/Home/css/touch.css" />
+    <css href="__PUBLIC__/Home/css/style.css" />
+    <css href="__PUBLIC__/Home/css/site.css?10156" />
+    <css href="__PUBLIC__/Home/css/photoswipe.css" />
+    <css href="__PUBLIC__/Home/css/default-skin.css" />
+</head>
+<body>
+<div class="message-tops">
+   <aside class="top-left"><img src="__PUBLIC__/Home/img/community_logo.png"></aside>
+   <aside class="top-center">话题 :&nbsp;2364&nbsp;&nbsp;关注: &nbsp;12354<p>全国娃娃机互动交流平台</p></aside>
+   <aside class="top-right"><div class="rem"><b>＋</b>关注</div></aside>
+</div>
+<!--广告 [[-->
+<div class="advertisement">
+    <ul>
+        <li><b>置顶</b>最强抓娃娃攻略</li>
+        <li><b>置顶</b>抓不到娃娃，一定是你方法不对</li>
+        <li><b>置顶</b>【微公益】娃娃太多没处去怎么办</li>
+    </ul>
+</div>
+<div class="clear"></div>
+<ul class="top_pai_li">
+    <li><a href="{:U('index',array('new'=>1,'openid'=>$create_openid,'group_id'=>$group_id,'device_command'=>$device_command,'mchid'=>$mchid))}">最新</a></li>
+    <li><a href="{:U('index',array('new'=>2,'openid'=>$create_openid,'group_id'=>$group_id,'device_command'=>$device_command,'mchid'=>$mchid))}">最热</a></li>
+    <li><a href="{:U('index',array('new'=>3,'openid'=>$create_openid,'group_id'=>$group_id,'device_command'=>$device_command,'mchid'=>$mchid))}">区域</a></li>
+    <li style="border-right:none;"><a href="{:U('index',array('new'=>4,'openid'=>$create_openid,'group_id'=>$group_id,'device_command'=>$device_command,'mchid'=>$mchid))}">置顶</a></li>
+</ul>
+<div class="clear"></div>
+<!--广告 ]]-->
+<div class="all-contents">
+    <!--底部菜单栏  [[-->
+    <menu class="ucenter-menu">
+        <ul>
+            <li onclick="window.location.href='{:U(\'Index/index\',array(openid=>$create_openid,group_id=>$group_id,device_command=>$device_command))}'"><i class="icon-weixin"></i><br>微信支付</li>
+            <li onclick="window.location.href='{:U(\'Personal/index\',array(openid=>$create_openid,group_id=>$group_id,device_command=>$device_command))}'"><i class="icon-doubi"></i><br>玩家中心</li>
+            <li onclick="window.location.href='{:U(\'Nomoney/index\',array(openid=>$create_openid,group_id=>$group_id,device_command=>$device_command))}'"><i class="icon-mian"></i><br>免费逗币</li>
+            <li><i class="icon-comm"></i><br>根据地</li>
+        </ul>
+    </menu>
+    <!--底部菜单栏  ]]-->
+    <!--评论内容  [[-->
+    <div class="clear"></div>
+    <section class="community" style="margin-top: 6px;">
+        <volist name="friend_info" id="value">
+            <div class="comm-total">
+                <div class="com-top"><b class="c-name">{$value.nickname}</b>  - {$value.create_date|str_substr=10} </div>
+                <div class="com-middle" onclick="window.location.href='{:U(detail,array(id=>$value[id],openid=>$value[create_by],create_openid=>$create_openid,mchid=>$mchid,device_command=>$device_command,group_id=>$group_id))}'">
+                    {$value.text}
+                </div>
+                <!--图片显示 [[-->
+                <php>if(!empty($value['pic'])){</php>
+                <ul class="pics">
+                    <li class="img_pics">
+                        <div class="demo-gallery">
+                            <php>
+                                $pic = explode(',',$value['pic']);
+                                $pics = array();
+                                foreach($pic as $p){
+                                $pics[]['imgs'] = $p;
+                                }
+                                foreach($pics as $kpic=>$vpic){
+                                if($kpic<=2){
+                            </php>
+                            <a href="{$vpic.imgs}" data-size="1600x1068" data-med="{$vpic.imgs}" data-med-size="1024x1024">
+                                <img src="<php>echo $vpic['imgs'];</php>">
+                            </a>
+                            <php>}}</php>
+                        </div>
+                    </li>
+                </ul>
+                <php>}</php>
+                <div class="clear"></div>
+                <!--图片显示 ]]-->
+                <ul class="com-bottom">
+                    <li class="bottom-two" data="{$value.id}"><img class="bxin" src="__PUBLIC__/Home/img/icon_04.png">&nbsp;&nbsp;<tt class="po">{$value.praise}</tt></li>
+                    <li class="bottom-one" replybuyer_id="{$value.create_by}" friendinfo_id="{$value.id}">
+                        <img src="__PUBLIC__/Home/img/coummity.png">&nbsp;&nbsp;{$value.community_total}</li>
+                </ul>
+                <div class="clear"></div>
+                <!--<if condition="$value['is_on'] eq 1">
+                    <div class="schoolmate-main-right-praise">
+                        <div class="praise-text">
+                            <volist name="reply" id="v">
+                                <if condition="$v['fr_id'] eq $value['id']">
+                                    <div class="praise-text-main comments" friendinfo_id="{$v.fr_id}" replybuyer_id="{$v.openid}">
+                                        <span class="color2377c5" id="names">{$v.re_name}</span> <if condition="$v['reply_name'] neq $value['nickname']">回复
+                                        <span class="color2377c5" id="name">{$v.reply_name}</span></if>
+                                        <span>:{$v.re_text}</span>
+                                    </div>
+                                </if>
+                            </volist>
+                        </div>
+                    </div>
+                </if>-->
+            </div>
+        </volist>
+
+        <!--评论内容  ]]-->
+    </section>
+    <button type="button" class="loading"><span class="more">点击加加载更多</span><img style="display: none;margin: auto;" class="loading_animate" src="__PUBLIC__/Home/img/three-dots.svg" width="40"/></button>
+    <p class="bottoms"></p>
+</div>
+
+<!--图片放大-->
+<div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip">
+                </div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="__PUBLIC__/Home/img/guangjia3.gif" style="display: none;" class="imgs">
+</body>
+<input type="hidden" class="community_more" value="{:U('community_more')}">
+<input type="hidden" class="community_add" value="{:U('community_add')}">
+<input type="hidden" class="dataiduser" value="">
+<input type="hidden" class="friendinfo_id" value="">
+<input type="hidden" class="strate_url_of" value="{:U('Community/com_reply')}">
+<input type="hidden" class="jinzhi" value="0">
+<input type="hidden" class="is_openid" value="{$is_openid}">
+<input type="hidden" class="pl_url" value="{:U('Index/pl_url')}">
+</body>
+<input type="hidden" class="user_ajax_community" value="{:U('Community/user_ajax')}">
+<input type="hidden" class="nurl" value="{:U('get_openid')}">
+<input type="hidden" class="click_friend" value="{:U('Community/click_friend')}">
+<input type="hidden" class="click_zan_more" value="{:U('Community/click_zan_more')}">
+<input type="hidden" class="community_more" value="{:U('community_more')}">
+<input type="hidden" class="community_add" value="{:U('community_add')}">
+<input type="hidden" class="cancel" value="{:U('cancel')}">
+<input type="hidden" class="icon_img" value="__PUBLIC__/Home/img/icon_04.png">
+<input type="hidden" class="xin" value="__PUBLIC__/Home/img/icon_05.png?100">
+<input type="hidden" class="comm_img" value="__PUBLIC__/Home/img/coummity.png">
+<input type="hidden" class="group_code" value="{$group_code.online_status}">
+<input type="hidden" class="mchid" value="{$mchid}">
+<input type="hidden" class="type" value="{$type}">
+<input type="hidden" class="sc_small" value="{$sc_small}">
+<input type="hidden" class="group_id" value="{$group_id}">
+<input type="hidden" class="openid" value="{$create_openid}">
+<input type="hidden" class="new" value="{$new}">
+<js href="__PUBLIC__/Home/js/jquery-1.9.1.min.js"/>
+<js href="__PUBLIC__/Home/js/zepto.js" />
+<js href="__PUBLIC__/Home/js/frozen.js" />
+<js href="__PUBLIC__/Home/js/touch.js" />
+<js href="__PUBLIC__/Home/js/community_wei.js?v1.2" />
+<js href="__PUBLIC__/Home/js/photoswipe.min.js" />
+<js href="__PUBLIC__/Home/js/photoswipe-ui-default.min.js" />
+<js href="__PUBLIC__/Home/js/snf1yod.js" />
+<js href="__PUBLIC__/Home/js/photo.js" />
+<script>
+   var useragent = navigator.userAgent;
+    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        var opened = window.open('about:blank', '_self');
+        opened.opener = null;
+        opened.close();
+    }
+</script>
+</html>

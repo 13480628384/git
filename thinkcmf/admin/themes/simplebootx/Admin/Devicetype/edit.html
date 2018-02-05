@@ -1,0 +1,34 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Devicetype/index')}">设备类型列表</a></li>
+        <li><a href="{:U('Devicetype/add')}">设备类型添加</a></li>
+        <li class="active"><a href="{:U('Devicetype/edit')}">设备类型修改</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Devicetype/edit_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">键值</label>
+                <div class="controls">
+                    <input type="text" name="device_type" value="{$device.device_type}">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">描述</label>
+                <div class="controls">
+                    <textarea name="desc">{$device.desc}</textarea>
+                </div>
+            </div>
+        </fieldset>
+        <input type="hidden" name="id" value="{$device.id}">
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

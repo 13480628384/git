@@ -1,0 +1,54 @@
+[ 2016-07-24T17:29:03+08:00 ] 0.0.0.0 /weixin_community/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 2 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\mysql.php 第 23 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 78 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\jssdk.php 第 55 行.
+NOTIC: [8] Undefined index: sc_small F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 14 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `service_userinfo` [ RunTime:0.098006s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `service_userinfo` WHERE ( `openid` = 'og5WUjmApU2pOqbZlxrppXCNhsio' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.102006s ]
+SQL: SHOW COLUMNS FROM `service_pay_info` [ RunTime:0.101006s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT SUM(ticket) AS tp_sum FROM `service_pay_info` WHERE ( `status` = 1 ) AND ( `app_id` = '1341024101' ) AND ( `from_username` = 'og5WUjmApU2pOqbZlxrppXCNhsio' ) LIMIT 1   [ RunTime:0.101005s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `user_integral` FROM `service_userinfo` WHERE ( `openid` = 'og5WUjmApU2pOqbZlxrppXCNhsio' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.100006s ]
+SQL: SHOW COLUMNS FROM `device_group` [ RunTime:0.100006s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `device_group` WHERE ( `device_command` = '352425020961770' ) AND ( `del_flag` = 0 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.100006s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `service_userinfo` LIMIT 1   [ RunTime:0.100005s ]
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi left join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='352425020961770' GROUP BY wu.openid ORDER BY count desc limit 5 [ RunTime:0.100006s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\mysql.php 第 23 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\weixin_community\ThinkPHP\Extend\Vendor\weixin\mysql.php 第 23 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\weixin_community\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+NOTIC: [2] mysql_real_escape_string(): 50 is not a valid MySQL-Link resource F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 331 行.
+NOTIC: [2] mysql_query(): 50 is not a valid MySQL-Link resource F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 103 行.
+SQL: SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = '' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] mysql_error(): 50 is not a valid MySQL-Link resource F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 315 行.
+ERR: :
+ [ SQL语句 ] : SELECT `nickname`,`headimgurl`,`city` FROM `service_userinfo` WHERE ( `openid` = '' ) LIMIT 1  
+NOTIC: [2] mysql_query(): 50 is not a valid MySQL-Link resource F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 103 行.
+SQL: SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi LEFT
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc [ RunTime:0.000000s ]
+NOTIC: [2] mysql_error(): 50 is not a valid MySQL-Link resource F:\www\weixin_community\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 315 行.
+ERR: :
+ [ SQL语句 ] : SELECT count(1) as count,wu.openid,wu.headimgurl,wu.nickname,wu.city FROM `service_pay_info` spi LEFT
+join service_userinfo wu on wu.openid=spi.from_username where spi.type=0 and spi.status=1
+ and spi.del_flag=0 and wu.openid!='' and spi.device_code='352425020961770' and spi.is_archive=0  and spi.sys_time>CURDATE() GROUP BY wu.openid ORDER BY count desc
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 105 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 344 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 151 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 152 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, boolean given F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 154 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, boolean given F:\www\weixin_community\APP\Modules\Home\Action\IndexAction.class.php 第 155 行.
+ERR: 模板不存在[./APP/Modules/Home/Tpl/Index/indexs.html]
+

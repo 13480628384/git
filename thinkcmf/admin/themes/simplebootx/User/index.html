@@ -1,0 +1,73 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Indexadmin/index')}">用户列表</a></li>
+			<li><a href="{:U('Indexadmin/sys_user_add')}">用户添加</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="{:U('Indexadmin/index')}">
+			用户ID： 
+			<input type="text" name="uid" style="width: 100px;" value="{:I('request.uid')}" placeholder="请输入用户ID">
+			关键字： 
+			<input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="用户名/昵称/邮箱">
+			<input type="submit" class="btn btn-primary" value="搜索" />
+			<a class="btn btn-danger" href="{:U('Indexadmin/index')}">清空</a>
+		</form>
+		<form method="post" class="js-ajax-form" action="{:U('Indexadmin/percent')}">
+			<div class="table-actions">
+				<button type="submit" class="btn btn-primary btn-small js-ajax-submit">提现百分比</button>
+			</div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>{:L('USERNAME')}</th>
+						<th>姓名</th>
+						<th>归属公司</th>
+						<th>归属部门</th>
+						<th>{:L('REGISTRATION_TIME')}</th>
+						<th>总金额</th>
+						<th>已提现</th>
+						<th>可提现</th>
+						<th>手机</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<php>$user_statuses=array("0"=>L('USER_STATUS_BLOCKED'),"1"=>L('USER_STATUS_ACTIVATED'),"2"=>L('USER_STATUS_UNVERIFIED'));</php>
+					<foreach name="list" item="vo">
+					<tr>
+						<td>{$vo['login_name']?$vo['login_name']:($vo['mobile']?$vo['mobile']:L('THIRD_PARTY_USER'))}
+							<if condition="$vo['openid'] neq null"><b>(微信已绑定)</b><else/>(微信未绑定)</if>
+						</td>
+						<!--<td><input type="text" name="percent[{$vo.id}]" class="input input-order valid" aria-invalid="flase" size="3" value="{$vo.percent}"></td>-->
+						<td>{$vo['name']?$vo['name']:L('NOT_FILLED')}</td>
+						<td>{$vo.name2}</td>
+						<td>{$vo.name1}</td>
+						<td>{$vo.create_date}</td>
+						<td>{$vo.totals}</td>
+						<td>{$vo.consume}</td>
+						<td><php>echo abs($vo['totals']-$vo['consume']);</php></td>
+						<td>{$vo.mobile}</td>
+						<td align="center">
+							<if condition="$vo['id'] eq '1'">
+								修改 | 删除
+								<else/>
+								<a href="{:U('indexadmin/sys_user_edit',array('id'=>$vo['id']))}" >修改</a> |
+								<a href="{:U('indexadmin/sys_user_del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="你确定要删除吗">删除</a> |
+								<a href="{:U('Admin/Rose2Orderflow/index',array('id'=>$vo['id'],'name'=>$vo['name']))}">收益</a>
+							</if>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="table-actions">
+				<button type="submit" class="btn btn-primary btn-small js-ajax-submit">提现百分比</button>
+			</div>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

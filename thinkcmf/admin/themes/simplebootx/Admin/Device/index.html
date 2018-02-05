@@ -1,0 +1,137 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Device/index')}">设备信息列表</a></li>
+        <li><a href="{:U('Device/device_add')}">设备信息添加</a></li>
+        <li>
+            <a href="{:U('Package/download')}">批量安装设备下载模板
+            </a>
+        </li>
+        <li>
+            <a href="{:U('Package/add')}">批量添加设备下载模板
+            </a>
+        </li>
+        <!--<li>
+            <a href="{:U('Package/add_all')}">批量添加与安装设备
+            </a>
+        </li>-->
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Device/index')}">
+       设备类型：
+        <select name="device_type">
+            <option value="">请选择</option>
+            <volist name="device_type" id="v">
+                <option value="{$v.device_type}">{$v.desc}</option>
+            </volist>
+        </select>
+        归属用户：
+        <select name="owner_id">
+            <option value="">请选择</option>
+            <volist name="owner_id" id="v">
+                <option value="{$v.id}">{$v.name}</option>
+            </volist>
+        </select>
+        归属公司：
+        <select name="company_id">
+            <option value="">请选择</option>
+            <volist name="company_id" id="v">
+                <option value="{$v.id}">{$v.name}</option>
+            </volist>
+        </select><p></p>
+       搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="扫描码/硬件设备码/硬件指令码">
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>扫描码</th>
+                <th>用户</th>
+                <th>部门</th>
+                <th>公司</th>
+                <th>区域</th>
+                <th>设备码</th>
+                <th>指令码</th>
+                <th>类型</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.scan_code}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.office_name}</td>
+                    <td>{$v.company_name}</td>
+                    <td>{$v.area_name}</td>
+                    <td>{$v.device_code}</td>
+                    <td>{$v.device_command}</td>
+                    <td>
+                        <if condition="$v['device_type'] eq 1">娃娃机
+                            <elseif condition="$v['device_type'] eq 2"/>充电器
+                            <elseif condition="$v['device_type'] eq 3"/>售货机
+                            <elseif condition="$v['device_type'] eq 4"/>按摩椅
+                            <elseif condition="$v['device_type'] eq 5"/>洗衣机
+                            <elseif condition="$v['device_type'] eq 6"/>电动车充电
+                            <elseif condition="$v['device_type'] eq 7"/>洗车
+                            <elseif condition="$v['device_type'] eq 8"/>厕纸机
+                            <elseif condition="$v['device_type'] eq 9"/>眼镜怡
+                            <elseif condition="$v['device_type'] eq 10"/>纸斤售货机
+                            <else/>其他
+                        </if>
+                    </td>
+                    <td><if condition="$v['device_status'] eq 1">有效<else/>无效</if></td>
+                    <td>{$v.create_date}</td>
+                    <td>
+                        <a class="btn btn-xs btn-warning" href="{:U('device_edit',array('id'=>$v['id']))}">修改 </a>
+                        <a class="btn btn-xs btn-warning" href="{:U('device_package',array('id'=>$v['id']))}">安装 </a>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('device_del',array('id'=>$v['id']))}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>扫描码</th>
+                <th>用户</th>
+                <th>部门</th>
+                <th>公司</th>
+                <th>区域</th>
+                <th>设备码</th>
+                <th>指令码</th>
+                <th>类型</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html><head>
+    <title>红家君助-订单</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="Description" content="红家君助">
+    <meta name="Keywords" content="红家君助">
+    <link type="text/css" rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link type="text/css" rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css?v2">
+    <link type="text/css" rel="stylesheet" href="{$Think.URL}__CSS__/customer.css?v228">
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+{if condition="$res neq null"}
+{volist name="res" id="v"}
+<section class="contes">
+    <p class="top-text">下单时间：{$v.create_date}</p>
+    <div class="order-card">
+        <table>
+            <thead>
+            <tr>
+                <th colspan="2">
+                    <span class="rabbon gray">
+                        {if condition="$v['status'] eq 0"}
+                        未付款
+                        {elseif condition="$v['status'] eq 1"} 成功下单
+                        {elseif condition="$v['status'] eq 2"} 待服务
+                        {elseif condition="$v['status'] eq 3"} 服务中
+                        {elseif condition="$v['status'] eq 4"} 服务完成
+                        {elseif condition="$v['status'] eq 5"} 交易关闭
+                        {/if}</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2"><img
+                        src="{$Think.WAP_IMG}{$v.img}"/>
+                    <div class="order-info">
+                        <p>
+                           {$v.title}
+                        </p>
+                        <p>
+                            服务时间：{$v.servicetime}
+                        </p>
+                        <p>
+                            数量：1人
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="red">¥<strong>{$v.price}</strong></span></td>
+                <td><span class="view" data-href="{:url('detail',array('id'=>$v.id))}">查看</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{/volist}
+{else/}
+<div class="no" style="text-align: center;margin-top:50%">你的订单空空的！</div>
+{/if}
+<div class="margin30"></div>
+<menu class="ucenter-menu">
+    <ul>
+        <li data-href="{:url('Index/index')}">
+            <i class="icon-home"></i><br>首页
+        </li>
+        <li class="active">
+            <i class="icon-custom"></i><br>我的订单
+        </li>
+        <li data-href="{:url('index')}">
+            <i class="icon-profile"></i><br>个人中心
+        </li>
+    </ul>
+</menu>
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js"></script>
+</body>
+</html>

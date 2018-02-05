@@ -1,0 +1,383 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>扫码</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="eric.wu" name="author">
+    
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/frozen.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/mobi.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/common.css" />
+    </head>
+    <body>
+    <div class="htmleaf-container">
+    <div class="mobile-wrap">
+      <div class="mobile clearfix">
+        <div class="content" style="    padding: 7px;">
+          <div class="html profile visible">
+              <input type="text" id="hard_code" name="hard" placeholder="硬二维码编号" onkeyup="hsoft()">
+              <button class="btn Confirm-btn hard">硬二维码</button><button class="btn Confirm-btn sends">发送</button>
+               <div class="postget" style="margin-top: 10px;margin-bottom:10px;">
+                  
+                </div>
+              <input type="text" id="paper_code" name="paper" placeholder="软二维码编号" onkeyup="psoft()">
+              <button class="btn Confirm-btn paper">软二维码</button>
+              <input type="hidden" class="user_id" value=""/>
+              <div class="datetime">
+                <input type="text" id="group_name" name="paper" placeholder="群组名称" readonly="readonly">
+                  <select name="p_code" id="device_group_id">
+                    
+                  </select>
+                  <input type="text" id="group_num" name="paper" readonly="readonly" placeholder="群组编号">
+                  <select name="p_code" id="device_group_code">
+                    <option value="A" selected="selected">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="K">K</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="N">N</option>
+                    <option value="O">O</option>
+                      <option value="P">P</option>
+                      <option value="Q">Q</option>
+                      <option value="R">R</option>
+                      <option value="S">S</option>
+                      <option value="T">T</option>
+                      <option value="U">U</option>
+                      <option value="V">V</option>
+                      <option value="W">W</option>
+                      <option value="X">X</option>
+                      <option value="Y">Y</option>
+                      <option value="Z">Z</option>
+                    </option>
+                  </select>
+              </div>
+            <div class="details">
+
+                <div class="postget" style="margin-top: 25px;margin-bottom:25px;">
+                  
+                </div>
+                <input type="text" id="another_name" name="hard" placeholder="运营编码">
+              <div class="postget" style="margin-top: 25px;margin-bottom:25px;">
+                  
+                </div>
+              <div class="action flipInY animated">
+              <span id="hour_show" style="display:none;"></span>
+              <span id="minute_show" style="display:none;"></span>
+              <span id="second_show" style="display:none;"></span>
+              <input type="hidden" id="pcode" value="1">
+              <input type="hidden" id="hcode" value="4">
+                <button class="btn Confirm-btn student_check" id="loading">提交软硬编码及群组信息</button>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+        </div>
+      </div>
+    </div>
+      <menu class="ucenter-menu">
+    <ul>
+        <li id="index" onclick="window.location.href='<?php echo U('index');?>'" class="current ">
+          扫码
+        </li>
+        <li id="deivice" onclick="window.location.href='<?php echo U('device');?>'" class="menu_li">
+          设备列表
+        </li>
+        <li id="group" onclick="window.location.href='<?php echo U('group');?>'" class="menu_li">
+          群组信息列表
+        </li>
+        <li id="personal" onclick="window.location.href='<?php echo U('personal');?>'" class="menu_li">
+          个人信息
+        </li>
+    </ul>
+  </menu>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/zepto.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/frozen.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jsweixin1.0.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+</body>
+<script type="text/javascript">
+wx.config({
+    debug: false,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+    jsApiList: [
+      'scanQRCode',
+    ]
+  });
+function getSNCode(str){
+  var n = str.lastIndexOf("/");
+  return str.substring(n+1);
+}
+var REG = {
+    paper: /^[a-zA-Z]{4}[a-zA-Z0-9]*$/,
+    num: /^[0-9]{10,25}\d*$/,
+    passwd:/^[0-9]{6,8}$/,
+    id:/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[A-Z])$/,
+}
+wx.ready(function () {
+  //点击软编码扫码
+    $(".paper").click(function(){
+        wx.scanQRCode({
+            needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+                var urlt = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+                if((urlt).indexOf("t.7i1.cn")<0){
+                  alert('域名格式不对');
+                  return false;
+                }
+                $('#paper_code').val(getSNCode(urlt));
+                  $.post("<?php echo U('soft_device_code_exists');?>",{device_code:$('#paper_code').val()},function(data){
+                    if(data.msg == 2){
+                      $('#pcode').val(2);
+                    }else{
+                      $('#pcode').val(1);
+                    }
+                  },'json');
+            }
+        });
+    });
+
+  //点击硬编码扫码
+    $(".hard").click(function(){
+        wx.scanQRCode({
+            needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+                var urlt = res.resultStr; 
+                $('#hard_code').val(getSNCode(urlt));
+                $.post("<?php echo U('hard_device_code_exists');?>",{device_command:$('#hard_code').val()},function(data){
+                  if(data.msg == 2){
+                    $('#hcode').val(5);
+                  }else{
+                    $('#hcode').val(4);
+                  }
+                },'json');
+            }
+        });
+    });
+});
+//手动输入软编码
+function psoft(){
+  $.post("<?php echo U('soft_device_code_exists');?>",{device_code:$('#paper_code').val()},function(data){
+    if(data.msg == 2){
+      $('#pcode').val(2);
+    }else{
+      $('#pcode').val(1);
+    }
+  },'json');
+}
+//手动输入硬编码
+function hsoft(){
+  $.post("<?php echo U('hard_device_code_exists');?>",{device_command:$('#hard_code').val()},function(data){
+    if(data.msg == 2){
+      $('#hcode').val(5);
+    }else{
+      $('#hcode').val(4);
+    }
+  },'json');
+}
+Zepto(function($){
+  //测试发送硬编码
+  $('.sends').click(function(){
+    var device_code = $.trim($('#hard_code').val());
+    if(device_code==''){
+      $.dialog({
+              content:'请先扫硬二维码',
+              button:['我知道了']
+          });
+          return false;
+    }
+    var el=$.loading({
+        content:'发送中...'
+    });
+    $.post("<?php echo U('remote_http');?>",{device_command:device_code},function(data){
+    var DG=$.dialog({
+      content:'恭喜您，发送成功！',
+      button:['我知道了']
+    });
+      el.hide();
+      },'json');
+  });
+
+        //自动加载群组信息
+        var el=$.loading({
+            content:'拼命加载中...'
+        });
+        $.post("<?php echo U('query_device_group');?>",function(reg){
+          if(reg.msg==1){
+            $.each(reg.datas,function(i,o){
+              $('#device_group_id').append(
+                '<option value="'+o.id+'">'+o.group_name+'</option>'
+              );
+            });
+          }
+          el.hide();
+        },'json');
+  //点击提交信息
+  var loading=$('#loading');
+  loading.click(function(){
+    var paper_code = $.trim($('#paper_code').val());
+    var device_group_id = $.trim($('#device_group_id').val());
+    var device_group_code = $.trim($('#device_group_code').val());
+    var hard_code = $.trim($('#hard_code').val());
+    var another_name = $.trim($('#another_name').val());
+    if(paper_code==''){
+      $.dialog({
+              content:'请扫软二维码',
+              button:['我知道了']
+      }); 
+      return false;
+    }
+    if(!REG.paper.test(paper_code)){
+      $.dialog({
+              content:'软码是字母和数子组合',
+              button:['我知道了']
+      }); 
+      return false;
+    }
+    if($('#pcode').val() == 2){
+      $.dialog({
+            content:'不存在软编码',
+            button:['我知道了']
+      });
+      return false;
+    }
+    if(hard_code==''){
+      $.dialog({
+              content:'请扫硬二维码',
+              button:['我知道了']
+          });
+          return false;
+    }
+    if(!REG.num.test(hard_code)){
+      $.dialog({
+              content:'硬二维码至少10位数字',
+              button:['我知道了']
+      }); 
+      return false;
+    }
+    if($('#hcode').val() == 4){
+          $.dialog({
+                content:'硬编码已经存在',
+                button:['我知道了']
+          });
+          return false;
+        }
+    if(another_name == ''){
+          $.dialog({
+                content:'请填写设备名',
+                button:['我知道了']
+          });
+          return false;
+        }
+    var el=$.loading({
+          content:'正在提交'
+      });
+      var ords = '';
+      if(device_group_code=='A'){
+        ords=1;
+      }if(device_group_code=='B'){
+        ords=2;
+      }if(device_group_code=='C'){
+        ords=3;
+      }if(device_group_code=='D'){
+        ords=4;
+      }if(device_group_code=='E'){
+        ords=5;
+      }if(device_group_code=='F'){
+        ords=6;
+      }if(device_group_code=='G'){
+        ords=7;
+      }if(device_group_code=='H'){
+        ords=8;
+      }if(device_group_code=='I'){
+        ords=9;
+      }if(device_group_code=='J'){
+        ords=10;
+      }if(device_group_code=='K'){
+        ords=11;
+      }if(device_group_code=='L'){
+        ords=12;
+      }
+      if(device_group_code=='M'){
+        ords=13;
+      }
+      if(device_group_code=='N'){
+        ords=14;
+      }if(device_group_code=='O'){
+        ords=15;
+      }if(device_group_code=='P'){
+          ords=16;
+      }if(device_group_code=='Q'){
+          ords=17;
+      }if(device_group_code=='R'){
+          ords=18;
+      }if(device_group_code=='S'){
+          ords=19;
+      }if(device_group_code=='T'){
+          ords=20;
+      }if(device_group_code=='U'){
+          ords=21;
+      }if(device_group_code=='V'){
+          ords=22;
+      }if(device_group_code=='W'){
+          ords=23;
+      }if(device_group_code=='X'){
+          ords=24;
+      }if(device_group_code=='Y'){
+          ords=25;
+      }if(device_group_code=='Z'){
+          ords=26;
+      }
+      var DATA={
+        device_code:paper_code,
+        hard_device_code:hard_code,
+        device_group_id:device_group_id,
+        device_group_code:device_group_code,
+        another_name:another_name,
+        ords:ords
+      };
+      $.post("<?php echo U('submit_device_infos');?>",DATA,function(reg){
+        if(reg.msg==1){
+          var DG=$.dialog({
+                content:'恭喜您，提交成功！',
+                button:['我知道了']
+          });
+          DG.on('dialog:action',function(e){
+              document.location.href="<?php echo U('device');?>";
+            });
+        }else{
+          $.dialog({
+                content:'网络错误，请重试',
+                button:['我知道了']
+            });
+        }
+      el.hide();
+      },'json');
+  });
+});    
+</script>
+</html>

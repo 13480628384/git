@@ -1,0 +1,91 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Vending/index')}">售货机列表</a></li>
+        <li class="active"><a href="{:U('Vending/edit')}">售货机修改</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Vending/edit_post')}">
+        <fieldset>
+            <div class="control-group">
+                <div class="control-group">
+                    <label class="control-label">归属用户</label>
+                    <div class="controls">
+                        <select name="owner_id">
+                            <volist name="owner_id" id="v">
+                                <option value="{$v.id}" <if condition="$res['owner_id'] eq $v['id']">selected="selected"</if>>{$v.name}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">设备编号</label>
+                    <div class="controls">
+                        <input type="text" name="device_code" value="{$res.device_code}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">设备编码</label>
+                    <div class="controls">
+                        <input type="text" name="device_command" value="{$res.device_command}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">充值价格</label>
+                    <div class="controls">
+                        <textarea name="pay_price">{$res.pay_price}</textarea>
+                    </div>
+                </div><p style="color:#f00;">注：价格1-赠送玫瑰币1,价格2-赠送玫瑰币2,价格3-赠送玫瑰币3</p>
+                <div class="control-group">
+                    <label class="control-label">设备安放位置</label>
+                    <div class="controls">
+                        <input type="text" name="address" value="{$res.address}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">设备类型</label>
+                    <div class="controls">
+                        <select name="device_type">
+                            <option value="1" <if condition="$res['device_type'] eq 1">selected="selected"</if>>投币型</option>
+                            <option value="2" <if condition="$res['device_type'] eq 2">selected="selected"</if>>微信支付型</option>
+                            <option value="3" <if condition="$res['device_type'] eq 3">selected="selected"</if>>支付宝型</option>
+                            <option value="4" <if condition="$res['device_type'] eq 4">selected="selected"</if>>混合型</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">货道数目</label>
+                    <div class="controls">
+                        <select name="number_routes">
+                            <option value="1" <if condition="$res['number_routes'] eq 1">selected="selected"</if>>1</option>
+                            <option value="2" <if condition="$res['number_routes'] eq 2">selected="selected"</if>>2</option>
+                            <option value="3" <if condition="$res['number_routes'] eq 3">selected="selected"</if>>3</option>
+                            <option value="4" <if condition="$res['number_routes'] eq 4">selected="selected"</if>>4</option>
+                            <option value="5" <if condition="$res['number_routes'] eq 5">selected="selected"</if>>5</option>
+                            <option value="6" <if condition="$res['number_routes'] eq 6">selected="selected"</if>>6</option>
+                            <option value="7" <if condition="$res['number_routes'] eq 7">selected="selected"</if>>7</option>
+                            <option value="8" <if condition="$res['number_routes'] eq 8">selected="selected"</if>>8</option>
+                            <option value="9" <if condition="$res['number_routes'] eq 9">selected="selected"</if>>9</option>
+                            <option value="10" <if condition="$res['number_routes'] eq 10">selected="selected"</if>>10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">备注</label>
+                    <div class="controls">
+                        <textarea name="remarks">{$res.remarks}</textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="id" value="{$res.id}">
+                <input type="hidden" name="number" value="{$res.number_routes}">
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+            <a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Organizational/index')}">机构列表</a></li>
+        <li><a href="{:U('Organizational/add')}">添加机构</a></li>
+    </ul>
+    <form class="js-ajax-form" action="{:U('Organizational/listorders')}" method="post">
+
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th width="80">机构编码</th>
+                <th width="220">机构名称</th>
+                <th width="180">归属地区</th>
+                <th width="80">机构类型</th>
+                <th width="180">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+                <volist name="category_list" id="v" key="k">
+                <tr>
+                    <td>{$v.code}</td>
+                    <td><div class="left">
+                        <if condition="admin_id eq 1">
+                            <if condition="$v['parent_id'] eq $v['id']">{$v.name}
+                                <elseif condition="$v['level'] eq 2" />{$v.delimiter}{$v.delimiter}|---{$v.name}
+                                <elseif condition="$v['level'] eq 3" />{$v.delimiter}{$v.delimiter}|---{$v.name}
+                                <else/>{$v.delimiter}{$v.delimiter}|---{$v.name}
+                            </if>
+                        <else/>
+
+                                <if condition="$v['parent_id'] eq $v['id']">{$v.name}
+                                    <else/>{$v.delimiter}{$v.delimiter}|---{$v.name}
+                                </if>
+                        </if>
+                    </div></td>
+                    <!--<td>
+                        <if condition="$v['level'] eq 1 or $v['level'] eq 2 or $v['level'] eq 3">
+                        <font color="red">顶级分类</font><else/>四级
+                        </if>
+                    </td>-->
+                    <td>
+                        {$v.area_name}
+                    </td>
+                    <td>
+                        {$v.type}
+                    </td>
+                    <td align="center">
+                        <a class="btn btn-xs btn-warning" href="{:U('org_edit',array('id'=>$v['id'],'parent_id'=>$v['parent_id'],'area_id'=>$v['area_id']))}">修改 </a>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn" data-msg="你确定要删除吗" href="{:U('org_del',array('id'=>$v['id']))}" data-id="{$v.id}">删除</a>
+                        <a class="btn btn-xs btn-success" href="{:U('org_next_add',array('id'=>$v['id']))}" >添加下级机构 </a>
+                    </td>
+                </tr>
+                </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th width="80">机构编码</th>
+                <th width="220">机构名称</th>
+                <th width="180">归属地区</th>
+                <th width="80">机构类型</th>
+                <th width="180">操作</th>
+            </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

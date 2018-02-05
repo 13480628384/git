@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>订单详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/common.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/accounting.css?1">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/frozen.css">
+    <link rel="stylesheet" href="{$Think.URL}__CSS__/mobi.css?1">
+    <style>
+        .hk-balance-second{
+            height:min-content;
+        }
+        .second-li{
+            border-bottom: 1px solid #ccc;
+        }
+        .add{
+            width: 100%;
+            background: #fff;
+            padding: 10px 10px;
+        }
+        .close {
+            width: 100%;
+            height: 3.33333rem;
+            line-height: 3.33333rem;
+            text-align: center;
+            margin: 0 auto;
+            font-size: .88rem;
+            color: #FFF;
+            position: fixed;
+            background: #b9b4b4;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="hk-balance">
+    <header class="hk-balance-number">
+        {if condition="$res['status'] eq 5"}预定服务关闭
+        {else/}预定服务成功
+        {/if}
+    </header>
+
+    <ul class="hk-balance-second">
+        <li class="second-li">
+            <i class="second-i">商品金额</i>
+            <span class="second-span">￥{$res.price}</span>
+        </li>
+        <li class="second-li">
+            <i class="second-i">服务需求</i>
+            <span class="second-span">{$res.remarks}</span>
+        </li>
+        <li class="second-li">
+            <i class="second-i">订单编号</i>
+            <span class="second-span">{$res.out_trade_no}</span>
+        </li>
+        <li class="second-li"></li>
+        <div class="clear">
+
+        </div>
+    </ul>
+    地址
+    <div class="add">
+        <p>姓名 {$add.name}</p>
+        <p>手机 {$add.phone}</p>
+        <p>地址 {$add.details}</p>
+    </div>
+    <ul class="hk-balance-third">
+        <div class="payaffirm">
+            <div class="item-message">支付总价</div>
+            <span class="payaffirm-price" id="payAmountSpan">￥{$res.price}</span>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div id="thirdPay">
+            <li class="item">
+                <div class="item-imgc">&nbsp;</div>
+                <div class="item-messagea">微信支付</div>
+                <div class="item-select  item-select-bg " data-id="23"></div>
+            </li>
+        </div>
+    </ul>
+    <div {if condition="$res['status'] eq 0"} class="hk-balance-btn" {else/} class="close" {/if}>付款</div>
+</div>
+</body>
+<input type="hidden" class="price" value="{$res.price}">
+<input type="hidden" class="openid" value="{$res.openid}">
+<input type="hidden" class="out_trade_no" value="{$res.out_trade_no}">
+<input type="hidden" class="washing_pay" value="{:url('weixin_place_pay')}">
+<script src="{$Think.URL}__JS__/zepto.js"></script>
+<script src="{$Think.URL}__JS__/frozen.js"></script>
+<script src="{$Think.URL}__JS__/base.js?v17713"></script>
+<script src="{$Think.URL}__JS__/common.js?85"></script>
+<script src="{$Think.URL}__JS__/jquery-1.1.2.min.js?85"></script>
+<script type="text/javascript">
+    Zepto(function($) {
+        $('.hk-balance-btn').tap(function () {
+            var price = $('.price').val();
+            var openid = $('.openid').val();
+            var order_id = $('.out_trade_no').val();
+            if (typeof WeixinJSBridge == "undefined") {
+                if (document.addEventListener) {
+                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                } else if (document.attachEvent) {
+                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                }
+            } else {
+                var jsApiParameters = null;
+                var outTradeNo = null;//商户订单号
+                var isGoToPay = false;
+
+                var washing_pay = $('.washing_pay').val();
+                $.ajax({
+                    type: 'POST',
+                    url: washing_pay,
+                    data: {"price": price, "openid": openid, order_id: order_id},
+                    dataType: "json",
+                    timeout: 3000,
+                    async: false,
+                    success: function (data) {
+                        if (data.code == 200) {
+                            isGoToPay = true;
+                            jsApiParameters = data.jsapi;
+                            outTradeNo = data.out_trade_no;
+                        } else {
+                            alert(data.error);
+                        }
+                    },
+                    error: function (xhr, type) {
+                        alert('支付错误,请重新支付');
+                    }
+                });
+                //判断是否调用支付控件
+                if (isGoToPay) {
+                    var jsPs = eval('(' + jsApiParameters + ')');
+                    WeixinJSBridge.invoke(
+                        'getBrandWCPayRequest',
+                        jsPs,
+                        function (res) {
+                            //WeixinJSBridge.log(res.err_msg);
+                            if (res.err_msg == "get_brand_wcpay_request:ok") {
+                                //更新支付明细
+                                $.ajax({
+                                    type: 'POST',
+                                    url: "",
+                                    data: {
+                                        "out_trade_no": outTradeNo,
+                                        "price": price,
+                                        "openid": $(".openid").val()
+                                    },
+                                    dataType: 'json',
+                                    async: false,
+                                    success: function (data) {
+                                        if (data.code == 200) {
+                                            alert('支付成功');
+                                        } else {
+                                            alert('支付失败');
+                                        }
+                                        canUpdateRemainsum1 = true;
+
+                                    },
+                                    error: function (xhr, type) {
+                                        alert('支付错误，请重新支付');
+                                        canUpdateRemainsum1 = true;
+                                    }
+                                });
+
+                            }
+                        }
+                    );
+                }
+            }
+        });
+    })
+</script>
+</html>
