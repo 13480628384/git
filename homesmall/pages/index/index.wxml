@@ -1,0 +1,24 @@
+
+<view class="container">
+	<scroll-view  class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" style="height: 500px;" bindscrolltolower="scrollLoading">
+		<view class="conference-list">
+			<navigator class="conference-item" wx:for="{{counitylist}}" wx:key="{{item.id}}" url="../yuding/yuding?id={{item.id}}">
+				<view class="conference-item-img" wx:if="{{item.img != ''}}">
+						<image src="{{cururl}} {{item.img}}" mode="aspectFill"></image>
+				
+				</view>
+				<view class="conference-item-text">
+					<view class="conference-item-title">{{item.title}}</view>
+					<view class="conference-item-info activity-item-info">
+						<text class="icon-time">{{item.price}}元</text>
+						<text class="icon-xinxi">{{item.comment}}</text>
+					</view>
+					<view class="conference-item-info">
+						<text class="icon-zuobiao">{{item.remarks}}</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>100?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>

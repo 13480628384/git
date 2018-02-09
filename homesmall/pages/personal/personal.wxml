@@ -1,0 +1,7 @@
+<view class="container">
+	<view class="my-list">
+		<navigator class="my-item" url="">
+		退出登录
+		</navigator>
+	</view>
+</view>

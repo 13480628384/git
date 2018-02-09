@@ -1,0 +1,26 @@
+/*yuding.css*/
+@import"../../wxParse/wxParse.wxss";
+.title{
+  font-size: 20px;
+  width:100%;
+}
+.smalltitle{
+  padding:10px;
+  display:block;
+  width: 100%;
+  font-size: 16px;
+}
+.price{
+  color:#f00;
+}
+.my-item{
+  position:fixed;
+bottom:0px;
+left:0px;
+text-align:center;
+width:100%;
+padding:8px;
+background:#f00;
+color:#fff;
+
+}

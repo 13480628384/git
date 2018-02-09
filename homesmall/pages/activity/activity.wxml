@@ -1,0 +1,53 @@
+<view class="container container-gray">
+	<view class="group">
+		<view class="group-header">
+      订单信息
+    </view>
+		<!--中间内容-->
+    <navigator class="conference-item" wx:for="{{counitylist}}" wx:key="{{item.id}}" url="../activitydetail/activitydetail?id={{item.id}}" style="clear:both">
+     <view class="order-card">
+        <view class='table'>下单时间：{{item.create_date}}
+            <view class='thead'>
+            <view class='tr'>
+                <view colspan="2" class='th'>
+                    <span class="rabbon gray">
+                        <view wx:if="{{item.status == 0}}"> 未付款 </view>
+                        <view wx:elif="{{item.status==1}}"> 成功下单 </view>
+                         <view wx:elif="{{item.status==2}}"> 待服务 </view>
+                          <view wx:elif="{{item.status==3}}"> 服务中 </view>
+                           <view wx:elif="{{item.status==4}}"> 服务完成 </view>
+                           <view wx:elif="{{item.status==5}}"> 交易关闭 </view>
+                       </span>
+                </view>
+            </view>
+            </view>
+            <view class='tbody'>
+            <view class='tr'>
+                <view colspan="2" class='td'>
+                <image class='img' src="{{cururl}} {{item.img}}"></image>
+                    <view class="order-info">
+                        <text>
+                           {{item.title}}
+                        </text>
+                        <text>
+                            服务时间：{{servicetime}}
+                        </text>
+                        <text>
+                            数量：1人
+                        </text>
+                    </view>
+                </view>
+            </view>
+            <view style='clear:both;'></view>
+            <view>
+            <view style='clear:both;'></view>
+                <view style="width:40%;float:left;"><text class="red">¥<text style='font-size:20px;'>{{item.price}}</text></text></view>
+                <view style="width:40%;float:right;"><text class="view">查看</text></view>
+            </view>
+            </view>
+        </view>
+    </view>
+    	</navigator>
+    <!--中间内容end-->
+	</view>
+</view>

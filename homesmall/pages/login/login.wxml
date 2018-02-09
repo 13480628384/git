@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="containerse">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="section">
+    <input bindinput="inputusername" class="phone" placeholder-style="color:#438CD0;" placeholder="请输入手机号码" placeholder-class="username-placeholder" type="number" />
+    <input bindinput="inputpassword" class="password" placeholder-style="color:#438CD0"  placeholder="请输入密码" placeholder-class="password-placeholder"type="password" />
+    <label class="infomess">{{infomess}}</label>
+  </view>
+  <button type="button" hover-class="other-button-hover" class="login-submit" bindtouchstart="mytouchstart" bindtouchend="mytouchend" bindtap="login" size="default">登录</button>
+  <navigator class="login" url="../resigter/resigter" hover-class="navigator-hover">去注册</navigator>
+</view>

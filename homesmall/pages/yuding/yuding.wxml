@@ -1,0 +1,17 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='content'>
+    <image src='{{cuulr}}{{detail.img}}' style='width:100%'></image>
+    <view class='con'>
+      <span class='title'>{{detail.title}}</span>\n
+       <span class='smalltitle'>{{detail.samlltitle}}</span>
+        <span class='price'>{{detail.price}}元</span>
+    </view>
+    <view class='p'>服务介绍</view>
+</view>
+<view class='wxParse'>
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+
+    	<navigator class="my-item" url="../reserve/reserve?id={{detail.id}}">
+		立即预定
+		</navigator>

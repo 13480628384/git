@@ -1,0 +1,62 @@
+
+<view class="container">
+	 <image src='{{cururl}}{{detail.img}}' style='width:100%'></image>
+              <view class='con'>
+                  <span class='title'>{{detail.title}}</span>\n
+                  <span class='smalltitle'>{{detail.samlltitle}}</span>
+                  <span class='price'>{{detail.price}}元</span>
+                </view>
+    <view class="section">  
+          <picker mode="date" value="{{date}}" start="2018-2-01" end="2030-1-23" bindchange="bindDateChange">  
+            <view class="picker">  
+              您希望上门时间: {{dates}}  
+            </view>  
+          </picker>  
+    </view>
+</view>  
+
+<view class="row-wrap">
+     <view class="label" style="float:left;margin-right:12px;">准确时间</view>
+     <picker bindchange="bindCasPickerChange" value="{{casIndex}}" range="{{casArray}}">
+          <view>
+          <text>{{casArray[casIndex]}}</text>
+          </view>
+     </picker>
+</view>
+
+<view class="container">
+    <view class="table">
+        <view class="tr" wx:for="{{counitylist}}">
+            <view class="td">{{item.hour}}已满</view>
+        </view>
+    </view>
+</view>
+<view style="clear:both;"></view>
+ <view class="weui-cells__title">备注</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入备注" style="height: 3.3em" bindinput="remarks"/>
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+</view>
+
+<view class="row-address" style="margin-bottom:100px">
+     <view class="label" style="margin:6px;">选择地址</view>
+      <scroll-view scroll-y="true" style="height:80px;margin-bottom:30px;border:1px solid #ccc;">
+           <radio-group class="radio-group" >  
+              <label class="radio" style="width:100%;display:block" wx:for="{{address}}" >
+                <radio value="{{item.details}}" bindtap='radio' data-id="{{item.id}}" checked="{{item.is_default}}"/>{{item.details}}  
+              </label>  
+          </radio-group>
+      </scroll-view>
+    <navigator url='' class="newadd">
+      新增地址
+    </navigator>
+</view>
+
+
+
+<span class="order" bindtap="changecheck">立即预定</span>
+

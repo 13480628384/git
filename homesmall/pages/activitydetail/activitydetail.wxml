@@ -1,0 +1,50 @@
+<view class="hk-balance">
+    <view class="hk-balance-number">
+        <view wx:if="{{activitydata.status == 5}}"> 预定服务关闭 </view>
+            <view wx:else> 预定服务成功 </view>
+    </view>
+
+    <view class="hk-balance-second">
+        <view class="second-li">
+            <span class="second-i">商品金额</span>
+            <span class="second-span">￥{{activitydata.price}}</span>
+        </view>
+        <view class="second-li">
+            <span class="second-i">服务需求</span>
+            <span class="second-span">{{activitydata.remarks}}</span>
+        </view>
+        <view class="second-li">
+            <span class="second-i">订单编号</span>
+            <span class="second-span">{{activitydata.out_trade_no}}</span>
+        </view>
+        <view class="second-li"></view>
+        <view class="clear">
+
+        </view>
+    </view>
+    <view class="clear">
+
+        </view>
+    <view class="add">
+        <view>姓名 {{activitydata.name}}</view>
+        <view>手机 {{activitydata.phone}}</view>
+        <view>地址 {{activitydata.details}}</view>
+    </view>
+    <view class="hk-balance-third">
+        <view class="payaffirm">
+            <view class="item-message">支付总价</view>
+            <span class="payaffirm-price" id="payAmountSpan">￥{{activitydata.price}}</span>
+            <view class="clear">
+
+            </view>
+        </view>
+        <view id="thirdPay">
+            <view class="item">
+                <view class="item-imgc"><icon type="success" size="30"/></view>
+                <view class="item-messagea">微信支付</view>
+                <view class="item-select  item-select-bg " data-id="23"></view>
+            </view>
+        </view>
+    </view>
+    <view  class="hk-balance-btn" >付款</view>
+</view>

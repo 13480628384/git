@@ -1,0 +1,139 @@
+/**app.wxss**/
+page{
+	height: 100%;
+	color: #333;
+  	display: flex;
+  	flex-direction: column;
+ 	font: normal 30rpx/1.68 -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+.container {
+	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+ 	box-sizing: border-box;
+}
+.container-body{
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.container-footer{
+	width: 100%;
+	display: flex;
+	height: 88rpx;
+	border-top: 1rpx solid #ddd;
+	background: #fff;
+}
+.container-footer text{
+	flex: 1;
+	display: block;
+	text-align: center;
+	height: 88rpx;
+	line-height: 88rpx;
+	font-size: 34rpx;
+	border-left: 1rpx solid #ddd;
+}
+.container-footer text:first-child{
+	border-left: none;
+}
+.container-footer .btn-block{
+	border-radius: 0;
+}
+.container-footer .btn-block:after{
+	border: none;
+}
+.container-gray{
+	background: #f9f9f9;
+}
+
+
+ .order-card {
+     border: 1px solid #d7d7d7;
+     background: #fff;
+     width: 95%;
+     margin: 0 auto;
+     border-radius: 8px;
+ }
+ .order-card .table {
+     width: 100%;
+ }
+ .table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ .order-card .th {
+     color: #999;
+     text-align: left;
+     position: relative;
+     padding: 9px 0 9px 80px;
+     font-weight: normal;
+     line-height: 14px;
+ }
+ .order-card tbody .tr {
+     border-top: 1px solid #e0e0e0;
+ }
+ .order-card .rabbon {
+     display: block;
+     color: #fff;
+     width:74px;
+     text-align: center;
+     position: absolute;
+     padding: 3px 0;
+     top: 50%;
+     margin-top: -10px;
+     left: -1px;
+ }
+ .order-card .tbody .td[colspan="2"] {
+     padding: 10px;
+     font-size: 14px;
+     line-height: 16px;
+ }
+ .order-card .img {
+     width: 40%;
+     height:100px;
+
+ }
+ .order-card .order-info {
+    float:right;
+     display: inline-block;
+     width: 58%;
+     vertical-align: top;
+     padding-left: 10px;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     font-size: 12px;
+     line-height: 17px;
+     clear: both;
+ }
+ .group{
+   background: #fff;
+ }
+ .tbody .tr{
+   padding: 16px;
+ }
+ .order-card .red {
+     padding-left: 10px;
+ }
+ .order-card .red strong {
+     font-size: 18px;
+ }
+ .order-card .view {
+     border-left: 1px solid #e0e0e0;
+     color: inherit;
+     float: right;
+     height: 30px;
+     line-height: 30px;
+     padding: 5px;
+     text-align: center;
+     width: 100%;
+ }
+ .red {
+     color: #df006e !important;
+ }
+ .gray {
+     background: #ccc;
+ }
+ .margin30{
+     margin-bottom: 70px;
+ }
