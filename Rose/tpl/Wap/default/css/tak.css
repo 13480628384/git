@@ -1,0 +1,106 @@
+.ucenter-data li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    line-height:23px;
+}
+.um-list li i:first-child {
+    position: absolute;
+    left: -4px;
+    top: 13px;
+    width: 25px;
+    height: 25px;
+}
+.ucenter-menu{padding: 0px;}
+.icon-top{
+    top: 8px !important;
+}
+.ucenter-menu li{
+    line-height: 50px;
+}
+.hard,.paper{
+    background-color: #0894ec;
+    width: 25%;
+    height: 44px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 2%;
+    text-align: center;
+}
+.status{
+    width: 200px;
+    height: 45px;
+}
+.Mask-from{
+    padding:10px;
+}
+.Mask-input{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    color: rgb(176, 176, 176);
+    position: relative;
+}
+.Mask-content.Mask-gai{
+    margin-top:150px !important;
+    background: #fff;
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#reform{
+    width: 90%;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.Mask-title{
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.Mask-btn{
+    padding: 10px;
+    display: -webkit-box;
+}
+.Mask-tab-btn{
+    -webkit-box-flex: 1;
+    text-align: center;
+    background-color: #e0e0e0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.check{
+    margin-right: 0;
+    background-color: #134c2f;
+    color: #fff;
+}
+.Mask{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100% !important;
+    background-color: rgba(0,0,0, 0.6) !important;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 9999;
+}
+.Mask.is-visible{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}

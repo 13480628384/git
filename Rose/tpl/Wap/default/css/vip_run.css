@@ -1,0 +1,21 @@
+/*会员运营商*/
+.vip_run .vip_run_top{ height:7rem;background:#2ebe74; text-align: center;}
+.vip_run .vip_run_top img{width: 5rem;margin-right: 1rem;border-radius: 50%;height: 5rem;}
+.vip_run .vip_run_top span{ height: 7rem;line-height: 7rem; color: #fff; font-size: 1.8rem;}
+.vip_run .height20{ height: 1rem;background: #f2f2f2;}
+.vip_run .vip_run_tab{ height: 3.5rem;line-height: 3.5rem; background: #fff;border-top: solid 1px #2ebe74;}
+.vip_run .vip_run_tab li{font-size: 1.7rem; height: 3.5rem;line-height: 3.5rem; float: left;width: 33%;text-align: center;}
+.vip_run .vip_run_tab .active{background:#2ebe74; color: #fff;}
+.vip_run .vip_run_tabli2{border-left: solid 1px #2ebe74; border-right: solid 1px #2ebe74; }
+.vip_run .vip_run_con{background: #fff; border-top: solid 1px #2ebe74; border-bottom: solid 1px #2ebe74; margin-bottom: 2rem}
+.vip_run .vip_run_con li{width: 90%; margin:auto; border-bottom:dashed 1px #2ebe74; height: 3rem;line-height: 3rem;}
+.vip_run .vip_run_con span{display: block; float: left;}
+.vip_run .vip_run_con .vip_run_con_span2{width: 35%}
+.vip_run .vip_run_con .vip_run_con_span2{text-align: right;font-size: 1.5rem;color: #666;width: 65%;float: right;}
+.vip_run .vip_run_con .vip_run_con_span2 .vip_run_con_img1{width: 1rem;}
+.vip_run .vip_run_con .vip_run_con_span2 .vip_run_con_img2{width: 4rem;}
+.vip_run .vip_run_con .vip_run_con_span2 .vip_run_con_img3{width: 2.5rem;}
+.vip_run .vip_run_con_span1{color: #172b1c; font-size: 1.5rem}
+.vip_run .vip_run_endp{font-size: 1.5rem; font-weight: normal;line-height: 3rem;
+	height: 3rem;color: #172b1c; text-align: center; border-top:solid 1px #2ebe74;
+	border-bottom:solid 1px #2ebe74; margin-bottom: 9rem;}

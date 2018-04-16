@@ -1,0 +1,30 @@
+[ 2018-03-13T09:51:10+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.082004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.152008s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.269015s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.131008s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.225013s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-22.019260s ]
+INFO: [ view_template ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 117 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 121 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 137 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-22.082263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228013s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-22.311276s ]
+INFO: Run TokenBuild Behavior [ RunTime:-22.328277s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-22.345278s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-22.365280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-22.389281s ]
+INFO: [ view_end ] --END-- [ RunTime:0.022001s ]
+

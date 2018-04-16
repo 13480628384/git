@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>群组信息列表</title>
+</head>
+<body>
+<div class="facility">
+    <table width="100%" align="center" >
+        <tr >
+            <td width="14.6%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">编号</td>
+            <td width="24.6%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">设备编码</td>
+            <td width="14.6%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">状态</td>
+            <td width="14.6%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">类型</td>
+            <td width="14.6%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1 style2">操作</td>
+        </tr>
+        <if condition="$res neq null">
+            <volist name="res" id="v">
+                <tr >
+                    <td width="14.6%" align="center" valign="middle" class="style3">{weikucms:$v.group_word}</td>
+                    <td width="24.6%" align="center" valign="middle" class="style3">{weikucms:$v.device_code}</td>
+                    <td width="14.6%" align="center" valign="middle" class="style3">
+                        <if condition="$v['online_status'] eq 1">在线<else/>离线</if></td>
+                    <td width="14.6%" align="center" valign="middle" class="style3">
+                        <if condition="$v['device_type'] eq 4">按摩椅
+                            <elseif condition="$v['device_type'] eq 1"/>娃娃机
+                            <elseif condition="$v['device_type'] eq 2"/>充电器
+                            <elseif condition="$v['device_type'] eq 3"/>售货机
+                            <elseif condition="$v['device_type'] eq 4"/>按摩椅
+                            <elseif condition="$v['device_type'] eq 5"/>洗衣机
+                            <elseif condition="$v['device_type'] eq 6" />电动车
+                            <elseif condition="$v['device_type'] eq 7" />洗车
+                            <elseif condition="$v['device_type'] eq 8" />厕纸
+                        </if>
+                    </td>
+                    <td width="14.6%" align="center" valign="middle" class="style2 style3">
+                        <a href="{weikucms::U('update_group_detail_list',array('openid'=>$openid,'id'=>$v['id'],'device_type'=>$v['device_type']))}">修改</a></td>
+                </tr>
+            </volist>
+        </if>
+    </table>
+</div>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+</html>

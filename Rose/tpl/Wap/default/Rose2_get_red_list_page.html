@@ -1,0 +1,8 @@
+<volist name="give_list" id="v">
+    <tr>
+        <td width="20%" align="center" valign="middle" class="style3">{weikucms:$v.nickname}</td>
+        <td width="20%" align="center" valign="middle" class="style3">+{weikucms:$v.total}</td>
+        <td width="35%" align="center" valign="middle" class="style3">{weikucms:$v.create_date}</td>
+        <td width="25%" align="center" valign="middle" class="style2 style3"><php>echo str_substr($v['content'],5)</php></td>
+    </tr>
+</volist>

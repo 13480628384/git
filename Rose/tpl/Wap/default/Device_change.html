@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mui.min.css">
+    <title>转移设备</title>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">转移设备</h1>
+</header>
+<div class="mui-content">
+    <h5 class="mui-content-padded">请选择转移设备</h5>
+    <div class="mui-card">
+        <div class="mui-input-row mui-search">
+            <input type="search" class="mui-input-clear search" placeholder="请输入要转移设备的用户手机号码">
+        </div>
+        <form class="mui-input-group ">
+            <volist name="res" id="v">
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>设备码 : &nbsp;&nbsp;{weikucms:$v.device_code}</label>
+                    <input name="checkbox" value="{weikucms:$v.id}" type="checkbox" class="checkbox">
+                    <p class="nesx" style="display: none" dataid="{weikucms:$v.device_command}"></p>
+                </div>
+            </volist>
+        </form>
+    </div>
+    <div class="mui-button-row">
+        <button type="button" class="mui-btn mui-btn-primary" style="margin-bottom:60px;">确认</button>
+    </div>
+</div>
+<input type="hidden" id="groupid" value=""/>
+<input type="hidden" id="di_id" value=""/>
+<input type="hidden" id="update" value="{weikucms::U('update_price')}"/>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/mui.min.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    mui('.mui-input-group').on('change', 'input', function() {
+        var value = this.checked?"true":"false";
+        this.nextElementSibling.innerText=value;
+        if(this.nextElementSibling.innerText == 'true'){
+            this.nextElementSibling.setAttribute('class','nadd');
+        }else{
+            this.nextElementSibling.setAttribute('class','nesx');
+        }
+    });
+    $('.mui-btn-primary').click(function(){
+        if($(this).hasClass('on')){
+            return false;
+        }
+        var text1='';
+        $(".checkbox").next(".nadd").each(function() {
+            if ($(this).attr("dataid")) {
+                 text1 += $(this).attr("dataid")+",";
+            }
+        });
+        var text1=text1.substring(-1,text1.length-1);
+        var user_name = $('.search').val();
+        if(user_name == ''){
+            //mui.toast('用户不能为空');
+            alert('用户手机号码不能为空');
+            return false;
+        }
+        if(text1 == ''){
+            //mui.toast('请选择设备');
+            alert('请选择设备');
+            return false;
+        }
+        $('.mui-btn-primary').addClass('on').html('设备转移中...');
+        $.post("{weikucms::U('changeing')}",{text1:text1,user_name:user_name},function(data){
+            if(data.code == 201){
+                alert(data.msg);
+            }else{
+                alert(data.msg);
+                window.location.href=window.location.href;
+            }
+            $('.mui-btn-primary').removeClass('on').html('确认');
+        },'json');
+    })
+</script>
+</html>

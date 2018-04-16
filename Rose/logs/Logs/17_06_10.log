@@ -1,0 +1,474 @@
+[ 2017-06-10T23:46:44+08:00 ] 117.136.79.150 /Rose/index.php?g=Wap&m=CommonWeixin&a=vehicle_pay
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002432s ]
+SQL: INSERT INTO `weixin_pay_rec` (`id`,`app_id`,`from_username`,`pay_status`,`out_trade_no`,`pay_account`,`contents`,`create_date`,`create_by`,`update_by`,`update_date`) VALUES ('2017061023_6E2E46ACF9F81DBA591F48661D841520','wx6a9d4afeace38e53','odOIPv68bdVaRv8-ZeKCzbW7XeCE','0','20170610234643_2D9A440477D8','5','{\"appId\":\"wx6a9d4afeace38e53\",\"timeStamp\":\"1497109604\",\"nonceStr\":\"03f6n04182r905ys3dp55uub6cpkywgz\",\"package\":\"prepay_id=wx201706102346444a483913b10841268519\",\"signType\":\"MD5\",\"paySign\":\"AB9D0031E2DD9C92636BC9C0D3C665D4\"}','2017-06-10 23:46:44','1','1','2017-06-10 23:46:44') [ RunTime:0.002522s ]
+
+[ 2017-06-10T23:46:53+08:00 ] 117.136.79.150 /Rose/index.php?g=Wap&m=CommonWeixin&a=vehicle_update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002347s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002463s ]
+SQL: UPDATE `weixin_pay_rec` SET `pay_status`=1,`update_date`='2017-06-10 23:46:53',`update_by`=2 WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `out_trade_no` = '20170610234643_2D9A440477D8' ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) [ RunTime:0.047221s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = 1 ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) LIMIT 1   [ RunTime:0.019467s ]
+SQL: UPDATE `weixin_userinfo` SET `pay_total_account`=50,`update_date`='2017-06-10 23:46:53',`update_by`=2 WHERE ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) [ RunTime:0.001783s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.018548s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002285s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.033808s ]
+
+[ 2017-06-10T23:47:00+08:00 ] 117.136.79.150 /Rose/index.php?g=Wap&m=AlipayCommon&a=vehicle_start
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: times /home/wwwroot/wxpay.roseo2o.com/Rose/Lib/Action/Wap/AlipayCommonAction.class.php 第 1223 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002332s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.018477s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002715s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.034343s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.002242s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `online_status` = 0 ) AND ( `device_command` = '4689096' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.002613s ]
+SQL: SHOW COLUMNS FROM `command_info` [ RunTime:0.002432s ]
+SQL: INSERT INTO `command_info` (`id`,`cmd_id`,`di_id`,`deivce_command`,`status`,`resp_status`,`device_type`,`create_date`,`update_by`,`update_date`) VALUES ('2017061023_9EBADE1AB87F949739B49490BBC47BF8','6e17c020-2b5e-59fc-9400-1310dc1a3fea','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','1','100','6','2017-06-10 23:47:00','1','2017-06-10 23:47:00') [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.002259s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `id` = '2017021517_8B2D0D2842BABF7D265021EDC5D796CA' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001777s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017061023_81196F4453772D7BFF987B366C29E7DD','wx6a9d4afeace38e53','odOIPv68bdVaRv8-ZeKCzbW7XeCE',1,'1','1','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','6e17c020-2b5e-59fc-9400-1310dc1a3fea','2017-06-10 23:47:00','2017050809_65D441FD86B2265BC7E145A5FF04EA44','1','13','2017-06-10 23:47:00') [ RunTime:0.001899s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` IN ('1','2') ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) LIMIT 1   [ RunTime:0.049377s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002333s ]
+SQL: UPDATE `weixin_userinfo` SET `consume_total_account`=46,`update_date`='2017-06-10 23:47:00',`update_by`='4' WHERE ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) [ RunTime:0.001959s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.019829s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.036136s ]
+
+[ 2017-06-10T23:47:06+08:00 ] 117.136.79.150 /Rose/index.php?g=Wap&m=AlipayCommon&a=vehicle_start
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: times /home/wwwroot/wxpay.roseo2o.com/Rose/Lib/Action/Wap/AlipayCommonAction.class.php 第 1223 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002035s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.019771s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002058s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.037462s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.002347s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `online_status` = 0 ) AND ( `device_command` = '4689096' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.002425s ]
+SQL: SHOW COLUMNS FROM `command_info` [ RunTime:0.001991s ]
+SQL: INSERT INTO `command_info` (`id`,`cmd_id`,`di_id`,`deivce_command`,`status`,`resp_status`,`device_type`,`create_date`,`update_by`,`update_date`) VALUES ('2017061023_075B8ED7EDFC755A48059FBBED2640AA','01c927f8-9642-5108-b651-c27afe916d24','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','1','100','6','2017-06-10 23:47:06','1','2017-06-10 23:47:06') [ RunTime:0.001515s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.001941s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `id` = '2017021517_8B2D0D2842BABF7D265021EDC5D796CA' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001481s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017061023_A1F1F94BBE11B7CCC5D89C7C47DCFB3C','wx6a9d4afeace38e53','odOIPv68bdVaRv8-ZeKCzbW7XeCE',1,'1','1','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','01c927f8-9642-5108-b651-c27afe916d24','2017-06-10 23:47:06','2017050809_65D441FD86B2265BC7E145A5FF04EA44','1','13','2017-06-10 23:47:06') [ RunTime:0.001592s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` IN ('1','2') ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) LIMIT 1   [ RunTime:0.048778s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002298s ]
+SQL: UPDATE `weixin_userinfo` SET `consume_total_account`=47,`update_date`='2017-06-10 23:47:06',`update_by`='4' WHERE ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) [ RunTime:0.001755s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.020376s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.034542s ]
+
+[ 2017-06-10T23:47:12+08:00 ] 117.136.79.150 /Rose/index.php?g=Wap&m=AlipayCommon&a=vehicle_start
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Undefined index: times /home/wwwroot/wxpay.roseo2o.com/Rose/Lib/Action/Wap/AlipayCommonAction.class.php 第 1223 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002301s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.018777s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002401s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.034928s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.002372s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `online_status` = 0 ) AND ( `device_command` = '4689096' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.002534s ]
+SQL: SHOW COLUMNS FROM `command_info` [ RunTime:0.002270s ]
+SQL: INSERT INTO `command_info` (`id`,`cmd_id`,`di_id`,`deivce_command`,`status`,`resp_status`,`device_type`,`create_date`,`update_by`,`update_date`) VALUES ('2017061023_3A3EC4FF72E2515CE11F85CC4248C2CE','105b5dcf-b13f-5ec1-9463-639fbbf1decf','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','1','100','6','2017-06-10 23:47:12','1','2017-06-10 23:47:12') [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.002273s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `id` = '2017021517_8B2D0D2842BABF7D265021EDC5D796CA' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001804s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017061023_527862B1757C36863CB18475865899C5','wx6a9d4afeace38e53','odOIPv68bdVaRv8-ZeKCzbW7XeCE',1,'1','1','2017021517_8B2D0D2842BABF7D265021EDC5D796CA','4689096','105b5dcf-b13f-5ec1-9463-639fbbf1decf','2017-06-10 23:47:12','2017050809_65D441FD86B2265BC7E145A5FF04EA44','1','13','2017-06-10 23:47:12') [ RunTime:0.001688s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` IN ('1','2') ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) LIMIT 1   [ RunTime:0.051202s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002632s ]
+SQL: UPDATE `weixin_userinfo` SET `consume_total_account`=48,`update_date`='2017-06-10 23:47:12',`update_by`='4' WHERE ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) [ RunTime:0.001949s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.020884s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv68bdVaRv8-ZeKCzbW7XeCE' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.033777s ]
+
+[ 2017-06-10T23:53:24+08:00 ] 183.28.171.84 /Rose/index.php?g=Wap&m=Washing&a=index&openid=odOIPv8MLToF0lXhLHtJWDJQJxxI&scan_code=ZHGZPY00163
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002117s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.018068s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002034s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.034148s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.002177s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00163' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.001993s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_AE6754A90876C866F93AD916AC35DCC7' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 5 ) LIMIT 1   [ RunTime:0.001744s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.001951s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.002021s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.002334s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT su.phone FROM sys_user su LEFT JOIN device_info di on di.office_id=su.office_id WHERE ( di.scan_code = 'ZHGZPY00163' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001584s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.279603s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 146 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 175 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' /home/wwwroot/wxpay.roseo2o.com/Rose/logs/Cache/Wap/10be5c25e7bfb9dee96182ecf11a1870.php 第 77 行.
+NOTIC: [8] Undefined variable: buyer_id /home/wwwroot/wxpay.roseo2o.com/Rose/logs/Cache/Wap/10be5c25e7bfb9dee96182ecf11a1870.php 第 90 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.280156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009753s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.289932s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.290256s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.290590s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.290813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.291356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-06-10T23:53:36+08:00 ] 183.28.171.84 /Rose/index.php?g=Wap&m=AlipayCommon&a=start
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.002296s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.018336s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.002295s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.034450s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.002438s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `online_status` = 0 ) AND ( `device_command` = '4581272' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `command_info` [ RunTime:0.002402s ]
+SQL: INSERT INTO `command_info` (`id`,`cmd_id`,`di_id`,`deivce_command`,`status`,`resp_status`,`device_type`,`create_date`,`update_by`,`update_date`) VALUES ('2017061023_A7571F99DC2AC2092CF336DAE8F66507','81263fd4-3b49-5212-a11c-7ddc569a5f75','2016123010_AE6754A90876C866F93AD916AC35DCC7','4581272','1','100','5','2017-06-10 23:53:35','1','2017-06-10 23:53:35') [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.002305s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `id` = '2016123010_AE6754A90876C866F93AD916AC35DCC7' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001706s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017061023_7C88F41678F104BE035CDAB67C3427D1','wx6a9d4afeace38e53','odOIPv8MLToF0lXhLHtJWDJQJxxI',1,'1','1','2016123010_AE6754A90876C866F93AD916AC35DCC7','4581272','81263fd4-3b49-5212-a11c-7ddc569a5f75','2017-06-10 23:53:35','2017022015_691D63AE6A6E187E67034C1940C03651','1','9','2017-06-10 23:53:35') [ RunTime:0.001793s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017061023_9E0EB5D7BA2984C6B0D6555985864DB6','wx6a9d4afeace38e53','odOIPv8MLToF0lXhLHtJWDJQJxxI',1,'1','1','2016123010_AE6754A90876C866F93AD916AC35DCC7','4581272','81263fd4-3b49-5212-a11c-7ddc569a5f75','2017-06-10 23:53:35','2017022015_691D63AE6A6E187E67034C1940C03651','1','9','2017-06-10 23:53:35') [ RunTime:0.001668s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` IN ('1','2') ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) LIMIT 1   [ RunTime:0.051976s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002507s ]
+SQL: UPDATE `weixin_userinfo` SET `consume_total_account`=27,`update_date`='2017-06-10 23:53:35',`update_by`='4' WHERE ( `app_id` = 'wx6a9d4afeace38e53' ) AND ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) [ RunTime:0.002032s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `pay_status` = '1' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.020098s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv8MLToF0lXhLHtJWDJQJxxI' ) AND ( `is_close` = 0 ) AND ( `del_flag` = 0 ) AND ( `command_status` IN ('1','2') ) LIMIT 1   [ RunTime:0.042247s ]
+
+[ 2017-06-10T23:59:35+08:00 ] 117.136.79.24 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&code=031R2mS61B15lR19TPP61d2iS61R2mSm&state=STATE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/wwwroot/wxpay.roseo2o.com/Rose/Lib/Action/Wap/Rose2BaseAction.class.php 第 2 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /home/wwwroot/wxpay.roseo2o.com/Rose/Lib/Action/Wap/WxPay.JsApiPay.php 第 165 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Driver/Db/DbMysql.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.002252s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv1mkIvSAYTLwBV_H7zA7a0g' ) LIMIT 1   [ RunTime:0.001761s ]
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.002213s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv1mkIvSAYTLwBV_H7zA7a0g' ) LIMIT 1   [ RunTime:0.007514s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = '2017050217_F9687B1387526F4196693B06D22B30D9'
+            AND di.del_flag = 0 [ RunTime:0.001834s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+            AND pwi.create_by = '2017050217_00309051E6B407BAD966DE06295D7D90'
+            AND di.del_flag = 0 [ RunTime:0.054872s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+            AND pwi.create_by = '2017050217_00309051E6B407BAD966DE06295D7D90'
+            AND di.del_flag = 0 [ RunTime:0.047425s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = '2017050217_F9687B1387526F4196693B06D22B30D9'
+            AND di.del_flag = 0 [ RunTime:0.042835s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = '2017050217_F9687B1387526F4196693B06D22B30D9'
+            AND di.del_flag = 0 [ RunTime:0.043457s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.002054s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = '2017050217_F9687B1387526F4196693B06D22B30D9' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:0.046071s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv1mkIvSAYTLwBV_H7zA7a0g' ) LIMIT 1   [ RunTime:0.002009s ]
+SQL: UPDATE `sys_user` SET `totals`=878 WHERE ( `del_flag` = 0 ) AND ( `id` = '2017050217_00309051E6B407BAD966DE06295D7D90' ) [ RunTime:0.002785s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Core/Db.class.php 第 555 行.
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv1mkIvSAYTLwBV_H7zA7a0g' ) LIMIT 1   [ RunTime:0.001747s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.908290s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 146 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 336 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 341 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 175 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /home/wwwroot/wxpay.roseo2o.com/Rose/Core/Lib/Template/ThinkTemplate.class.php 第 115 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.908898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009381s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.918305s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.918602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.918918s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.919139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.919562s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000457s ]
+

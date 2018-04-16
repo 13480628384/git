@@ -1,0 +1,89 @@
+<html><head>
+    <title>登录</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="tpl/Wap/default/css/mobi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        .logo{
+            text-align: center;
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div class="space-20"></div>
+<h1 class="logo animated fadeInDown">售货机</h1>
+<div class="space-20"></div>
+
+<section class="account-form">
+    <div class="af-row">
+        <label for="login_phone"><i class="icon-phone"></i></label>
+        <input type="text" pattern="[0-9]*" placeholder="您的手机号码" id="login_phone" value="">
+    </div>
+    <div class="af-row">
+        <label for="login_passwd"><i class="icon-lock"></i></label>
+        <input type="password" pattern="[0-9]*" placeholder="请输入密码" id="login_passwd" value="">
+    </div>
+</section>
+<aside class="account-text"><a href="">忘记密码？</a></aside>
+<aside class="account-submit">
+    <button class="ui-btn-lg ui-btn-danger" type="button" id="J_submitLogin">登录</button>
+</aside>
+
+<footer class="foot">
+    深圳玫瑰物联</footer>
+<div class="space-50"></div>
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<script src="tpl/Wap/default/js/zepto.js"></script>
+<script src="tpl/Wap/default/js/frozen.js"></script>
+<script type="text/javascript">
+    Zepto(function($){
+        $("#J_submitLogin").tap(function(){
+            var phone = $('#login_phone').val();
+            var passwd = $('#login_passwd').val();
+            var openid = $('.openid').val();
+            if(phone == ''){
+                $.dialog({
+                    content: '请输入手机号码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            if(passwd == ''){
+                $.dialog({
+                    content: '请输入密码',
+                    button: ['ok']
+                });
+                return false;
+            }
+            var el=$.loading({
+                content:'正在登录'
+            });
+            $.post("",{phone:phone,passwd:passwd,openid:openid},function(data){
+                el.hide();
+                if(data.code == 200){
+                    var DG = $.dialog({
+                        content:data.msg,
+                        button: ['ok']
+                    });
+                    DG.on('dialog:action',function(e){
+                        document.location.href=data.url;
+                    });
+                }else{
+                    $.dialog({
+                        content: data.msg,
+                        button: ['ok']
+                    });
+                    return false;
+                }
+            },'json');
+        });
+    })
+</script>
+</body></html>

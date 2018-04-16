@@ -1,0 +1,11 @@
+<volist name="balance" id="v">
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+    <div class="tab_date">
+        <div class="tab_num1">  {weikucms:$v.consume_account}</div>
+        <div class="tab_dev1" style="width: 40%;text-align: center;"><if condition="$v['command_status'] eq '1' OR $v['command_status'] eq '2'">成功
+            <else/>已退币
+        </if></div>
+        <div class="tab_ear1" style="width: 30%">{weikucms:$v.create_date}</div>
+    </div>
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+</volist>

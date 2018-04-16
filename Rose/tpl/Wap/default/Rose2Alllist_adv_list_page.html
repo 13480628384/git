@@ -1,0 +1,8 @@
+<volist name="adv_list" id="v">
+    <tr>
+        <td width="20%" align="center" valign="middle" class="style3"><if condition="$v['type'] eq 1">订阅号<else/>服务号</if></td>
+        <td width="30%" align="center" valign="middle" class="style3">{weikucms:$v.per_price}</td>
+        <td width="30%" align="center" valign="middle" class="style3"><php>echo substr($v['create_date'],0,10)</php></td>
+        <td width="20%" align="center" valign="middle" class="style2 style3"><if condition="$v['consume_status'] eq 1">无效<else/>有效</if></td>
+    </tr>
+</volist>

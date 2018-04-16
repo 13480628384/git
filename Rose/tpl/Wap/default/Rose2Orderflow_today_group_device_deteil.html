@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/report_forms.css" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>流水报表</title>
+    <style>
+        .tab-yf-box-main-name,.tab_ear1{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+<div class="report_forms">
+    <div id="tabbox">
+        <ul class="tabs" id="tabs">
+            <div class="tabs_return" onclick='javascript:history.go(-1)'><img src="./tpl/Wap/default/img/left.png" alt="" width="30%"></div>
+            <li style="width: 60%;color: #2EBE74;height: 3rem;font-size: 2rem;">24小时</li>
+            <div class="clear"></div>
+        </ul>
+        <ul class="tab_conbox" id="tab_conbox">
+            <div class="tab-yf-box-main f14">
+                <div class="tab-yf-box-main-name">
+                    <div>消费时间</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>二维码编号</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>编号</div>
+                </div>
+                <div class="tab-yf-box-main-time">
+                    <div>价格</div>
+                </div>
+                <div class="tab-yf-box-main-time">
+                    <div>操作</div>
+                </div>
+            </div>
+            <!-- 每周内容 -->
+            <li class="tab_con ">
+                <volist name="balance" id="v">
+                <div style="height: 0.5rem; background: #f2f2f2"></div>
+                <div class="tab_date">
+                    <div class="tab_ear1"><php>echo substr($v['create_date'],10)</php></div>
+                    <div class="tab_ear1"><span>{weikucms:$v.code}</span><p></p></div>
+                    <div class="tab_ear1"><span>{weikucms:$v.group_word}</span><p></p></div>
+                    <div class="tab_ear1">{weikucms:$v.consume_account}元</div>
+                    <div class="tab_ear1" ><span><if condition="$v['consume_status'] eq 1">有效<else/>无效</if></span><p></p></div>
+                </div>
+                <div style="height: 0.5rem; background: #f2f2f2"></div>
+                </volist>
+            </li>
+            <div id="now_add">正在玩命加载中...</div>
+        </ul>
+    </div>
+</div>
+<input type="hidden" class="di_id" value="{weikucms:$di_id}">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+<script>
+    var n=0;
+    var stop=0;
+    var timeOut = null;
+    $(document).scroll(function(){
+        if(stop==1){
+            return false;
+        }
+        //滚动条顶部的偏移==总个文档的高度-窗口的高度
+        var diff = Number($(window).height()) + Number(20);
+        if($(document).height() - $(window).scrollTop() < diff){
+            if(timeOut != null) {
+                return false;
+            }
+            $('#now_add').css('display','block');
+            n++;
+            timeOut = setTimeout(function(){//1秒加载一次
+                var di_id = $('.di_id').val();
+                $.post('',{"n": n,di_id:di_id},function(html){
+                    if($.trim(html).length>0){
+                        $(html).appendTo('.tab_con');
+                        timeOut=null;
+                    }else{
+                        $('#now_add').html('没有啦');
+                        stop=1;
+                    }
+                },'html');
+            },1000);
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css?v1">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/vase.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>我的玫瑰花瓶</title>
+</head>
+<body style="background: #fff">
+<!-- 头部 -->
+<div class="head">
+    <a href="" class="head-lf"></a>
+    <span class="head-ct">我的玫瑰花瓶</span>
+    <span class="head-ri head-ri-add"></span>
+</div>
+<!--我的玫瑰花瓶主页-->
+<div class="vase-home">
+    <div class="vase-home-top">
+        <p>
+            <span class="vase-home-top-span1">USR ID</span>
+            <span class="vase-home-top-span2">{weikucms:$rose.rose_id}</span>
+        </p>
+        <p>
+            <span class="vase-home-top-span1">送玫瑰给</span>
+            <span class="vase-home-top-span2">{weikucms:$rose.nickname}</span>
+        </p>
+    </div>
+    <form action="" class="vase-home-form">
+        <ul >
+            <li class="vase-home-form-img1" datanumber='1' dataprice="0.1"><img src="./tpl/Wap/default/img/mg2.png" alt=""></li>
+            <li class="vase-home-form-img2" datanumber='10' dataprice="1"><img src="./tpl/Wap/default/img/mg3.png" alt=""></li>
+            <li class="vase-home-form-img3" datanumber='20' dataprice="2"><img src="./tpl/Wap/default/img/mg4.png" alt=""></li>
+            <li class="vase-home-form-img4" datanumber='50' dataprice="5"><img src="./tpl/Wap/default/img/mg5.png" alt=""></li>
+            <li class="vase-home-form-img5" datanumber='100' dataprice="10"><img src="./tpl/Wap/default/img/mg6.png" alt=""></li>
+            <li class="vase-home-form-img6" datanumber='200' dataprice="20"><img src="./tpl/Wap/default/img/mg7.png" alt=""></li>
+            <li class="vase-home-form-img7" datanumber='500' dataprice="50"><img src="./tpl/Wap/default/img/mg8.png" alt=""></li>
+            <li class="vase-home-form-img8" datanumber='999' dataprice="100"><img src="./tpl/Wap/default/img/mg9.png" alt=""></li>
+            <li class="vase-home-form-img9" datanumber='5000' dataprice="500"><img src="./tpl/Wap/default/img/mg10.png" alt=""></li>
+        </ul>
+        <p>*温馨提示:成为玫瑰会员,您将可以向对方发送“玫瑰赠言”</p>
+        <img class="pay" src="./tpl/Wap/default/img/mg11.png" alt="">
+    </form>
+    <div class="vase-home-gg">
+        <volist name="rose_adv" id="v" key="k">
+            <if condition="$v['count'] eq 2">
+                <p class="startp1" dataid="{weikucms:$v.id}" dataurl="{weikucms:$v.url}" style="border-bottom: solid 1px #f2f2f2">{weikucms:$v.title}</p>
+            </if>
+        </volist>
+    </div>
+</div>
+<input type="hidden" class="number" value="1">
+<input type="hidden" class="price" value="0.1">
+<input type="hidden" class="quotient_id" value="{weikucms:$rose.id}">
+<input type="hidden" class="user_id" value="{weikucms:$user_id}">
+<input type="hidden" class="scan_code" value="{weikucms:$scan_code}">
+<input type="hidden" class="send_id" value="{weikucms:$send_id}">
+<input type="hidden" class="weixin_alipay_type" value="{weikucms:$weixin_alipay_type_al}">
+<input type="hidden" class="weixin_send_red" value="{weikucms::U('V_2WechatPay/weixin_send_red')}">
+<input type="hidden" class="alipay_send_red" value="{weikucms::U('Alipay/alipay_send_red')}">
+<input type="hidden" class="weixin_send_red_update" value="{weikucms::U('V_2WechatPay/weixin_send_red_update')}">
+<script type="text/javascript" src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./tpl/Wap/default/js/font.js"></script>
+<script type="text/javascript" src="./tpl/Wap/default/js/vase.js?2"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/common.js"></script>
+</body>
+<script>
+    $('.startp1').click(function(){
+        if($(this).hasClass('on')){
+            return false;
+        }
+        var id = $(this).attr('dataid');
+        var dataurl = $(this).attr('dataurl');
+        var user_id = "{weikucms:$user_id}";
+        $(this).addClass('on');
+        $.post("{weikucms::U('V_2RoseAjax/add_adv')}",{id:id,user_id:user_id},function(data){
+            if(data.code==200){
+                window.location.href=dataurl;
+            }else{
+                alert('此广告无效');
+            }
+            $('.startp1').removeClass('on');
+        },'json')
+    });
+    Zepto(function($) {
+        /* $('.vase-home-form li').tap(function () {
+         $('.number').val($(this).attr('datanumber'));
+         $('.price').val($(this).attr('dataprice'));
+         });*/
+        $('.pay').tap(function () {
+            var number = $('.number').val();
+            var quotient_id = $('.quotient_id').val();
+            var user_id = $('.user_id').val();
+            var weixin_alipay_type = $('.weixin_alipay_type').val();
+            var send_id = $('.send_id').val();
+            var price = $('.price').val();
+            var scan_code = $('.scan_code').val();
+            var DATA = {
+                quotient_id: quotient_id,
+                user_id: user_id,
+                number: number,
+                weixin_alipay_type: weixin_alipay_type,
+                send_id:send_id,
+                price:price,
+                scan_code:scan_code
+            }
+            if (weixin_alipay_type == 'wechat') {
+                if (typeof WeixinJSBridge == "undefined") {
+                    if (document.addEventListener) {
+                        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                    } else if (document.attachEvent) {
+                        document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                    }
+                } else {
+                    var jsApiParameters = null;
+                    var out_trade_no = null;
+                    var isGoToPay = false;
+                    var weixin_send_red = $('.weixin_send_red').val();
+                    $.ajax({
+                        type: 'POST',
+                        url: weixin_send_red,
+                        data: DATA,
+                        dataType: "json",
+                        timeout: 3000,
+                        async: false,
+                        success: function (data) {
+                            if (data.code == 200) {
+                                isGoToPay = true;
+                                jsApiParameters = data.jsapi;
+                                out_trade_no = data.out_trade_no;
+                            } else {
+                                $.dialog({
+                                    content: data.error,
+                                    button: ['好']
+                                });
+                                return false;
+                            }
+                        },
+                        error: function (xhr, type) {
+                            $.dialog({
+                                content: '支付错误',
+                                button: ['好']
+                            });
+                        }
+                    });
+                    if (isGoToPay) {
+                        var jsPs = eval('(' + jsApiParameters + ')');
+                        WeixinJSBridge.invoke(
+                                'getBrandWCPayRequest',
+                                jsPs,
+                                function (res) {
+                                    if (res.err_msg == "get_brand_wcpay_request:ok") {
+                                        var weixin_send_red_update = $('.weixin_send_red_update').val();
+                                        var number = $('.number').val();
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: weixin_send_red_update,
+                                            data: {
+                                                "out_trade_no": out_trade_no,
+                                                quotient_id: quotient_id,
+                                                user_id: user_id,
+                                                send_id:send_id,
+                                                number:number,
+                                                scan_code:scan_code,
+                                                weixin_alipay_type:weixin_alipay_type
+                                            },
+                                            dataType: 'json',
+                                            async: false,
+                                            success: function (data) {
+                                                if (data.code == 200) {
+                                                    window.location.href=data.url;
+                                                } else {
+                                                    $.dialog({
+                                                        content: '支付错误',
+                                                        button: ['好']
+                                                    });
+                                                    return false;
+                                                }
+
+                                            },
+                                            error: function (xhr, type) {
+                                                $.dialog({
+                                                    content: '支付错误',
+                                                    button: ['好']
+                                                });
+                                                return false;
+                                            }
+                                        });
+
+                                    }
+                                }
+                        );
+                    }
+                }
+            } else {
+                var Alipay = $('.alipay_send_red').val();
+                post(Alipay, DATA);
+            }
+        });
+    })
+</script>
+</html>

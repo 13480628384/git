@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>上传安装文件</title>
+    <style>
+        .file{width: 80%; margin:auto;  text-align: center;}
+        .file input{
+            width: 300px;
+            border-radius: 6px;
+            margin: auto;
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .anniu{
+            height: 50px;
+            line-height: 50px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 24px;
+            background: #EA6C40;
+            margin: auto;
+            border: solid 1px #A93811;
+            color: #fff;
+        }
+        .header{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background: #f2f2f2">
+<header class="header">
+    <h2>设备批量<b style="color:#f00;">添加</b></h2>
+</header>
+
+<button class="anniu batch_down">批量添加设备下载模板</button>
+<form id="base" class="file" action="{weikucms::U('base_excel')}" method="post" enctype="multipart/form-data">
+    <a href="#" class="a_button btn btn-primary">
+        <input type="file" name="file" id="codebase" value="导入资料">
+    </a>
+</form>
+<button class="anniu" id="import_base">确定安装设备</button>
+<div class="errors" style=" width: 300px;margin-top: 5px;height: 100px;color:#f00;">
+</div>
+<hr>
+<header class="header">
+    <h2>设备批量<b style="color:#f00;">安装</b></h2>
+</header>
+<form id="myform" class="file" action="{weikucms::U('excel')}" method="post" enctype="multipart/form-data">
+    <a href="#" class="a_button btn btn-primary">
+        <input type="file" name="file" id="codefile" value="导入资料">
+    </a>
+</form>
+<button class="anniu" id="import_btn">确定安装设备</button>
+<button class="anniu logout">退出</button>
+<div class="error" style=" width: 300px;margin-top: 5px;height: 100px;color:#f00;">
+</div>
+<button class="anniu excel_down">模板下载</button>
+<pre>批量上传要注意的事项：
+      1）必须严格按照excel的模板来执行按照，否则会安装出错。
+      2）安装时：若其中一个软编码不存在时，请登录玫瑰物联后台检查终端设备列表是否已经上传编码，若不，请上传后再安装
+      3）安装一半的时候，若出现以下情况：
+                        编码不存在
+                        群组名称不存在
+                        硬编码已存在
+      4）根据第三步找到所在的行数，把前面的行数数据全部删除，（前面的已经安装成功）再重新安装数据。
+      5）注意：硬编码两边不能有任何的空格或者单引号，其他字符
+   </pre>
+</body>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/jquery.form.js"></script>
+<script>
+    $(function(){
+        var btn = $("#import_btn");
+        var error = $(".error");
+        $("#import_btn").click(function(){
+            if($('#import_btn').hasClass('add')){
+                return false;
+            }
+            v= $("#codefile").val();
+            if(!v){
+                alert('请选择防伪码文件');
+            }else{
+                $("#myform").ajaxSubmit({
+                    dataType:  'json',
+                    beforeSend: function() {
+                        error.html("处理中..");
+                        $('#import_btn').addClass('add');
+                    },
+                    success: function(data) {
+                        if(data.code==200){
+                            error.html(data.msg);
+                            error.css('color','#2bda3a');
+                        }else{
+                            error.html(data.msg);
+                        }
+                    },
+                    error:function(xhr){
+                        if(xhr.code == 201){
+                            error.html(data.msg);
+                            return false;
+                        }
+                        //error.html("处理失败");
+                    }
+                });
+            }
+        });
+        //下载模板
+        $('.excel_down').click(function(){
+            window.location.href='{weikucms::U("download_excel")}';
+        });
+        //退出
+        $('.logout').click(function(){
+            window.location.href='{weikucms::U("logout")}';
+        });
+        //下载添加设备模板
+        $('.batch_down').click(function(){
+            window.location.href='{weikucms::U("batch_down")}';
+        });
+
+        //批量添加设备
+        var errors = $(".errors");
+        $("#import_base").click(function(){
+            if($('#import_base').hasClass('add')){
+                return false;
+            }
+            codebase= $("#codebase").val();
+            if(!codebase){
+                alert('请选择防伪码文件');
+            }else{
+                $("#base").ajaxSubmit({
+                    dataType:  'json',
+                    beforeSend: function() {
+                        errors.html("处理中..");
+                        $('#import_base').addClass('add');
+                    },
+                    success: function(data) {
+                        if(data.code==200){
+                            errors.html(data.msg);
+                            errors.css('color','#2bda3a');
+                        }else{
+                            errors.html(data.msg);
+                        }
+                        $('#import_base').removeClass('add');
+                    },
+                    error:function(xhr){
+                        $('#import_base').removeClass('add');
+                        if(xhr.code == 201){
+                            errors.html(data.msg);
+                            return false;
+                        }
+                    }
+                });
+            }
+        });
+    });
+
+</script>
+</html>

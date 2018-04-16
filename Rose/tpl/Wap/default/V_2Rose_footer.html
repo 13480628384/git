@@ -1,0 +1,16 @@
+<ul class="footer">
+    <if condition="$weixin_alipay_type eq 'wechat'">
+        <li data-url="{weikucms::U('V_2WechantDollMachine/index',array('user_id'=>$user_id,'weixin_alipay_type'=>$weixin_alipay_type,'scan_code'=>$scan_code))}">首页</li>
+        <else/>
+        <li data-url="{weikucms::U('V_2AlipayDollMachine/index',array('user_id'=>$user_id,'weixin_alipay_type'=>$weixin_alipay_type,'scan_code'=>$scan_code))}">首页</li>
+    </if><!--<li data-url="{weikucms::U('space',array('user_id'=>$user_id,'weixin_alipay_type'=>$weixin_alipay_type))}">玫瑰空间</li>-->
+    <li data-url="{weikucms::U('V_2Rose/quotient',array('user_id'=>$user_id,'weixin_alipay_type'=>$weixin_alipay_type,'scan_code'=>$scan_code))}">生态商</li>
+    <li data-url="{weikucms::U('V_2Rose/vip_personal',array('user_id'=>$user_id,'weixin_alipay_type'=>$weixin_alipay_type,'scan_code'=>$scan_code))}">我的</li>
+</ul>
+<script type="text/javascript" charset="utf-8">
+    $('.footer li').click(function(){
+        location.href = $(this).attr('data-url');
+    });
+    var url = location.pathname + location.search;
+    $("[data-url='"+url+"']").addClass('active');
+</script>

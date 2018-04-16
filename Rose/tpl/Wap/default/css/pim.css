@@ -1,0 +1,7 @@
+/* CSS Document */
+.pimdiv{ margin-top: 1.5rem; font-size: 1.4rem; color: #676767}
+.pimdiv .pimdivtd1{display: inline-block;width: 30%;padding-left: 5%;}
+.pimdiv .pimdivtd2{display: inline-block;width: -1%;padding-right: 3%;text-align: right;}
+.pimdiv li{ background: #fff; height: 3.5rem;line-height: 3.5rem; border-bottom: solid 1px #bdbdbd}
+.pimdiv .pimdivtd2 img{width:2rem }
+.pimdivtd_img{width: 1rem !important;    margin-left: 1rem;}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <include file="./tpl/User/default/Public/source.html" />
+    </head>
+    <style type="text/css">
+	.management-content-right-content {
+    width: 180px;
+    height: 559px;
+    border: 1px solid #e6e6e6;
+    padding: 0 10px;
+    overflow-y: auto;
+}
+
+    </style>
+    <body>
+    	<include file="./tpl/User/default/Public/Header.html" />
+            <content>
+                    <div class="content">
+                                <include file="./tpl/User/default/Public/left.html" />
+                                <div class="content-tab">
+								<input type="hidden" id="edit_id" value="{weikucms:$id}">
+                                            <div class="supervise-title">
+                                            		<div class="supervise-content" onclick="history.go(-1);"><span class="icon-uniE6F9 mr10"></span>返回</div>
+                                            </div>
+                                            <div class="management-content">
+                                            		<div class="management-content-left">
+                                            			<div class="form-group">
+		  					  <input type="text"  placeholder="培训名字" id="train_name" value="{weikucms:$edit.train_name}">
+						  </div>
+						  <div class="course mt10">
+                                            			<div class="course-title">课程选择（可多选）</div>
+                                            			<div class="course-tab">
+                                            				<ul class="course-tab-ul">
+																<?php foreach($course as $v){?>
+                                            					<li class="course-tab-ul-li">
+                                            						<div class="course-tab-ul-li-check <if condition="$v['isExist'] eq 1">icon-uniE6F8</if>"></div>
+                                            						<div class="course-tab-ul-li-text" dataall="<?php echo $v['id']?>"><?php echo $v['course_name']?></div>
+                                            					</li>
+                                            					<?php }?>
+                                            				</ul>
+                                            			</div>
+                                            		</div>
+                                                                <div class="course mt10">
+                                                        <div class="course-title">老师选择</div>
+                                                        <div class="course-tab">
+                                                            <ul class="course-tab-ul">
+                                                                <?php foreach($teacher as $v){?>
+																<li class="course-tab-ul-li1 <if condition="$v['isExist'] eq 1">on</if>">
+                                                                    <div class="course-tab-ul-li-check1 icon-uniE6F8"></div>
+																	
+                                                                    <div class="course-tab-ul-li-text class_select" dataselect="<?php echo $v['id']?>"><?php echo $v['teacher_num']?></div>
+                                                                </li>
+                                                                <?php }?>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+						  <div class="management-main user-height">
+						  	<div class="management-title">请从右侧添加学员</div>
+						  	<div class="management-user">
+						  		<volist name="edit_img" id="value">
+						  		<div class="management-user-main as" data="{weikucms:$value.id}" id="f_c_{weikucms:$value.id}">
+						  			<p class="management-img">
+						  				<img src="{weikucms:$value.avatar}" />
+						  				<span class="icon-minus3 minus" datac="{weikucms:$value.id}"></span>
+						  			</p>
+						  			<p>{weikucms:$value.name}</p>
+						  			<p class="time">{weikucms:$value.start_time}</p>
+						  			<input type="hidden" id="classid" value="{weikucms:$value.id}" class="classid" dataid="{weikucms:$value.id}">
+						  		</div>
+								</volist>
+						  	</div>
+						  </div>
+						  <div class="btn-student">
+                                            				确认
+                                            			</div>
+                                            		</div>
+                                            		<div class="management-content-right">
+                                            			<div class="management-content-right-content">
+                                            			<form action="" method="post" id="form1">
+                                            				<div class="management-seek seek">
+                                            					<input type="text" name="search"  placeholder="搜索学员">
+                                            				<span class="icon-search2 search2 T_CT" id="search_btn">
+                       											 </span>
+                                            				</div>
+                                            			</form>
+															<?php foreach($list as $v){?>
+                                            				<div class="user-main" id="c_{weikucms:$v.id}">
+                                            					<div class="management-img fl">
+                                            						<img src="<?php echo $v['avatar']?>" />
+                                            					</div>
+																
+                                            					<div class="user-title fl">
+																	<input type="hidden" value="{weikucms:$v.id}" id="class_id">
+                                            						<p id="name"><?php echo $v['name']?></p>
+                                            						<p class="time">{weikucms:$v.start_time}</p>
+                                            					</div>
+                                            					<div class="icon-check-alt check <if condition="$v['isExist'] eq 1">on</if>"></div>
+                                            				</div>
+                                            				<?php }?>
+                                            			</div>
+                                            		</div>
+                                            </div>
+                                </div>
+                    </div>
+            </content>
+    </body>
+	<script>
+	// $("#condition").click(function(){
+	// 	$(".supervise-input-down").toggleClass('block');
+	// })
+	// $(".down-li").click(function(){
+	// 	$("[name=condition]").val($(this).html());
+	// })
+	// $(".course-tab-ul-li-check").click(function(){
+	// 	$(this).toggleClass('icon-uniE6F8');
+	// })
+	// $(".minus").click(function(){
+	// 	$(this).parents('.management-user-main').remove(); 
+	// })
+	// 	$(".course-tab-ul-li1").click(function(){
+	// 	$(this).addClass('on').siblings().removeClass('on');
+	// })
+	// $(".classify-tab").click(function(){
+	// 	$(this).addClass('on').siblings().removeClass('on')
+	// })
+
+
+	
+			// $(".check").click(function(){
+			// 	alert(1);
+			// 	var name =$(this).parents(".user-main").find(".user-title").find("#name").html();
+			// 	var time = $(this).parents(".user-main").find(".user-title").find(".time").html();
+			// 	var class_id = $(this).parents(".user-main").find(".user-title").find('#class_id').val();
+			// 	var img = $(this).parents(".user-main").find(".management-img ").find("img").attr("src");
+			// 	var data = $(this).parents(".user-main").attr("id");
+			// 	if($(this).hasClass('on')){
+			// 		$(this).removeClass('on');
+			// 		$('#f_' + data).remove();
+			// 	}else{
+			// 		$(this).addClass('on');
+			// 		$(".management-user").append('<div class="management-user-main as" id=f_'+data+'><p class="management-img"><img src='+img+'><span class="icon-minus3 minus" datac='+class_id+'></span></p><p>'+name+'</p><input type="hidden" id="classid" value='+class_id+' dataidf='+class_id+'><p class="time">'+time+'</p></div>');
+			// 	}
+			// 	$(".minus").click(function(){
+			// 		$(this).parents('#f_' + data).remove();
+			// 		$('#'+data).find('.check').removeClass('on');
+			// 	})
+	// $(document).on('click','.minus',function(){
+	// 	var class_id = $(this).attr('datac');
+	// 	$(this).parents('#f_' + class_id).remove();
+	// 	$('#c_'+class_id).find('.check').removeClass('on');
+	// })
+	$(".btn-student").click(function(){
+		var train_name = $('#train_name').val();
+		var edit_id = $('#edit_id').val();
+		if(!train_name){
+			alert('培训名不能为空');
+			return false;
+		}
+		if(!$('.course-tab-ul-li-check').hasClass('icon-uniE6F8'))
+		{
+			alert('请选择课程');
+			return false;
+		}
+		if(!$('.course-tab-ul-li1').hasClass('on'))
+		{
+			alert('请选择班级');
+			return false;
+		}
+		if(!$('.management-user-main').hasClass('as'))
+		{
+			alert('学生不能为空');
+			return false;
+		}
+		//课程选择
+		var select_id="";
+        $(".icon-uniE6F8").next(".course-tab-ul-li-text").each(function() {
+            if ($(this).attr("dataall")) {
+                select_id += $(this).attr("dataall")+",";
+            }
+        });
+        var select_id=select_id.substring(0,select_id.length-1);
+		//班级选择
+		var class_select = $('.course-tab-ul-li1.on .class_select').attr('dataselect');
+		//学生
+		var idValue="";
+		$.each($(".management-user-main"), function(i,o){//循环得到不同的id的值
+			idValue += $(o).find('#classid').attr("dataid")+',';
+		});
+		var idValue = idValue.substring(0,idValue.length-1);
+		$.post("{weikucms::U('train_edit_check')}",{edit_id:edit_id,idValue:idValue,train_name:train_name,select_id:select_id,class_select:class_select},function(data){
+			if(data==1)
+			{
+				alert('培训修改成功');
+				window.location.href="{weikucms::U('train')}";
+			}else{
+				alert('培训修改失败');
+			}
+		})
+	});
+	$("#search_btn").click(function(){
+        $("#form1").submit();
+    });
+	</script>
+</html>

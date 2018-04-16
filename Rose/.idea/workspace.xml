@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Lib/Action/Wap/CommonWeixinAction.class.php" line="82" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/Lib/Action/Wap/VendmanageAction.class.php" line="502" mnemonic="9" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60dc36c2-222b-4416-91ac-fcf88acc674f" name="默认的" comment="" />
+    <ignored path="Rose.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Rose" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DeviceAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/DeviceAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-118">
+              <caret line="158" column="14" lean-forward="false" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Device_device_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Device_device_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="22" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rose2Wallet_fuerkan.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2Wallet_fuerkan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="131" column="57" lean-forward="false" selection-start-line="131" selection-start-column="43" selection-end-line="131" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarWallet_index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Wap/default/CarWallet_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="86" column="82" lean-forward="false" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="82" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>price</find>
+      <find>lib</find>
+      <find>vehicle_pay</find>
+      <find>car_pay_owner</find>
+      <find>all</find>
+      <find>member</find>
+      <find>car_update_owner</find>
+      <find>$car_pay</find>
+      <find>footers</find>
+      <find>SSLROOTCA_PATH</find>
+      <find>BA01B5A812474D21B585F1D27A564566</find>
+      <find>car_member_pay</find>
+      <find>fennotify</find>
+      <find>$car_mem</find>
+      <find>canUpdateRemainsum1</find>
+      <find>.footer</find>
+      <find>car_start_pay</find>
+      <find>count</find>
+      <find>balances</find>
+      <find>accounts</find>
+      <find>launch</find>
+      <find>car_ali_pay_xiche</find>
+      <find>.pay-miao li</find>
+      <find>.pay-zan li</find>
+      <find>洗车</find>
+      <find>.pay-li li</find>
+      <find>.right</find>
+      <find>洗</find>
+      <find>rediss</find>
+      <find>weikucms</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/WeixinPayAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Anm_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Washing_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Vehicle_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Ce_ji_index.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/ZhijinpayAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/AlipayCommonAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/WapApiAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/ChaxieAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/ChaxieAction.class.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/BackAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/ChaxieAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/ChaxiePayAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Chaxie_index.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Glass_tokenAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/V_2RoseBaseAction.class.php" />
+        <option value="$PROJECT_DIR$/Common/func.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/MessageAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Glass_notifyAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Glass_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Car_Wash_Pay_new.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/FenstartAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/StartAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Rose2WalletAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/CommonWeixinAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Rose2OrderflowAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Car_Wash_Pay_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Rose2Personal_presonal_new.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/JsApiPaySub.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/WxPay.JsApiPayCar.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Rose2BaseAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/js/car_cash.js" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/car/WxMch.Pay.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/car/WxPay.Config.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/NotifyAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/CarBaseAction.class.php" />
+        <option value="$PROJECT_DIR$/config/car_notify.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Car_Wash_PayAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/NewPayAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Car_NewAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Car_Wash_Pay_news.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/CarFenn_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/CarFen_index.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/CarFenAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/DeviceAction.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/Rose2PersonalAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Rose2Wallet_index.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Rose2Wallet_fuerkan.html" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/Rose2Personal_index.html" />
+        <option value="$PROJECT_DIR$/Lib/Action/Wap/CarWalletAction.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Wap/default/CarWallet_index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1300" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Action" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Action" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Rose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thinkcmf" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WWW\Rose\tpl\Wap\default\" />
+      <recent name="D:\WWW\Rose\Lib\Action" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60dc36c2-222b-4416-91ac-fcf88acc674f" name="默认的" comment="" />
+      <created>1479711451659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1479711451659</updated>
+      <workItem from="1501231183192" duration="3178000" />
+      <workItem from="1501554487146" duration="4039000" />
+      <workItem from="1501639480658" duration="7713000" />
+      <workItem from="1501740674039" duration="8380000" />
+      <workItem from="1501812271711" duration="2095000" />
+      <workItem from="1502071009235" duration="14691000" />
+      <workItem from="1502156170612" duration="13032000" />
+      <workItem from="1502242415480" duration="252000" />
+      <workItem from="1502242683935" duration="4603000" />
+      <workItem from="1502345690120" duration="4812000" />
+      <workItem from="1502432004404" duration="2873000" />
+      <workItem from="1502677624854" duration="878000" />
+      <workItem from="1502777906019" duration="7057000" />
+      <workItem from="1502863835257" duration="694000" />
+      <workItem from="1502933724753" duration="3471000" />
+      <workItem from="1503035945567" duration="5218000" />
+      <workItem from="1503283699909" duration="612000" />
+      <workItem from="1503471241730" duration="1756000" />
+      <workItem from="1503541081704" duration="1813000" />
+      <workItem from="1503629235180" duration="2232000" />
+      <workItem from="1503912073658" duration="3466000" />
+      <workItem from="1503973350650" duration="2805000" />
+      <workItem from="1504060534610" duration="4858000" />
+      <workItem from="1504143870846" duration="4736000" />
+      <workItem from="1504237719291" duration="142000" />
+      <workItem from="1504254280779" duration="1887000" />
+      <workItem from="1504490792815" duration="11006000" />
+      <workItem from="1504517044729" duration="1745000" />
+      <workItem from="1504579691652" duration="4556000" />
+      <workItem from="1504600908584" duration="11000" />
+      <workItem from="1504601134933" duration="4952000" />
+      <workItem from="1504663562791" duration="5084000" />
+      <workItem from="1504748671655" duration="8177000" />
+      <workItem from="1504835226876" duration="4190000" />
+      <workItem from="1505096024928" duration="10752000" />
+      <workItem from="1505182535678" duration="13019000" />
+      <workItem from="1505358014140" duration="5604000" />
+      <workItem from="1505439780594" duration="16217000" />
+      <workItem from="1505466137468" duration="7177000" />
+      <workItem from="1505701872290" duration="18425000" />
+      <workItem from="1505787040942" duration="20010000" />
+      <workItem from="1505878411052" duration="16919000" />
+      <workItem from="1505974892885" duration="9959000" />
+      <workItem from="1506044992341" duration="11629000" />
+      <workItem from="1506308086911" duration="14386000" />
+      <workItem from="1506390133594" duration="8421000" />
+      <workItem from="1506497403755" duration="6757000" />
+      <workItem from="1506562536971" duration="11013000" />
+      <workItem from="1506650089225" duration="14393000" />
+      <workItem from="1507514547532" duration="3135000" />
+      <workItem from="1507600351350" duration="2381000" />
+      <workItem from="1507686321052" duration="8915000" />
+      <workItem from="1507773707483" duration="9503000" />
+      <workItem from="1507860955719" duration="3491000" />
+      <workItem from="1508118908328" duration="5672000" />
+      <workItem from="1508208299844" duration="6055000" />
+      <workItem from="1508291429439" duration="1237000" />
+      <workItem from="1508378163555" duration="7083000" />
+      <workItem from="1508463709578" duration="5232000" />
+      <workItem from="1508723864880" duration="6783000" />
+      <workItem from="1508809666395" duration="2005000" />
+      <workItem from="1508982127507" duration="7853000" />
+      <workItem from="1509069319505" duration="3476000" />
+      <workItem from="1509329570393" duration="2865000" />
+      <workItem from="1509414714236" duration="1414000" />
+      <workItem from="1509503129959" duration="1257000" />
+      <workItem from="1509586609090" duration="9737000" />
+      <workItem from="1509673030524" duration="5622000" />
+      <workItem from="1509934259114" duration="1567000" />
+      <workItem from="1510035664095" duration="2060000" />
+      <workItem from="1510277348278" duration="1209000" />
+      <workItem from="1510883193489" duration="599000" />
+      <workItem from="1510902110162" duration="1200000" />
+      <workItem from="1511333284348" duration="1906000" />
+      <workItem from="1511423554894" duration="636000" />
+      <workItem from="1511487662386" duration="2651000" />
+      <workItem from="1511748496851" duration="1219000" />
+      <workItem from="1511833995919" duration="4913000" />
+      <workItem from="1511924388260" duration="594000" />
+      <workItem from="1512023264810" duration="4146000" />
+      <workItem from="1512092589414" duration="7849000" />
+      <workItem from="1512368094998" duration="5474000" />
+      <workItem from="1512437044660" duration="5485000" />
+      <workItem from="1512525278254" duration="2213000" />
+      <workItem from="1512610181434" duration="1204000" />
+      <workItem from="1512712546596" duration="12107000" />
+      <workItem from="1512797253607" duration="3482000" />
+      <workItem from="1512956245877" duration="26409000" />
+      <workItem from="1513059337876" duration="9057000" />
+      <workItem from="1513133045965" duration="12275000" />
+      <workItem from="1513214883400" duration="8550000" />
+      <workItem from="1513318308684" duration="6553000" />
+      <workItem from="1513585059417" duration="3526000" />
+      <workItem from="1513647865936" duration="3505000" />
+      <workItem from="1513734804358" duration="15103000" />
+      <workItem from="1513821661858" duration="3436000" />
+      <workItem from="1513906995374" duration="1204000" />
+      <workItem from="1513911873307" duration="9758000" />
+      <workItem from="1514167677306" duration="1815000" />
+      <workItem from="1514252577607" duration="17914000" />
+      <workItem from="1514338573335" duration="22403000" />
+      <workItem from="1514425082823" duration="14808000" />
+      <workItem from="1514512736967" duration="1096000" />
+      <workItem from="1514857559152" duration="7591000" />
+      <workItem from="1514944329703" duration="2809000" />
+      <workItem from="1515029774277" duration="1291000" />
+      <workItem from="1515115573225" duration="599000" />
+      <workItem from="1515377696265" duration="2973000" />
+      <workItem from="1515462720550" duration="592000" />
+      <workItem from="1515548345203" duration="597000" />
+      <workItem from="1515634809548" duration="597000" />
+      <workItem from="1515720354935" duration="598000" />
+      <workItem from="1515982423958" duration="2995000" />
+      <workItem from="1516068092050" duration="7754000" />
+      <workItem from="1516153965763" duration="16178000" />
+      <workItem from="1516238756031" duration="12054000" />
+      <workItem from="1516325775484" duration="6416000" />
+      <workItem from="1516585936766" duration="6068000" />
+      <workItem from="1516672013079" duration="2192000" />
+      <workItem from="1516759134587" duration="596000" />
+      <workItem from="1516844305925" duration="598000" />
+      <workItem from="1516933351141" duration="595000" />
+      <workItem from="1517191537329" duration="1056000" />
+      <workItem from="1517276541543" duration="1591000" />
+      <workItem from="1517362667128" duration="1227000" />
+      <workItem from="1517449547199" duration="10554000" />
+      <workItem from="1517535858547" duration="2000000" />
+      <workItem from="1517795817077" duration="1198000" />
+      <workItem from="1517882162121" duration="596000" />
+      <workItem from="1517968473840" duration="2640000" />
+      <workItem from="1518054429386" duration="598000" />
+      <workItem from="1518142295121" duration="598000" />
+      <workItem from="1519610282261" duration="605000" />
+      <workItem from="1519702642039" duration="1703000" />
+      <workItem from="1519782822056" duration="7997000" />
+      <workItem from="1519869274729" duration="7933000" />
+      <workItem from="1519954555977" duration="968000" />
+      <workItem from="1520215687239" duration="589000" />
+      <workItem from="1520560779607" duration="5420000" />
+      <workItem from="1520820372445" duration="6760000" />
+      <workItem from="1520906033998" duration="10000" />
+      <workItem from="1520993230431" duration="10217000" />
+      <workItem from="1521077748348" duration="3197000" />
+      <workItem from="1521164239720" duration="8364000" />
+      <workItem from="1521428893926" duration="1903000" />
+      <workItem from="1521548881884" duration="3250000" />
+      <workItem from="1521629919860" duration="7978000" />
+      <workItem from="1521726947958" duration="916000" />
+      <workItem from="1521854137646" duration="12337000" />
+      <workItem from="1521894101952" duration="6885000" />
+      <workItem from="1522028382841" duration="13955000" />
+      <workItem from="1522132116766" duration="9104000" />
+      <workItem from="1522217569418" duration="3153000" />
+      <workItem from="1522286912464" duration="8773000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="860505000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30775076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/JuicerSubPayAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1159">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/js/cash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="209" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/js/fu_cash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="216" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Extend/Vendor/weipay/WxPayPubHelper/WxPayPubHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="889" column="20" lean-forward="false" selection-start-line="889" selection-start-column="20" selection-end-line="889" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/lib/WxPay.Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/lib/WxMch.Pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/WxPay.JsApiPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3116">
+          <caret line="164" column="61" lean-forward="false" selection-start-line="164" selection-start-column="49" selection-end-line="164" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/car/WxPay.Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/car/WxPay.Exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/car/WxPay.Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/JsApiPaySub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Device_anm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SimpleXML/SimpleXML.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="364" column="9" lean-forward="false" selection-start-line="364" selection-start-column="9" selection-end-line="364" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Lib/Core/Action.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/WxPay.JsApiPayCar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2Red_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/alipay_notify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/VendBackAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/V_2RoseAjaxAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/js/car_cash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="127" column="9" lean-forward="false" selection-start-line="127" selection-start-column="7" selection-end-line="133" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/cert/rootca.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/car/WxPay.Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/car/WxMch.Pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/BackAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1634">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/StartAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/AlipayCommonAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2827">
+          <caret line="1506" column="37" lean-forward="false" selection-start-line="1506" selection-start-column="20" selection-end-line="1506" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Car_Wash_Pay_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4085">
+          <caret line="215" column="62" lean-forward="false" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/car_notify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="43" column="105" lean-forward="false" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/CommonWeixinAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="487" column="48" lean-forward="false" selection-start-line="487" selection-start-column="48" selection-end-line="487" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/NotifyAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="109" column="37" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Car_Wash_PayAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/NewPayAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Rose2WalletAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="277" column="5" lean-forward="true" selection-start-line="235" selection-start-column="4" selection-end-line="277" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Car_Wash_Pay_news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="318" column="45" lean-forward="false" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Car_washAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/CarBaseAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Car_NewAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2698">
+          <caret line="142" column="12" lean-forward="false" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Rose2BaseAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Rose2OrderflowAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Rose2OrderflowMonthAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <marker date="1509961920483" expanded="true" signature="1744:2052" ph="SELECT `deiv... device_consume_rec" />
+            <marker date="1509961920483" expanded="true" signature="2468:2773" ph="SELECT `deiv... device_consume_rec" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/CarFenAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/Rose2PersonalAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <marker date="1522311830342" expanded="true" signature="948:1254" ph="SELECT sum(d... *" />
+            <marker date="1522311830342" expanded="true" signature="978:1250" ph="SELECT * fro... *" />
+            <marker date="1522311830342" expanded="true" signature="993:1202" ph="SELECT dr.* device_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2OrderflowMonth_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/DeviceAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="158" column="14" lean-forward="false" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/CarFen_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2Wallet_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="67" column="59" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2Personal_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="62" column="71" lean-forward="false" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Device_device_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="22" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Action/Wap/CarWalletAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/CarWallet_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="86" column="82" lean-forward="false" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wap/default/Rose2Wallet_fuerkan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="131" column="57" lean-forward="false" selection-start-line="131" selection-start-column="43" selection-end-line="131" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

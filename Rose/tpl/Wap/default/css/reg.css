@@ -1,0 +1,18 @@
+/*登录页面*/
+.web_reg{ width: 100%;margin-top: 2rem; margin:auto;background-color: #f2f2f2;}
+.web_reg .logo{text-align: center;padding-top: 2rem; padding-bottom: 4rem;}
+.web_reg .web_reg_input{height: 3.5rem; line-height: 3.5rem;border-top: solid 1px #999999;border-bottom: solid 1px #f2f2f2;background: #fff;padding-left: 1.5rem;}
+.web_reg .web_reg_input input{ width: 66%; color: #a9a9a9; font-size:1.5rem;}
+.web_reg .web_reg_input span{color:#17120e; font-size: 1.8rem; padding-right: 1rem;}
+.web_reg .web_reg_input_code input{width:47%;}
+.web_reg .web_reg_button_submit{    background-color: #f2f2f2;width: 84%;height: 4.2rem;border:none;margin:auto;display: block;
+    margin-top: 4rem;background-image: url(../img/button.png);background-repeat: no-repeat;background-position: center center;background-size:100%;}
+.web_reg .web_reg_button_submit p{ display: none; }
+.web_reg .logos img{
+    width: 12rem;margin: auto;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.web_reg .web_reg_input_code{ border-bottom: solid 1px  #999999; background: #fff;}
+.web_reg .web_reg_button {width: 5rem;margin-left: 1rem;font-size: 0.8rem;border-radius: 2px;height: 2.5rem;line-height: 2.5rem;background: #2ebf74;border: none;color: #fff;}

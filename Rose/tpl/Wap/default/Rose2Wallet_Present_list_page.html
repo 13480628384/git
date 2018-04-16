@@ -1,0 +1,11 @@
+<volist name="present_list" id="v">
+    <tr>
+        <td width="20%" align="center" valign="middle" class="style3">
+            <if condition="$v['type'] eq 1">广告提现<elseif condition="$v['type'] eq 0"/>
+                余额提现<elseif condition="$v['type'] eq 2"/>按摩提现</if></td>
+        <td width="30%" align="center" valign="middle" class="style3">{weikucms:$v.arrival}</td>
+        <td width="30%" align="center" valign="middle" class="style3"><php>echo substr($v['create_date'],0,10)</php></td>
+        <td width="20%" align="center" valign="middle" class="style2 style3">
+            <if condition="$v['status'] eq 1">成功<else/>失败</if></td>
+    </tr>
+</volist>

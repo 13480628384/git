@@ -1,0 +1,262 @@
+[ 2017-12-15T14:36:50+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.022002s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = 'kefuanmoyitest'
+            AND di.del_flag = 0 [ RunTime:1.940111s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = 'kefuanmoyitest'
+            AND di.del_flag = 0 [ RunTime:0.943054s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.016000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:1.990114s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.021002s ]
+SQL: UPDATE `sys_user` SET `totals`=76.5 WHERE ( `del_flag` = 0 ) AND ( `id` = 'kefuanmoyitest' ) [ RunTime:0.161009s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.039002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-6.798389s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-6.807390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-6.874393s ]
+INFO: Run TokenBuild Behavior [ RunTime:-6.876394s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-6.878394s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-6.880394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-6.881394s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-15T15:18:57+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.158009s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('kefuanmoyitest','2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.125007s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.449082s ]
+INFO: [ view_template ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.464083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.543088s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.544088s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.551088s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.552088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.570089s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-12-15T15:20:27+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.009000s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = 'kefuanmoyitest'
+            AND di.del_flag = 0 [ RunTime:0.553032s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = 'kefuanmoyitest'
+            AND di.del_flag = 0 [ RunTime:0.540031s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.012000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:2.092120s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: UPDATE `sys_user` SET `totals`=76.5 WHERE ( `del_flag` = 0 ) AND ( `id` = 'kefuanmoyitest' ) [ RunTime:0.031002s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.619264s ]
+INFO: [ view_template ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.635265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.672267s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.674267s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.676267s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.677267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.679267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-15T16:20:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_372D563EFF437C62FEFA1FBF8EA6EBEF','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:14',1,'1','9','2017-12-15 16:20:14') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_72E2126AECEF7F311C71981DB146E57A','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_9DC9B632017B49F4F20B3DCEB6AD4592','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_792A3DEB88F1126A0FA2F51124B90DDB','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_11E947B93E1BDBFB124317E6652CC28B','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_605D8F251B6E40F3125FF9BDB34FB348','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_41BFCE347A5FFF8A817937C7AE0DCC2C','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_3B7740D96ADD4DD45FCE9346C2FD0266','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:15',1,'1','9','2017-12-15 16:20:15') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_936D2B01A46E95ADF436598CD9B3FA6D','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_C0018080F853911175B367C841A48B05','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_049E8F7D85E539ABC4AC371487D525DF','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_8A1F55C5E0AEACDE415FD90236F38C90','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_2C8279A38725B4CF9DA180E421DA1D76','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_8CCEC277515549C754E3DE58000F4778','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_BB929DD4CE3BBDC6F19372B94EE9C533','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.013001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_ECB7EFD36468480D0CE22ADB5411667E','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_36C88E39DF84E25BE713276EE254A21F','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_34E447D0D316F588620DB51729AA0BF9','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_B27B240550857FD778C2CDCAFE308FAC','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:20:16',1,'1','9','2017-12-15 16:20:16') [ RunTime:0.018001s ]
+
+[ 2017-12-15T16:22:25+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.019001s ]
+SQL: begin [ RunTime:0.000000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\Rose\Core\Lib\Driver\Db\DbMysql.class.php 第 101 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\Rose\Core\Lib\Driver\Db\DbMysql.class.php 第 73 行.
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_46472DC12D6A40B5F8F61A447BA3B1BB','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_D7E4E685F0D580C07C1E3336423C20ED','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_5FAADEE5F672BBF6AED8CDF499A2B273','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_990EF30C9B3429B06D7BBBB30FF95AA4','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_502863620ECFC0352B0FFEBF500D5626','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_3639D507011D7AB9D127C3DD3766449F','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_D460A3484D1E45F7468AFC5BF1674C42','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_FA03F0D5603773A5E26512B27F686AE7','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_E48EB20B8505A35349C41B5E7303E973','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_AA048AA115CBBAA835E9D1F763DA28AA','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_F379CD927D088E36430E5455C085E0C0','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_D6CFA3FE18CF40820D70ED01BC90B0E9','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_8A5BF9BC30F63C0001309929B9E92DDC','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_FE134375B37BB806438B74AB62395E81','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_495B1731342C238DE20A370655A4290B','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_AC54FB27B8BC58E4E51EE2893F901668','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_2844016368E9DDE3BF0B234BE4AE2AD2','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_7540792EE189D17AD388234458F9E447','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.000000s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_611EFA2325EF48DE65163333785B4D59','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:22:25',1,'1','9','2017-12-15 16:22:25') [ RunTime:0.001000s ]
+
+[ 2017-12-15T16:23:00+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_9D00DE5F88E83083F08E53615AB27BE6','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.123007s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_36C671C07610D930DFE57376EFB771D1','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.034001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_82ADD44BB534DA4F1B5AC112C64F4423','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_6BA60DA75125BD6410EA0FD28CA284D4','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_F77E0E7BFE661B1C10933A4C679891DA','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_14FA1EE1CECB3AD3CDBF5BA3F7D535F2','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_9B324FD2254562AA9491FEF65E44C3BF','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.009001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_2D58EB3999769EF2A8FDB9AD4203C956','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.019001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_91948A3E9ADB73F760B37C530560156A','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.009001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_58F74992E8D147315049AA7057A260B6','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_79B51D83EB2230BE5D358450CD617EF5','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_A09D19B6EFF786DD6A450BE376BBECBD','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.016001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_F8859A76667CF7A3E719F182FAD2E05A','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_8E542D919E20E8F519FB249E82DA301C','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_8DFD114F62AB485F2EE40F524738BE6E','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_CE9463CFCE18B9F7C5D178ED088477CE','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_DC083AAB4CCC92E116A189ABDDC2B7DC','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.018001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_9786972773EF4309D27D722BA9C3CF67','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.017001s ]
+SQL: INSERT INTO `device_consume_rec` (`id`,`app_id`,`from_username`,`consume_account`,`command_status`,`consume_status`,`di_id`,`deivce_command`,`cmd_uuid`,`create_date`,`create_by`,`update_by`,`type`,`update_date`) VALUES ('2017121516_7F967F6ADED980042DA7CC7EEA431B84','wx6a9d4afeace38e53','odOIPv9UcOs4N_jKX0JECOwADE7s',2,'1','1','874435449b1842e19c2bafe35582e04f',4051958,123,'2017-12-15 16:23:00',1,'1','9','2017-12-15 16:23:00') [ RunTime:0.019001s ]
+
+[ 2017-12-15T17:01:29+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-15T17:05:59+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-15T17:06:15+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-15T17:08:59+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-15T17:09:12+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-15T17:09:35+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-15T17:10:37+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,102 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-09-17 15:43:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-09-30 17:55:46
+*/
+.header{
+	width:100%;
+	background-color: #7ebe29;
+}
+.header-left,.header{
+	height: 50px;
+	line-height: 50px;
+}
+.header-title,.header-logo,.hedaer-text,.header-left{
+	float:left;
+}
+.header-right{
+	float:right;
+}
+.header-right{
+	margin-right:15px;
+	position: relative;
+}
+.header-logo{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+/*	background-color: #fff;*/
+	margin-left:24px;
+	margin-top: 7.5px;
+	cursor: pointer;
+}
+.header-logo img{
+	vertical-align: top;
+}
+.header-title{
+	font-size: 18px;
+	color: #fff;
+	margin-left:10px;
+	margin-right:20px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+.header-user-name,.icon-switch{
+	float:left;
+}
+.icon-switch{
+	color:#3f5f14;
+	font-size:20px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.hedaer-text{
+	font-size:14px;
+	color:#dfefc9;
+	letter-spacing: 1px
+}
+.header-user-name{
+	margin-right:18px;
+	color:#fff;
+	font-size:14px;
+	margin-left:10px;
+	cursor: pointer;
+}
+.header-user{
+	width:30px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-top: 10px;
+}
+.header-name{
+	position: absolute;
+	bottom: -112px;
+	background-color: #fff;
+	z-index: 999999;
+	text-align: center;
+	width: 100px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	display: none;
+}
+.header-name.on{
+	display: block;
+}
+.header-name-ul{
+	/* height: 150px; */
+	width: 90px;
+	margin: 0 auto;
+}
+.header-name-ul-li{
+	border-bottom: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+.header-name-ul-li:hover{
+	color: red;
+}
+.header-name-ul-li:last-child{
+	border-bottom:0;
+};

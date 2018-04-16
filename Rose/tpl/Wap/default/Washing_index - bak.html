@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <link href="./tpl/Wap/default/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./tpl/Wap/default/css/style_cd.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/style_xyj.css?a5">
+    <title>深圳市富捷电子科技有限公司</title>
+</head>
+<body style="background-color: #fff;">
+<div class="Rose_xyj" style="margin-bottom: 50px">
+    <div class="Rose_xyj_top"><img src="./tpl/Wap/default/img/banner1.png" alt=""></div>
+    <div class="Rose_xyj_pic">
+        <span>余额：<b class="count">{weikucms:$count}</b>元</span>
+    </div>
+    <div class="h20"></div>
+    <ul class="Rose_xyj_money">
+       <div class="Rose_xyj_staty_tis"><span style="color: #f00">提示</span>:选中充值金额,再点击充值按钮,即可充值</div>
+        <li class="hover hover2 weixinpay">充值</li>
+        <li price="1">1元</li>
+        <li price="5">5元</li>
+        <li price="10">10元</li>
+        <li price="10">20元</li>
+        <li price="50">50元</li>
+    </ul>
+    <div class="h20"></div>
+
+    <ul class="Rose_xyj_staty">
+
+        <div class="Rose_xyj_staty_tis"><span style="color: #f00">提示</span>:点击对应模式启动洗衣机，祝您使用愉快</div>
+        <li class="hover2" times="{weikucms:$out.1}" price="{weikucms:$out.0}"><span class="Rose_xyj_staty_span">{weikucms:$out.0}元 单脱水</span><span class="Rose_xyj_staty_span1">{weikucms:$out.1}分钟</span></li>
+        <li times="{weikucms:$out.3}" price="{weikucms:$out.2}"><span class="Rose_xyj_staty_span">{weikucms:$out.2}元 快洗</span><span class="Rose_xyj_staty_span1">{weikucms:$out.3}分钟</span></li>
+        <li times="{weikucms:$out.5}" price="{weikucms:$out.4}"><span class="Rose_xyj_staty_span">{weikucms:$out.4}元 标准洗</span><span class="Rose_xyj_staty_span1">{weikucms:$out.5}分钟</span></li>
+        <li times="{weikucms:$out.7}" price="{weikucms:$out.6}"><span class="Rose_xyj_staty_span">{weikucms:$out.6}元 大物洗</span><span class="Rose_xyj_staty_span1">{weikucms:$out.7}分钟</span></li>
+
+        <div style="height: 50px; clear: both;"></div>
+    </ul>
+</div>
+<a href="./tpl/Wap/default/Washing_shuoming.html" style="position: fixed; bottom: 0; display: block;width: 100%;
+text-align:center;text-decoration: underline; font-size: 36px; color: #f00">使用说明</a>
+</body>
+<input type="hidden" class="scan_code" value="{weikucms:$scan_code}">
+<input type="hidden" class="price" value="1">
+<input type="hidden" class="all" value="{weikucms:$count}">
+<input type="hidden" class="weixin_alipay_type" value="{weikucms:$weixin_alipay_type}">
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<input type="hidden" class="buyer_id" value="{weikucms:$buyer_id}">
+<input type="hidden" class="device_command" value="{weikucms:$device_command}">
+<input type="hidden" class="device_id" value="{weikucms:$device_id}">
+<input type="hidden" class="online_status" value="{weikucms:$online_status}">
+<input type="hidden" class="washing_pay" value="{weikucms::U('CommonWeixin/washing_pay')}">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".Rose_xyj_money li").click(function() {
+            $(this).addClass('hover').siblings().removeClass('hover');
+            $('.price').val(($(this).attr('price')));
+        });
+        //启动
+        $(".Rose_xyj_staty li").click(function() {
+            $(this).addClass('hover2').siblings().removeClass('hover2');
+            if($(this).hasClass('on')){
+                return false;
+            }
+            $(this).addClass('on');
+            var price = $(this).attr('price');
+            var times = $(this).attr('times');
+            var openid = $('.openid').val();
+            var weixin_alipay_type = $('.weixin_alipay_type').val();
+            var buyer_id = $('.buyer_id').val();
+            var device_command = $('.device_command').val();
+            var all = $('.all').val();
+            if(all<parseInt(price)){
+                alert('余额不足');
+                return false;
+            }
+            var device_id = $('.device_id').val();
+            var dat = {
+                weixin_alipay_type:weixin_alipay_type,
+                openid:openid,
+                times:times,
+                price:price,
+                buyer_id:buyer_id,
+                device_id:device_id,
+                device_command:device_command
+            };
+            $.post("{weikucms::U('AlipayCommon/start')}",dat,function(data){
+                if(data.code == 200){
+                    alert(data.msg);
+                    $('.count').html(data.count);
+                } else {
+                    alert(data.msg);
+                }
+            $(".Rose_xyj_staty li").removeClass('on');
+            },'json');
+        });
+    });
+    var clicktag=0;
+    $('.weixinpay').click(function(){
+        var online_status = $.trim($('.online_status').val());
+        var openid = $.trim($('.openid').val());
+        var weixin_alipay_type = $('.weixin_alipay_type').val();
+        var price = $('.price').val();
+        /*if(online_status == 0){
+            alert('设备不在线');
+            return false;
+        }*/
+        if (clicktag == 1) {
+            return;
+        }
+        if (clicktag == 0) {
+            clicktag = 1;
+            setTimeout(function () {
+                clicktag = 0
+            }, 1500);
+        }
+        if(weixin_alipay_type == 'wechat'){
+            if (typeof WeixinJSBridge == "undefined"){
+                if( document.addEventListener ){
+                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                }else if (document.attachEvent){
+                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                }
+            }else{
+                var jsApiParameters =  null;
+                var outTradeNo =null;//商户订单号
+                var isGoToPay = false;
+                var washing_pay = $('.washing_pay').val();
+                $.ajax({
+                    type: 'POST',
+                    url: washing_pay,
+                    data: {"price":price,"openid":openid},
+                    dataType: "json",
+                    timeout: 3000,
+                    async:false,
+                    success: function(data){
+                        if(data.code == 200){
+                            isGoToPay = true;
+                            jsApiParameters = data.jsapi;
+                            outTradeNo = data.out_trade_no;
+                        }else{
+                            alert(data.error);
+                        }
+                    },
+                    error: function(xhr, type){
+                        alert('支付错误,请重新支付');
+                    }
+                });
+                //判断是否调用支付控件
+                if(isGoToPay){
+                    var jsPs = eval('(' + jsApiParameters + ')');
+                    WeixinJSBridge.invoke(
+                            'getBrandWCPayRequest',
+                            jsPs ,
+                            function(res){
+                                //WeixinJSBridge.log(res.err_msg);
+                                if(res.err_msg == "get_brand_wcpay_request:ok" ){
+                                    //更新支付明细
+                                    var device_command = $('.device_command').val();
+                                    var device_id = $('.device_id').val();
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: "{weikucms::U('CommonWeixin/washing_update')}",
+                                        data: {
+                                            "out_trade_no":outTradeNo,
+                                            "price":price,
+                                            "openid":$(".openid").val()},
+                                        dataType: 'json',
+                                        async:false,
+                                        success: function(data){
+                                            if(data.code == 200){
+                                                $('.count').html(data.msg);
+                                            }else{
+                                                alert('支付失败');
+                                            }
+                                            canUpdateRemainsum1 = true;
+
+                                        },
+                                        error: function(xhr, type){
+                                            alert('支付错误，请重新支付');
+                                            canUpdateRemainsum1 = true;
+                                        }
+                                    });
+
+                                }
+                            }
+                    );
+                }
+            }
+        } else {
+            var buyer_id = $.trim($('.buyer_id').val());
+            var device_id = $('.device_id').val();
+            var scan_code = $('.scan_code').val();
+            var device_command = $('.device_command').val();
+            var datae = {
+                scan_code:scan_code,
+                price:price,
+                device_command:device_command,
+                device_id:device_id,
+                buyer_id:buyer_id
+            }
+            post("{weikucms::U('AlipayCommon/washing_pay')}",datae)
+        }
+    });
+
+</script>
+</html>

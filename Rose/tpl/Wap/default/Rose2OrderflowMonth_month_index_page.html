@@ -1,0 +1,11 @@
+<volist name="index" id="v">
+    <li class="tab_con month-year">
+        <div class="years_tall">
+            <span>{weikucms:$v.year}年-{weikucms:$v.month}月</span>
+            <br/><span>总收益&nbsp;&nbsp;<b class="count">{weikucms:$v.count}</b>（元）</span>
+        </div>
+        <div class="look-detail">
+            <a href="{weikucms::U('group_details_list',array('openid'=>$openid,'month'=>$v['month']))}">查看明细</a>
+        </div>
+    </li>
+</volist>

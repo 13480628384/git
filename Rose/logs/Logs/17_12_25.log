@@ -1,0 +1,74 @@
+[ 2017-12-25T10:06:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&scan_code=ARSG1234
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.135008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.136008s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.161009s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.206012s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017122211_80F63D2ED9FD6545CD2F477AD7C6A03C' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 9 ) LIMIT 1   [ RunTime:0.033002s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.242014s ]
+SQL: SELECT su.phone FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ARSG1234' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-11.553661s ]
+INFO: [ view_template ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 81 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 83 行.
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 86 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 88 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 98 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 99 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-11.611664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234013s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-11.845677s ]
+INFO: Run TokenBuild Behavior [ RunTime:-11.864678s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-11.883679s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-11.890680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.076005s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-11.921682s ]
+INFO: [ view_end ] --END-- [ RunTime:0.041002s ]
+
+[ 2017-12-25T15:01:34+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glassregiter&a=index&scan_code=ARSG1234&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.028059s ]
+INFO: [ view_template ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.092063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120007s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.212070s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.221070s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.230071s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.232071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.251072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-25T17:07:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glassregiter&a=index&scan_code=ARSG1234&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.026002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.119064s ]
+INFO: [ view_template ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.178067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164009s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.342076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.344077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.346077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.348077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.349077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+

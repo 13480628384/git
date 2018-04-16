@@ -1,0 +1,10 @@
+<volist name="list" id="v">
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+    <div class="tab_date">
+        <div class="tab_ear1">{weikucms:$v.consume_account}</div>
+        <div class="tab_ear1"><if condition="$v['status'] eq 1">有效<else/>无效</if></div>
+        <div class="tab_ear1">{weikucms:$v.device_command}</div>
+        <div class="tab_ear1"><php>echo substr($v['create_date'],0,10)</php></div>
+    </div>
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+</volist>

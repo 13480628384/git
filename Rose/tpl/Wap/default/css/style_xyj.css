@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*洗衣机*/
+*{font-family: 微软雅黑}
+.h20{ height: 20px; background: #f2f2f2; clear: both;}
+.Rose_xyj{width: 750px; margin:auto;}
+.Rose_xyj_top{height: 230px; background: #298FE8;}
+.Rose_xyj_pic img{width: 50px;}
+.Rose_xyj_pic span{font-size: 36px; padding-left: 20px;}
+.Rose_xyj_money{width:600px; margin:auto;}
+.Rose_xyj_money li{ width: 180px;margin: 10px; border:solid 1px #298FE8;  border-radius: 6px;
+ float: left;height: 100px;font-size: 26px;color: #666; line-height: 100px; text-align:center;}
+.Rose_xyj_money .hover{ background: #298FE8; color: #fff; }
+.Rose_xyj_pic{  text-align: center;    margin-bottom: 20px;
+    line-height: 70px;}
+ .Rose_xyj_staty li{    
+	width: 180px;
+    margin: 10px;
+    border: solid 1px #298FE8;
+    border-radius: 6px;
+  height: 100px;
+  float: left;
+
+    font-size: 26px;
+    color: #666;
+    text-align: center;}
+    .Rose_xyj_staty_span{ display: block;     margin-top: 10px;}
+     .Rose_xyj_staty{width: 600px; margin:auto;}
+    .Rose_xyj_staty_span1{ font-size: 18px; }
+    .Rose_xyj_staty_tis{ font-size: 20px; text-align: center; margin-top: 20px; color: #666 }
+    .hover2{background: #298FE8;color: #fff !important;}
+   .foot{ position: fixed; bottom: 0px; left: 0px; width: 100%; height: 50px; line-height: 50px; text-align: center; font-size: 20px; color: #999 }
+

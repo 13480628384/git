@@ -1,0 +1,85 @@
+<div class="left">
+                                        <ul class="left-ul">
+										        <li class="left-ul-li-title">
+                                                    <div>控制台</div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Main/index')}">
+                                                    <div>日程信息</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li-title">
+                                                    <div>学生</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/manage')}">
+                                                    <div>学员管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/index')}">
+                                                    <div>班级管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+												<li class="left-ul-li" data-url="{weikucms::U('Index/train')}">
+                                                    <div>培训班管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('OrderCourse/index')}">
+                                                    <div>学生约课</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/testlist')}">
+                                                    <div>单词测试</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                 <li class="left-ul-li-title">
+                                                    <div>老师与课程</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Classroom/index')}">
+                                                    <div>老师管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/og')}">
+                                                    <div>机构课程</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+												<li class="left-ul-li" data-url="{weikucms::U('Classroomm/Class_list')}">
+                                                    <div>教室管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/questions')}">
+                                                    <div>试题管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Classroomm/paper')}">
+                                                    <div>试卷管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Curriculum/index')}">
+                                                    <div>排课</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                 <li class="left-ul-li-title">
+                                                    <div>系统管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Index/og_list')}">
+                                                    <div>下属机构管理</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                                <li class="left-ul-li" data-url="{weikucms::U('Qrcode/index')}">
+                                                    <div>机构二维码</div>
+                                                    <div class="arrow-right"></div>
+                                                </li>
+                                        </ul>
+                                        <div class="left-bottom">
+                                                     <span class="icon-uniE6FC mr10"></span>在线客服
+                                        </div>
+                                </div>
+                                <script type="text/javascript" charset="utf-8">
+                                    $('.left-ul-li').click(function(){
+                                        location.href = $(this).attr('data-url');
+                                    });
+                                    var url = location.pathname + location.search;
+                                    $("[data-url='"+url+"']").addClass('on');
+                                </script>

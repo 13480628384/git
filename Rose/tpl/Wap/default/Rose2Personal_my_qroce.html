@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/del_vip.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>我的二维码</title>
+    <style>
+        .click_pic{ margin-top: 1.5rem !important; margin-bottom: 1.5rem; }
+        .anniu{ font-size: 1.8rem; }
+        .del_vip .del_li{height: 5rem;}
+    </style>
+</head>
+<body style="background: #f2f2f2">
+<div class="head">
+    <span class="head-ct">我的二维码</span>
+</div>
+
+<div class="del_vip code-mains" style="text-align: center;margin-top:50px;">
+
+</div>
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<input type="hidden" class="qrcode" value="http://wxpay.roseo2o.com/Rose/index.php?g=Wap&m=Rose2Personal&a=index">
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/jsweixin1.0.js"></script>
+<script src="./tpl/Wap/default/js/jquery.qrcode.min.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+<script>
+    $(function(){
+        $(".code-mains").qrcode({
+            width: 230, //宽度
+            height: 230, //高度
+            foreground:'rgb(51, 51, 51)',
+            text: $('.qrcode').val()
+        });
+    });
+    Zepto(function($){
+        var REG = {
+            name: /^[a-zA-Z\u4e00-\u9fa5]{2,8}$/,
+            phone: /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^0{0,1}1[0|1|2|3|4|5|6|7|8|9][0-9]{9}$)/,
+            passwd:/^[0-9]{6,8}$/,
+            id:/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[A-Z])$/,
+            email:/\w+[@]{1}\w+[.]\w+/
+        }
+        $('#edit_name').tap(function(){
+            var mobile = $.trim($('.mobile').val());
+            var phone = $.trim($('.phone').val());
+            var openid = $.trim($('.openid').val());
+            var email = $.trim($('.email').val());
+            var percent = $.trim($('.percent').val());
+            if (email == '' || phone == '' || mobile == '') {
+                $.dialog({
+                    content: '请输入手机号码或邮箱或提现比例',
+                    button: ['好']
+                });
+                return false;
+            }
+            if(!REG.email.test(email)){
+                $.dialog({
+                    content:'请输入正确的邮箱',
+                    button:['好']
+                });
+                return false;
+            }
+            if(!REG.phone.test(mobile)){
+                $.dialog({
+                    content:'请输入正确的电话',
+                    button:['好']
+                });
+                return false;
+            }
+            if(!REG.phone.test(phone)){
+                $.dialog({
+                    content:'请输入正确的手机号码',
+                    button:['好']
+                });
+                return false;
+            }
+            var el = $.loading({
+                content: '正在提交'
+            });
+            $.post("",{openid:openid,email:email,phone:phone,mobile:mobile},function(data){
+                if(data.code == 200){
+                    $.dialog({
+                        content:data.success,
+                        button:['好']
+                    });
+                } else {
+                    $.dialog({
+                        content:data.error,
+                        button:['好']
+                    });
+                }
+                el.hide();
+            },'json')
+        })
+    })
+</script>
+</html>

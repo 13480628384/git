@@ -1,0 +1,54 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-08-06 15:49:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-08-06 17:33:19
+*/
+.header{
+	margin-top: 40px;
+	text-align: center;
+}
+.error-header{
+	margin-top: 30px;
+	text-align: center;
+}
+.header .T-BACK{
+	font-size: 19px;
+	color: #4d4d4d;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom:20px;
+}
+.header .mistake{
+	font-size: 19px;
+	color: #4d4d4d;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom:20px;
+}
+.return {
+	color: #8e8e8e;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+a{
+	color: #24B6F3;
+}
+.immediately-return {
+	color: #24b6f3;
+	border-bottom: #24b6f3 1px solid;
+	display: -webkit-inline-box;
+	font-size:14px;
+}
+.error {
+	font-size: 33px;
+	color: #4d4d4d;
+	margin-bottom:20px;
+	font-weight: bold;
+}
+.visit{
+	color: #4d4d4d;
+	font-size: 14px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}

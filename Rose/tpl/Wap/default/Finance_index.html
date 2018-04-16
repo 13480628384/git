@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>数据分析</title>
+</head>
+<body>
+<div class="facility">
+    <table width="100%" align="center" >
+        <tr >
+            <td width="20%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">月份</td>
+            <td width="20%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">收入统计</td>
+            <td width="20%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">预存金额</td>
+            <td width="20%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">提现金额</td>
+            <td width="20%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1 style2">剩余金额</td>
+        </tr>
+        <volist name="res" id="v">
+            <tr>
+                <td width="10%" align="center" valign="middle" class="style3">{weikucms:$v.month}</td>
+                <td width="10%" align="center" valign="middle" class="style3">
+                    <a href="{weikucms::U('month_personal',array('month'=>$v['month']))}">
+                    <php>echo $v['acount']?$v['acount']:'0';</php>
+                </a></td>
+                <td width="10%" align="center" valign="middle" class="style3">
+                    <a href="{weikucms::U('yucun',array('month'=>$v['month']))}">
+                        <php>echo $v['pay_account']?$v['pay_account']:'0';</php>
+                    </a></td>
+                <td width="10%" align="center" valign="middle" class="style3">
+                    <a href="{weikucms::U('tixian',array('month'=>$v['month']))}">
+                        <php>echo $v['amount']?$v['amount']:'0';</php>
+                    </a>
+                </td>
+                <td width="10%" align="center" valign="middle" class="style3"><php>if((intval($v['acount'])-intval($v['amount'])) < 0){echo '0';}else{ echo ($v['acount']-$v['amount']);}</php></td>
+            </tr>
+        </volist>
+    </table>
+</div>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+</html>

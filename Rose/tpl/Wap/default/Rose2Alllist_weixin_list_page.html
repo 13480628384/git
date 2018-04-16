@@ -1,0 +1,16 @@
+<volist name="weixin_list" id="v">
+    <tr>
+        <td width="20%" align="center" valign="middle" class="style3"><if condition="$v['type'] eq 1">微信消费
+            <elseif condition="$v['type'] eq 3"/>按摩椅消费
+            <elseif condition="$v['type'] eq 5"/>充电器消费
+            <else/>其它</if></td>
+        <td width="30%" align="center" valign="middle" class="style3">{weikucms:$v.consume_account}</td>
+        <td width="30%" align="center" valign="middle" class="style3"><php>echo substr($v['create_date'],0,10)</php></td>
+        <td width="20%" align="center" valign="middle" class="style2 style3">
+            <if condition="$v['command_status'] eq 2">成功消费
+                <elseif condition="$v['command_status'] eq 1"/>正在消费
+                <elseif condition="$v['command_status'] eq 3"/>已退币
+            </if>
+        </td>
+    </tr>
+</volist>

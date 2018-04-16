@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="eric.wu" name="author">
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/startcss.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/common.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/index.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/curricula.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/scrollDate.min.css">
+    <style>
+        .pay{
+            display: inline-block;
+            padding: 14px 44px;
+            margin-bottom: 0;
+            font-size: 22px;
+            font-weight: 400;
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        </style>
+</head>
+<body>
+<div class="binding">
+    <p><img src="./tpl/Wap/default/images/1(1).jpg" alt=""></p>
+    <p>对不起</p>
+    <p>你还没有绑定机构呢！</p>
+    <p>请先扫描机构二维码进行绑定。</p>
+    <button class="pay" type="button">支付</button>
+</div>
+</body>
+<script type="text/javascript" src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./tpl/Wap/default/js/mobiscrollDate.min.js"></script>
+<script type="text/javascript" src="./tpl/Wap/default/js/education.js"></script>
+
+<script>
+    //是否判断可加载
+    var canUpdateRemainsum = true;
+    //调用微信JS api 支付
+    function jsApiCall( jsApiParameters)
+    {
+
+        var jsPs = eval('(' + jsApiParameters + ')');
+        WeixinJSBridge.invoke(
+                'getBrandWCPayRequest',
+                jsPs ,
+                function(res){
+                    //WeixinJSBridge.log(res.err_msg);
+                    if(res.err_msg == "get_brand_wcpay_request:ok" ){
+                        //更新支付明细
+                        //返回支付的汇总记录
+                        $.ajax({
+                            type: 'POST',
+                            url: '{weikucms::U("weixin_pay_update")}',
+                            data: {"open_id":$("#openId").val()},
+                            dataType: 'json',
+                            async:false,
+                            success: function(data){
+                                canUpdateRemainsum = true;
+
+                            },
+                            error: function(xhr, type){
+                                alert('充值错误，请重新充值');
+                                canUpdateRemainsum = true;
+                            }
+                        });
+                    }
+                }
+        );
+    }
+        $('.pay').click(function(){
+            if (typeof WeixinJSBridge == "undefined"){
+                if( document.addEventListener ){
+                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                }else if (document.attachEvent){
+                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                }
+            }else{
+                var jsApiParameters =  null;
+                var outTradeNo =null;//商户订单号
+                var isGoToPay = false;
+                var openId = $('#openId').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '{weikucms::U("weixin_pay")}',
+                    data: {"openId":openId},
+                    dataType: "text",
+                    timeout: 3000,
+                    async:false,
+                    success: function(data){
+                        alert(data);
+                        isGoToPay = true;
+                        jsApiParameters = data;
+                    },
+                    error: function(xhr, type){
+                        alert('充值错误,请重新充值');
+                    }
+                });
+                //判断是否调用支付控件
+                if(isGoToPay){
+                    jsApiCall(jsApiParameters);
+                }
+            }
+        })
+</script>
+</html>

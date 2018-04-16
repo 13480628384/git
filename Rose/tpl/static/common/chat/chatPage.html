@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+        <link rel="stylesheet" href="main.css"  />
+        <script type="text/javascript" src="jquery-1.11.2.min.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="samphay-jquery.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="iscroll-probe.js" charset="UTF-8"></script>
+        
+    </head>
+    <body>
+<!-- chatPage -->
+<div class="pageBox pageBoxchat chatPage" id="chatPage">
+    <div class="header">
+        <div class="goBackWrap">
+            <div class="circle back arrowDown">
+            </div>
+        </div>
+        <div class="titleBox">
+            <div class="text f18" id="to_wx_username">
+
+            </div>
+            <div class="title f12"><span class="deviceType"></span><span class="netType"></span></div>
+        </div>
+    </div>
+    <div class="content" id="chatScroll">
+        <div class="scrollContent">
+
+        </div>
+
+    </div>
+    <div class="footer m">
+        <div class="inputEdit myul">
+            <!--
+            <div class="icon-smile" id="faceSwitch">
+                <i class="icon-smileMouth"></i>
+            </div>
+            -->
+            <div class="inputBox">
+                <input id="chatMsg" type="text" placeholder=""/>
+            </div>
+            <div class="btnReply">
+                发送
+            </div>
+        </div>
+        <div class="faceBox">
+            <div class="faceBoxContain">
+                <div class="facePage" id="faceContent">
+
+                </div>
+            </div>
+            <div class="faceList">
+                更多表情敬请期待
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    </body>
+    <script type="text/javascript">
+    var chatScroll ;
+    window.onload = function(){
+        chatScroll = new IScroll("#chatScroll",{
+                        scrollbars:true,
+                        probeType: 1,
+                        interactiveScrollbars: true,
+                        shrinkScrollbars: 'scale',
+                        fadeScrollbars: true,
+                        bounceTime : 800
+                        //momentum : true,
+                        /*MSPointerMove: function(){
+                        }*/
+                    });
+    }
+        /*
+     * 发送的信息模板
+     * msg:信息内容
+     * img:头像地址
+    * */
+    function toMessage_(msg,img){
+        if(!img)img = "";
+        if(!msg) return;
+        return '<div class="cItem to">' +
+            '<div class="cLogo">' +
+            '<img src="'+img+'">' +
+            '</div>' +
+            '<div class="myWord">'+msg+'</div>' +
+            '</div>';
+    };
+  
+    /*
+     * 收到的信息模板
+     * msg:信息内容
+     * img:头像地址
+     * */
+    function fromMessage_(msg,img){
+        if(!img)img = "";
+        if(!msg) return;
+        return '<div class="cItem from">' +
+            '<div class="cLogo">' +
+            '<img src="'+img+'">' +
+            '</div>' +
+            '<div class="myWord">'+msg+'</div>' +
+            '</div>';
+    };
+   
+
+    /*
+    * 信息模板输出
+    * */
+    function showMessage(msg){
+        /*var printf = function(msg){
+                var img = $(msg).find("img").attr("src"),
+                    word = $(msg).text();
+                if($(msg).hasClass("to")){
+                    return toMessage_(word,img);
+                }else if($(msg).hasClass("from")){
+                    return fromMessage_(word,img);
+                }
+            };*/
+        function faceData(face){
+            var data = {};
+            $.each(face,function(i,o){
+                data[o.name] = "<img width='48px' src='"+ o.img + "' >";
+            })
+            return data
+        }
+        var printf = function(msg){
+            var img = $(msg).find("img").attr("src"),
+                word = $(msg).text();
+            if($(msg).hasClass("to")){
+                return toMessage_(word,img);
+            }else if($(msg).hasClass("from")){
+                return fromMessage_(word,img);
+            }
+        };
+        $("#chatScroll").find(".scrollContent").append(printf(msg));
+        chatScroll.refresh();
+        if($(msg).hasClass("from")){
+            if(chatScroll.y - chatScroll.maxScrollY <250){
+                countMsg = 0;
+                $("#_msgTips").fadeOut(function(){
+                    $("#_msgTips").html(countMsg);
+                });
+                chatScroll.scrollToElement(document.querySelector('.cItem:last-child'),100,null,true);
+            }else{
+                countMsg++;
+                //console.log(countMsg);
+                showMsgTips(countMsg);
+            }
+        }else{
+            chatScroll.scrollToElement(document.querySelector('.cItem:last-child'),100,null,true);
+        }
+    };
+
+
+
+    /*
+    * 发送时的加载条
+    * */
+    function sendLoading(){
+        $(".cItem.to").eq(-1).find(".myWord").before().waiting(function(this_){
+            this_.css({
+                "position" : "absolute",
+                "top": "10px",
+                "left" : "-70%"
+            });
+            /*
+            typeof callBack == "function" ? callBack(this_) : setTimeout(function(){
+                //this_.remove();
+            },500);
+            */
+            return this_;
+
+        },18);
+    };
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $(".btnReply").touch(function(){
+                var msgstr = $.trim($("#chatMsg").val());
+                if(!msgstr==""){
+                    var html = toMessage_(msgstr) ;
+                    showMessage(html);
+                    $("#chatMsg").val("")
+                    setTimeout(function(){
+                        var html_ = fromMessage_("您好，有事请烧香！") ;
+                        showMessage(html_);
+                    },1000)
+                    
+                }else{
+                    alert('请输入聊天内容');
+                    return false;
+                }
+            })
+        })
+    </script>
+</html>
+

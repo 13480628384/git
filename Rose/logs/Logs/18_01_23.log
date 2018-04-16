@@ -1,0 +1,47 @@
+[ 2018-01-23T09:45:32+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glassregiter&a=pay_index&scan_code=ARSG1234&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.077004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.175010s ]
+NOTIC: [8] Undefined index: owner_id D:\phpStudy\WWW\Rose\Lib\Action\Wap\GlassregiterAction.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.195011s ]
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.101006s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = null ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `glass_user` [ RunTime:0.080005s ]
+SQL: SELECT `time_nums` FROM `glass_user` WHERE ( `user_id` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-11.617665s ]
+INFO: [ view_template ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 74 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 77 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 80 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 80 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 80 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 82 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 83 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 83 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 86 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 86 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 86 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 88 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 89 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 89 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 92 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 92 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 92 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 94 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 95 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Rose\logs\Cache\Wap\b8a3d5cda8ff2ca074c6b244a8293ab5.php 第 95 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-11.668668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-11.795675s ]
+INFO: Run TokenBuild Behavior [ RunTime:-11.832677s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-11.858678s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-11.867679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-11.886680s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015001s ]
+

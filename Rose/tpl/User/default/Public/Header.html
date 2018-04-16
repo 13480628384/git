@@ -1,0 +1,41 @@
+<header>
+        <div class="header">
+          <div class="header-left">
+            <div class="header-logo">
+            		<img src="{weikucms::STATICS}/file/images/login-tu.png" alt="">
+            </div>
+            <div class="header-title">晓课盒子</div>
+            <div class="hedaer-text">欢迎来到晓课盒子微信智能教育系统！</div>
+          </div>
+          <div class="header-right">
+            <div class="header-user-name"> 
+                              <span class="name-header">{weikucms:$default_og_name}</span>
+                            <span class="icon-chevron-down2 ml5"></span>
+                      </div>
+                      <div class="header-name">
+                              <ul class="header-name-ul">
+                                      <volist name="all_og" id="v">
+                                        <li class="header-name-ul-li" onclick="qie({weikucms:$v.og_no})">{weikucms:$v.name}</li>
+                                      </volist>
+                              </ul>
+                              <div id="triangle-up"></div>
+                      </div>
+                      <div class="icon-switch" onclick="logout()"></div>
+          </div>
+        </div>
+        <script>
+          function logout(){
+            if(confirm("你确定退出吗")){
+              window.location.href="{weikucms::U('Index/logout')}";
+            }
+          }
+          function qie(id){
+            $.post("{weikucms::U('Index/qie')}",{id:id},function(data){
+              if(data==1)
+              {
+                window.location.href="{weikucms::U('Main/index')}";
+              }
+            })
+          }
+        </script>
+      </header>

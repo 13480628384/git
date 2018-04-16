@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <link href="./tpl/Wap/default/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./tpl/Wap/default/css/style_cd.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>玫瑰云网 - 充电器</title>
+</head>
+<body>
+<div class="width750">
+    <img src="./tpl/Wap/default/img/charger.png" alt="玫瑰云网" width="100%" style="margin-bottom: 30px;">
+    <div class="botton_cdq weixin_pay" datapay="{weikucms:$out.0}" datatime="{weikucms:$out.1}">
+        支付{weikucms:$out.0}元 充电{weikucms:$out.1}分钟 </div>
+    <div class="botton_cdq weixin_pay" datapay="{weikucms:$out.2}" datatime="{weikucms:$out.3}">
+        支付{weikucms:$out.2}元 充电{weikucms:$out.3}分钟</div>
+    <div class="botton_cdq weixin_pay" datapay="{weikucms:$out.4}" datatime="{weikucms:$out.5}">
+        支付{weikucms:$out.4}元 充电{weikucms:$out.5}分钟</div>
+    <div class="botton_cdq free">免费 充电30分钟</div>
+    <div class="fozi" style="padding-left:3%; border-color: #4D9ADA; clear: both;">&nbsp;</div>
+    <div class="fozi" style="padding-left:3%;border-color: #4D9ADA;"><a   style=" color:#4D9ADA"href="http://www.roseo2o.com"><em>玫瑰物联</em> <br>商业设备物联化,运营交易平台化</a></div>
+    <div class="fozi" style="padding-left:3%;border-color: #4D9ADA;"><a  style=" color:#4D9ADA" href="http://coworking.cn"><em>众志联盟</em> <br>创建全球领先的智能开关研发制造企业</a></div>
+    <div style="height:65px "></div>
+    <h6 class="foort">玫瑰物联版权所有</h6>
+</div>
+</body>
+<input type="hidden" class="scan_code" value="{weikucms:$scan_code}">
+<input type="hidden" class="buyer_id" value="{weikucms:$buyer_id}">
+<input type="hidden" id="start" value="{weikucms:$start}"/>
+<input type="hidden" class="device_command" value="{weikucms:$device_command}">
+<input type="hidden" class="device_id" value="{weikucms:$device_id}">
+<input type="hidden" class="online_status" value="{weikucms:$online_status}">
+<input type="hidden" class="alipay_pay_charger" value="{weikucms::U('WeixinPay/alipay_pay')}">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/common.js"></script>
+<script>
+    //免费充电
+    $('.free').click(function(){
+        if($(this).hasClass('on')){
+            return false;
+        }
+        var device_command = $('.device_command').val();
+        var device_id = $('.device_id').val();
+        $(this).addClass('on');
+        $.post("{weikucms::U('WeixinPay/free')}",{device_command:device_command,device_id:device_id},function(data){
+            if(data.code == 200){
+                alert('充电开始');
+            } else {
+                alert('充电失败');
+            }
+            $('.free').removeClass('on');
+        },'json')
+    });
+    $('.weixin_pay').click(function(){
+        var online_status = $.trim($('.online_status').val());
+        var buyer_id = $.trim($('.buyer_id').val());
+        var scan_code = $.trim($('.scan_code').val());
+        var device_command = $('.device_command').val();
+        var device_id = $('.device_id').val();
+        var alipay_pay_charger = $('.alipay_pay_charger').val();
+        var price = $(this).attr('datapay');
+        var times = $(this).attr('datatime');
+        if(online_status == 0){
+            alert('设备不在线');
+			return false;
+        }
+        if(price == '' || buyer_id == '' || times == ''){
+            alert('参数错误，请重新扫码');
+			return false;
+        }
+        var DATA = {
+            price: price,
+            buyer_id: buyer_id,
+            scan_code:scan_code,
+            times:times,
+            device_command:device_command,
+            device_id:device_id
+        }
+        post(alipay_pay_charger,DATA);
+    });
+    var starts = $('#start').val();
+    if(starts == 1){
+        alert('充电器开始充电');
+    }
+
+</script>
+</html>

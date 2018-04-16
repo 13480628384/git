@@ -1,0 +1,5 @@
+[ 2017-12-18T16:17:06+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.019002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027002s ]
+

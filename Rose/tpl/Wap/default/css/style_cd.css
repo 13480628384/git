@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* index全部css */
+.width750{ width: 750px;margin:auto; }
+
+ .width750 h2{    text-align: center;
+    font-size: 3rem; color: #A4A4A4}
+  .width750  p{    width: 640px;
+    margin: auto;
+ font-size: 1.5rem; margin-bottom: 50px;}
+ .width750 h6{ text-align: center;; font-size: 2rem; color: #A4A4A4; margin-top: 50px;}
+ /* index全部css结束 */
+ /* admin全部css 开始*/
+.hearpic img{width: 100px; height: 100px; border-radius: 50px;}
+.armchair_hearder{ width: 400px;margin:auto; }
+.hearpic{ float: left; }
+.userid{height: 100px; line-height: 100px; margin-left: 20px; font-size: 3rem; float: left}
+.settext{ clear: both; width: 600px; margin: auto;  text-align:center; margin-top: 150px;}
+.settext li div{ clear: both; width: 400px; margin:auto; margin-top: 20px;}
+.settext li span{ font-size: 2rem; color: #A4A4A4; display: block; text-align: left;margin-bottom: 20px;padding-top: 20px;}
+.settext li .jia1{ width: 60px; height: 50px; float:left;}
+.settext li input{ width: 260px; height: 50px; float:left; padding-left: 10px;}
+.qudbutton{ clear: both; padding-top: 20px;  }
+.qudbutton button{ height: 50px; }
+ /* admin全部css结束*/
+.fozi{border-bottom:solid 1px #00A098; margin-top:20px; padding-bottom:30px;}
+.fozi a{
+    clear: both;
+    color: #5FD0CA;
+    line-height: 50px;
+    font-size:2rem;
+
+    display:block;
+
+    text-decoration: none;
+}
+.helpimg{ width:100px; position:fixed; bottom:300px; right:0px;}
+.helpimg img{ width:100px;}
+
+li.lion1 {
+    background:#ea7215;
+}
+/*添加*/
+.inputdate{width: 450px; margin:auto; text-align: center;font-size: 2rem;    font-family: 微软雅黑;}
+.inputdate input{ border:none;width:50px;  overflow:scroll;}
+/*添加*/
+.botton_cdq{
+    text-align:center;
+    background-color: #3bb3e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:2rem;
+    text-decoration: none;
+    color: #fff;
+    height: 70px;
+    width: 40%;
+    float: left;
+    margin-left: 7.5%;
+    line-height: 70px;
+    margin-top: 20px;
+    padding-left:20px;
+    border-left: solid 1px #2ab7ec;
+    background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44,160,202)), color-stop(1, rgb(62,184,229)) );
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.botton_cdq:hover{ color: #f00;}
+.foort{
+    height: 65px;
+    line-height: 65px;
+    background: #4D9ADA;
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    color: #FFFFFF;
+    margin-top: 50px;
+    font-family: 微软雅黑;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+
+
+

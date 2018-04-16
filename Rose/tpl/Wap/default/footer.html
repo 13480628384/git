@@ -1,0 +1,27 @@
+<ul class="footer_rose">
+    <li data-url="{weikucms::U('Rose2Personal/index',array('openid'=>$openid))}">首页</li>
+    <li data-url="{weikucms::U('Device/device_list',array('openid'=>$openid))}">设备列表</li>
+    <li data-url="{weikucms::U('Device/group_list',array('openid'=>$openid))}">群组列表</li>
+    <li data-url="{weikucms::U('Rose2Personal/presonal_new',array('openid'=>$openid))}">个人信息</li>
+</ul>
+<script type="text/javascript" charset="utf-8">
+    $('.footer_rose li').click(function(){
+        location.href = $(this).attr('data-url');
+    });
+    var url = location.pathname + location.search;
+    var code = url.split("&code")[0];
+    $("[data-url='"+code+"']").addClass('active');
+    function onBridgeReady(){
+        WeixinJSBridge.call('hideOptionMenu');
+    }
+    if (typeof WeixinJSBridge == "undefined"){
+        if( document.addEventListener ){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if (document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }
+    }else{
+        onBridgeReady();
+    }
+</script>

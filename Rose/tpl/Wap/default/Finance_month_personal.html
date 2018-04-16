@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>数据分析</title>
+    <style>
+        .header{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: CENTER;
+            background: #18b4ed;
+            color: #fff;
+            font-size: 16px;
+        }
+        .list li{
+            width: 100%;
+            background: #fff;
+            padding: 4px;
+            margin: auto;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="facility" style="margin-bottom: 80px;">
+    <header class="header">{weikucms:$month}月份数据</header>
+    <ul class="list">
+        <volist name="result" id="v">
+        <li class="subject_4 pbw">
+            <div style="white-space:normal; ">
+                设备编号：{weikucms:$v.deivce_command}<br/>
+                <b style="font-size: 16px;font-weight: 600;">消费金额：{weikucms:$v.consume_account}</b>
+                消费类型： <if condition="$v['type'] eq 1">微信消费
+                <elseif condition="$v['type'] eq 3"/>按摩椅消费
+                <elseif condition="$v['type'] eq 4"/>按摩椅支付宝消费
+                <elseif condition="$v['type'] eq 2"/>支付宝消费
+                <elseif condition="$v['type'] eq 5"/>充电器消费
+                <elseif condition="$v['type'] eq 6"/>充电器支付宝消费
+                <elseif condition="$v['type'] eq 9"/>微信洗衣机消费
+                <elseif condition="$v['type'] eq 10"/>支付宝洗衣机消费
+                <elseif condition="$v['type'] eq 15"/>微信洗车
+                <elseif condition="$v['type'] eq 16"/>支付宝洗车
+                <elseif condition="$v['type'] eq 13"/>微信电动车消费
+                <elseif condition="$v['type'] eq 14"/>支付宝电动车消费
+                <else/>其它</if><br/>
+                消费单号：{weikucms:$v.id} <br/>客户名称：{weikucms:$v.from_username}<br/>
+                设备位置：默认地址
+            </div>
+            <p class="pl">消费时间：{weikucms:$v.create_date} </p>
+        </li>
+        </volist>
+    </ul>
+</div>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+</html>

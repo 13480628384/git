@@ -1,0 +1,132 @@
+<html><head>
+    <title>微信支付</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/del_vip.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <style type="text/css">
+        .bg-df3100 {
+            background: #f7f7f7;
+        }
+        .header-top{
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .weui-form-preview {
+            position: relative;
+            background-color: #FFFFFF;
+        }
+        .weui-form-preview__hd {
+            position: relative;
+            padding: 10px 15px;
+            text-align: right;
+            line-height: 2.5em;
+        }
+        .weui-form-preview__item {
+            overflow: hidden;
+        }
+        .weui-form-preview__label {
+            float: left;
+            margin-right: 1em;
+            min-width: 4em;
+            color: #999999;
+            text-align: justify;
+            text-align-last: justify;
+        }
+        .weui-form-preview__hd .weui-form-preview__value {
+            font-style: normal;
+            font-size: 1.6em;
+        }
+        .weui-form-preview__value {
+            display: block;
+            overflow: hidden;
+            word-break: normal;
+            word-wrap: break-word;
+        }
+        .weui-form-preview__bd {
+            padding: 10px 15px;
+            font-size: .9em;
+            text-align: right;
+            color: #999999;
+            line-height: 2;
+        }
+        .weui-form-preview__item {
+            overflow: hidden;
+        }
+        .weui-form-preview__label {
+            float: left;
+            margin-right: 1em;
+            min-width: 4em;
+            color: #999999;
+            text-align: justify;
+            text-align-last: justify;
+        }
+        .weui-form-preview__value {
+            display: block;
+            overflow: hidden;
+            word-break: normal;
+            word-wrap: break-word;
+        }
+        .page__bd{
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body class="bg-df3100">
+<header class="header-top">
+    微信支付
+</header>
+<div class="page__bd">
+    <volist name="order" id="v">
+        <div class="weui-form-preview">
+            <div class="weui-form-preview__hd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">付款金额</label>
+                    <em class="weui-form-preview__value" style="color: #333">¥{weikucms:$v.pay_account}</em>
+                </div>
+            </div>
+            <div class="weui-form-preview__bd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">商品</label>
+                    <span class="weui-form-preview__value">深圳玫瑰物联-充值</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">商户名称</label>
+                    <span class="weui-form-preview__value">玫瑰物联</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">当前状态</label>
+                    <span class="weui-form-preview__value"><if condition="$v['pay_status'] eq 1">支付成功<else/>支付失败</if></span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">支付时间</label>
+                    <span class="weui-form-preview__value">{weikucms:$v.create_date}</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">支付方式</label>
+                    <span class="weui-form-preview__value">其它</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">交易单号</label>
+                    <span class="weui-form-preview__value">{weikucms:$v.transaction_id}</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">商户单号</label>
+                    <span class="weui-form-preview__value">{weikucms:$v.out_trade_no}</span>
+                </div>
+            </div>
+        </div>
+        <br>
+    </volist>
+</div>
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/jsweixin1.0.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>注册会员</title>
+    <style>
+        .time_nums{
+            width: 110px;
+            height: 36px;
+            margin-top: 5px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body style="background: #f2f2f2">
+<header class="header-top">
+    注册会员
+</header>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form" id="J_TJJJRPhone">
+        <li><label  class="label">姓名</label><input type="text" maxlength="4" placeholder="请输入姓名" class="name"></li>
+        <li><label class="label">电话</label><input type="number" class="phone" pattern="[0-9]*" placeholder="电话" maxlength="11"></li>
+        <li><label class="label">密码</label><input type="password" class="password" placeholder="默认手机后六位" maxlength="6" ></li>
+        </ul>
+</section>
+<div class="space-20"></div>
+<aside class="account-submit">
+    <button class="ui-btn-lg ui-btn-danger add_name" type="button" id="J_submitCustomer" style="background-color: #30BF75;border-color: #30bf75;">确定</button>
+</aside>
+
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+</body>
+<script>
+    Zepto(function($){
+        $('.add_name').tap(function(){
+            var patrn = /^((13[0-9])|(15[0-35-9])|(18[0,2,3,5-9]))\d{8}$/;
+            var openid = $.trim($('.openid').val());
+            var phone = $.trim($('.phone').val());
+            var name = $.trim($('.name').val());
+            var password = $.trim($('.password').val());
+            if(name == ''){
+                $.dialog({
+                    content:'姓名不能为空',
+                    button:['好']
+                });
+                return false;
+            }
+            if(password == ''){
+                $.dialog({
+                    content:'密码不能为空',
+                    button:['好']
+                });
+                return false;
+            }
+            if(password.length != 6){
+                $.dialog({
+                    content:'密码不正确',
+                    button:['好']
+                });
+                return false;
+            }
+            if(phone == ''){
+                $.dialog({
+                    content:'手机号码不能为空',
+                    button:['好']
+                });
+                return false;
+            }
+            if(!patrn.test(phone)){
+                $.dialog({
+                    content:'手机号码不正确',
+                    button:['好']
+                });
+                return false;
+            }
+            var el=$.loading({
+                content:'正在提交'
+            });
+            $.post("{weikucms::U('add_post')}",{phone:phone,password:password,openid:openid,name:name},function(reg){
+                if(reg.code==200){
+                    var DG=$.dialog({
+                        content:'恭喜您，提交成功！',
+                        button:['好']
+                    });
+                    DG.on('dialog:action',function(e){
+                        document.location.href="{weikucms::U('Glass/index',array('openid'=>$openid,'scan_code'=>$scan_code))}";
+                    });
+                }else{
+                    $.dialog({
+                        content:'网络错误，请重试',
+                        button:['好']
+                    });
+                }
+                el.hide();
+            },'json');
+        });
+    })
+</script>
+</html>
+
+

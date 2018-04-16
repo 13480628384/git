@@ -1,0 +1,39 @@
+
+/*个人中心*/
+.web_aboutme{ width: 100%; margin:auto; }
+.web_aboutme .web_aboutme_top{ height: 11.5rem;background: #2ebe74;}
+.web_aboutme .web_aboutme_top_top{ height: 7rem; border-bottom: solid 1px #fff }
+.web_aboutme .web_aboutme_top_top_img{ float: left; width: 5rem; height: 5rem; border-radius: 1rem;margin-top: 1rem;}
+.web_aboutme .web_aboutme_top_top p{ height: 7rem;line-height: 7rem; float: left; margin-left: 0.75rem; color: #fff; font-size: 1.8rem }
+.web_aboutme .web_aboutme_top_bottom{ height: 4rem; line-height: 4rem; }
+.web_aboutme .web_aboutme_top_bottom_left{width: 49%; border-right:dashed 1px #fff; float: left;height: 4.5rem; }
+.web_aboutme .web_aboutme_top_bottom_right{width: 49%; float: left;height: 4.5rem;}
+.web_aboutme .web_aboutme_top_bottom img{padding-top: 0.6rem;width: 2.4rem; float: left;}
+.web_aboutme .web_aboutme_top_bottom span{font-size: 4rem;color: #fff;}
+.web_aboutme .web_aboutme_end{height: 1rem; border-bottom: solid 1px #37c07a}
+.web_aboutme .web_aboutme_vip{ background: #fff; border-bottom: solid 1px #37c07a;padding-bottom:0.75rem}
+.web_aboutme .web_aboutme_vip h2{ height: 3rem; line-height: 3rem; width: 95%; margin:auto; border-bottom:dashed 1px #37c07a; color: #172b1c; font-size: 1.7rem; font-weight: normal;}
+.web_aboutme .web_aboutme_vip p{ font-size: 1.5rem;line-height: 2.5rem; color: #172b1c; width: 95%; margin:auto; }
+.web_aboutme .web_aboutme_vip h3{font-size: 1.5rem; font-weight: normal;line-height: 3rem; height:3rem; color: #172b1c;width: 95%;margin:auto;text-align: center;font-weight: normal;}
+.web_aboutme_vip2 img{width: 90%;margin:auto; padding-bottom: 3rem;}
+.web_aboutme .web_aboutme_vip_button p{ display: none; }
+.web_aboutme .web_aboutme_vip2{ padding: 0;text-align: center;   }
+.web_aboutme_top_top_all{width:60%;margin:auto;}
+.web_aboutme_top_bottom_left_all{width:40%;margin:auto; text-align: center;}
+.web_aboutme_top_bottom_right_all{width:52%;margin:auto;text-align: center;}
+
+.indent-btn{
+    border: 1px solid #f57789;
+    border-radius: 5px;
+    color: #f57789;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 20%;
+    text-align: center;
+}
+.indent-btn a {
+    color:#f57789;
+}

@@ -1,0 +1,266 @@
+<html><head>
+    <meta charset="utf-8"/>
+    <title>添加用户</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/del_vip.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <style>
+        /* .slideTwo */
+        .slideTwo {
+            width: 80px;
+            height: 30px;
+            background: #30bf75;
+            float:right;
+            margin-right: 115px;
+            margin-top: 7px;
+            position: relative;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+            -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+        }
+        .slideTwo:after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            height: 2px;
+            width: 52px;
+            background: #111;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+            -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+        }
+        .slideTwo label {
+            display: block;
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            position: absolute;
+            top: 4px;
+            z-index: 1;
+            left: 4px;
+            background: #fcfff4;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+        }
+        .slideTwo label:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            background: #333;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-box-shadow: inset 0px 1px 1px black, 0px 1px 0px rgba(255, 255, 255, 0.9);
+            -webkit-box-shadow: inset 0px 1px 1px black, 0px 1px 0px rgba(255, 255, 255, 0.9);
+            box-shadow: inset 0px 1px 1px black, 0px 1px 0px rgba(255, 255, 255, 0.9);
+        }
+        .slideTwo input[type=checkbox] {
+            visibility: hidden;
+        }
+        .slideTwo input[type=checkbox]:checked + label {
+            left: 54px;
+        }
+        .slideTwo input[type=checkbox]:checked + label:after {
+            background: #00bf00;
+        }
+        /* end .slideTwo */
+        .squaredOne {
+            width: 28px;
+            height: 28px;
+            position: relative;
+            float:right;
+            margin-right: 135px;
+            margin-top: 7px;
+            background: #30bf75;
+            background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .squaredOne label {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            cursor: pointer;
+            background: -moz-linear-gradient(top, #222222 0%, #45484d 100%);
+            background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+            background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+            -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+            -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+        }
+        .squaredOne label:after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background: #30bf75;
+            background: -moz-linear-gradient(top, #30bf75 0%, #30bf75 100%);
+            background: -webkit-linear-gradient(top, #30bf75 0%, #30bf75 100%);
+            background: linear-gradient(to bottom, #30bf75 0%, #30bf75 100%);
+            -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+            opacity: 0;
+        }
+        .squaredOne label:hover::after {
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+            opacity: 0.2;
+        }
+        .squaredOne input[type=checkbox] {
+            visibility: hidden;
+        }
+        .squaredOne input[type=checkbox]:checked + label:after {
+            filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-top">
+    添加用户
+</header>
+<section class="ucenter-main animated fadeInDown">
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form" id="J_TJJJRPhone">
+        <li><label  class="label">姓名</label><input type="text" maxlength="6" placeholder="请输入姓名" id="name"></li>
+        <li><label  class="label">后台账号</label><input type="text" maxlength="6" placeholder="请输入账号" id="login_name"></li>
+        <li><label class="label">密码</label><input type="password" maxlength="6" placeholder="请输入密码" id="password"></li>
+        <li><label class="label">电话</label><input type="number" maxlength="11" placeholder="请输入电话" id="phone"></li>
+        <li><label  class="label">是否分成</label>
+            <div class="slideTwo">
+                <input type="checkbox" value="None" id="slideTwo" name="check"/>
+                <label for="slideTwo"></label>
+            </div>
+        </li>
+    </ul>
+    <div class="space-10"></div>
+    <ul class="um-list um-list-form">
+        <li><label class="label">备注</label><input type="text" maxlength="50" placeholder="选填" id="remarks"></li>
+    </ul>
+    <p class="um-tips"><em>提示：</em>请务必提交真实的客户信息，若多次提交虚假信息，您的账号会被禁用。
+        </p>
+</section>
+<div class="space-20"></div>
+<aside class="account-submit">
+    <button class="ui-btn-lg ui-btn-danger" type="button" id="J_submitCustomer" style="background-color: #30BF75;border-color: #30bf75;">马上添加</button>
+</aside>
+<div class="space-20"></div>
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<input type="hidden" class="fencheng" value="0">
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/jsweixin1.0.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+<script type="text/javascript">
+    Zepto(function($){
+
+        $('#slideTwo').click(function(){
+            if($('input[name="check"]').prop("checked"))
+            {
+                $('.fencheng').val(1);
+            }else{
+                $('.fencheng').val(0);
+            }
+        });
+        var REG = {
+            name: /^[a-zA-Z\u4e00-\u9fa5]{2,8}$/,
+            phone: /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^0{0,1}1[0|1|2|3|4|5|6|7|8|9][0-9]{9}$)/,
+            passwd:/^[0-9]{6,8}$/,
+            id:/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[A-Z])$/,
+            email:/\w+[@]{1}\w+[.]\w+/
+        }
+        $('#J_submitCustomer').tap(function(){
+            var name = $.trim($('#name').val());
+            var phone = $.trim($('#phone').val());
+            var password = $.trim($('#password').val());
+            var login_name = $.trim($('#login_name').val());
+            var remarks = $.trim($('#remarks').val());
+            var is_fencheng = $.trim($('.fencheng').val());
+            var openid = $.trim($('.openid').val());
+            if (name == '') {
+                $.dialog({
+                    content: '请输入姓名',
+                    button: ['好']
+                });
+                return false;
+            }
+            if (login_name == '') {
+                $.dialog({
+                    content: '请输入账号',
+                    button: ['好']
+                });
+                return false;
+            }
+            if (password == '') {
+                $.dialog({
+                    content: '请输入密码',
+                    button: ['好']
+                });
+                return false;
+            }
+            if(!REG.phone.test(phone)){
+                $.dialog({
+                    content:'请输入正确的手机号码',
+                    button:['好']
+                });
+                return false;
+            }
+            var el = $.loading({
+                content: '正在提交'
+            });
+            $.post("{weikucms::U('add_post_user')}",{openid:openid,login_name:login_name,phone:phone
+                ,name:name,remarks:remarks,password:password,is_fencheng:is_fencheng},function(data){
+                if(data.code == 200){
+                    var dg = $.dialog({
+                        content:data.message,
+                        button:['好']
+                    });
+                    dg.on('dialog:action', function (e) {
+                        document.location.href = "{weikucms::U('users_list',array('openid'=>$openid))}";
+                    });
+                } else {
+                    $.dialog({
+                        content:data.message,
+                        button:['好']
+                    });
+                }
+                el.hide();
+            },'json')
+        })
+    })
+</script>
+</body></html>

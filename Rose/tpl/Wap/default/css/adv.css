@@ -1,0 +1,34 @@
+﻿/*我是广告商*/
+.adv .adv-top{height: 14.5rem;background-image: url(../img/hmgbj.png); background-size: 100% 100%;}
+.adv .adv-top-left-pic{ border:solid 1px #f2f2f2; border-radius: 50%; width: 5rem; height: 5rem; margin-top: 1rem;margin-bottom: 1.8rem;}
+.adv .adv-top-left{width: 26%;float:left;text-align: center;}
+.adv .adv-top-left-p {height:3rem; line-height: 3rem; width: 80%; margin:auto;}
+.adv .adv-top-left-p img{width: 2.5rem;float: left;}
+.adv .adv-top-left-p span{font-size: 14px;color: #fff;}
+.adv .adv-top-right{width: 74%; float: left;}
+.adv .adv-top-right li{width: 46%;float:left; margin-right: 2%; margin-left: 2%;margin-top:0.9rem; height: 3.5rem;}
+.adv .adv-top-right li img{ width: 100%; height: 100%; }
+.adv .adv-con h2{ text-align: center; height: 3rem; line-height: 3rem;color: #172b1c; font-size: 1.6rem; }
+.adv .adv-con{ background: #fff;}
+.adv .adv-con p{width: 92%; margin:auto; color: #17120e; font-size: 1.5rem;}
+.adv .adv-con input{    padding-right: 1rem;width: 60%; height: 4rem; line-height: 4rem; border:solid 1px #999; border-radius:6px; margin-left: 0.6rem;padding-left: 1rem;}
+.adv .ggimg{width: 60%;height: 10rem; margin: auto;border: solid 1px #999; border-radius: 6px; margin-left: 0.6rem;padding-left: 1rem; margin-top: 1rem; margin-bottom: 1rem;    padding-right: 1rem;}
+.adv .adv-con p span{width: 20%; display: block; float: left;height: 4rem;line-height: 4rem;}
+.adv .adv-con h6{ font-size: 1.4rem; color: #717171; padding-top: 1rem; padding-bottom: 1rem;width: 90%;margin: auto; }
+.adv .adv-con .adv-con-buttonimg img{ width: 100% }
+.adv .adv-con .adv-con-buttonimg{width: 90%;margin: auto;}
+.adv .adv-bottom li{width: 100%; text-align: center;    background: #2EBE74; height: 2rem;line-height: 2rem;}
+.adv .adv-bottom .adv-table-title{ height: 2rem; text-align: center;color: #fff;font-size: 1.5rem; }
+.adv .adv-bottom .adv-table-title2{ height: 6rem; text-align: center;color:#717171; border:solid 1px #ccc; }
+.adv .adv-bottom .adv-table-title img{width:1.2rem;}
+.adv .adv-bottom .adv-table-other{position: relative;}
+.adv .adv-bottom .adv-table-other ul{position: absolute;top:2rem;left: 0}
+.adv .adv-table-other2{display: none;}
+.adv .adv-table-other3{display: none;}
+.adv .adv-table-other2-td{display: none;}
+.adv .adv-table-other3-td{display: none;}
+.adv .adv-bottom ul{width: 100%; display: none;}
+.adv .adv-bottom li:hover{background: #fff; color: #172b1c;}
+.adv .adv-bottom h2{text-align: center; height: 3rem;line-height: 3rem;color: #172b1c;font-size: 1.6rem; margin-top: 2rem;}
+.adv .ggimg-input{width: 60%;height: 10rem;margin: auto;border: solid 1px #999; border-radius: 6px; margin-left: 0.6rem;
+    padding-left: 1rem;margin-top: 1rem;margin-bottom: 1rem;padding-right: 1rem;position: absolute;left: 20%;opacity: 0;}

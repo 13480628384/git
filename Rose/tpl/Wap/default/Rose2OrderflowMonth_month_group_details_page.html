@@ -1,0 +1,30 @@
+<volist name="balance" id="v">
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+    <div class="tab_date">
+        <div class="tab_ear1">{weikucms:$v.deivce_command}</div>
+        <div class="tab_ear1"><span>{weikucms:$v.consume_account} 元</span><p></p></div>
+        <div class="tab_ear1">
+            <if condition="$v['type'] eq 1">微信消费
+                <elseif condition="$v['type'] eq 3"/>按摩椅消费
+                <elseif condition="$v['type'] eq 4"/>按摩椅支付宝消费
+                <elseif condition="$v['type'] eq 2"/>支付宝消费
+                <elseif condition="$v['type'] eq 5"/>充电器消费
+                <elseif condition="$v['type'] eq 6"/>充电器支付宝消费
+                <elseif condition="$v['type'] eq 9"/>微信洗衣机消费
+                <elseif condition="$v['type'] eq 10"/>支付宝洗衣机消费
+                <elseif condition="$v['type'] eq 15"/>微信洗车
+                <elseif condition="$v['type'] eq 16"/>支付宝洗车
+                <elseif condition="$v['type'] eq 13"/>微信电动车消费
+                <elseif condition="$v['type'] eq 14"/>支付宝电动车消费
+                <else/>其它</if>
+        </div>
+        <div class="tab_ear1">
+            <if condition="$v['command_status'] eq 2">成功消费
+                <elseif condition="$v['command_status'] eq 1"/>正在消费
+                <elseif condition="$v['command_status'] eq 3"/>已退币
+            </if>
+        </div>
+        <div class="tab_ear1">{weikucms:$v.create_date}</div>
+    </div>
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+</volist>

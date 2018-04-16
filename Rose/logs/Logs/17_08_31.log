@@ -1,0 +1,94 @@
+[ 2017-08-31T09:42:46+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.104006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.133008s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:1.395080s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv4ru6Afo8yH-LPijpMFRsWE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:1.096063s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv4ru6Afo8yH-LPijpMFRsWE' ) LIMIT 1   [ RunTime:2.576148s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = '2017033016_55B01A6FFA5D8FCA4794C4FB512F8615'
+            AND di.del_flag = 0 [ RunTime:0.689039s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '2017081514_DD0CC66382FAB6CED4CF5241EEB7B016'
+            AND di.del_flag = 0 [ RunTime:5.115293s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '2017081514_DD0CC66382FAB6CED4CF5241EEB7B016'
+            AND di.del_flag = 0 [ RunTime:0.354020s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = '2017033016_55B01A6FFA5D8FCA4794C4FB512F8615'
+            AND di.del_flag = 0 [ RunTime:0.215012s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = '2017033016_55B01A6FFA5D8FCA4794C4FB512F8615'
+            AND di.del_flag = 0 [ RunTime:0.287017s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.008000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = '2017033016_55B01A6FFA5D8FCA4794C4FB512F8615' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:6.011344s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv4ru6Afo8yH-LPijpMFRsWE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `sys_user` SET `totals`=167 WHERE ( `del_flag` = 0 ) AND ( `id` = '2017081514_DD0CC66382FAB6CED4CF5241EEB7B016' ) [ RunTime:0.071004s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv4ru6Afo8yH-LPijpMFRsWE' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-21.135209s ]
+INFO: [ view_template ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-21.158210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148009s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-21.306219s ]
+INFO: Run TokenBuild Behavior [ RunTime:-21.325220s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-21.326220s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-21.328220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-21.329220s ]
+INFO: [ view_end ] --END-- [ RunTime:0.012001s ]
+

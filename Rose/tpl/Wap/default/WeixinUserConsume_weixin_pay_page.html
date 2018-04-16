@@ -1,0 +1,9 @@
+<volist name="balance" id="v">
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+    <div class="tab_date">
+        <div class="tab_num1"> + {weikucms:$v.pay_account}</div>
+        <div class="tab_dev1" style="width: 40%;text-align: center;"><if condition="$v['pay_status'] eq 1">成功<else/>失败</if></div>
+        <div class="tab_ear1" style="width: 30%">{weikucms:$v.create_date}</div>
+    </div>
+    <div style="height: 0.5rem; background: #f2f2f2"></div>
+</volist>

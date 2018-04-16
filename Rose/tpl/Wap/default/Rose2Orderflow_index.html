@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/report_forms.css" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>流水报表</title>
+    <style>
+        .tab_ear1{width: 20%;}
+        .tab-yf-box-main-name{width: 20%}
+    </style>
+</head>
+<body>
+<div class="report_forms">
+    <div id="tabbox">
+        <ul class="tabs" id="tabs">
+            <div class="tabs_return" onclick='javascript:history.go(-1)'><img src="./tpl/Wap/default/img/left.png" alt="" width="30%"></div>
+            <li class="thistab">24小时</li>
+            <li><a href="{weikucms::U('week_index',array('openid'=>$openid))}">一周</a></li>
+            <li><a href="{weikucms::U('Rose2OrderflowMonth/index',array('openid'=>$openid))}">月份</a></li>
+            <div class="clear"></div>
+        </ul>
+        <ul class="tab_conbox" id="tab_conbox">
+            <div class="tab-yf-box-main f14">
+                <div class="tab-yf-box-main-name">
+                    <div>编号</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>收益</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>类型</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>状态</div>
+                </div>
+                <div class="tab-yf-box-main-name">
+                    <div>时间</div>
+                </div>
+            </div>
+            <!-- 每周内容 -->
+            <li class="tab_con ">
+                <volist name="balance" id="v">
+                    <div style="height: 0.5rem; background: #f2f2f2"></div>
+                    <div class="tab_date">
+                        <div class="tab_ear1">{weikucms:$v.deivce_command}</div>
+                        <div class="tab_ear1"><span>{weikucms:$v.consume_account} 元</span><p></p></div>
+                        <div class="tab_ear1">
+                            <if condition="$v['type'] eq 1">微信消费
+                                <elseif condition="$v['type'] eq 3"/>按摩椅消费
+                                <elseif condition="$v['type'] eq 4"/>按摩椅支付宝消费
+                                <elseif condition="$v['type'] eq 2"/>支付宝消费
+                                <elseif condition="$v['type'] eq 5"/>充电器消费
+                                <elseif condition="$v['type'] eq 6"/>充电器支付宝消费
+                                <elseif condition="$v['type'] eq 9"/>微信洗衣机消费
+                                <elseif condition="$v['type'] eq 10"/>支付宝洗衣机消费
+                                <elseif condition="$v['type'] eq 15"/>微信洗车
+                                <elseif condition="$v['type'] eq 16"/>支付宝洗车
+                                <elseif condition="$v['type'] eq 13"/>微信电动车消费
+                                <elseif condition="$v['type'] eq 14"/>支付宝电动车消费
+                                <else/>其它</if>
+                        </div>
+                        <div class="tab_ear1">
+                            <if condition="$v['command_status'] eq 2">成功消费
+                                <elseif condition="$v['command_status'] eq 1"/>正在消费
+                                <elseif condition="$v['command_status'] eq 3"/>已退币
+                            </if>
+                        </div>
+                        <div class="tab_ear1">{weikucms:$v.create_date}</div>
+                    </div>
+                    <div style="height: 0.5rem; background: #f2f2f2"></div>
+                </volist>
+            </li>
+            <div id="now_add">正在玩命加载中...</div>
+        </ul>
+    </div>
+</div>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+<script>
+    var n=0;
+    var stop=0;
+    var timeOut = null;
+    $(document).scroll(function(){
+        if(stop==1){
+            return false;
+        }
+        //滚动条顶部的偏移==总个文档的高度-窗口的高度
+        var diff = Number($(window).height()) + Number(20);
+        if($(document).height() - $(window).scrollTop() < diff){
+            if(timeOut != null) {
+                return false;
+            }
+            $('#now_add').css('display','block');
+            n++;
+            timeOut = setTimeout(function(){//1秒加载一次
+                $.post('',{"n": n,},function(html){
+                    if($.trim(html).length>0){
+                        $(html).appendTo('.tab_con');
+                        timeOut=null;
+                    }else{
+                        $('#now_add').html('没有啦');
+                        stop=1;
+                    }
+                },'html');
+            },1000);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./tpl/Wap/default/css/public.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/facility.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/tak.css">
+    <title>用户列表</title>
+</head>
+<body>
+<div class="facility" style="margin-bottom: 6rem;">
+    <table width="100%" align="center" >
+        <tr >
+            <td width="12%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">姓名</td>
+            <td width="22%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">电话</td>
+            <td width="12%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">分成</td>
+            <!--<td width="12%" height="73" align="center" valign="middle" bgcolor="#2ebf74" class="style1">操作</td>-->
+        </tr>
+        <if condition="$list neq null">
+            <volist name="list" id="v">
+                <tr >
+                    <td width="25%" align="center" valign="middle" class="style3">{weikucms:$v.name}</td>
+                    <td width="25%" align="center" valign="middle" class="style3">{weikucms:$v.phone}</td>
+                    <td width="25%" align="center" valign="middle" class="style3">
+                        <if condition="$v['is_into'] eq 1">是<else/>否</if>
+                    </td>
+                    <!--<td width="12%" align="center" valign="middle" class="style3">修改</td>-->
+                </tr>
+            </volist>
+        </if>
+    </table>
+</div>
+<script src="./tpl/Wap/default/js/jquery-1.11.2.min.js"></script>
+<script src="./tpl/Wap/default/js/font.js"></script>
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<include file="./tpl/Wap/default//footer.html" />
+</body>
+<script>
+
+</script>
+</html>

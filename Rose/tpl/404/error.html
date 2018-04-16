@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="./tpl/static/lib/css/common.css">
+	<link rel="stylesheet" href="./tpl/404/css/index.css">
+	<script type="text/javascript" href="{weikucms::STATICS}/lib/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./tpl/404/js/jquery.js"></script>
+	<script type="text/javascript">
+	// 设置超时时间为5秒钟
+	var timeout = 5;
+		function show() {
+			var showbox = $(".showbox");
+			showbox.html(timeout);
+			timeout--;
+		if (timeout == 0) {
+			window.opener = null;
+			window.location.href = "javascript:history.back();";
+		}
+		else {
+			setTimeout("show()", 1000);
+		}
+	}
+</script>
+    </head>
+    <body onload="show()">
+    	<div class="header">
+    		<div class="T-BACK">哦噢！走丢了...</div>
+		<div class="mistake">【404错误页面】</div>
+		<div class="return"><span class="showbox"></span>秒后返回上一页</div>
+		<div class="immediately-return"><a href="#" onclick="javascript:history.back();return false ">立即返回上一页</a></div>
+    	</div>
+    	<div>
+    		<img src="./tpl/404/images/2.png" />
+    	</div>
+    </body>
+</html>

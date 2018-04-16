@@ -1,0 +1,12 @@
+<volist name="give_list" id="v">
+    <tr>
+        <td width="35%" align="center" valign="middle" class="style3"><php>echo str_substr($v['title'],10)</php></td>
+        <td width="35%" align="center" valign="middle" class="style3">
+            <if condition="$v['audit_status'] eq 0">未审核
+                <elseif condition="$v['audit_status'] eq 1"/>审核通过
+                <else/>审核不通过</if>
+        </td>
+        <td width="15%" align="center" valign="middle" class="style3">{weikucms:$v.click_number}</td>
+        <td width="15%" align="center" valign="middle" class="style2 style3">{weikucms:$v.show_number}</td>
+    </tr>
+</volist>

@@ -1,0 +1,188 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-09-17 17:01:58
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-10-10 10:14:24
+*/
+.btn-add,.btn-lead{
+	float: left;
+	width: 106px;
+	height: 31px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 31px;
+	color: #fff;
+	border-radius: 16px;
+	margin-top:22.5px;
+	margin-right:10px;
+	cursor: pointer;
+}
+.btn-add{
+	background-color: #28be68;
+	/* margin-left:17px; */
+}
+.btn-lead{
+	background-color: #6cc8f7
+}
+.btn-case{
+	width:190px;
+	height:29px;
+	font-size: 12px;
+	line-height: 29px;
+	border:1px solid #d9d9d9;
+	text-align: center;
+	float: left;
+	margin-top:23.5px;
+	/* margin-left:10px; */
+	cursor: pointer;
+}
+.btn-case-download{
+	color:#45aade;
+}
+.btn-select-ul-li{
+	width:140px;
+	color:#838383;
+	font-size: 12px;
+	text-indent: 13px;
+	line-height: 30px;
+	margin-right:8px;
+	float: left;
+	margin-top:23px;
+	height:30px;
+	border:1px solid #e6e6e6;
+	cursor: pointer;
+	position: relative;
+}
+.btn-input{
+	width:240px;
+	height:30px;
+	border:1px solid #e6e6e6;
+	font-size: 12px;
+	float: left;
+	line-height: 30px;
+	position: relative;
+	margin-top: 23px;
+}
+.btn-input input{
+	border:0;
+	font-family: 微软雅黑;
+	width: 90%;
+	text-indent: 13px;
+}
+.btn-select{
+	float:left;
+}
+.tab-text-btn{
+	float: left;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	border-radius: 20px;
+	background-color: #ffad0f;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.tab-text-btn:hover{
+	background-color: red;
+}
+.tab-text-btn.color7ebe29{
+	background-color:#7ebe29;
+}
+.tab-text-btn.color7ebe29:hover{
+	background-color: red;
+}
+.tab-text-btn.colorff6868{
+	background-color:#ff6868;
+}
+.tab-text-btn.colorff6868:hover{
+	background-color: red;
+}
+.tab-title-top1.center{
+	text-align: center;
+	line-height: inherit;
+	padding-top: 20px;
+	padding-left: 0.7%;
+}
+.colorbcdc91{
+	color:#bcdc91;
+}
+.colorff7171{
+	color:#ff7171;
+}
+.btn-add:hover{
+	background-color: red;
+}
+.btn-lead:hover{
+	background-color: red;
+}
+.block{
+	display: block;
+}
+.btn-student{
+	width:218px;
+	height:40px;
+	font-size:16px;
+	line-height: 40px;
+	border-radius: 20px;
+	color:#fff;
+	background-color: #28be68;
+	text-align: center;
+	margin-top: 40px;
+	cursor: pointer;
+	font-family: 微软雅黑;
+}
+.btn-student:hover{
+	background-color: red;
+}
+.supervise-content:hover{
+	background-color: #7ebe29;
+	color:#fff;
+}
+.btn-student.mt30{
+	margin-top:30px;
+}
+.tab-text-btn.inline:first-child{
+	margin-left: 65px;
+}
+.tab-text-btn.inline{
+/*	float: initial;*/
+	margin-top: 15px;
+	margin-left: 5px;
+	display: inline-block;
+}
+.col-md-2.top-conter.colorfcd384 {
+	color: #fcd384;
+}
+.title-btn{
+	display: table;
+}
+.Mask-btn{
+	width: 200px;
+	height:39px;
+	line-height: 39px;
+	font-size:14px;
+	color:#fff;
+	background-color: #28be68;
+	text-align: center;
+	border-radius: 20px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+.Mask-btn:hover{
+	background-color:red;
+}
+.icon-search2.search2{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	color: #ccc;
+	font-size: 16px;
+	cursor: pointer;
+}
+.icon-plus{
+	display: inline-block;
+	font-size: 16px;
+	width: 16px;
+	vertical-align: text-bottom;
+}

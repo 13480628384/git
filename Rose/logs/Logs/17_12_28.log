@@ -1,0 +1,1946 @@
+[ 2017-12-28T09:38:41+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.028001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.025002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.161009s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.061004s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.016001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `del_flag` = '0' ) AND ( `type` IN ('1','3','5','9','11','13','15','17','19') ) AND ( `transfer_status` = '0' ) AND ( `consume_status` IN ('1','2') ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:13.349763s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `del_flag` = '0' ) AND ( `type` IN ('2','4','6','10','12','14','16','18') ) AND ( `transfer_status` = '0' ) AND ( `consume_status` IN ('1','2') ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.062004s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:2.871164s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.103006s ]
+SQL: UPDATE `sys_user` SET `totals`=119.3 WHERE ( `del_flag` = 0 ) AND ( `id` = 'kefuanmoyitest' ) [ RunTime:0.117007s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.021001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-18.404053s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-18.410053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101006s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-18.511059s ]
+INFO: Run TokenBuild Behavior [ RunTime:-18.513059s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-18.515059s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-18.516059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-18.518059s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T09:56:25+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.009001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.071004s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.007001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-12-28 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.044002s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-12')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:1.778102s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.007001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:1.228070s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.009000s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.111006s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.119007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.011001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.776273s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.785273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.833276s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.835276s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.836276s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.837276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.839276s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-28T09:56:34+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2017-12-28T09:56:37+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.042002s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:2.238128s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.147008s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.097006s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.602034s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 86 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.432253s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-4.433253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.468255s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.469255s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.471255s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.472255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.473255s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-12-28T10:05:23+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=tixian&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.010000s ]
+SQL: SELECT partner_trade_no,create_date,amount,status FROM `weixin_enterprise_payment` WHERE openid = 'odOIPv9UcOs4N_jKX0JECOwADE7s' and month(create_date) = 2 [ RunTime:0.005000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.273072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 51 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.276073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.299074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.300074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.301074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.302074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.303074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:05:32+08:00 ] ERR: (ThinkException) 非法操作:yucun
+[ 2017-12-28T10:14:11+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.009000s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 2 [ RunTime:0.069004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.256072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.258072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.272073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.273073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.273073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.274073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.275073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:14:19+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.104063s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.047003s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012000s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.411024s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.773159s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.774159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.793160s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.794160s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.795160s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.795160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.796160s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T10:14:24+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.045002s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012001s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 6 [ RunTime:0.068004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.339077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.340077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.352078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.353078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.354078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.355078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.356078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-28T10:14:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012000s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 3 [ RunTime:0.070004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.271072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.272072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.285073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.285073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.286073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.286073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.287073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:15:08+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.406080s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.365021s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.963170s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.965170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.979171s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.980171s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.981171s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.981171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.982171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T10:15:11+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.023001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.013000s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:0.066004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.237071s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 37 行.
+NOTIC: [8] Undefined index: partner_trade_no D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 38 行.
+NOTIC: [8] Undefined index: pay_status D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 41 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 37 行.
+NOTIC: [8] Undefined index: partner_trade_no D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 38 行.
+NOTIC: [8] Undefined index: pay_status D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 41 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 37 行.
+NOTIC: [8] Undefined index: partner_trade_no D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 38 行.
+NOTIC: [8] Undefined index: pay_status D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 41 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 37 行.
+NOTIC: [8] Undefined index: partner_trade_no D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 38 行.
+NOTIC: [8] Undefined index: pay_status D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 41 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.239071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.251072s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.252072s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.253072s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.254072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.254072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:15:57+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=7
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.009001s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 7 [ RunTime:0.070004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.216070s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 37 行.
+NOTIC: [8] Undefined index: partner_trade_no D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 38 行.
+NOTIC: [8] Undefined index: pay_status D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 41 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.218070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.230071s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.231071s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.232071s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.232071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.233071s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:17:12+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.253072s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.009000s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.054003s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.009000s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.615035s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.146180s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.148180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.162181s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.163181s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.163181s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.164181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.165181s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:17:38+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.020001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.013001s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id,pay_status FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:0.073004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.277073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.278073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.292074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.293074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.294074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.294074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.295074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:17:49+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.225070s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.010001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.048002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.391022s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.851163s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.852163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.867164s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.868164s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.869164s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.869164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.870165s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T10:17:51+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012001s ]
+SQL: SELECT from_username,create_date,pay_account,transaction_id,pay_status FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:0.072004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.218070s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.219070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.232071s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.233071s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.234071s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.234071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.235071s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:18:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012001s ]
+SQL: SELECT from_username,create_date,pay_account,out_trade_no,pay_status FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:0.076004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.324075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.326076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.339076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.340076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.341076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.341076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.342076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-28T10:18:48+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=yucun&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012001s ]
+SQL: SELECT from_username,create_date,pay_account,out_trade_no,pay_status FROM `weixin_pay_rec` WHERE create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:0.070004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.195068s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\a5e2ed6fe21d50b7674e555351962cf9.php 第 55 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.197068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.209069s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.209069s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.210069s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.211069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.212069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:18:58+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=month_personal&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009001s ]
+SQL: SELECT `from_username`,`deivce_command`,`create_date`,`consume_account`,`type`,`id`
+FROM `device_consume_rec` WHERE command_status='2' and consume_status in(1,2) and transfer_status='0' and del_flag='0'
+and create_by = 'kefuanmoyitest' and month(create_date) = 2 [ RunTime:1.568089s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.745157s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.746157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.780159s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.781159s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.782159s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.782159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.783159s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-28T10:19:23+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=month_personal&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009000s ]
+SQL: SELECT `from_username`,`deivce_command`,`create_date`,`consume_account`,`type`,`id`
+FROM `device_consume_rec` WHERE command_status='2' and consume_status in(1,2) and transfer_status='0' and del_flag='0'
+and create_by = 'kefuanmoyitest' and month(create_date) = 2 [ RunTime:1.248072s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.595149s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.597149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.612149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.613150s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.614150s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.614150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.615150s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:19:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=tixian&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.059003s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.008001s ]
+SQL: SELECT partner_trade_no,create_date,amount,status FROM `weixin_enterprise_payment` WHERE openid = 'odOIPv9UcOs4N_jKX0JECOwADE7s' and month(create_date) = 2 [ RunTime:0.050003s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.305075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 51 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.306075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.319076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.319076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.320076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.320076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.321076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T10:19:48+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=tixian&month=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.014001s ]
+SQL: SELECT partner_trade_no,create_date,amount,status FROM `weixin_enterprise_payment` WHERE openid = 'odOIPv9UcOs4N_jKX0JECOwADE7s' and month(create_date) = 2 [ RunTime:0.002000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.208069s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 51 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.210069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.223070s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.224070s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.225070s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.225070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.226070s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:19:59+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=month_personal&month=10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.013001s ]
+SQL: SELECT `from_username`,`deivce_command`,`create_date`,`consume_account`,`type`,`id`
+FROM `device_consume_rec` WHERE command_status='2' and consume_status in(1,2) and transfer_status='0' and del_flag='0'
+and create_by = 'kefuanmoyitest' and month(create_date) = 10 [ RunTime:1.331076s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.543145s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.544145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.559146s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.560146s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.561146s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.561146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.562146s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:33:45+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.013001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.794102s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.635036s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.809217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 31 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 27 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 35 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 38 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.811218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.825218s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.826218s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.827219s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.828219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.829219s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:34:06+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.016001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.344077s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.010001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.048002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.007001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.435025s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.002172s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.003172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.018173s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.019173s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.020173s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.020173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.021173s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:38:49+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.021001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.015000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.010000s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-12-28 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.020002s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-12')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:1.262072s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:1.157066s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.007000s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.010001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.008000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.012001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.012230s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.013230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.027231s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.028231s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.029231s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.030231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.031231s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:42:10+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.046003s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.010000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-12-28 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.020001s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-12')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:1.417081s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:2.085119s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.019001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.014000s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.012001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.008001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-5.132294s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-5.134294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-5.149295s ]
+INFO: Run TokenBuild Behavior [ RunTime:-5.150295s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-5.151295s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-5.152295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-5.153295s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:42:27+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.009001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-12-28 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.018001s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-12')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:1.063061s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.015001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:1.210069s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.011001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.011001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.007000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.619207s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.622207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.639208s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.640208s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.641208s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.641208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.642208s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-12-28T10:42:31+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.058004s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.010000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.235071s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.012000s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.010001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.397023s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 102 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.965170s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.966170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.981171s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.981171s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.982171s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.983171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.984171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:51:13+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.027001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:1.203069s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.095005s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.011001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.406023s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.894166s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.895166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.909167s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.910167s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.911167s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.912167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.913167s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T10:53:57+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.130008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.130008s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.301018s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.099006s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:11.115636s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:1.883108s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.015000s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:4.798275s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-21.333220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-21.350221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-21.491229s ]
+INFO: Run TokenBuild Behavior [ RunTime:-21.508230s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-21.528231s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-21.539232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-21.550232s ]
+INFO: [ view_end ] --END-- [ RunTime:0.040003s ]
+
+[ 2017-12-28T11:04:50+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.009000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.008001s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:2.458140s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.009001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.009001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.419024s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.321247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-4.328247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.377250s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.379250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.380250s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.381250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.383250s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-12-28T11:35:54+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2017-12-28T14:42:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=user_consume&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.017001s ]
+SQL: SELECT `from_username`,`create_date`,sum(consume_account) as consume_account,`id`,day(create_date) as d FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `create_date` >= '2017-11-28 00:00:00' ) GROUP BY day(create_date) ORDER BY create_date desc LIMIT 100   [ RunTime:2.620150s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.010001s ]
+SQL: SELECT `from_username`,`create_date`,`pay_status`,sum(pay_account) as pay_account,`transaction_id`,day(create_date) as d FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `create_date` >= '2017-11-28 00:00:00' ) GROUP BY day(create_date)  [ RunTime:0.377021s ]
+NOTIC: [8] Undefined index: d D:\phpStudy\WWW\Rose\Lib\Action\Wap\WeixinUserConsumeAction.class.php 第 251 行.
+NOTIC: [8] Undefined index: d D:\phpStudy\WWW\Rose\Lib\Action\Wap\WeixinUserConsumeAction.class.php 第 251 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.041231s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: consume_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\72f1e39556c95511a7fd09e07546eca0.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-4.047232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.081234s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.083234s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.084234s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.086234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.087234s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T15:48:44+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.147008s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:8.322476s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-9.658552s ]
+INFO: [ view_template ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-9.668553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080004s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-9.748557s ]
+INFO: Run TokenBuild Behavior [ RunTime:-9.749557s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-9.751558s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-9.752558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-9.753558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-28T15:49:40+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.015001s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:4.399252s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-5.453312s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-5.455312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-5.471313s ]
+INFO: Run TokenBuild Behavior [ RunTime:-5.472313s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-5.473313s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-5.475313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-5.476313s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T15:51:57+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.014001s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:3.460198s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.503258s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.505258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.520259s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.521259s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.522259s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.522259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.523259s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T15:52:15+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.015000s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:3.328191s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.358249s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.360249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.373250s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.374250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.375250s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.376250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.377250s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T15:52:31+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.020001s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:3.714212s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.759272s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.761272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.775273s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.776273s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.777273s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.778273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.779273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T15:53:04+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.010000s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:3.628208s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.717270s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.718270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.731271s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.731271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.732271s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.733271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.734271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-28T15:53:38+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.009001s ]
+SQL: SELECT sum(consume_account) consume_account,`consume_status`,`create_date`,`command_status` FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `del_flag` = 0 ) GROUP BY create_date ORDER BY create_date DESC LIMIT 20   [ RunTime:3.889222s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.969284s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.970284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.985285s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.986285s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.987285s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.988285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.988285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T15:53:43+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=WeixinUserConsume&a=user_consume&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.019001s ]
+SQL: SELECT `from_username`,`create_date`,sum(consume_account) as consume_account,`id`,day(create_date) as d FROM `device_consume_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `create_date` >= '2017-11-28 00:00:00' ) GROUP BY day(create_date) ORDER BY create_date desc LIMIT 100   [ RunTime:2.255129s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.034002s ]
+SQL: SELECT `from_username`,`create_date`,`pay_status`,sum(pay_account) as pay_account,`transaction_id`,day(create_date) as d FROM `weixin_pay_rec` WHERE ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `create_date` >= '2017-11-28 00:00:00' ) GROUP BY day(create_date)  [ RunTime:0.471027s ]
+NOTIC: [8] Undefined index: d D:\phpStudy\WWW\Rose\Lib\Action\Wap\WeixinUserConsumeAction.class.php 第 251 行.
+NOTIC: [8] Undefined index: d D:\phpStudy\WWW\Rose\Lib\Action\Wap\WeixinUserConsumeAction.class.php 第 251 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.808218s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: consume_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\72f1e39556c95511a7fd09e07546eca0.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.810218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.836220s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.837220s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.838220s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.839220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.840220s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T16:55:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.043002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.042003s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.011000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:0.803046s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.014001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.073004s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.010001s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.624035s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.275187s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.287188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.394194s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.396194s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.398194s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.400195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.402195s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-12-28T16:56:02+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=month_personal&month=4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.024001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.030001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.011000s ]
+SQL: SELECT `from_username`,`deivce_command`,`create_date`,`consume_account`,`type`,`id`
+FROM `device_consume_rec` WHERE command_status='2' and consume_status in(1,2) and transfer_status='0' and del_flag='0'
+and create_by = 'kefuanmoyitest' and month(create_date) = 4 [ RunTime:0.977056s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.067175s ]
+INFO: [ view_template ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\59ba4b57cd9a29cda0fa13b24695df82.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.082176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.114178s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.115178s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.116178s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.117178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.118178s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T17:10:43+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=tixian&month=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.029001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.023001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.011000s ]
+SQL: SELECT partner_trade_no,create_date,amount,status FROM `weixin_enterprise_payment` WHERE openid = 'odOIPv9UcOs4N_jKX0JECOwADE7s' and month(create_date) = 3 order by create_date desc [ RunTime:0.036002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.390079s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 51 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 53 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\ebc1fd884602e6d18247e764c51a846b.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.392079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.428081s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.429082s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.429082s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.430082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.431082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-28T17:15:56+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Finance&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.011001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.013000s ]
+SQL: SELECT month(create_date) as month,sum(consume_account) as acount FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `consume_status` IN ('1','2') ) AND ( `transfer_status` = '0' ) AND ( `del_flag` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) AND ( `create_date` >= '2016-12-28 00:00:00' ) GROUP BY month(create_date)  [ RunTime:0.764044s ]
+SQL: SHOW COLUMNS FROM `weixin_enterprise_payment` [ RunTime:0.012001s ]
+SQL: SELECT month(create_date) as month,sum(amount) as amount FROM `weixin_enterprise_payment` WHERE ( `status` = '1' ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) GROUP BY month(create_date)  [ RunTime:0.050003s ]
+SQL: SHOW COLUMNS FROM `weixin_pay_rec` [ RunTime:0.012000s ]
+SQL: SELECT month(create_date) as month,sum(pay_account) pay_account FROM `weixin_pay_rec` WHERE ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY month(create_date)  [ RunTime:0.508030s ]
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: month D:\phpStudy\WWW\Rose\Lib\Action\Wap\FinanceAction.class.php 第 107 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.558147s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 34 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: amount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 26 行.
+NOTIC: [8] Undefined index: pay_account D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 30 行.
+NOTIC: [8] Undefined index: acount D:\phpStudy\WWW\Rose\logs\Cache\Wap\b7d919ef8e556e92c8c6db29e13f9f3e.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.559147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.595149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.596149s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.597149s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.597149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.599149s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

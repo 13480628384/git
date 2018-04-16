@@ -1,0 +1,27 @@
+/* CSS Document */
+.report_forms .tabs li{color: #2EBE74;width: 25%;float:left;color: #111;text-align: center;height: 3rem;line-height: 3rem;font-family: 微软雅黑;font-size: 1.5rem;}
+.report_forms .tabs li a {display: block;padding: 0 1rem;outline: none;}
+.report_forms .tabs .thistab,.tabs .thistab a:hover{border-bottom: 1px solid #30BF75;color: #30BF75;height: 3rem; line-height: 3rem;    font-size: 2rem;
+    font-family: 微软雅黑;}
+.report_forms .tabs li h2{font-size: 3rem;font-weight: normal; font-family: 微软雅黑;    margin: 1rem;}
+.report_forms .tabs li p{font-size: 0.8rem;font-weight: normal; font-family: 微软雅黑;    margin: 0.5rem;text-align:center;}
+.report_forms .tab_conbox{ clear: both; }
+.tab_num{width: 10%; float: left; line-height: 5rem; text-align: center;}
+.tab_dev{width: 55%;float: left; height: 5rem;}
+.tab_ear{width: 35%; float: left;line-height: 5rem;text-align: center;     font-size: 1.2rem;}
+.tab_num1{width: 30%; float: left;height: 4rem; text-align: center;  line-height: 4rem;    font-size: 1.2rem;}
+.tab_dev1{width: 50%;float: left; height: 4rem; line-height: 4rem ;    font-size: 1.2rem;}
+.tab_dev1 p{ font-size: 0.8rem; }
+.tab_ear1{width: 20%; float: left;text-align: center; height: 4rem;line-height: 4rem}
+.tab_date{ height:4rem;}
+.tab_dev span{ font-size: 1.8rem;text-align: center; display: block; margin-top: 0.5rem;}
+.tab_dev p{ font-size: 1rem;text-align: center; display: block;}
+.tab_date_det h2{ background: #f2f2f2;height: 5rem; line-height: 5rem;text-align: center; font-size: 2rem;font-weight: normal;}
+.tab_date_detlist p{ float: left; height: 4rem; line-height: 4rem;}
+.tab_date_detlist{ margin-top: 1rem; background: #f2f2f2; text-align: center;}
+.tab_date_detlist_p1{width: 30%}
+.tab_date_detlist_p2{width: 40%}
+.tab_date_detlist_p3{width: 30%}
+.tabs_return{ width: 20%; height: 3rem;float: left; line-height: 3rem; text-align: center;}
+.tabs{ border-top:solid 2px #30BF75; padding-top: 1rem}
+.thistab a{ color:#30BF75}

@@ -1,0 +1,14 @@
+/*启动页面*/
+.start .starttop{ background: #2ebe74;}
+.start .starttop img{ width: 45%; margin-top: 2rem; margin-left: 1.5rem; margin-bottom: 2rem;}
+.start .starttop_zi{ width: 45%; float: right;text-align: center;padding-right: 1rem;}
+.start .starttop_zi p{ margin-top: 6rem; font-size: 1.3rem;  color: #fff;font-size: 1.5rem; font-family: "微软雅黑"}
+.start .starttop_zi h2{font-weight: bold;font-size: 2.4rem;color: #f6ff00;letter-spacing:3px; margin-bottom: 1rem;}
+.start .starttop_zi span{font-weight: normal;font-size: 1.5rem;border: solid 3px #fff;border-radius: 2px; color: #fff;padding: 0.2rem 1rem;font-family: "微软雅黑"}
+.start .startbottom_img{background: #fff;}
+.start .startbottom_img img{  display: block;margin:auto;width: 13rem;}
+.start .startheight20{ height: 20px; clear: both;background: #F2F2F2; }
+.start .startp1{height: 3rem;line-height: 3rem;background: #fff;text-align: center;font-size:1.5rem;color: #172b1c}
+.start .startp2{ border-bottom: solid 1px #f2f2f2; font-size: 1.5rem;color: #172b1c}
+.start .startp3{ height: 6.5rem; line-height: 6.5rem;font-size: 1.5rem;color: #172b1c}
+

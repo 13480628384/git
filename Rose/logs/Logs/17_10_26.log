@@ -1,0 +1,1667 @@
+[ 2017-10-26T09:42:33+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=VendingWeixin&a=index&openid=odOIPv4WtdWt9ebczeYuYByhYr_0&device_code=A352425021222040
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.063004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.123007s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_weixin_alipay_pay_rec` [ RunTime:0.046003s ]
+SQL: SELECT SUM(pay_account) AS tp_sum FROM `goods_weixin_alipay_pay_rec` WHERE ( `wechat_alipay_id` = 'odOIPv4WtdWt9ebczeYuYByhYr_0' ) AND ( `pay_status` = '1' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) AND ( `type` = '1' ) LIMIT 1   [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods_consume_rec` [ RunTime:0.096005s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_consume_rec` WHERE ( `type` = '1' ) AND ( `wechat_alipay_id` = 'odOIPv4WtdWt9ebczeYuYByhYr_0' ) AND ( `command_status` IN ('1','2') ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `goods_rose` [ RunTime:0.073004s ]
+SQL: SELECT SUM(account) AS tp_sum FROM `goods_rose` WHERE ( `wechat_alipay_id` = 'odOIPv4WtdWt9ebczeYuYByhYr_0' ) AND ( `status` = '1' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) AND ( `type` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_rose_consume_rec` [ RunTime:0.069004s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_rose_consume_rec` WHERE ( `type` = '1' ) AND ( `wechat_alipay_id` = 'odOIPv4WtdWt9ebczeYuYByhYr_0' ) AND ( `command_status` IN ('1','2') ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.043003s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `device_code` = 'A352425021222040' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.128007s ]
+SQL: SELECT gh.number,gh.id as gid,gh.number_order,gs.id,gh.shop_number,gh.shop_price,gh.toubi_price,gh.status,gs.name,gs.image FROM goods_huodao gh LEFT JOIN goods_shop gs on gh.shop_id=gs.id WHERE ( gh.shipment_id = '2017091316_B93FDE7CBB8F76AA025D5D94E90F6538' ) ORDER BY gh.number asc  [ RunTime:0.182010s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-11.825676s ]
+INFO: [ view_template ] --END-- [ RunTime:0.038003s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-11.863679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.328018s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-12.191697s ]
+INFO: Run TokenBuild Behavior [ RunTime:-12.197698s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-12.212698s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-12.226699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-12.232700s ]
+INFO: [ view_end ] --END-- [ RunTime:0.014000s ]
+
+[ 2017-10-26T09:44:23+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.056004s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.131007s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.158009s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.846048s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.184010s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.155009s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.146009s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.012000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:1.646095s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `sys_user` SET `totals`=2776 WHERE ( `del_flag` = 0 ) AND ( `id` = '0aff0d6c1d9f4a8694b041b338431927' ) [ RunTime:0.058003s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.020001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.675267s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.687268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.744271s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.745271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.746271s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.747271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.748271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T09:44:34+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.092005s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.018001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.666038s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.134008s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.195011s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.011001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4051958' ) AND ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.011000s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.076005s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.049003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.544146s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.551146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.588148s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.589148s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.591148s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.592148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.593148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-10-26T09:58:46+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.011000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.075004s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.001000s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.201011s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.176010s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.144009s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.145008s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.010000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:1.862107s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `sys_user` SET `totals`=2776 WHERE ( `del_flag` = 0 ) AND ( `id` = '0aff0d6c1d9f4a8694b041b338431927' ) [ RunTime:0.037002s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.231242s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.243243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.273245s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.274245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.275245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.276245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.277245s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T10:05:39+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Wallet&a=fuerkan&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `phone` FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.430081s ]
+INFO: [ view_template ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.443082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.475084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.476084s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.477084s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.478084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.480084s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T10:05:40+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Wallet&a=fu_cash
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-10-26T10:05:55+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2017-10-26T11:50:14+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Wallet&a=fuerkan&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.312018s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.071005s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.065004s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.045002s ]
+SQL: SELECT `phone` FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.614206s ]
+INFO: [ view_template ] --END-- [ RunTime:0.239014s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.853220s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.348077s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-5.201297s ]
+INFO: Run TokenBuild Behavior [ RunTime:-5.235299s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-5.275301s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-5.304303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.133008s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-5.369307s ]
+INFO: [ view_end ] --END-- [ RunTime:0.023001s ]
+
+[ 2017-10-26T11:50:16+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Wallet&a=fu_cash
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.054003s ]
+
+[ 2017-10-26T15:07:38+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.110006s ]
+SQL: SELECT * FROM `deivce_group_info` WHERE ( `owner_id` IN ('0aff0d6c1d9f4a8694b041b338431927','2017062015_125CE48636F866DBD82C46812D1DF626') ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.017001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.727099s ]
+INFO: [ view_template ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.770102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.862107s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.864107s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.865107s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.866107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.868107s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:22:26+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_detail_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE&id=8c67c2d0673c96ef4fd234605cc6ebe4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.022002s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.015001s ]
+SQL: SELECT `group_name` FROM `deivce_group_info` WHERE ( `id` = '8c67c2d0673c96ef4fd234605cc6ebe4' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.033001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `status` = 1 ) AND ( `dgi_id` = '8c67c2d0673c96ef4fd234605cc6ebe4' ) ORDER BY group_word  [ RunTime:0.022002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.503086s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.515086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.547088s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.548088s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.549088s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.549088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.550088s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:24:40+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_detail_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE&id=c4adc9733a46ffd13c7352cfa178804f
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.014001s ]
+SQL: SELECT `group_name` FROM `deivce_group_info` WHERE ( `id` = 'c4adc9733a46ffd13c7352cfa178804f' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `del_flag` = 0 ) AND ( `status` = 1 ) AND ( `dgi_id` = 'c4adc9733a46ffd13c7352cfa178804f' ) ORDER BY group_word  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.429082s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.430082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.445083s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.446083s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.446083s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.447083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.448083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:34:27+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.033002s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.017001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.015001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:1.137065s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.155009s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.209012s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4051958' ) AND ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.047002s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.057004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.012000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.141180s ]
+INFO: [ view_template ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.154180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.190182s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.191182s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.192182s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.192182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.193182s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-10-26T15:34:36+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=users_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = '0aff0d6c1d9f4a8694b041b338431927' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.311075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.320076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.342077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.343077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.343077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.344077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.345077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:34:44+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=users_add&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.288073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.302074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.341076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.342076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.343076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.344076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.345076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-10-26T15:34:52+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.023002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.021001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('0aff0d6c1d9f4a8694b041b338431927','2017062015_125CE48636F866DBD82C46812D1DF626') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.047003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Rose\Lib\Action\Wap\DeviceAction.class.php 第 166 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.340134s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.348134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.384136s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.385136s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.386136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.387136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.388136s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-10-26T15:34:56+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `deivce_group_info` WHERE ( `owner_id` IN ('0aff0d6c1d9f4a8694b041b338431927','2017062015_125CE48636F866DBD82C46812D1DF626') ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.283074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.284074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.311075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.312076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.313076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.314076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.314076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:35:04+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.033002s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.220013s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.179010s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.150008s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.148009s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014001s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:1.546088s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `sys_user` SET `totals`=2776 WHERE ( `del_flag` = 0 ) AND ( `id` = '0aff0d6c1d9f4a8694b041b338431927' ) [ RunTime:0.108006s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.755215s ]
+INFO: [ view_template ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.778216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.812218s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.813218s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.814218s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.814218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.815218s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:35:42+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.013001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('0aff0d6c1d9f4a8694b041b338431927','2017062015_125CE48636F866DBD82C46812D1DF626') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.007001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.361078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.362078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.379079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.380079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.381079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.381079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.382079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:35:58+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=anm&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE&device_type=4&ANM=1=5-2=18-3=31&di_id=2017102615_02A650CB4BF9F198511E002B5214B6BD
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017102615_02A650CB4BF9F198511E002B5214B6BD' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.015001s ]
+SQL: SELECT `fencheng` FROM `device_info` WHERE ( `id` = '2017102615_02A650CB4BF9F198511E002B5214B6BD' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `id` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = '0aff0d6c1d9f4a8694b041b338431927' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.368078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\3eab22224a12274703b173642c90c67a.php 第 44 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\Rose\logs\Cache\Wap\3eab22224a12274703b173642c90c67a.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.370078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.418081s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.422081s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.423081s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.423081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.425081s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:35:58+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2017-10-26T15:36:56+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.032002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014000s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('0aff0d6c1d9f4a8694b041b338431927','2017062015_125CE48636F866DBD82C46812D1DF626') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.008001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.446083s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.447083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.465084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.466084s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.467084s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.467084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.468084s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:37:22+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=anm&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE&device_type=4&ANM=1=5-2=18-3=31&di_id=2017102615_02A650CB4BF9F198511E002B5214B6BD
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017102615_02A650CB4BF9F198511E002B5214B6BD' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.015001s ]
+SQL: SELECT `fencheng` FROM `device_info` WHERE ( `id` = '2017102615_02A650CB4BF9F198511E002B5214B6BD' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `id` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = '0aff0d6c1d9f4a8694b041b338431927' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.343077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\Rose\logs\Cache\Wap\3eab22224a12274703b173642c90c67a.php 第 44 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\Rose\logs\Cache\Wap\3eab22224a12274703b173642c90c67a.php 第 54 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.344077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.359078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.360078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.361078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.361078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.362078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T15:37:22+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2017-10-26T15:49:22+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.014000s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.014001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.130008s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.140008s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.189011s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014000s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4051958' ) AND ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = '0aff0d6c1d9f4a8694b041b338431927' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.012000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = '0aff0d6c1d9f4a8694b041b338431927' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.971112s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.973113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.987113s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.988113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.989113s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.989113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.991114s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:49:28+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=users_list&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = '0aff0d6c1d9f4a8694b041b338431927' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.309075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.310075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.323076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.324076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.324076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.325076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.326076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-26T15:49:33+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=users_add&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.276073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.277073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.290074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.291074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.292074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.292074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.294074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T15:49:41+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=my_qroce&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.023002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.315075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.337077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.372079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.373079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.374079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.375079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.376079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T16:06:23+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPvxcAIG11jxBZLIp6A_AkOhk
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.011000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.014001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'f075a8b8d85740fc8fe1c1b836171b7f' ) LIMIT 1   [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.014001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'suyangfei' ) LIMIT 1   [ RunTime:1.140065s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'suyangfei' ) LIMIT 1   [ RunTime:1.232070s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'suyangfei' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.863050s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014000s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4051681' ) AND ( `owner_id` = 'suyangfei' ) LIMIT 1   [ RunTime:0.010001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'suyangfei' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.013001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'suyangfei' ) LIMIT 1   [ RunTime:0.011000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.794275s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.801275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.834277s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.835277s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.836277s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.837277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.839277s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T16:06:32+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPvxcAIG11jxBZLIp6A_AkOhk
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.028001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.013000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id = 'suyangfei' ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.063004s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.551089s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.553089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.578090s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.579091s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.580091s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.581091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.582091s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:06:42+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_list&openid=odOIPvxcAIG11jxBZLIp6A_AkOhk
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPvxcAIG11jxBZLIp6A_AkOhk' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `deivce_group_info` WHERE ( `owner_id` = 'suyangfei' ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.824104s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.825104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.853106s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.854106s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.855106s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.856106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.857106s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:09:13+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=group_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 )  [ RunTime:0.027002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( `del_flag` = 0 )  [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `deivce_group_info` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `deivce_group_info` WHERE ( `owner_id` IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.340076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.341076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.355077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.356077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.357077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.357077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.359077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-26T16:09:19+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.013001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.012001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.693039s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.572033s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.518030s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.012000s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.019002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.011000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.232185s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.233185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.248186s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.248186s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.249186s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.250186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.251186s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:09:21+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.016000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( `del_flag` = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.013001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.044003s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.365078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.366078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.385079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.386079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.387079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.388079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.389079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:09:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=anm&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&device_type=4&ANM=1=2-2=4-3=6&di_id=2017011016_61E95CE26BA021C9D545F692C4B99869
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014001s ]
+SQL: SELECT `fencheng` FROM `device_info` WHERE ( `id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `id` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = 'kefuanmoyitest' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.359078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.360078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.383080s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.384080s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.385080s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.386080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.387080s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:09:30+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2017-10-26T16:10:31+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=anm&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&device_type=4&ANM=1=2-2=4-3=6&di_id=2017011016_61E95CE26BA021C9D545F692C4B99869
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.022002s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `fencheng` FROM `device_info` WHERE ( `id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `id` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = 'kefuanmoyitest' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.345077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.346077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.363078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.364078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.364078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.365079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.366079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:10:31+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2017-10-26T16:10:35+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( `del_flag` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.017001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5','kefuanmoyitest') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.008000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.354077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.355077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.375078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.376078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.377078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.378078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.379079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:10:45+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=anm&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&device_type=4&ANM=1=2-2=4-3=6&di_id=2017011016_61E95CE26BA021C9D545F692C4B99869
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `fencheng` FROM `device_info` WHERE ( `id` = '2017011016_61E95CE26BA021C9D545F692C4B99869' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `id` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `pre_userid` = 'kefuanmoyitest' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.324076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.325076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.342077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.342077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.343077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.344077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.345077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:10:45+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2017-10-26T16:17:10+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=change&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `owner_id` = 'kefuanmoyitest' ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.002000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.598091s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.600091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.644094s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.646094s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.659095s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.661095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.662095s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T16:19:08+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=change&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `owner_id` = 'kefuanmoyitest' ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.002000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.327076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.329076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.341077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.342077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.343077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.343077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.344077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:23:15+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.022002s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('kefuanmoyitest','2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.008000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.437082s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.439082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.458083s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.459083s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.460083s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.460083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.462084s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:23:19+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=change&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `owner_id` = 'kefuanmoyitest' ) AND ( `del_flag` = 0 ) ORDER BY create_date desc  [ RunTime:0.003000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.366078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.367078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.380079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.381079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.383079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.384079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.385079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:41:03+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.028002s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.014001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.622035s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.582034s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.015001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.601034s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.050003s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.014000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.015001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.456197s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.457197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.479199s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.480199s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.481199s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.482199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.483199s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:41:11+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.020001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.012001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('kefuanmoyitest','2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.048003s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.403080s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.404080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.423081s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.424081s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.426081s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.426081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.428081s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-10-26T16:41:23+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.015000s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.013001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.607035s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.515029s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.015001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.618035s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.015001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.013001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.008000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.185182s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.186182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.202183s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.203183s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.204183s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.204183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.206183s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:43:44+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.020001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.013001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.014001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.566032s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.584034s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.011000s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.554032s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.014000s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.039003s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.012000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.008001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.294188s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.295188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.310189s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.311189s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.312189s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.312189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.313189s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T16:43:47+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Device&a=device_list&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.012001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.007001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `is_into` = '1' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014001s ]
+SQL: SELECT device_relation_group.*,dgi.group_name,di.scan_code FROM `device_relation_group` LEFT JOIN deivce_group_info dgi on dgi.id = device_relation_group.dgi_id LEFT JOIN device_info di on di.id = device_relation_group.di_id WHERE ( di.owner_id IN ('kefuanmoyitest','2017061610_0EDE8AFAD47B2648DE9BE38F9D9B3EA5') ) AND ( dgi.del_flag = 0 ) ORDER BY device_relation_group.online_status desc  [ RunTime:0.035002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.350078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.351078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.371079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.372079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.373079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.374079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.375079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-26T16:44:10+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=presonal_new&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_office` [ RunTime:0.017001s ]
+SQL: SELECT `name` FROM `sys_office` WHERE ( `del_flag` = 0 ) AND ( `id` = 'a721bdccfcb44571a48df2065950d05d' ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.016001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `create_date` >= '2017-10-26 00:00:00' ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.588033s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given D:\phpStudy\WWW\Rose\Core\Lib\Core\Db.class.php 第 459 行.
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( (`create_date` >= '2017-10')  ) AND ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.516030s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SELECT sum(consume_account) as count,`deivce_command` FROM `device_consume_rec` WHERE ( `command_status` = 2 ) AND ( `consume_status` = 1 ) AND ( `del_flag` = 0 ) AND ( `transfer_status` = 0 ) AND ( `create_by` = 'kefuanmoyitest' ) GROUP BY deivce_command ORDER BY count desc LIMIT 1   [ RunTime:0.535030s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.011001s ]
+SQL: SELECT `scan_code` FROM `device_info` WHERE ( `del_flag` = 0 ) AND ( `device_command` = '4093646' ) AND ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.015001s ]
+SQL: SELECT sum(1) as count,drg.online_status FROM device_info di LEFT JOIN device_relation_group drg ON drg.di_id = di.id WHERE ( di.del_flag = 0 ) AND ( drg.del_flag = 0 ) AND ( di.owner_id = 'kefuanmoyitest' ) GROUP BY drg.online_status ORDER BY drg.online_status asc  [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `userefund` [ RunTime:0.014000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `userefund` WHERE ( `owner_id` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.007001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.066175s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.067175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.083176s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.084176s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.084176s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.085176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.086176s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-26T16:49:32+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=users_add&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.018001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.023002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.443083s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.444083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.464084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.465084s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.466084s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.467084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.468084s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

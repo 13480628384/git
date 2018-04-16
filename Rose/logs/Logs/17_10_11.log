@@ -1,0 +1,932 @@
+[ 2017-10-11T09:42:39+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv5RJwDqO94UaCbpKQvdjhLE
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.071004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.091005s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.758043s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.858049s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.068004s ]
+SQL: SELECT count(*) as adv
+            FROM
+                `device_info` di
+            LEFT JOIN adv_uservisit_rec pwi ON pwi.di_id = di.id
+            LEFT JOIN adv_weixin_info awi ON awi.id = pwi.adv_id
+            WHERE
+                pwi.status = 2
+            and pwi.del_flag=0
+            and pwi.transfer_status = 0
+			and awi.status=1
+			and awi.del_flag=0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:1.350078s ]
+SQL: SELECT sum(pwi.consume_account) as count
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(1,3,5,9,11,13,15,17)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:9.370536s ]
+SQL: SELECT sum(pwi.consume_account) as alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type in(2,4,6,10,12,14,16,18)
+			and pwi.transfer_status = 0
+			and pwi.consume_status = 1
+            AND pwi.create_by = '0aff0d6c1d9f4a8694b041b338431927'
+            AND di.del_flag = 0 [ RunTime:0.205011s ]
+SQL: SELECT sum(pwi.consume_account) as anm_weixin
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=3
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.207012s ]
+SQL: SELECT sum(pwi.consume_account) as anm_alipay
+            FROM
+                `device_info` di
+            LEFT JOIN device_consume_rec pwi ON pwi.di_id = di.id
+            WHERE
+                pwi.command_status = 2
+            and pwi.del_flag=0
+            and pwi.type=4
+			and pwi.transfer_status = 0
+            AND di.office_id = 'a721bdccfcb44571a48df2065950d05d'
+            AND di.del_flag = 0 [ RunTime:0.201012s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.096005s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:5.599320s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `sys_user` SET `totals`=2776 WHERE ( `del_flag` = 0 ) AND ( `id` = '0aff0d6c1d9f4a8694b041b338431927' ) [ RunTime:0.247015s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv5RJwDqO94UaCbpKQvdjhLE' ) LIMIT 1   [ RunTime:0.026001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-22.576291s ]
+INFO: [ view_template ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-22.603293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196011s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-22.799304s ]
+INFO: Run TokenBuild Behavior [ RunTime:-22.812305s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-22.849307s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-22.859307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.076004s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-22.875308s ]
+INFO: [ view_end ] --END-- [ RunTime:0.021001s ]
+
+[ 2017-10-11T16:20:50+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=VendLogin&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendLoginAction.class.php 第 2 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.051002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.213013s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.264015s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.276015s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.287016s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.289016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.295016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-10-11T16:21:18+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_consume_rec` [ RunTime:0.022001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_consume_rec` WHERE ( `type` = '1' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_consume_rec` WHERE ( `type` = '2' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_rose_consume_rec` [ RunTime:0.053003s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_rose_consume_rec` WHERE ( `type` = '1' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_rose_consume_rec` WHERE ( `type` = '2' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `sys_user` SET `vend_total`=10.4 WHERE ( `del_flag` = 0 ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) [ RunTime:0.063003s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.802103s ]
+INFO: [ view_template ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.824105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.849106s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.850106s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.850106s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.851106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.852106s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:21:22+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.046003s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.009000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.466083s ]
+INFO: [ view_template ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.480084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.542088s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.544088s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.545088s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.546088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.548088s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:21:29+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_consume_rec` [ RunTime:0.020001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_consume_rec` WHERE ( `type` = '1' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_consume_rec` WHERE ( `type` = '2' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods_rose_consume_rec` [ RunTime:0.012001s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_rose_consume_rec` WHERE ( `type` = '1' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `goods_rose_consume_rec` WHERE ( `type` = '2' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) AND ( `command_status` = '2' ) AND ( `is_close` = '0' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `sys_user` SET `vend_total`=10.4 WHERE ( `del_flag` = 0 ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) [ RunTime:0.053003s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.362078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.365078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.383079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.384079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.385079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.386079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.387079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-11T16:21:34+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.296075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.298075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.310075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.311075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.311075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.312075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.313076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:22:15+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.024002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.023002s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.380079s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 48 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 49 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 50 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 51 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.392079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090006s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.482085s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.483085s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.484085s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.485085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.486085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:23:53+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.418081s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.421081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.440082s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.441082s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.442082s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.443083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.444083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-11T16:25:13+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.289074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.291074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.306075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.307075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.308075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.309075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.310075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:38:42+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.410080s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.412081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.428081s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.428081s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.429081s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.430082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.431082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:40:38+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update_device
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.010000s ]
+SQL: UPDATE `goods_vending` SET `device_code`='A352425021222042',`device_command`='1241241',`pay_price`='10-0,20-1,50-0,100-0,200-0,500-5',`address`='123',`remarks`='22',`update_date`='2017-10-11 16:40:37' WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.011000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_D9F5EC8276AF0CC4FE47E3453435AD1C','A352425021222042',1,'2017-10-11 16:40:37','2017-10-11 16:40:37','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.003000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_D83F82B7FA216A4E4076B64CAB1111C4','A352425021222042',2,'2017-10-11 16:40:38','2017-10-11 16:40:38','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_C56DE77A104F26C49ECFE1D02714A50B','A352425021222042',3,'2017-10-11 16:40:38','2017-10-11 16:40:38','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_860A6A339BAEF0D962C6645F59643B66','A352425021222042',4,'2017-10-11 16:40:38','2017-10-11 16:40:38','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_690B870702823DCC456058F6E8679D0E','A352425021222042',5,'2017-10-11 16:40:38','2017-10-11 16:40:38','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:40:40+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.276073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.278074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.295075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.296075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.297075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.298075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.299075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:41:12+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.416081s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.418081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.434082s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.434082s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.435082s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.436082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.436082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:42:01+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.274072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.276073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.291073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.291073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.292073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.293074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.294074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:42:05+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.282073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.285073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.299074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.300074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.300074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.301074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.302074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:42:09+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update_device
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: UPDATE `goods_vending` SET `device_code`='A352425021222042',`device_command`='1241241',`pay_price`='10-0,20-1,50-0,100-0,200-0,500-5',`address`='123',`number_routes`='3',`remarks`='22',`update_date`='2017-10-11 16:42:09' WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.015001s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_E40EBB55383A61CF78582CDC0618DE52','A352425021222042',1,'2017-10-11 16:42:09','2017-10-11 16:42:09','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_6CF207DF825FB5D89F71B823C3FD82DD','A352425021222042',2,'2017-10-11 16:42:09','2017-10-11 16:42:09','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_B4DA012D3F276EB4DA7A559A8A3768CA','A352425021222042',3,'2017-10-11 16:42:09','2017-10-11 16:42:09','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:42:19+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.269072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.271072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.284073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.285073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.285073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.286073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.287073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:43:12+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.303075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.306075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.319076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.320076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.321076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.322076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.323076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:43:25+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.023002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.282073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.284073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.297074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.298074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.299074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.300074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.300074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:43:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update_device
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.007000s ]
+SQL: UPDATE `goods_vending` SET `device_code`='A352425021222042',`device_command`='1241241',`pay_price`='10-0,20-1,50-0,100-0,200-0,500-5',`address`='123',`number_routes`='5',`remarks`='22',`update_date`='2017-10-11 16:43:30' WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.006001s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_14FB4C269F003167A7980AA1E057E770','A352425021222042',1,'2017-10-11 16:43:30','2017-10-11 16:43:30','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_5F27AA7BEB77BF3EC7338AF7937D7D91','A352425021222042',2,'2017-10-11 16:43:30','2017-10-11 16:43:30','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_DFA36E63E338CB05F7D4815E8F57A69C','A352425021222042',3,'2017-10-11 16:43:30','2017-10-11 16:43:30','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_D6B1370193625B46A6A792A744AD5698','A352425021222042',4,'2017-10-11 16:43:30','2017-10-11 16:43:30','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_3E2A796B87E892F3F66768437D26B91C','A352425021222042',5,'2017-10-11 16:43:30','2017-10-11 16:43:30','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:43:58+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.017000s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.285074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.287074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.302075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.303075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.304075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.305075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.306075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:44:58+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.359078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.361078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.374079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.375079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.376079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.376079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.377079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:45:26+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.019002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.304075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.307075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.320076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.321076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.322076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.323076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.324076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:45:42+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.303074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.305074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.323075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.324075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.325075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.325075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.326075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-10-11T16:46:42+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.286074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.288074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.309075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.310075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.311075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.311075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.312075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:46:46+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update_device
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.025002s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.015001s ]
+SQL: UPDATE `goods_vending` SET `device_code`='A352425021222042',`device_command`='1241241',`pay_price`='10-0,20-1,50-0,100-0,200-0,500-5',`address`='123',`number_routes`='3',`remarks`='22',`update_date`='2017-10-11 16:46:46' WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.015001s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_1FDBF9C2B2AF35AEE63C56BF6C8AD198','A352425021222042',2,'2017-10-11 16:46:46','2017-10-11 16:46:46','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_54DF488A7CB7667A53DE0FDC2529513F','A352425021222042',3,'2017-10-11 16:46:46','2017-10-11 16:46:46','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:46:56+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.283074s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.285074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.302075s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.303075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.304075s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.304075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.305075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T16:46:58+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update&id=2017092018_40EEB7C1C303A8CF2D85E94502958D3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.323075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 65 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 66 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\844f1c3abbe2e40e400ae13c3da0bd8b.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.325075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.339076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.339076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.340076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.341076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.342076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:47:03+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=update_device
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.019001s ]
+SQL: UPDATE `goods_vending` SET `device_code`='A352425021222042',`device_command`='1241241',`pay_price`='10-0,20-1,50-0,100-0,200-0,500-5',`address`='123',`number_routes`='5',`remarks`='22',`update_date`='2017-10-11 16:47:03' WHERE ( `id` = '2017092018_40EEB7C1C303A8CF2D85E94502958D3E' ) AND ( `del_flag` = '0' ) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_huodao` [ RunTime:0.016001s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_9D2DA7BBB86F90CA7161D5B97907FF9D','A352425021222042',4,'2017-10-11 16:47:03','2017-10-11 16:47:03','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.001000s ]
+SQL: INSERT INTO `goods_huodao` (`id`,`device_code`,`number`,`create_date`,`update_date`,`shipment_id`) VALUES ('2017101116_0483ACAA1DFCC2C6DA2AAC8E819CA7F6','A352425021222042',5,'2017-10-11 16:47:03','2017-10-11 16:47:03','2017092018_40EEB7C1C303A8CF2D85E94502958D3E') [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:47:07+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.281073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.283073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.300074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.301074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.302074s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.302074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.303075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-11T17:16:53+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Vendmanage&a=device_list
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\VendmanageAction.class.php 第 2 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\VendinghomeAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.082005s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv8267xTj4vLdcQ2xNb3Divo' ) AND ( `no` = '售货机' ) AND ( `id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' ) LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `goods_vending` [ RunTime:0.037002s ]
+SQL: SELECT * FROM `goods_vending` WHERE ( `del_flag` = '0' ) AND ( `owner_id` = '2017091315_7D29AF66AE2DBB98A0718A6D9B90FCE1' )  [ RunTime:0.009001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.892108s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.894108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076004s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.970112s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.971113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.972113s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.973113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.975113s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+

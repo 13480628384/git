@@ -1,0 +1,71 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-09-17 15:43:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-10-12 17:31:36
+*/
+.left{
+	background-color: #f1f4f2;
+	height:750px;
+	font-size:16px;
+	color:#9da09e;
+	width:12%;
+	text-align: center;
+	border-right:1px solid #e6e6e6;
+	float:left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	position: relative;
+}
+.left-ul-li{
+	height: 35px;
+	line-height: 35px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #545555;
+	position: relative;
+}
+.left-ul-li:hover{
+	background-color: #ffad0f;
+	color:#fff;
+}
+.left-ul-li.on{
+	background-color: #ffad0f;
+	color:#fff;
+}
+.left-bottom{
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color:#828782;
+	border-top:1px solid #d8e5c9;
+	position: absolute;
+	bottom:0;
+	width:100%;
+}
+.left-ul-li-title{
+	height:35px;
+	line-height: 35px;
+	font-size:12px;
+	text-align: left;
+	text-indent: 40px;
+	color: #a0a0a0;
+}
+.arrow-right{
+	display: none;
+}
+.left-ul-li.on .arrow-right{
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	top: 12.5px;
+	right: -5px;
+	transform: rotate(45deg);
+}
+.left-ul{
+	overflow: initial;
+}

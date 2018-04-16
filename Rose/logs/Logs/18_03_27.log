@@ -1,0 +1,289 @@
+[ 2018-03-27T14:32:38+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Rose2Personal&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.029001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\Rose\Lib\Action\Wap\Rose2BaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) AND ( `login_flag` = '0' ) LIMIT 1   [ RunTime:0.008001s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 75 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\Rose\Core\Extend\Vendor\weixin\jssdk.php 第 53 行.
+SQL: SHOW COLUMNS FROM `weixin_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `weixin_userinfo` WHERE ( `del_flag` = 0 ) AND ( `from_username` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `device_consume_rec` [ RunTime:0.011000s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `del_flag` = '0' ) AND ( `type` IN ('1','3','5','9','11','13','15','17','19') ) AND ( `transfer_status` = '0' ) AND ( `consume_status` IN ('1','2') ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.995057s ]
+SQL: SELECT SUM(consume_account) AS tp_sum FROM `device_consume_rec` WHERE ( `command_status` = '2' ) AND ( `del_flag` = '0' ) AND ( `type` IN ('2','4','6','10','12','14','16','18') ) AND ( `transfer_status` = '0' ) AND ( `consume_status` IN ('1','2') ) AND ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:1.006058s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.011000s ]
+SQL: SELECT sum(dw.LOC_OP) c from (SELECT * from (SELECT dr.* FROM `device_info` LEFT JOIN device_record
+ dr on dr.dev_id=device_info.device_command WHERE ( device_info.del_flag = 0 )
+ AND ( device_info.office_id = 'a721bdccfcb44571a48df2065950d05d' ) ORDER BY dr.LOC_OP desc)
+ da GROUP BY da.dev_id ORDER BY da.LOC_OP desc) dw [ RunTime:3.993229s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.016001s ]
+SQL: UPDATE `sys_user` SET `totals`=161.5 WHERE ( `del_flag` = 0 ) AND ( `id` = 'kefuanmoyitest' ) [ RunTime:0.144008s ]
+SQL: SELECT SUM(totals-consume) AS tp_sum FROM `sys_user` WHERE ( `del_flag` = 0 ) AND ( `openid` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `car_pay` [ RunTime:0.060004s ]
+SQL: SELECT * FROM `car_pay` WHERE ( `create_by` = 'kefuanmoyitest' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-7.683440s ]
+INFO: [ view_template ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 16 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 22 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 28 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 34 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 45 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 48 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 49 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 50 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 51 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 52 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 54 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 55 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 62 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 63 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 64 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\e7df92f51d469124969cd9771311378b.php 第 65 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-7.703441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179010s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-7.882451s ]
+INFO: Run TokenBuild Behavior [ RunTime:-7.884451s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-7.886452s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-7.888452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-7.890452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-27T16:39:49+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.088005s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.226013s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.338020s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.095005s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.031002s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.353192s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 182 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 184 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-3.370193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.263015s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.633208s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.635208s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.643209s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.647209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.658210s ]
+INFO: [ view_end ] --END-- [ RunTime:0.037002s ]
+
+[ 2018-03-27T16:42:41+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.009000s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.909110s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 183 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 185 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.911110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.929111s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.930111s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.931111s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.932111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.934111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-27T16:43:36+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.016001s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.863106s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 186 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 188 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.866107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.882107s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.883107s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.884108s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.885108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.887108s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-27T16:44:35+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.013001s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.863106s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 184 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 186 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.865106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.884107s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.885108s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.886108s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.887108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.888108s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-27T16:44:54+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.007000s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.948111s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 184 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 186 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.951112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.969113s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.970113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.971113s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.972113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.974113s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-27T16:45:10+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011000s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.882108s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 184 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 186 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.885108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.900109s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.901109s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.904109s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.905109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.906109s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-27T16:45:30+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.015000s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011001s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.919110s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 184 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 186 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.921110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.938111s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.939111s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.940111s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.940111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.942111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-27T16:49:27+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Car_Wash_Pay&a=news&scan_code=ZHGZPY00166&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ZHGZPY00166' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2016123010_2FC2C4F29CAF97922A3F9D3F290D02F1' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: car_member D:\phpStudy\WWW\Rose\Lib\Action\Wap\Car_Wash_PayAction.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.023001s ]
+SQL: SELECT su.phone,su.title FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ZHGZPY00166' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.080119s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 187 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\120b268aac98074ef532a57af49d6a39.php 第 189 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-2.083119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.101120s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.103121s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.104121s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.105121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.107121s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+

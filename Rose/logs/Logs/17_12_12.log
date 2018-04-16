@@ -1,0 +1,135 @@
+[ 2017-12-12T14:16:51+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glassregiter&a=pay_index&scan_code=ARSG1234&openid=odOIPv9UcOs4N_jKX0JECOwADE7s
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.600034s ]
+SQL: SELECT `owner_id` FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.254015s ]
+SQL: SELECT * FROM `sys_user` WHERE ( `id` = '2017022015_3BFD7BF8FE1FA3771EED084ED34A41B0' ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `glass_user` [ RunTime:0.124007s ]
+SQL: SELECT `time_nums` FROM `glass_user` WHERE ( `user_id` = 'odOIPv9UcOs4N_jKX0JECOwADE7s' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-9.525545s ]
+INFO: [ view_template ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-9.569548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-9.720556s ]
+INFO: Run TokenBuild Behavior [ RunTime:-9.723556s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-9.736557s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-9.756558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-9.778560s ]
+INFO: [ view_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2017-12-12T15:01:48+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass_notify&a=redis
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:18:52+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2017-12-12T15:18:53+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&scan_code=ARSG1234
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.087005s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.045002s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017113014_AF11210C3D981654383C2FAD8283BD7E' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 9 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.059004s ]
+SQL: SELECT su.phone FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ARSG1234' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.031001s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.680096s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 81 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 83 行.
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 86 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 88 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 97 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 98 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.688097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.741100s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.743100s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.745100s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.746100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.748100s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-12-12T15:19:09+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&scan_code=ARSG1234
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017113014_AF11210C3D981654383C2FAD8283BD7E' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 9 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.011001s ]
+SQL: SELECT su.phone FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ARSG1234' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.493085s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 81 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 83 行.
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 86 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 88 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 97 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 98 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.494085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.508086s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.508086s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.510086s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.510086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.511086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:42:24+08:00 ] 0.0.0.0 /Rose/index.php?g=Wap&m=Glass&a=index&openid=odOIPv9UcOs4N_jKX0JECOwADE7s&scan_code=ARSG1234
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_info` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `device_info` WHERE ( `scan_code` = 'ARSG1234' ) AND ( `device_status` = 1 ) AND ( `del_flag` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_relation_group` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `device_relation_group` WHERE ( `di_id` = '2017113014_AF11210C3D981654383C2FAD8283BD7E' ) AND ( `del_flag` = 0 ) AND ( `device_type` = 9 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.015001s ]
+SQL: SELECT su.phone FROM sys_user su LEFT JOIN device_info di on di.owner_id=su.id WHERE ( di.scan_code = 'ARSG1234' ) AND ( di.del_flag = 0 ) AND ( su.del_flag = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.908109s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 74 行.
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 81 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 83 行.
+NOTIC: [8] Use of undefined constant wechat - assumed 'wechat' D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 86 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 88 行.
+NOTIC: [8] Undefined variable: openid D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 97 行.
+NOTIC: [8] Undefined variable: buyer_id D:\phpStudy\WWW\Rose\logs\Cache\Wap\bcf73615984b3058bc150c1b35567356.php 第 98 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.910109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.926110s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.927110s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.928110s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.928110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.929110s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T18:04:13+08:00 ] ERR: (ThinkException) 无法加载模块:Index

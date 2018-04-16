@@ -1,0 +1,173 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <link href="./tpl/Wap/default/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./tpl/Wap/default/css/style_cd.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+    <title>玫瑰云网 - 充电器</title>
+</head>
+<body>
+<div class="width750">
+    <img src="./tpl/Wap/default/img/charger.png" alt="玫瑰云网" width="100%" style="margin-bottom: 30px;">
+    <div class="botton_cdq weixin_pay" datapay="<?php echo ($out["0"]); ?>" datatime="<?php echo ($out["1"]); ?>">
+        支付<?php echo ($out["0"]); ?>元 充电<?php echo ($out["1"]); ?>分钟 </div>
+    <div class="botton_cdq weixin_pay" datapay="<?php echo ($out["2"]); ?>" datatime="<?php echo ($out["3"]); ?>">
+        支付<?php echo ($out["2"]); ?>元 充电<?php echo ($out["3"]); ?>分钟</div>
+    <div class="botton_cdq weixin_pay" datapay="<?php echo ($out["4"]); ?>" datatime="<?php echo ($out["5"]); ?>">
+        支付<?php echo ($out["4"]); ?>元 充电<?php echo ($out["5"]); ?>分钟</div>
+    <div class="botton_cdq free">免费 充电30分钟</div>
+    <div class="fozi" style="padding-left:3%; border-color: #4D9ADA; clear: both;">&nbsp;</div>
+    <div class="fozi" style="padding-left:3%;border-color: #4D9ADA;"><a   style=" color:#4D9ADA"href="http://www.roseo2o.com"><em>玫瑰物联</em> <br>商业设备物联化,运营交易平台化</a></div>
+    <div class="fozi" style="padding-left:3%;border-color: #4D9ADA;"><a  style=" color:#4D9ADA" href="http://coworking.cn"><em>众志联盟</em> <br>创建全球领先的智能开关研发制造企业</a></div>
+    <div style="height:65px "></div>
+    <h6 class="foort">玫瑰物联版权所有</h6>
+</div>
+</body>
+<input type="hidden" class="scan_code" value="<?php echo ($scan_code); ?>">
+<input type="hidden" class="openid" value="<?php echo ($openid); ?>">
+<input type="hidden" class="device_command" value="<?php echo ($device_command); ?>">
+<input type="hidden" class="device_id" value="<?php echo ($device_id); ?>">
+<input type="hidden" class="online_status" value="<?php echo ($online_status); ?>">
+<input type="hidden" class="weixin_pay_charger" value="<?php echo U('WeixinPay/weixin_pay');?>">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script>
+    //免费充电
+    $('.free').click(function(){
+        if($(this).hasClass('on')){
+            return false;
+        }
+        var device_command = $('.device_command').val();
+        var device_id = $('.device_id').val();
+        $(this).addClass('on');
+        $.post("<?php echo U('WeixinPay/free');?>",{device_command:device_command,device_id:device_id},function(data){
+            if(data.code == 200){
+                alert('充电开始');
+            } else {
+                alert('充电失败');
+            }
+            $('.free').removeClass('on');
+        },'json')
+    });
+        var clicktag=0;
+        $('.weixin_pay').click(function(){
+            var online_status = $.trim($('.online_status').val());
+            var openid = $.trim($('.openid').val());
+            var price = $(this).attr('datapay');
+            var times = $(this).attr('datatime');
+            if(online_status == 0){
+                alert('设备不在线');
+				return false;
+            }
+            if(price == '' || openid == '' || times == ''){
+                alert('参数错误，请重新扫码');
+		return false;
+            }
+            if (clicktag == 1) {
+                return;
+            }
+            if (clicktag == 0) {
+                clicktag = 1;
+                setTimeout(function () {
+                    clicktag = 0
+                }, 1500);
+            }
+            callpay(price,times);
+        });
+
+    function callpay(price,times)
+    {
+        if (typeof WeixinJSBridge == "undefined"){
+            if( document.addEventListener ){
+                document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+            }else if (document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+            }
+        }else{
+            var jsApiParameters =  null;
+            var outTradeNo =null;//商户订单号
+            var isGoToPay = false;
+            var openid = $('.openid').val();
+            var weixin_pay_charger = $('.weixin_pay_charger').val();
+            $.ajax({
+                type: 'POST',
+                url: weixin_pay_charger,
+                data: {"price":price,"openid":openid},
+                dataType: "json",
+                timeout: 3000,
+                async:false,
+                success: function(data){
+                    if(data.code == 200){
+                        isGoToPay = true;
+                        jsApiParameters = data.jsapi;
+                        outTradeNo = data.out_trade_no;
+                    }else{
+                        alert(data.error);
+                    }
+                },
+                error: function(xhr, type){
+                    alert('支付错误,请重新支付');
+                }
+            });
+            //判断是否调用支付控件
+            if(isGoToPay){
+                jsApiCall(jsApiParameters,outTradeNo,price,times);
+            }
+        }
+    }
+    function jsApiCall( jsApiParameters,outTradeNo,price,times)
+    {
+
+        var jsPs = eval('(' + jsApiParameters + ')');
+        WeixinJSBridge.invoke(
+                'getBrandWCPayRequest',
+                jsPs ,
+                function(res){
+                    //WeixinJSBridge.log(res.err_msg);
+                    if(res.err_msg == "get_brand_wcpay_request:ok" ){
+                        //更新支付明细
+                        var device_command = $('.device_command').val();
+                        var device_id = $('.device_id').val();
+                        $.ajax({
+                            type: 'POST',
+                            url: "<?php echo U('WeixinPay/weixin_update');?>",
+                            data: {
+                                "out_trade_no":outTradeNo,
+                                "device_command":device_command,
+                                "price":price,
+                                "times":times,
+                                "device_id":device_id,
+                                "openid":$(".openid").val()},
+                            dataType: 'json',
+                            async:false,
+                            success: function(data){
+                                if(data.code == 200){
+                                    alert('充电开始工作');
+                                }else{
+                                    alert('充电失败');
+                                }
+                                canUpdateRemainsum1 = true;
+
+                            },
+                            error: function(xhr, type){
+                                alert('支付错误，请重新支付');
+                                canUpdateRemainsum1 = true;
+                            }
+                        });
+
+                    }
+                }
+        );
+    }
+</script>
+</html>

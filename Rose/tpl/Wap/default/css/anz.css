@@ -1,0 +1,9 @@
+/* CSS Document */
+.anz{ margin-top: 1.5rem }
+.anz .anzdiv1{ height: 4rem;line-height: 4rem; border-bottom: solid 1px #bdbdbd; background: #fff; padding-left: 10%; padding-right: 10%;
+font-size: 1.5rem;color: #666666;}
+.anz .anzdiv1 img{width: 2.5rem}
+.anz .anzdiv1 input{ padding-left: 0.5rem;display: inline-block; width: 50%;}
+.anz .anzspan1{ display: inline-block; width: 30%; }
+.anz option{ font-size: 1.5rem; color: #909090;}
+.anz select{ font-size: 1.5rem; color: #909090; padding-right: 1rem;}

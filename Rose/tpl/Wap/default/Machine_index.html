@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://dwwed.com/szj/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="pragram" content="no-cache">
+	<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <link href="./tpl/Wap/default/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./tpl/Wap/default/css/style_cd.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/frozen.css">
+    <link rel="stylesheet" href="./tpl/Wap/default/css/mobi.css">
+	
+    <style>
+	.fozi{border-bottom:solid 1px #00A098; margin-top:20px; padding-bottom:30px;}
+    .fozi a{clear: both;color: #5FD0CA;line-height: 50px;font-size:2.8rem;display:block;text-decoration: none;}
+	.helpimg{ width:100px; position:fixed; bottom:300px; right:0px;}
+	.helpimg img{ width:100px;}
+	li.lion1 {background:#ea7215;}
+    /*添加*/
+    .inputdate{width: 450px; margin:auto; text-align: center;font-size: 2.5rem;    font-family: 微软雅黑;}
+    .inputdate input{ border:none;width:50px;  overflow:scroll;}
+    /*添加*/
+    .botton_cdqd{
+       text-align: center;
+    background-color: #ea7215!important;
+    font-size: 2.5rem;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    border-left: solid 1px #2ab7ec;
+    border-radius: 15px; 
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px
+
+}
+.botton_cdq:hover{ color: #f00;}
+    </style>
+	<title>玫瑰云网 -自动售货纸巾机</title>
+</head>
+<body dh="1" rlt="1">
+<div class="width750">
+	<img src="./tpl/Wap/default/img/13.png" alt="玫瑰云网" width="100%" style="margin-bottom: 30px;">
+	<div class="botton_cdqd weixin_pay" dataprice="{weikucms:$out.0}" datatime="{weikucms:$out.1}">支付{weikucms:$out.0}元 购买{weikucms:$out.1}件 </div>
+    <div class="botton_cdqd weixin_pay" dataprice="{weikucms:$out.2}" datatime="{weikucms:$out.3}">支付{weikucms:$out.2}元 购买{weikucms:$out.3}件 </div>
+    <div class="fozi" style="padding-left:3%; border-color: #ea7215; clear: both;">&nbsp;</div>
+    <div class="fozi" style="padding-left:3%;border-color: #ea7215;"><a style=" color:#ea7215" href="http://www.roseo2o.com/"><em>玫瑰物联</em> <br>商业设备物联化,运营交易平台化</a></div>
+    <div class="fozi" style="padding-left:3%;border-color: #ea7215;"><a style=" color:#ea7215" href="http://coworking.cn/"><em>众志联盟</em> <br>创建全球领先的智能开关研发制造企业</a></div>  
+    <div style="height:65px "></div>
+	<h6 style="height: 65px;
+    line-height: 65px;
+    background: #ea7215;
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    color: #FFFFFF;
+    margin-top: 50px;
+    font-family: 微软雅黑;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    ">玫瑰物联版权所有</h6>
+        
+</div>
+<input type="hidden" class="scan_code" value="{weikucms:$scan_code}">
+<input type="hidden" class="openid" value="{weikucms:$openid}">
+<input type="hidden" class="device_command" value="{weikucms:$device_command}">
+<input type="hidden" class="device_id" value="{weikucms:$device_id}">
+<input type="hidden" class="online_status" value="{weikucms:$online_status}">
+<input type="hidden" class="weixin_pay_machine" value="{weikucms::U('WeixinPay/weixin_machine_pay')}">
+<script src="./tpl/Wap/default/js/zepto.js"></script>
+<script src="./tpl/Wap/default/js/frozen.js"></script>
+<script>
+    var clicktag=0;
+    $('.weixin_pay').click(function(){
+        var online_status = $.trim($('.online_status').val());
+        var openid = $.trim($('.openid').val());
+        var price = $(this).attr('dataprice');
+        var times = $(this).attr('datatime');
+        if(online_status == 0){
+            alert('设备不在线');
+            return false;
+        }
+        if(price == '' || openid == '' || times == ''){
+            alert('参数错误，请重新扫码');
+            return false;
+        }
+        if (clicktag == 1) {
+            return;
+        }
+        if (clicktag == 0) {
+            clicktag = 1;
+            setTimeout(function () {
+                clicktag = 0
+            }, 1500);
+        }
+        callpay(price,times);
+    });
+
+    function callpay(price,times)
+    {
+        if (typeof WeixinJSBridge == "undefined"){
+            if( document.addEventListener ){
+                document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+            }else if (document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+            }
+        }else{
+            var jsApiParameters =  null;
+            var outTradeNo =null;//商户订单号
+            var isGoToPay = false;
+            var openid = $('.openid').val();
+            var weixin_pay_machine = $('.weixin_pay_machine').val();
+            $.ajax({
+                type: 'POST',
+                url: weixin_pay_machine,
+                data: {"price":price,"openid":openid},
+                dataType: "json",
+                timeout: 3000,
+                async:false,
+                success: function(data){
+                    if(data.code == 200){
+                        isGoToPay = true;
+                        jsApiParameters = data.jsapi;
+                        outTradeNo = data.out_trade_no;
+                    }else{
+                        alert(data.error);
+                    }
+                },
+                error: function(xhr, type){
+                    alert('支付错误,请重新支付');
+                }
+            });
+            //判断是否调用支付控件
+            if(isGoToPay){
+                jsApiCall(jsApiParameters,outTradeNo,price,times);
+            }
+        }
+    }
+    function jsApiCall( jsApiParameters,outTradeNo,price,times)
+    {
+
+        var jsPs = eval('(' + jsApiParameters + ')');
+        WeixinJSBridge.invoke(
+                'getBrandWCPayRequest',
+                jsPs ,
+                function(res){
+                    //WeixinJSBridge.log(res.err_msg);
+                    if(res.err_msg == "get_brand_wcpay_request:ok" ){
+                        //更新支付明细
+                        var device_command = $('.device_command').val();
+                        var device_id = $('.device_id').val();
+                        $.ajax({
+                            type: 'POST',
+                            url: "{weikucms::U('WeixinPay/weixin_machine_update')}",
+                            data: {
+                                "out_trade_no":outTradeNo,
+                                "device_command":device_command,
+                                "price":price,
+                                "times":times,
+                                "device_id":device_id,
+                                "openid":$(".openid").val()},
+                            dataType: 'json',
+                            async:false,
+                            success: function(data){
+                                if(data.code == 200){
+                                    alert('购买成功');
+                                }else{
+                                    alert('购买失败');
+                                }
+                                canUpdateRemainsum1 = true;
+
+                            },
+                            error: function(xhr, type){
+                                alert('支付错误，请重新支付');
+                                canUpdateRemainsum1 = true;
+                            }
+                        });
+
+                    }
+                }
+        );
+    }
+</script>
+</body></html>
