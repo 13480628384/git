@@ -1,0 +1,83 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Device/index')}">设备信息列表</a></li>
+        <li class="active"><a href="{:U('Device/add')}">设备信息添加</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Device/add_post')}">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label">区域</label>
+                <div class="controls">
+                    <select name="area_id">
+                        <volist name="sys_area" id="v">
+                            <option value="{$v.id}">{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">归属用户</label>
+                <div class="controls">
+                    <select name="user_login">
+                        <volist name="users" id="v">
+                            <option value="{$v.id}">{$v.user_login}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">扫描码</label>
+                <div class="controls">
+                    <input type="text" maxlength="16" name="scan_code" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">设备码</label>
+                <div class="controls">
+                    <input type="text" maxlength="18" name="device_code" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">指令码</label>
+                <div class="controls">
+                    <input type="text" maxlength="10" name="device_command" value="">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">价格</label>
+                <div class="controls">
+                    <input type="text"  maxlength="10" name="pay_price" value="">
+					价格格式 2元-1杯=4元-2杯
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">状态</label>
+                <div class="controls">
+                    <select name="status">
+                        <option value="1">有效</option>
+                        <option value="0">无效</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">离线/在线</label>
+                <div class="controls">
+                    <select name="online_status">
+                        <option value="1">在线</option>
+                        <option value="0">离线</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary js-ajax-submit">添加</button>
+            <a class="btn" href="javascript:history.back(-1);">返回</a>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

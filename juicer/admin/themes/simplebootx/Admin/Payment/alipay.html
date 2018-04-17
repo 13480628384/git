@@ -1,0 +1,89 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Payment/alipay')}">支付宝</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Payment/alipay')}">
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="id,订单号">
+        支付时间 ：<input type="text" name="start_time" class="js-datetime" value="{$formget.start_time|default=''}" style="width: 120px;" autocomplete="off">-
+        <input autocomplete="off" type="text" class="js-datetime" name="end_time" value="{$formget.end_time|default=''}" style="width: 120px;">
+        状态:
+        <select name="status">
+            <option value="">请选择</option>
+            <option value="1">有效</option>
+            <option value="0">无效</option>
+        </select>
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>buyer_id</th>
+                <th>金额</th>
+                <th>状态</th>
+                <th>商户订单号</th>
+                <th>支付订单号</th>
+                <th>归档</th>
+                <th>支付时间</th>
+                <!-- <th>操作</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.buyer_id}</td>
+                    <td>{$v.consume_account}</td>
+                    <td <if condition="$v['status'] eq 0">style="color:#0d87cc"</if> >
+                    <if condition="$v['status'] eq 1">√<else/><b style="color:#f00;">×</b></if></td>
+                    <td>{$v.out_trade_no}</td>
+                    <td>{$v.transaction_id}</td>
+                    <td><if condition="$v['is_close'] eq 1">是<else/>未</if></td>
+                    <td>{$v.create_date}</td>
+                    <!--<td>
+                        <a class="btn btn-xs btn-danger js_del js-ajax-dialog-btn"
+                           data-msg="你确定要删除吗" href="{:U('del',array('id'=>$v['id']))}">
+                            删除</a></td>-->
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>openid</th>
+                <th>金额</th>
+                <th>状态</th>
+                <th>商户订单号</th>
+                <th>支付订单号</th>
+                <th>归档</th>
+                <th>支付时间</th>
+                <!--<th>操作</th>-->
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

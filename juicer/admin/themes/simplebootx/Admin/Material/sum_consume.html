@@ -1,0 +1,73 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('Material/sum_consume')}">物料消耗总数</a></li>
+    </ul>
+    <form class="well form-search" method="post" action="{:U('Material/sum_consume')}">
+        搜索关键字：
+        <input type="text" name="keyword" style="width: 200px;" value="{:I('request.keyword')}" placeholder="搜索">
+
+        <input type="submit" class="btn btn-primary" value="搜索" />
+    </form>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>硬件指令码</th>
+                <th>所属区域</th>
+                <th>当天使用橙子数</th>
+                <th>当天榨汁杯数</th>
+                <th>平均每天的橙子用量</th>
+                <th>时间</th>
+                <!-- <th>操作</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td>{$v.device_command}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.all_orange}</td>
+                    <td>{$v.all_beishu}</td>
+                    <td>{$v.one_orange}</td>
+                    <td>{$v.create_date}</td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>硬件指令码</th>
+                <th>所属区域</th>
+                <th>当天使用橙子数</th>
+                <th>当天榨汁杯数</th>
+                <th>平均每天的橙子用量</th>
+                <th>时间</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

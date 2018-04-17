@@ -1,0 +1,61 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('Settlement/index')}">微信消费</a></li>
+        <li><a href="{:U('Settlement/weixin_get')}">微信日收益报表</a></li>
+        <li class="active"><a href="{:U('Settlement/weixin_month')}">微信月收益报表</a></li>
+    </ul>
+    <h1>月收益报表</h1>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>收益金额</th>
+                <th>消费时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v">
+                <tr>
+                    <td><h3><php>echo abs($v['count']);</php></h3></td>
+                    <td><h3>{$v.year}年-{$v.month}月</h3></td>
+                    <td><a href="{:U('Settlement/deivce_month',array('month'=>$v['month']))}">
+                        点击查看所有设备的详情收益列表</a></td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>收益金额</th>
+                <th>消费时间</th>
+                <th>操作</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>

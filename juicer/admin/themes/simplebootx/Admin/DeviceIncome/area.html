@@ -1,0 +1,60 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('DeviceIncome/area')}">区域排名</a></li>
+    </ul>
+    <form class="js-ajax-form" action="" method="post">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th>名次</th>
+                <th>区域名称</th>
+                <th>收益金额</th>
+                <th>消费时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="v" key="k">
+                <tr>
+                    <td>{$k}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.count}</td>
+                    <td>{$v.create_date}</td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>名次</th>
+                <th>区域名称</th>
+                <th>收益金额</th>
+                <th>消费时间</th>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+
+    setInterval(function() {
+        var refersh_time = getCookie('refersh_time_admin_menu_index');
+        if (refersh_time == 1) {
+            reloadPage(window);
+        }
+    }, 1000);
+    setCookie('refersh_time_admin_menu_index', 0);
+</script>
+</body>
+</html>
