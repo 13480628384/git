@@ -1,0 +1,6 @@
+  {
+    "navigationBarTitleText": "添加地址",
+    "backgroundColor": "rgb(239, 65, 65)",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": "true"
+}

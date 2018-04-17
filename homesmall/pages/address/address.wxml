@@ -1,0 +1,52 @@
+<view class="page__bd">
+
+        <view class="weui-cells__title">联系人</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputusername" placeholder="请输入联系人姓名" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">联系电话</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputphone"  placeholder="手机号码" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">服务面积</view>
+            <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputarea" placeholder="请输入服务的面积" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">详细地址</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入门牌街道信息" style="height: 3.3em" bindinput="detail" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">设置为默认地址</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__ft">
+                    <switch  bindchange="checkboxChange" checked />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+        </view>
+</view>        

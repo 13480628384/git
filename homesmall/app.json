@@ -8,7 +8,8 @@
     "pages/activitydetail/activitydetail",
     "pages/resigter/resigter",
     "pages/yuding/yuding",
-    "pages/reserve/reserve"
+    "pages/reserve/reserve",
+    "pages/address/address"
   ],
   "wxParse":[
     "wxParse/wxParse.wxml"

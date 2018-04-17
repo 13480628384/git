@@ -90,6 +90,10 @@ function reserve(){
 function reser_submit(){
   return host_url + 'xiao/reser_submit';
 }
+//添加地址
+function address(){
+  return host_url + 'xiao/address';
+}
 //暴露窗口
 module.exports = {
   resigter: resigter,
@@ -105,5 +109,6 @@ module.exports = {
   my_customr: my_customr,
   yuding:yuding,
   reserve:reserve,
-  reser_submit:reser_submit
+  reser_submit:reser_submit,
+  address:address
 }

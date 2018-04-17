@@ -1,6 +1,10 @@
 <view class="container">
 	<view class="my-list">
-		<navigator class="my-item" url="">
+		<navigator class="my-item" url="../address/address">
+		家庭地址
+		</navigator>
+
+    	<navigator class="my-item" url="">
 		退出登录
 		</navigator>
 	</view>
