@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="742307e8-39d0-41e1-ba4d-9551d42e57c0" name="默认的" comment="" />
+    <ignored path="weixinscan.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="weixinscan" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="game.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game_test/game.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="136" column="70" lean-forward="false" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="70" />
+              <folding>
+                <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+                <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+                <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+                <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+                <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WxPay.JsApiPay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_test/wxpay/WxPay.JsApiPay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2546">
+              <caret line="134" column="5" lean-forward="false" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glass_token.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_test/glass_token.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <folding>
+                <marker date="1516189727767" expanded="true" signature="1512:1580" ph="select * fro... glass_user" />
+                <marker date="1516189727767" expanded="true" signature="1618:1663" ph="select * fro... glass_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onenet_url_massage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <marker date="1484709430000" expanded="true" signature="958:1052" ph="update devic... " />
+                <marker date="1484709430000" expanded="true" signature="1154:1248" ph="update devic... " />
+                <marker date="1484709430000" expanded="true" signature="1671:1768" ph="select * fro... device_record" />
+                <marker date="1484709430000" expanded="true" signature="2435:2498" ph="Select dev_i... device_record" />
+                <marker date="1484709430000" expanded="true" signature="2530:2587" ph="delete from " />
+                <marker date="1484709430000" expanded="true" signature="2955:3031" ph="select * fro... device_record" />
+                <marker date="1484709430000" expanded="true" signature="3656:3803" ph="update devic... " />
+                <marker date="1484709430000" expanded="true" signature="4050:4080" ph="insert into device_record... " />
+                <marker date="1484709430000" expanded="true" signature="4196:4342" ph="update devic... " />
+                <marker date="1484709430000" expanded="true" signature="4588:4618" ph="insert into device_record... " />
+                <marker date="1484709430000" expanded="true" signature="4836:4980" ph="update devic... " />
+                <marker date="1484709430000" expanded="true" signature="5224:5254" ph="insert into device_record... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$success_pay</find>
+      <find>$key</find>
+      <find>$type</find>
+      <find>NuvLHXoUYxZn99MVEbtVNyjSd9E=</find>
+      <find>DEBUG</find>
+      <find>http_request</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/game_test/weixin_come.php" />
+        <option value="$PROJECT_DIR$/game_test/glass_message.php" />
+        <option value="$PROJECT_DIR$/game_test/update_device_no_online.php" />
+        <option value="$PROJECT_DIR$/game_test/update_device_yes_online.php" />
+        <option value="$PROJECT_DIR$/game_test/devicecommand/getcommandstatus_update_payinfo_commandinfo.php" />
+        <option value="$PROJECT_DIR$/game_test/Util.php" />
+        <option value="$PROJECT_DIR$/game_test/glass_token.php" />
+        <option value="$PROJECT_DIR$/game_test/game.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1300" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="weixinscan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixinscan" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="weixinscan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixinscan" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="game_test" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homewap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="742307e8-39d0-41e1-ba4d-9551d42e57c0" name="默认的" comment="" />
+      <created>1503295978376</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503295978376</updated>
+      <workItem from="1503295980395" duration="1314000" />
+      <workItem from="1504491100788" duration="7125000" />
+      <workItem from="1504515905510" duration="773000" />
+      <workItem from="1512024154404" duration="1867000" />
+      <workItem from="1512094150420" duration="2058000" />
+      <workItem from="1512713488682" duration="2960000" />
+      <workItem from="1513059474905" duration="2145000" />
+      <workItem from="1513234188286" duration="730000" />
+      <workItem from="1513318578489" duration="1215000" />
+      <workItem from="1513587003159" duration="3163000" />
+      <workItem from="1513737815199" duration="1239000" />
+      <workItem from="1514340630655" duration="2523000" />
+      <workItem from="1514857861003" duration="5614000" />
+      <workItem from="1514944341160" duration="1201000" />
+      <workItem from="1515029788214" duration="1205000" />
+      <workItem from="1515115579194" duration="598000" />
+      <workItem from="1515377705081" duration="1193000" />
+      <workItem from="1515462729043" duration="887000" />
+      <workItem from="1515548350136" duration="597000" />
+      <workItem from="1515634814148" duration="1195000" />
+      <workItem from="1515720358484" duration="597000" />
+      <workItem from="1515982428387" duration="1599000" />
+      <workItem from="1516068097182" duration="3195000" />
+      <workItem from="1516153971429" duration="4627000" />
+      <workItem from="1516238759773" duration="597000" />
+      <workItem from="1516325780155" duration="1225000" />
+      <workItem from="1516585942539" duration="3696000" />
+      <workItem from="1516672020386" duration="1217000" />
+      <workItem from="1516759139634" duration="1196000" />
+      <workItem from="1516844310844" duration="599000" />
+      <workItem from="1516933355213" duration="595000" />
+      <workItem from="1517191542765" duration="1071000" />
+      <workItem from="1517276548375" duration="594000" />
+      <workItem from="1517362673182" duration="1297000" />
+      <workItem from="1517449554874" duration="597000" />
+      <workItem from="1517535864461" duration="669000" />
+      <workItem from="1517795822530" duration="598000" />
+      <workItem from="1517882167443" duration="596000" />
+      <workItem from="1517968479722" duration="2487000" />
+      <workItem from="1518054433063" duration="598000" />
+      <workItem from="1518142299979" duration="597000" />
+      <workItem from="1519610294986" duration="597000" />
+      <workItem from="1519702646316" duration="596000" />
+      <workItem from="1519782829242" duration="1984000" />
+      <workItem from="1519869280960" duration="595000" />
+      <workItem from="1519954561457" duration="597000" />
+      <workItem from="1520215694014" duration="591000" />
+      <workItem from="1520560784997" duration="595000" />
+      <workItem from="1520820380519" duration="592000" />
+      <workItem from="1520906043754" duration="2000" />
+      <workItem from="1520993238546" duration="1193000" />
+      <workItem from="1521077752858" duration="1882000" />
+      <workItem from="1521164245368" duration="597000" />
+      <workItem from="1521428900638" duration="596000" />
+      <workItem from="1521548887166" duration="594000" />
+      <workItem from="1522144505572" duration="1238000" />
+      <workItem from="1523529290336" duration="633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="80731000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2986322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/game_test/weixin_come.php</url>
+          <line>2</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/game_test/wxpay/WxPay.JsApiPay.php</url>
+          <line>123</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/weixin_come.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <marker date="1504580521985" expanded="true" signature="70:250" ph="select sum(c... device_consume_rec" />
+            <marker date="1504580521985" expanded="true" signature="282:397" ph="select sum(p... weixin_pay_rec" />
+            <marker date="1504580521985" expanded="true" signature="419:472" ph="SELECT * fro... weixin_come" />
+            <marker date="1504580521985" expanded="true" signature="667:790" ph="update weixi... " />
+            <marker date="1504580521985" expanded="true" signature="1075:1103" ph="INSERT INTO weixin_come... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2337">
+          <caret line="123" column="6" lean-forward="true" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="6" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/weixin_come.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <marker date="1504580521985" expanded="true" signature="70:250" ph="select sum(c... device_consume_rec" />
+            <marker date="1504580521985" expanded="true" signature="282:397" ph="select sum(p... weixin_pay_rec" />
+            <marker date="1504580521985" expanded="true" signature="419:472" ph="SELECT * fro... weixin_come" />
+            <marker date="1504580521985" expanded="true" signature="667:790" ph="update weixi... " />
+            <marker date="1504580521985" expanded="true" signature="1075:1103" ph="INSERT INTO weixin_come... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="71" lean-forward="false" selection-start-line="107" selection-start-column="64" selection-end-line="107" selection-end-column="71" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/weixin_come.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <marker date="1504580521985" expanded="true" signature="70:250" ph="select sum(c... device_consume_rec" />
+            <marker date="1504580521985" expanded="true" signature="282:397" ph="select sum(p... weixin_pay_rec" />
+            <marker date="1504580521985" expanded="true" signature="419:472" ph="SELECT * fro... weixin_come" />
+            <marker date="1504580521985" expanded="true" signature="667:790" ph="update weixi... " />
+            <marker date="1504580521985" expanded="true" signature="1075:1103" ph="INSERT INTO weixin_come... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="150" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="69" lean-forward="false" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="69" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="150" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/glass_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/devicecommand/getcommandstatus_update_payinfo_commandinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="134" column="35" lean-forward="false" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="69" lean-forward="false" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="69" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="150" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/glass_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="69" lean-forward="false" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="69" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/devicecommand/getcommandstatus_update_payinfo_commandinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="225" column="117" lean-forward="false" selection-start-line="225" selection-start-column="116" selection-end-line="225" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_device_no_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="144" lean-forward="false" selection-start-line="40" selection-start-column="138" selection-end-line="40" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_device_yes_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/weixin_come.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504580521985" expanded="true" signature="70:250" ph="select sum(c... device_consume_rec" />
+            <marker date="1504580521985" expanded="true" signature="282:397" ph="select sum(p... weixin_pay_rec" />
+            <marker date="1504580521985" expanded="true" signature="419:472" ph="SELECT * fro... weixin_come" />
+            <marker date="1504580521985" expanded="true" signature="667:790" ph="update weixi... " />
+            <marker date="1504580521985" expanded="true" signature="1075:1103" ph="INSERT INTO weixin_come... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_juicer_yes_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/mysql/mysqldbwrite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1060">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_juicer_yes_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/glass_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/vending.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/vending_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/weixin_come.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <marker date="1504580521985" expanded="true" signature="70:250" ph="select sum(c... device_consume_rec" />
+            <marker date="1504580521985" expanded="true" signature="282:397" ph="select sum(p... weixin_pay_rec" />
+            <marker date="1504580521985" expanded="true" signature="419:472" ph="SELECT * fro... weixin_come" />
+            <marker date="1504580521985" expanded="true" signature="667:790" ph="update weixi... " />
+            <marker date="1504580521985" expanded="true" signature="1075:1103" ph="INSERT INTO weixin_come... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_device_yes_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/devicecommand/getcommandstatus_update_payinfo_commandinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="284" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/JsApiParameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="81" column="33" lean-forward="false" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/is_device_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/load_user_remainsum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/update_device_no_online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/Util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1718">
+          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="105" column="9" lean-forward="false" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/glass_token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <marker date="1516189727767" expanded="true" signature="1512:1580" ph="select * fro... glass_user" />
+            <marker date="1516189727767" expanded="true" signature="1618:1663" ph="select * fro... glass_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/onenet_url_massage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <marker date="1484709430000" expanded="true" signature="958:1052" ph="update devic... " />
+            <marker date="1484709430000" expanded="true" signature="1154:1248" ph="update devic... " />
+            <marker date="1484709430000" expanded="true" signature="1671:1768" ph="select * fro... device_record" />
+            <marker date="1484709430000" expanded="true" signature="2435:2498" ph="Select dev_i... device_record" />
+            <marker date="1484709430000" expanded="true" signature="2530:2587" ph="delete from " />
+            <marker date="1484709430000" expanded="true" signature="2955:3031" ph="select * fro... device_record" />
+            <marker date="1484709430000" expanded="true" signature="3656:3803" ph="update devic... " />
+            <marker date="1484709430000" expanded="true" signature="4050:4080" ph="insert into device_record... " />
+            <marker date="1484709430000" expanded="true" signature="4196:4342" ph="update devic... " />
+            <marker date="1484709430000" expanded="true" signature="4588:4618" ph="insert into device_record... " />
+            <marker date="1484709430000" expanded="true" signature="4836:4980" ph="update devic... " />
+            <marker date="1484709430000" expanded="true" signature="5224:5254" ph="insert into device_record... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/lib/WxPay.Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/lib/WxPay.Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9929">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/WxPay.MicroPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/WxPay.NativePay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/devicecommand/OneNetApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13477">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/wxpay/WxPay.JsApiPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="134" column="5" lean-forward="false" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_test/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="136" column="70" lean-forward="false" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="70" />
+          <folding>
+            <marker date="1522144537687" expanded="true" signature="1659:1745" ph="select * fro... ju_device_info_detail" />
+            <marker date="1522144537687" expanded="true" signature="2022:2122" ph="select * fro... device_info" />
+            <marker date="1522144537687" expanded="true" signature="6259:6320" ph="select dgi_i... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="6394:6508" ph="select * fro... device_relation_group" />
+            <marker date="1522144537687" expanded="true" signature="8064:8317" ph="select drg.*... device_relation_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
